@@ -1,88 +1,121 @@
 <html>
-    <title>html2</title>
+<head>
+    <title>Html 2</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <head>
-        <body>
-            <p align ="left" style="color:red"> pertama fadhil minum</p>
-            <p align ="center" style="color:red"> paragraf kedua SKT minum</p>
-            <p align ="right" style="color:red"> paragraf ketiga task done</p>
-            <br> Selamat Pagi</br>
-            hari ini kuliah SI web
-            <a href="html1.html">Klik Untuk Lihat Tugas pertama Html1</a>
-            <table border="2">
-                <tr>
-                    <th>Nama</th>
-                    <th>Nim</th>
-                    <th>Prodi</th>
-                </tr>
-                <tr>
-                    <td>Febrero Araya K</td>
-                    <td>E41171991</td>
-                    <td>TIF</td>
-                </tr>
-                <tr>
-                    <Td>SktT1 Faker</Td>
-                    <td>E4118220</td>
-                    <td>Mid</td>
-                </tr>
-                <tr>
-                    <td>Jeong</td>
-                    <td>E411308</td>
-                    <td>Dance</td>
-                </tr>
-            </table>
-            <h3>Team  List</h3>
-            <ol type="1">
-                <li>Febrero Araya K</li>
-                <li>Skt Leo</li>
-                <li>Skt Faker</li>
-                <li>SKT Mata</li>
-            </ol>
-            <h3>Ban List</h3>
-            <ul>
-            <li>Jhin</li>
-            <li>Master YI</li>
-            <li>Darius</li>
-            <li>Garen</li>
-        </ul>
-            <form border="2">
-            <h3>NAMA :<input type="text" placeholder="ISI NAMA" name="NAMA"></br></h3>
-            <h3>Curhatan : <textarea placeholder="isi curhat" name="Curhatan"></textarea></br></h3>
-            Team : 
-            <input type="radio" name="team" value="biru" checked/>Biru
-            <input type="radio" name="team" value="merah">merah
-            </br>
-            Grade: <input type="checkbox" name="A" /> A
-      <input type="checkbox" name="B" checked /> B
-      <input type="checkbox" name="C" /> C
-<br />
-Team List :
-<select>
-    <option>aqua</option>
-    <option>cleo</option>
-    <option>club</option>
-    <option>alqodiri</option>
-</select>
-</br>
-<center><input type="submit" style="color:green" value="Buat Team"></center>
-        </form>
-       <img src="air.jpg" width="450" height="450">
-       <iframe width="420" height="315"
-</iframe> 
-<marquee><h1>Belajar HTML menghubungkan html dengan css :)</h1></marquee>
-</p>
-<p>
-        <center><h3>Mengenal Class dan Id pada HTML<br/></h3></center>
-        <!-- contoh penggunaan class -->
-       <center> <div class="kotak" >kotak 1</div> 
-        <div class="kotak">kotak 2</div>
-        <div class="kotak">kotak 3</div>
-     
-        <!-- contoh penggunaan id -->
-        <div id="kotak">Kotak 4</div>
-    </center>
-</p>
+</head>
+<body>
+    <!-- contoh paragraf -->
+    <h3>Contoh paragraf</h3>
+
+    <p>Ini adalah paragraf pertama</p>
+    <p>Ini adalah paragraf kedua</p>
+    <p>Ini adalah paragraf ketiga</p>
+
+
+    <!-- contoh table -->
+    <h3>Contoh table</h3>
+
+    <table border="1">
+        <tr>
+            <td>Kolom 1 / Kolom 2</td>
+            <td>Baris 1 / Kolom 2</td>
+            <td>Baris 1 / Kolom 3</td>
+        </tr>
+        <tr>
+            <td>Baris 2 / Kolom 1</td>
+            <td>Baris 2 / Kolom 2</td>
+            <td>Baris 2 / Kolom 3</td>
+        </tr>
+        <tr>
+            <td>Baris 3/ Kolom 1</td>
+            <td>Baris 3/ Kolom 2</td>
+            <td>Baris 3/ Kolom 3</td>
+        </tr>
        
-        </body>
-    </head>
+
+    </table>
+
+
+    <!-- contoh link -->
+    <h3>Contoh link</h3>
+
+    <a href="html1.html">klik disini</a>
+
+
+
+    <!-- contoh list -->
+    <h3>Contoh list</h3>
+    <li>Teknik informatika</li>
+    <li>Belajar coding </li>
+    <li>Belajar html</li>
+
+
+
+    <!-- contoh form -->
+    <h3>Contoh form</h3>
+    <form>
+            Nama &emsp;  : <input type="text" name="nama"><br/>
+            Alamat &emsp;   : <input type="text" name="alamat"></br/>
+            Password : <input type="password" name="pass"><br/>
+            Jenis Kelamin : 
+                <input type="radio" name="jk" value="laki-laki" checked /> 
+                    Laki - Laki
+                <input type="radio" name="jk" value="perempuan" /> 
+                    Perempuan
+                <br/>
+            Bahasa pemograman yang dikuasai :
+                <input type="checkbox" name="web"> Akses
+                <input type="checkbox" name="mobile"> Web
+                <input type="checkbox" name="desk"> DESKTOP
+                <br/>
+            Kota asal :
+            <select>
+                <option>Situbondo</option>
+                <option>Banyuwangi</option>
+            </select>
+            <br/>
+            Pesan anda :
+            <textarea>
+                
+            </textarea>
+            <br/>
+            <input type="submit" value="proses">
+        </form>
+
+        <!-- contoh menampilkan simbol -->
+        <h3>Membuat symbol pada HTML<br/>menampilkan simbol</h3>
+	<p>&#9824;</p>
+	<a href="#">Simbol panah &#8594;</a><br/>
+	<a href="#">Simbol panah &rarr;</a><br/>
+	&#8704;<br/>
+	&#8711;<br/>
+	&#8719;<br/>
+	&#174; <br/>
+	&#9829;<br/>
+	&#8594;<br/>
+	&#8593;<br/>
+	&#8592;<br/>
+    &#8482;<br/>
+
+    <!-- contoh menampilkan gambar -->
+    <h3>contoh menampilkan gambar</h3>
+    <img src="air.jpg" height="300" width="600">
+
+
+    <!-- contoh menghubungkan ke css -->
+    <h3> contoh menghubungkan ke css</h3>
+    <h1> menghubungkan css ke html</h1>
+    <h2> menghuubungkan </h2>
+
+    <!-- coontoh mengenal clas dan id -->
+    <div class="kotak">kotak 1</div>
+	<div class="kotak">kotak 2</div>
+    <div class="kotak">kotak 3</div>
+    
+    <!-- contoh penggunaan id -->
+	<div id="kotak">Kotak 4</div>
+    
+
+
+</body>
 </html>
