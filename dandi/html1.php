@@ -11,7 +11,7 @@
 	<h3>polije kampus bondowoso</h3>
 
 	<?php
-echo "dandi";
+echo "belajar PHP";
 ?>
 </body>
 
