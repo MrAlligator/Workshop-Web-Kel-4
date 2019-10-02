@@ -9,7 +9,7 @@
             <center><h3>Politeknik negeri jember </h3></center>
             <?php
 echo "<center><h1>Php saya</h1>";
-echo "Belajar Php + Html</center>";
+echo "<h2>Belajar Php + Html</h2></center>";
 ?>
        
         </body>
