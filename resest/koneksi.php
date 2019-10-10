@@ -1,18 +1,20 @@
 <?php 
-// isi nama host, username mysql, dan password mysql anda
-$host = mysql_connect("127.0.0.1","root"," ");
- 
-if($host){
-	echo "koneksi host berhasil.<br/>";
-}else{
-	echo "koneksi gagal.<br/>";
+
+$koneksi = mysqli_connect("127.0.0.1","root","","db_smk");
+
+// Check connection
+if (mysqli_connect_errno()){
+	echo "Koneksi database gagal : " . mysqli_connect_error();
 }
-// isikan dengan nama database yang akan di hubungkan
-$db = mysql_select_db("db_smk");
+
+?>
+<?php 
  
-if($db){
-	echo "koneksi database berhasil.";
-}else{
-	echo "koneksi database gagal.";
+$koneksi = mysqli_connect("127.0.0.1","root","","db_smk");
+ 
+// Check connection
+if (mysqli_connect_errno()){
+	echo "Koneksi database gagal : " . mysqli_connect_error();
 }
+ 
 ?>
