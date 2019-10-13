@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Login</title>
 </head>
 <body>
@@ -29,9 +30,6 @@ if(isset($_GET['pesan'])){
 
         <br/>
         <br/>
-        <center>
-            <a class="link" href="https://www.malasngoding.com">kembali</a>
-        </center>
     </form>
     
 </div>
