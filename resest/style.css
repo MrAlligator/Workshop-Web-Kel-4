@@ -1,0 +1,31 @@
+h1{
+	color:rebeccapurple;
+	font-family: sans-serif;
+	text-align: center;
+}
+h2{
+    color: blue;
+    font-family: sans-serif;
+
+
+}
+h3{
+	color: black;
+	font-family: sans-serif;
+	text-align: center;
+}
+ 
+.kotak{
+	padding: 50px;
+	width: 100px;
+	color: #fff;
+	margin: 10px;
+	background: black;	
+}
+ 
+#kotak{
+	width: 400px;
+	color: #fff;
+	background: black;
+	padding: 50px;
+}
