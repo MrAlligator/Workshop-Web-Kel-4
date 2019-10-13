@@ -1,0 +1,11 @@
+<?php 
+
+$gear['SS'] = "sangat super";
+$gear['S'] = "super";
+$gear['A'] = "bagus";
+$gear['B'] = "lumayan";
+
+
+echo $gear['SS'];
+
+?>
