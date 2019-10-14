@@ -20,36 +20,36 @@
 				<td><input type="text" name="nama"></td>
 			</tr>
 			<tr>
-				<td>NIM</td>
-				<td><input type="number" name="nim"></td>
+				<td>NIS</td>
+				<td><input type="text" name="nis"></td>
 			</tr>
 			<tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
+				<td>Jenis Kelamin</td>
+				<td><input type="text" name="jenisKelamin"></td>
 			</tr>
+			<tr>
+				<td>Agama</td>
+				<td><input type="text" name="agama"></td>
+            </tr>
             <tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
+				<td>Tempat Lahir</td>
+				<td><input type="text" name="tmptlahir"></td>
+            </tr>
+            <tr>
+				<td>Tanggal Lahir</td>
+				<td><input type="text" name="tanggal"></td>
             </tr>
             <tr>
 				<td>Alamat</td>
 				<td><input type="text" name="alamat"></td>
             </tr>
             <tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
+				<td>No. Telepon</td>
+				<td><input type="text" name="notelp"></td>
             </tr>
             <tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
-            </tr>
-            <tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
-            </tr>
-            <tr>
-				<td>Alamat</td>
-				<td><input type="text" name="alamat"></td>
+				<td>Password</td>
+				<td><input type="text" name="passwd"></td>
             </tr>
             <tr>
 				<td></td>
