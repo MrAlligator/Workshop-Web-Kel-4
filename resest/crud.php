@@ -44,8 +44,8 @@
 				<td><?php echo $d['telp_siswa']; ?></td>
 				<td><?php echo $d['password']; ?></td>
 				<td>
-					<a href="edit.php<?php echo $d['id']; ?>">EDIT</a>
-					<a href="hapus.php<?php echo $d['id']; ?>">HAPUS</a>
+					<a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a>
+					<a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a>
 				</td>
 			</tr>
 			<?php 
