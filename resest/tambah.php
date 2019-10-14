@@ -9,7 +9,7 @@
 <body>
 <h2>CRUD DATA MAHASISWA - WWW.MALASNGODING.COM</h2>
 	<br/>
-	<a href="index.php">KEMBALI</a>
+	<a href="crud.php">KEMBALI</a>
 	<br/>
 	<br/>
 	<h3>TAMBAH DATA MAHASISWA</h3>
