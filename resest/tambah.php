@@ -27,10 +27,34 @@
 				<td>Alamat</td>
 				<td><input type="text" name="alamat"></td>
 			</tr>
-			<tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
+				<td>Alamat</td>
+				<td><input type="text" name="alamat"></td>
+            </tr>
+            <tr>
 				<td></td>
 				<td><input type="submit" value="SIMPAN"></td>
-			</tr>		
+            </tr>		
 		</table>
 	</form>
 </body>
