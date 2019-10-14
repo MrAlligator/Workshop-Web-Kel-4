@@ -26,7 +26,7 @@
 					<td>Nama</td>
 					<td>
 						<input type="hidden" name="id" value="<?php echo $d['id']; ?>">
-						<input type="text" name="nama" value="<?php echo $d['nama']; ?>">
+						<input type="text" name="nama" value="<?php echo $d['nama_siswa']; ?>">
 					</td>
 				</tr>
 				<tr>
@@ -35,31 +35,31 @@
                 </tr>
                 <tr>
 					<td>Jenis Kelamin</td>
-					<td><input type="text" name="jenisKelamin" value="<?php echo $d['jenisKelamin']; ?>"></td>
+					<td><input type="text" name="jenisKelamin" value="<?php echo $d['jk_siswa']; ?>"></td>
                 </tr>
                 <tr>
 					<td>Agama</td>
-					<td><input type="text" name="agama" value="<?php echo $d['agama']; ?>"></td>
+					<td><input type="text" name="agama" value="<?php echo $d['agama_siswa']; ?>"></td>
                 </tr>
                 <tr>
 					<td>Tempat Lahir</td>
-					<td><input type="text" name="tmptlahir" value="<?php echo $d['tmptlahir']; ?>"></td>
+					<td><input type="text" name="tmptlahir" value="<?php echo $d['tmptlahir_siswa']; ?>"></td>
                 </tr>
                 <tr>
 					<td>Tanggal Lahir</td>
-					<td><input type="text" name="tanggal" value="<?php echo $d['tanggal']; ?>"></td>
+					<td><input type="text" name="tanggal" value="<?php echo $d['tgllahir_siswa']; ?>"></td>
 				</tr>
 				<tr>
 					<td>Alamat</td>
-					<td><input type="text" name="alamat" value="<?php echo $d['alamat']; ?>"></td>
+					<td><input type="text" name="alamat" value="<?php echo $d['alamat_siswa']; ?>"></td>
                 </tr>
                 <tr>
 					<td>No. Telepon</td>
-					<td><input type="text" name="notelp" value="<?php echo $d['notelp']; ?>"></td>
+					<td><input type="text" name="notelp" value="<?php echo $d['telp_siswa']; ?>"></td>
                 </tr>
                 <tr>
 					<td>Password</td>
-					<td><input type="text" name="passwd" value="<?php echo $d['passwd']; ?>"></td>
+					<td><input type="text" name="passwd" value="<?php echo $d['password']; ?>"></td>
 				</tr>
 				<tr>
 					<td></td>
