@@ -35,7 +35,7 @@
 				<td><?php echo $d['tmptlahir']; ?></td>
 				<td><?php echo $d['tgllahir']; ?></td>
 				<td><?php echo $d['alamat']; ?></td>
-				<td><?php echo $d['notelp']; ?></td>
+				<td><?php echo $d['telp']; ?></td>
 				<td>
 					<button><a href="edit.php?id=<?php echo $d['id']; ?>">EDIT</a></button>
 					<button><a href="hapus.php?id=<?php echo $d['id']; ?>">HAPUS</a></button>
@@ -45,5 +45,9 @@
 		}
 		?>
 	</table>
+	</br>
+	</br>
+	</br>
+	<button><a href="tambah.php">TAMBAH SISWA</a></button>
 </body>
 </html>
