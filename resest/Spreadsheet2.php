@@ -19,8 +19,8 @@
         $sheet = $spreadsheet->getActiveSheet();
 
         $sheet->setTitle('Sheet 1');
-        $sheet->setCellValue('A1', 'First Name');
-        $sheet->setCellValue('B1', 'Last Name');
+        $sheet->setCellValue('A1', 'Nama');
+        $sheet->setCellValue('B1', 'NIS');
 
         $employee = mysqli_query($koneksi,"select * from tb_siswa");
         $row = 2;
