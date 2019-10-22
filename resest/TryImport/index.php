@@ -39,8 +39,10 @@
     <a href="form.php" class="btn btn-success pull-right">
         <span class="glyphicon glyphicon-upload"></span> Import Data
     </a>
+</br>
+</br>
     <a href="proses.php" class="btn btn-success pull-right">
-        <span class="glyphicon glyphicon-upload"></span> Import Data
+        <span class="glyphicon glyphicon-download"></span> Export Data
     </a>
     
     <h3>Data Hasil Import</h3>
