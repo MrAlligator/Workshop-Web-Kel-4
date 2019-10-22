@@ -97,6 +97,9 @@
             <th>NIS</th>
             <th>Nama</th>
             <th>Jenis Kelamin</th>
+            <th>Agama</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
             <th>Telepon</th>
             <th>Alamat</th>
         </tr>";
@@ -104,36 +107,44 @@
         $numrow = 1;
         $kosong = 0;
         foreach($sheet as $row){ 
-            $nis = $row['A']; 
-            $nama = $row['B']; 
-            $jenis_kelamin = $row['C']; 
-            $telp = $row['D']; 
-            $alamat = $row['E']; 
+            $nis = $row['A'];
+            $nama = $row['B'];
+            $jk = $row['C'];
+            $agama = $row ['D'];
+            $tmptlahir = $row ['E'];
+            $tgllahir = $row ['F'];
+            $telp = $row['G'];
+            $alamat = $row['H']; 
             
-            if($nis == "" && $nama == "" && $jenis_kelamin == "" && $telp == "" && $alamat == "")
-        
+            if($nis == "" && $nama == "" && $jk == "" && $agama == "" && $tmptlahir == "" && $tgllahir == "" && $telp == "" && $alamat == "")
             continue; 
             if($numrow > 1){
-              $nis_td = ( ! empty($nis))? "" : " style='background: #E07171;'"; // Jika NIS kosong, beri warna merah
-              $nama_td = ( ! empty($nama))? "" : " style='background: #E07171;'"; // Jika Nama kosong, beri warna merah
-              $jk_td = ( ! empty($jenis_kelamin))? "" : " style='background: #E07171;'"; // Jika Jenis Kelamin kosong, beri warna merah
-              $telp_td = ( ! empty($telp))? "" : " style='background: #E07171;'"; // Jika Telepon kosong, beri warna merah
-              $alamat_td = ( ! empty($alamat))? "" : " style='background: #E07171;'"; // Jika Alamat kosong, beri warna merah
+                $nis_td = ( ! empty($nis))? "" : " style='background: #E07171;'"; // Jika NIS kosong, beri warna merah
+                $nama_td = ( ! empty($nama))? "" : " style='background: #E07171;'"; // Jika Nama kosong, beri warna merah
+                $jk_td = ( ! empty($jk))? "" : " style='background: #E07171;'"; // Jika Jenis Kelamin kosong, beri warna merah
+                $agama_td = ( ! empty($agama))? "" : " style='background: #E07171;'";
+                $tmptlahir_td = ( ! empty($tmptlahir))? "" : " style='background: #E07171;'";
+                $tgllahir_td = ( ! empty($tgllahir))? "" : " style='background: #E07171;'";
+                $telp_td = ( ! empty($telp))? "" : " style='background: #E07171;'";
+                $alamat_td = ( ! empty($alamat))? "" : " style='background: #E07171;'"; // Jika Alamat kosong, beri warna merah
             
-            if($nis == "" or $nama == "" or $jenis_kelamin == "" or $telp == "" or $alamat == ""){
+            if($nis == "" or $nama == "" or $jk == "" or $agama == "" or $tmptlahir == "" or $tgllahir == "" or $telp == "" or $alamat == ""){
                 $kosong++; 
             }
             
             echo "<tr>";
             echo "<td".$nis_td.">".$nis."</td>";
             echo "<td".$nama_td.">".$nama."</td>";
-            echo "<td".$jk_td.">".$jenis_kelamin."</td>";
+            echo "<td".$jk_td.">".$jk."</td>";
+            echo "<td".$agama_td.">".$agama."</td>";
+            echo "<td".$tmptlahir_td.">".$tmptlahir."</td>";
+            echo "<td".$tgllahir_td.">".$tgllahir."</td>";
             echo "<td".$telp_td.">".$telp."</td>";
             echo "<td".$alamat_td.">".$alamat."</td>";
             echo "</tr>";
             }
             
-            $numrow++; // Tambah 1 setiap kali looping
+            $numrow++;
         }
         
         echo "</table>";

@@ -11,15 +11,21 @@ foreach($sheet as $row){
     $nis = $row['A'];
     $nama = $row['B'];
     $jk = $row['C'];
-    $telp = $row['D'];
-    $alamat = $row['E'];
-    if($nis == "" && $nama == "" && $jk == "" && $telp == "" && $alamat == "")
+    $agama = $row ['D'];
+    $tmptlahir = $row ['E'];
+    $tgllahir = $row ['F'];
+    $telp = $row['G'];
+    $alamat = $row['H'];
+    if($nis == "" && $nama == "" && $jk == "" && $agama == "" && $tmptlahir == "" && $tgllahir == "" && $telp == "" && $alamat == "")
     continue;
     if($numrow > 1){
-    $sql = $pdo->prepare("INSERT INTO tb_siswa VALUES(:nis,:nama,:jk,:telp,:alamat)");
+    $sql = $pdo->prepare("INSERT INTO tb_siswa VALUES(:nis,:nama,:jk,:agama,:tmptlahir,:tgllahir,:telp,:alamat)");
     $sql->bindParam(':nis', $nis);
     $sql->bindParam(':nama', $nama);
     $sql->bindParam(':jk', $jk);
+    $sql->bindParam(':agama', $agama);
+    $sql->bindParam(':tmptlahir', $tmptlahir);
+    $sql->bindParam(':tgllahir', $tgllahir);
     $sql->bindParam(':telp', $telp);
     $sql->bindParam(':alamat', $alamat);
     $sql->execute();
