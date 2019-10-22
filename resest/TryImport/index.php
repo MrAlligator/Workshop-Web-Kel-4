@@ -57,7 +57,7 @@
         <?php
         include "koneksi.php";
         
-          $sql = $pdo->prepare("SELECT * FROM siswa");
+          $sql = $pdo->prepare("SELECT * FROM tb_siswa");
         $sql->execute();
         
         $no = 1;
@@ -66,12 +66,12 @@
             echo "<td>".$no."</td>";
             echo "<td>".$data['nis']."</td>";
             echo "<td>".$data['nama']."</td>";
-            echo "<td>".$data['jenis_kelamin']."</td>";
+            echo "<td>".$data['jk']."</td>";
             echo "<td>".$data['telp']."</td>";
             echo "<td>".$data['alamat']."</td>";
             echo "</tr>";
             
-            $no++; // Tambah 1 setiap kali looping
+            $no++;
         }
         ?>
         </table>
