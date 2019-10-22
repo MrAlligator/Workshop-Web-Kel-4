@@ -68,10 +68,10 @@
     if(isset($_POST['preview'])){
         $nama_file_baru = 'data.xlsx';
         
-        if(is_file('tmp/'.$nama_file_baru)) // Jika file tersebut ada
-          unlink('tmp/'.$nama_file_baru); // Hapus file tersebut
+        if(is_file('tmp/'.$nama_file_baru))
+        unlink('tmp/'.$nama_file_baru);
         
-        $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION); // Ambil ekstensi filenya apa
+        $ext = pathinfo($_FILES['file']['name'], PATHINFO_EXTENSION);
         $tmp_file = $_FILES['file']['tmp_name'];
 
         if($ext == "xlsx"){
@@ -80,7 +80,7 @@
         require_once 'PHPExcel/PHPExcel.php';
         
         $excelreader = new PHPExcel_Reader_Excel2007();
-          $loadexcel = $excelreader->load('tmp/'.$nama_file_baru); // Load file yang tadi diupload ke folder tmp
+        $loadexcel = $excelreader->load('tmp/'.$nama_file_baru); 
         $sheet = $loadexcel->getActiveSheet()->toArray(null, true, true ,true);
         
         echo "<form method='post' action='import.php'>";
@@ -103,30 +103,23 @@
         
         $numrow = 1;
         $kosong = 0;
-          foreach($sheet as $row){ // Lakukan perulangan dari data yang ada di excel
-            // Ambil data pada excel sesuai Kolom
-            $nis = $row['A']; // Ambil data NIS
-            $nama = $row['B']; // Ambil data nama
-            $jenis_kelamin = $row['C']; // Ambil data jenis kelamin
-            $telp = $row['D']; // Ambil data telepon
-            $alamat = $row['E']; // Ambil data alamat
+        foreach($sheet as $row){ 
+            $nis = $row['A']; 
+            $nama = $row['B']; 
+            $jenis_kelamin = $row['C']; 
+            $telp = $row['D']; 
+            $alamat = $row['E']; 
             
-            // Cek jika semua data tidak diisi
             if($nis == "" && $nama == "" && $jenis_kelamin == "" && $telp == "" && $alamat == "")
-              continue; // Lewat data pada baris ini (masuk ke looping selanjutnya / baris selanjutnya)
-            
-            // Cek $numrow apakah lebih dari 1
-            // Artinya karena baris pertama adalah nama-nama kolom
-            // Jadi dilewat saja, tidak usah diimport
+        
+            continue; 
             if($numrow > 1){
-              // Validasi apakah semua data telah diisi
               $nis_td = ( ! empty($nis))? "" : " style='background: #E07171;'"; // Jika NIS kosong, beri warna merah
               $nama_td = ( ! empty($nama))? "" : " style='background: #E07171;'"; // Jika Nama kosong, beri warna merah
               $jk_td = ( ! empty($jenis_kelamin))? "" : " style='background: #E07171;'"; // Jika Jenis Kelamin kosong, beri warna merah
               $telp_td = ( ! empty($telp))? "" : " style='background: #E07171;'"; // Jika Telepon kosong, beri warna merah
               $alamat_td = ( ! empty($alamat))? "" : " style='background: #E07171;'"; // Jika Alamat kosong, beri warna merah
             
-              // Jika salah satu data ada yang kosong
             if($nis == "" or $nama == "" or $jenis_kelamin == "" or $telp == "" or $alamat == ""){
                 $kosong++; // Tambah 1 variabel $kosong
             }
