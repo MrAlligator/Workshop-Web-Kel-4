@@ -121,7 +121,7 @@
               $alamat_td = ( ! empty($alamat))? "" : " style='background: #E07171;'"; // Jika Alamat kosong, beri warna merah
             
             if($nis == "" or $nama == "" or $jenis_kelamin == "" or $telp == "" or $alamat == ""){
-                $kosong++; // Tambah 1 variabel $kosong
+                $kosong++; 
             }
             
             echo "<tr>";
