@@ -3,5 +3,7 @@
     "description": "latihan composer",
     "type": "Project",
     "license": "GPL",
-    "require": {}
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9"
+    }
 }
