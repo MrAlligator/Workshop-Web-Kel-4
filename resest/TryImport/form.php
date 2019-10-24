@@ -91,7 +91,7 @@
         
         echo "<table class='table table-bordered'>
         <tr>
-            <th colspan='5' class='text-center'>Preview Data</th>
+            <th colspan='10' class='text-center'>Preview Data</th>
         </tr>
         <tr>
             <th>NIS</th>
