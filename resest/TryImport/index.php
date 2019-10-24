@@ -52,10 +52,12 @@
     <div class="table-responsive">
         <table class="table table-bordered">
         <tr>
-            <th>No</th>
             <th>NIS</th>
             <th>Nama</th>
             <th>Jenis Kelamin</th>
+            <th>Agama</th>
+            <th>Tempat Lahir</th>
+            <th>Tanggal Lahir</th>
             <th>Telepon</th>
             <th>Alamat</th>
         </tr>
@@ -72,6 +74,9 @@
             echo "<td>".$data['nis']."</td>";
             echo "<td>".$data['nama']."</td>";
             echo "<td>".$data['jk']."</td>";
+            echo "<td>".$data['agama']."</td>";
+            echo "<td>".$data['tmptlahir']."</td>";
+            echo "<td>".$data['tgllahir']."</td>";
             echo "<td>".$data['telp']."</td>";
             echo "<td>".$data['alamat']."</td>";
             echo "</tr>";
