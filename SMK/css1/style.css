@@ -410,14 +410,14 @@ button:focus {
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
-/* Home Banner Area css
+/* Home  Area css
 ============================================================================================ */
 .home_banner_area {
   z-index: 1;
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/home-banner.jpg) no-repeat scroll center; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/ghost.jpg) no-repeat scroll center; }
   .home_banner_area .banner_inner {
     position: relative;
     z-index: 10;
@@ -3269,7 +3269,7 @@ h6 {
   /* End Home Banner Area css
   ============================================================================================ */
   .banner_area .banner_inner .banner_content h2 {
-    font-size: 32px; }
+    font-size: 32px;}
 
   /* Blog Page Area css
   ============================================================================================ */
