@@ -61,7 +61,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.php"><img src="img/logo.png" alt=""></a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="icon-bar"></span>
@@ -71,7 +71,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -335,7 +335,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<h2>Berita</h2>
+						<a href="#"><h2>Berita</h2></a>
 					</div>
 				</div>
 			</div>
@@ -479,8 +479,53 @@
 			</div>
 		</div>
 	</div>
-	
 	<!--================ End Events Area =================-->
+
+	    <!--================Contact Area =================-->
+		<section class="contact_area section_gap">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Iki ditulisi opo rek</h2></a>
+					</div>
+				</div>
+			</div>
+            <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
+                data-mlat="40.701083" data-mlon="-74.1522848">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>California, United States</h6>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+    	                    <i class="lnr lnr-phone-handset"></i>
+        	                <h6><a href="#">00 (440) 9865 562</a></h6>
+            	            <p>Mon to Fri 9am to 6 pm</p>
+                	    </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6><a href="#">support@colorlib.com</a></h6>
+                            <p>Send us your query anytime!</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -527,9 +572,9 @@
 					<p>You can trust us. we only send promo offers,</p>
 					<div class="form-wrap" id="mc_embed_signup">
 						<form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-						 method="get" class="form-inline">
+						method="get" class="form-inline">
 							<input class="form-control" name="EMAIL" placeholder="Your Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address'"
-							 required="" type="email">
+							required="" type="email">
 							<button class="click-btn btn btn-default">
 								<span>subscribe</span>
 							</button>
