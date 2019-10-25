@@ -481,8 +481,8 @@
 	</div>
 	<!--================ End Events Area =================-->
 
-	    <!--================Contact Area =================-->
-		<section class="contact_area section_gap">
+    <!--================Contact Area =================-->
+	<section class="contact_area section_gap">
         <div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
@@ -615,7 +615,7 @@
 	<script src="vendors/counter-up/jquery.counterup.js"></script>
 	<script src="js/mail-script.js"></script>
 	<!--gmaps Js-->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
 	<script src="js/gmaps.min.js"></script>
 	<script src="js/theme.js"></script>
 </body>
