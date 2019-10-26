@@ -491,8 +491,8 @@
 					</div>
 				</div>
 			</div>
-            <div id="mapBox" class="mapBox" data-lat="40.701083" data-lon="-74.1522848" data-zoom="13" data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-                data-mlat="40.701083" data-mlon="-74.1522848">
+            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
+                data-mlat="-7.924831" data-mlon="113.879707">
             </div>
             <div class="row">
                 <div class="col-md-4">
