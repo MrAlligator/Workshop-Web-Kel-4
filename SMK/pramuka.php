@@ -71,7 +71,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -98,11 +98,11 @@
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakulikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
 									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
@@ -283,7 +283,7 @@
 					<h4>Ekstrakulikuler</h4>
 					<ul>
 						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="#">Pencak Silat</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
