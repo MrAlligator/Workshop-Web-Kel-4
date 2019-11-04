@@ -166,19 +166,19 @@
 	<?php 
 		include 'koneksi.php';
 		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
+		$data = mysqli_query($koneksi,"select * from tb_guru");
 		while($d = mysqli_fetch_array($data)){
 	?>
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color">Data Siswa</h3>
+				<h3 class="mb-30 title_color">Data Guru</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
+							<div class="visit">NIP</div>
 							<div class="country">Jenis Kelamin</div>
 							<div class="visit">Agama</div>
 							<div class="country">Tempat Lahir</div>
@@ -187,13 +187,13 @@
 						</div>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
+							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="visit"><?php echo $d['agama_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
+							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>
 					</div>
 				</div>

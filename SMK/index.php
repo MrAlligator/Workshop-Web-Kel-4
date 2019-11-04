@@ -5,7 +5,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/favicon.png" type="image/png">
+	<link rel="icon" href="img/logosmk.png" type="image/png">
 	<title>SMK Darussalam</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -543,9 +543,9 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Data Sekolah</h4>
 					<ul>
-						<li><a href="#">Siswa</a></li>
-						<li><a href="#">Guru</a></li>
-						<li><a href="#">Karyawan</a></li>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
