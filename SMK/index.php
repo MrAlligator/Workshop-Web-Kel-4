@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/logosmk.png" type="image/png">
-	<title>SMK Darussalam</title>
+	<title>SMK Darus Salam</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -103,7 +103,7 @@
 								aria-expanded="false">Ekstrakulikuler</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -144,7 +144,7 @@
 						<div class="banner_content">
 							<h2>
 								Selamat datang di <br>
-								SMK Darussalam
+								SMK Darus Salam
 							</h2>
 							<p>
 								Slogan
@@ -558,7 +558,7 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Ekstrakulikuler</h4>
 					<ul>
-						<li><a href="#">Pramuka</a></li>
+						<li><a href="pramuka.php">Pramuka</a></li>
 						<li><a href="#">Pencak Silat</a></li>
 					</ul>
 				</div>
