@@ -487,7 +487,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Iki ditulisi opo rek</h2></a>
+						<a href="#"><h2>Hubungi Kami</h2></a>
 					</div>
 				</div>
 			</div>
@@ -499,7 +499,7 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
-                            <h6>California, United States</h6>
+                            <h6>Bondowoso, Jawa Timur</h6>
                             <p>Santa monica bullevard</p>
                         </div>
                     </div>
@@ -508,7 +508,7 @@
 					<div class="contact_info">
 						<div class="info_item">
     	                    <i class="lnr lnr-phone-handset"></i>
-        	                <h6><a href="#">00 (440) 9865 562</a></h6>
+        	                <h6>00 (440) 9865 562</h6>
             	            <p>Mon to Fri 9am to 6 pm</p>
                 	    </div>
 					</div>
@@ -517,7 +517,7 @@
 					<div class="contact_info">
 						<div class="info_item">
                             <i class="lnr lnr-envelope"></i>
-                            <h6><a href="#">support@colorlib.com</a></h6>
+                            <h6>support@colorlib.com</a></h6>
                             <p>Send us your query anytime!</p>
                         </div>
 					</div>
@@ -541,7 +541,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data</h4>
+					<h4>Data Sekolah</h4>
 					<ul>
 						<li><a href="#">Siswa</a></li>
 						<li><a href="#">Guru</a></li>
