@@ -85,10 +85,10 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Materi</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="materi.php">Materi</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
