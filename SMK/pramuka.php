@@ -103,7 +103,7 @@
 								aria-expanded="false">Ekstrakulikuler</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
