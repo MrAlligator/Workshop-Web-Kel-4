@@ -88,6 +88,7 @@
 									<li class="nav-item"><a class="nav-link" href="#">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Materi</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
@@ -110,8 +111,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
