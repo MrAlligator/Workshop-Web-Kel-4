@@ -10,20 +10,26 @@
 
     <script>
         // fungsi initialize untuk mempersiapkan peta
-        function initialize() {
-        var propertiPeta = {
-            center:new google.maps.LatLng(-7.912324,113.8227445,17),
-            zoom:17,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-        };
         
-        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
+        var myCenter=new google.maps.LatLng(-6.9008486,112.0419431);
+        function initialize() {
+	        var mapProp = {
+                center:myCenter,
+                zoom:15,
+                mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+	        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	        var marker=new google.maps.Marker({
+                position:myCenter,
+                title: 'Click to zoom',
+		        icon:"https://www.smkn1-tuban.sch.id/views/themes/enviro/assets/img/theme/marker.png"
+            });
+	    marker.setMap(map);
         }
-
-        // event jendela di-load  
         google.maps.event.addDomListener(window, 'load', initialize);
+
     </script>
-  
+
 </head>
 <body>
 
