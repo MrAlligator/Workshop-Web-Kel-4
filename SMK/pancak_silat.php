@@ -205,11 +205,6 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
 
             </p>
 
-            <h3 class="text-heading title_color">Lambang Gerakan Pramuka</h3>
-			<p style="font-family:Arial">
-            Lambang Gerakan Pramuka adalah gambar silhouette Tunas Kelapa yang diciptakan oleh bapak Sunardjo, seorang pensiunan Departemen Pertanian.
-
-            </p>
 </div>
 <div class="whole-wrap">
 		<div class="container">
