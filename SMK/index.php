@@ -144,7 +144,7 @@
 						<div class="banner_content">
 							<h2>
 								Selamat datang di <br>
-								SMK Darussalam
+								SMK Darus Salam
 							</h2>
 							<p>
 								Slogan
