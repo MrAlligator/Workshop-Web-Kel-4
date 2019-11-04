@@ -543,9 +543,9 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Data Sekolah</h4>
 					<ul>
-						<li><a href="#">Siswa</a></li>
-						<li><a href="#">Guru</a></li>
-						<li><a href="#">Karyawan</a></li>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
