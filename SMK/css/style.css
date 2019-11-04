@@ -417,7 +417,14 @@ button:focus {
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), no-repeat scroll center; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  no-repeat scroll center; }
+  .home_pramuka_banner {
+    z-index: 1;
+    min-height: 780px;
+    display: flex;
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/banner/home-banner.jpg) no-repeat scroll center; }
+  
   .home_banner_area .banner_inner {
     position: relative;
     z-index: 10;
@@ -545,7 +552,7 @@ button:focus {
 
 .banner_area {
   position: relative;
-  background: url() no-repeat center center;
+  background: url(../img/pramuka.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important; }
