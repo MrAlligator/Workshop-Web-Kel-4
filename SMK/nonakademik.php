@@ -100,7 +100,7 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakulikuler</a>
+								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
 									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
@@ -298,7 +298,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakulikuler</h4>
+					<h4>Ekstrakurikuler</h4>
 					<ul>
 						<li><a href="pramuka.php">Pramuka</a></li>
 						<li><a href="pencak_silat.php">Pencak Silat</a></li>
