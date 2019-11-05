@@ -72,7 +72,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
@@ -90,7 +90,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item active submenu dropdown">
+							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
