@@ -72,7 +72,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
@@ -98,7 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakulikuler</a>
 								<ul class="dropdown-menu">
@@ -144,14 +144,14 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area2">
+	<section class="banner_area3">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Pancak Silat</h2>
+                            <h2>VISI - MISI</h2>
                         </div>
                     </div>
                 </div>
@@ -171,59 +171,62 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Pancak Silat</h3>
-			<p style="font-family:Arial">
-            Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
-Meski demikian, masing-masing negara juga mempunyai sebutannya sendiri sesuai dengan bahasa lokal mereka seperti gayong dan cekak (Malaysia dan Singapura), bersilat (Thailand), dan pasilat (Filipina).
-Pencak silat berasal dari dua kata, yakni pencak dan silat. Pengertian pencak ialah gerak dasar bela diri dan terikat dengan peraturan. 
-Sedangkan silat berarti gerak beladiri sempurna yang bersumber dari kerohanian.
-Dalam perkembangannya, silat ini lebih mengutamakan unsur seni dalam penampilan keindahan gerakan, sementara itu silat ialah inti dari ajaran bela diri dalam pertarungan.
-Pengurus Besar IPSI menyebutkan pengertian pencak silat sebagai:
-“Pencak silat ialah hasil budaya manusia di Indonesia untuk membela, lalu mempertahankan eksistensi (kemandiriannya) serta integritasnya (manunggal) untuk lingkungan hidup sekitarnya guna mencapai keselarasan hidup dalam meningkatkan iman & taqwa terhadap Tuhan YME”.
-Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu sebagai permainan (keahlian) dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan ataupun tanpa senjata.
-
-           
+			<h3 class="text-heading title_color">VISI DAN MISI</h3>
+			<p style="font-family:Arial">         
 
 		</div>
     </section>
     <div class="whole-wrap">
 		<div class="container">
-						<h3 class="mb-20 title_color">Beberapa istilah resmi yang berkaitan dengan silat dari berbagai daerah di Indonesia, diantaranya yaitu:</h3>
+						<h3 class="mb-20 title_color">Dalam kategori multimedia content production menggunakan media sebagai berikut : </h3>
 						<div class="">
 							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Di provinsi Sumatera Barat terdapat istilah Silek & Gayuang</li></p>
-								<li style="font-family:Arial"><p>Pesisir timur provinsi Sumatra Barat serta Malaysia terdapat istilah Bersilat</li></p>
-                                <li style="font-family:Arial"><p>Di Jawa Barat terdapatistilah Maempok serta Penca</li></p>
-                                <li style="font-family:Arial"><p>Di Jawa Tengah, Yogyakarta, provinsi Jawa Timur terdapat istilah Pencak</li></p>
-                                <li style="font-family:Arial"><p>Di Madura dengan Pulau Bawean terdapat istilah Mancak</li>
-                                <li style="font-family:Arial"><p>Di Bali terdapat istilah Mancak ataupun Encak</li>
-                                <li style="font-family:Arial"><p>Di NTB dan Dompu terdapat istilah Mpaa Sila</li>	
+								<li style="font-family:Arial"><p>Media tulisan (Teks)</li></p>
+								<li style="font-family:Arial"><p>Media Suara (Audio)</li></p>
+                                <li style="font-family:Arial"><p>Media Video</li></p>
+                                <li style="font-family:Arial"><p>Media Gambar (Grafik)</li></p>
+                                <li style="font-family:Arial"><p>Media Animasi</li>
+                                <li style="font-family:Arial"><p>Media Efek Khusus (Special Effect)</li>
+                                <li style="font-family:Arial"><p>Media Interaktif (Interactivity)</li>	
 							</ul>
                     </div>
 </div>
 </div>
 <section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Sejarah Pancak silat</h3>
-			<p style="font-family:Arial">
-            Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
-Selain seabgai upaya untuk mempertahankan diri, seni bela diri ini juga menjadi salah satu seni budaya yang terus dilestarikan hingga sekarang.
-Dan seperti yang telah kita ketahui, silat ini tak hanya berkembang di negara Indonesia saja.
-Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam, Singapura, ataupun negara lainnya.
-
-            </p>
+			<h3 class="text-heading title_color">Multimedia ini tak akan jauh dari seni dan imajinasi kita. Menurut Hofstetter (2001) Multimedia terdiri dari 5 unsur, yaitu :</h3>
+            <p style="font-family:Arial"><b>Teks</b> merupakan unsur dasar untuk meyampaikan informasi. Dalam penempatan teks pun tidak sembarangan. Harus teliti mampu menemukan kunci empatik konsumen dengan imajinasi kita. Atau biasa dipelajari dalam materi Tipografi.</p></br>
+            <p style="font-family:Arial"><b>Gambar (Grafik)</b> merupakan informasi yang tidak dijelaskan dengan kata-kata. Kadangkala ketika kita di berkendara di jalan raya melihat baligo besar berisi informasi hanya dengan melihat gambar saja tanpa membaca kata-katanya kita sudah dapat menyimpulkan isi dari baligo tersebut.</p></br>
+            <p style="font-family:Arial"> <b>Audio</b> merupakan unsur yang bisa berupa percakapan, music atau efek suara. Multimedia tanpa audio akan terasa hambar seperti sayur tanpa garam. Hehehe … Format dasar audio ini biasanya WAVE dan MIDI.</p></br>
+            <p style="font-family:Arial"><b>Video</b> merupakan unsur yang membuat suatu informasi tampak terasa hidup dan lebih jelas. Tentu diiringi dengan audionya.</p></br>
+            <p style="font-family:Arial"><b>Animasi</b> merupakan simulasi gerakan yang dihasilkan  dengan menampilkan beberapa frame ke layer.</p>
 
 </div>
 <div class="whole-wrap">
 		<div class="container">
        
-						<h3 class="mb-20 title_color">Organiasi silat lainnya diantaranya sebagai berikut:</h3>
+						<h3 class="mb-20 title_color">Dalam jurusan multimedia ini kita akan mempelajari hal – hal berikut :</h3>
 						<div class="">
 							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>IPSI (Ikatan Pencak Silat Indonesia) di Indonesia</li></p>
-								<li style="font-family:Arial"><p>PESAKA (Persekutuan Silat Kebangsaan Malaysia) di Malaysia</li></p>
-                                <li style="font-family:Arial"><p>PERSIS (Persekutuan Silat Singapore) di Singapura</li></p>
-                                <li style="font-family:Arial"><p>PERSIB (Persekutuan Silat Bruei Darussalam) di Brunei Darussalam</li></p>
+								<li style="font-family:Arial"><p>Dasar-dasar multimedia</li></p>
+								<li style="font-family:Arial"><p>Pengenalan dan Perakitan PC</li></p>
+                                <li style="font-family:Arial"><p>Etimologi Multimedia</li></p>
+                                <li style="font-family:Arial"><p>Fotografi  dan Teknik Pengambilan Gambar</li></p>
+                                <li style="font-family:Arial"><p>Belajar Animasi Dasar</li></p>
+                                <li style="font-family:Arial"><p>Alir Produksi Multimedia</li></p>
+                                <li style="font-family:Arial"><p>Pengelolaan Web</li></p>
+                                <li style="font-family:Arial"><p>Desain Animasi</li></p>
+                                <li style="font-family:Arial"><p>Video Shooting</li></p>
+                                <li style="font-family:Arial"><p>Audio dan Video Editing</li></p>
+                                <li style="font-family:Arial"><p>Menggambar Clean-up dan Sisip</li></p>
+                                <li style="font-family:Arial"><p>Perawatan peralatan multimedia</li></p>
+                                <li style="font-family:Arial"><p>Proposal pembuatan produk</li></p>
+                                <li style="font-family:Arial"><p>Seni Grafis dan Gambar 2D</li></p>
+                                <li style="font-family:Arial"><p>Stop Motion</li></p>
+                                <li style="font-family:Arial"><p>Efek Khusus</li></p>
+                                <li style="font-family:Arial"><p>Pembuatan Story Board</li></p>
+                                <li style="font-family:Arial"><p>Instalasi Sistem Operasi Dasar</li></p>
+                                <li style="font-family:Arial"><p>Final Project (Proyek Akhir pembuatan produk multimedia)</li></p>
 							</ul>
 						</div>
                     </div>
@@ -247,55 +250,7 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="title_color">Image Gallery</h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+	
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->

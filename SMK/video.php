@@ -78,8 +78,8 @@
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
 									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -227,8 +227,8 @@
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
 						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="#">Visi dan Misi</a></li>
-						<li><a href="#">Struktur</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
