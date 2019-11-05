@@ -543,7 +543,7 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
 					<ul>
-						<li><a href="#">Sejarah</a></li>
+						<li><a href="sejarah.php">Sejarah</a></li>
 						<li><a href="#">Profil Singkat</a></li>
 						<li><a href="#">Visi dan Misi</a></li>
 						<li><a href="#">Struktur</a></li>
