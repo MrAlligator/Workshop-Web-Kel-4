@@ -77,7 +77,7 @@
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
 								</ul>
@@ -213,7 +213,7 @@
 					<h4>Profil Sekolah</h4>
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="#">Profil Singkat</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
 						<li><a href="#">Visi dan Misi</a></li>
 						<li><a href="#">Struktur</a></li>
 					</ul>

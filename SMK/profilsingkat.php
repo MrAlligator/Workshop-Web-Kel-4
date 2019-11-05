@@ -72,7 +72,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
@@ -90,7 +90,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item active submenu dropdown">
+							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
@@ -151,7 +151,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Multimedia</h2>
+                            <h2>Profil Singkat</h2>
                         </div>
                     </div>
                 </div>
@@ -171,13 +171,8 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Multimedia</h3>
-			<p style="font-family:Arial">
-            multimedia secara utuh berarti Kombinasi atau penggabungan dari beberapa media seperti teks, audio, video, animasi, gambar yang disajikan dalam penggunaan komputer dengan bantuan tool dan link sehingga menghasilkan presentasi yang menarik.
-Kategori dalam multimedia terdapat
- 2 macam, yaitu Multimedia Communication dan  Multimedia Content Production.
-  Pengertian dari Multimedia Communication adalah penggunaan media yang memiliki fungsi mempublikasikan informasi. Dalam kategori ini media yang digunakan adalah TV, Radio, Film, Game, Musik, Entertaiment, Tutorial, Internet, dan Media Cetak. Dengan adanya multimedia communication ini akan mempermudah penggua dalam menyampaikan dan mendapatkan informasi. Selanjutnya Multimedia Content Production adalah penggunaan beberapa media yang berbeda seperti Teks, Animasi, Audio, Video, gambar (grafik) yang dipadukan 
-untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dll.          
+			<h3 class="text-heading title_color">Profil singkat Darus Salam Bondowoso</h3>
+			<p style="font-family:Arial">         
 
 		</div>
     </section>

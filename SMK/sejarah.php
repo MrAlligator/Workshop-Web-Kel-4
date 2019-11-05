@@ -72,12 +72,12 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
 								</ul>
@@ -90,7 +90,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item active submenu dropdown">
+							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
@@ -261,7 +261,7 @@
 					<h4>Profil Sekolah</h4>
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="#">Profil Singkat</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
 						<li><a href="#">Visi dan Misi</a></li>
 						<li><a href="#">Struktur</a></li>
 					</ul>
