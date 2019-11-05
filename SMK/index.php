@@ -179,7 +179,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<h2>Pengumuman</h2>
+						<h2><a href="#">Pengumuman</a></h2>
 					</div>
 				</div>
 			</div>
