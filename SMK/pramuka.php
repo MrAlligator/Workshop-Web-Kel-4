@@ -76,7 +76,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
@@ -311,7 +311,7 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
 					<ul>
-						<li><a href="#">Sejarah</a></li>
+						<li><a href="sejarah.php">Sejarah</a></li>
 						<li><a href="#">Profil Singkat</a></li>
 						<li><a href="#">Visi dan Misi</a></li>
 						<li><a href="#">Struktur</a></li>
