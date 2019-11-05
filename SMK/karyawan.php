@@ -94,7 +94,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -120,6 +120,14 @@
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Pengumuman</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Prestasi</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -229,7 +237,7 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Jurusan</h4>
 					<ul>
-						<li><a href="#">Multimedia</a></li>
+						<li><a href="multimedia.php">Multimedia</a></li>
 						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
@@ -245,6 +253,13 @@
 					<ul>
 						<li><a href="#">Pengumuman</a></li>
 						<li><a href="#">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik.php">Akademik</a></li>
+						<li><a href="nonakademik.php">Non - Akademik</a></li>
 					</ul>
 				</div>
 			</div>

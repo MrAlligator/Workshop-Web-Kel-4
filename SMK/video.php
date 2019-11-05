@@ -122,6 +122,14 @@
 									<li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
 								</ul>
 							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Prestasi</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+								</ul>
+							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -162,7 +170,7 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Image Gallery</h3>
+				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
 					<div class="col-md-4">
 						<a href="img/elements/g1.jpg" class="img-gal">
@@ -250,6 +258,13 @@
 					<ul>
 						<li><a href="#">Pengumuman</a></li>
 						<li><a href="#">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik.php">Akademik</a></li>
+						<li><a href="nonakademik.php">Non - Akademik</a></li>
 					</ul>
 				</div>
 			</div>
