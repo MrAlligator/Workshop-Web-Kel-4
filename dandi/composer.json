@@ -1,0 +1,15 @@
+{
+    "name": "warungbelajar/belajar-composer",
+    "description": "untuk kebutuhan belajar composer",
+    "type": "project License",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "yudi iriyanto",
+            "email": "yudiiriyanto7@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.9"
+    }
+}
