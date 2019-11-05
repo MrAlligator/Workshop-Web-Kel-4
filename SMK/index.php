@@ -189,30 +189,25 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p>Pengumuman penerimaan siswa baru 2019.</p>
 							<div class="course_meta d-flex justify-content-between">
 								<div>
 									<span class="meta_info">
-										<a href="#"><i class="lnr lnr-user"></i>355</a>
+										<a href="#">
+										</a>
 									</span>
 									<span class="meta_info">
 										<a href="#">
-											<i class="lnr lnr-bubble"></i>35
 										</a>
 									</span>
 								</div>
 								<div>
-									<span class="price">$150</span>
+									<a href="#"><span class="price">Selengkapnya</span></a>
 								</div>
 							</div>
 						</div>
@@ -223,106 +218,31 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
 							<div class="course_meta d-flex justify-content-between">
 								<div>
 									<span class="meta_info">
 										<a href="#">
-											<i class="lnr lnr-user"></i>355
 										</a>
 									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
+									<span class="meta_info">
+										<a href="#">
 										</a></span>
 								</div>
 								<div>
-									<span class="price df_color1">$150</span>
+									<a href=""><span class="price df_color1">Selengkapnya</span></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color2">$150</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
