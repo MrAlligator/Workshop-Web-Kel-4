@@ -77,10 +77,16 @@
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
+<<<<<<< HEAD
 									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
 									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Prestasi</a></li>
+=======
+									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
+>>>>>>> 9c83981ce1a9d0a3386e6cac6c67432ace75c115
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -101,7 +107,7 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakulikuler</a>
+								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
 									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
@@ -543,10 +549,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
 					<ul>
+<<<<<<< HEAD
 						<li><a href="#">Sejarah</a></li>
 						<li><a href="profilsingkat.php">Profil Singkat</a></li>
 						<li><a href="visimisi.php">Visi dan Misi</a></li>
 						<li><a href="struktur.php">Struktur</a></li>
+=======
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="#">Profil Singkat</a></li>
+						<li><a href="#">Visi dan Misi</a></li>
+						<li><a href="#">Struktur</a></li>
+>>>>>>> 9c83981ce1a9d0a3386e6cac6c67432ace75c115
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -565,7 +578,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakulikuler</h4>
+					<h4>Ekstrakurikuler</h4>
 					<ul>
 						<li><a href="pramuka.php">Pramuka</a></li>
 						<li><a href="pencak_silat.php">Pencak Silat</a></li>
