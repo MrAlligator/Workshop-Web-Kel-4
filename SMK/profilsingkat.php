@@ -171,7 +171,7 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Profil singkat Darus Salam Bondowoso</h3>
+			<h3 class="text-heading title_color">Profil singkat SMK Darus Salam Bondowoso</h3>
 			<p style="font-family:Arial">         
 
 		</div>
