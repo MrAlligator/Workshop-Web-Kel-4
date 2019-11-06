@@ -276,10 +276,9 @@
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Mengukir Prestasi Pada Open Championship se Jawa - Bali</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -293,8 +292,7 @@
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -308,8 +306,7 @@
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -323,8 +320,7 @@
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
+							<p></p>
 						</div>
 					</div>
 				</div>
