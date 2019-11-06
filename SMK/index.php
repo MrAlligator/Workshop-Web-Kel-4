@@ -174,7 +174,7 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
@@ -258,7 +258,7 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg2">
+	<div class="popular_courses lite_bg">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
