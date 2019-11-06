@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/logosmk.png" type="image/png">
-	<title>SMK Darussalam</title>
+	<title>SMK Darus Salam</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -71,7 +71,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -90,7 +90,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item active submenu dropdown">
+							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
@@ -144,20 +144,25 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Multimedia</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2>
+								Selamat datang di <br>
+								SMK Darus Salam
+							</h2>
+							<p>
+								Slogan
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -169,77 +174,9 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Multimedia</h3>
-			<p style="font-family:Arial">
-            multimedia secara utuh berarti Kombinasi atau penggabungan dari beberapa media seperti teks, audio, video, animasi, gambar yang disajikan dalam penggunaan komputer dengan bantuan tool dan link sehingga menghasilkan presentasi yang menarik.
-Kategori dalam multimedia terdapat
- 2 macam, yaitu Multimedia Communication dan  Multimedia Content Production.
-  Pengertian dari Multimedia Communication adalah penggunaan media yang memiliki fungsi mempublikasikan informasi. Dalam kategori ini media yang digunakan adalah TV, Radio, Film, Game, Musik, Entertaiment, Tutorial, Internet, dan Media Cetak. Dengan adanya multimedia communication ini akan mempermudah penggua dalam menyampaikan dan mendapatkan informasi. Selanjutnya Multimedia Content Production adalah penggunaan beberapa media yang berbeda seperti Teks, Animasi, Audio, Video, gambar (grafik) yang dipadukan 
-untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dll.          
-
-		</div>
-    </section>
-    <div class="whole-wrap">
-		<div class="container">
-						<h3 class="mb-20 title_color">Dalam kategori multimedia content production menggunakan media sebagai berikut : </h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Media tulisan (Teks)</li></p>
-								<li style="font-family:Arial"><p>Media Suara (Audio)</li></p>
-                                <li style="font-family:Arial"><p>Media Video</li></p>
-                                <li style="font-family:Arial"><p>Media Gambar (Grafik)</li></p>
-                                <li style="font-family:Arial"><p>Media Animasi</li>
-                                <li style="font-family:Arial"><p>Media Efek Khusus (Special Effect)</li>
-                                <li style="font-family:Arial"><p>Media Interaktif (Interactivity)</li>	
-							</ul>
-                    </div>
-</div>
-</div>
-<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Multimedia ini tak akan jauh dari seni dan imajinasi kita. Menurut Hofstetter (2001) Multimedia terdiri dari 5 unsur, yaitu :</h3>
-            <p style="font-family:Arial"><b>Teks</b> merupakan unsur dasar untuk meyampaikan informasi. Dalam penempatan teks pun tidak sembarangan. Harus teliti mampu menemukan kunci empatik konsumen dengan imajinasi kita. Atau biasa dipelajari dalam materi Tipografi.</p></br>
-            <p style="font-family:Arial"><b>Gambar (Grafik)</b> merupakan informasi yang tidak dijelaskan dengan kata-kata. Kadangkala ketika kita di berkendara di jalan raya melihat baligo besar berisi informasi hanya dengan melihat gambar saja tanpa membaca kata-katanya kita sudah dapat menyimpulkan isi dari baligo tersebut.</p></br>
-            <p style="font-family:Arial"> <b>Audio</b> merupakan unsur yang bisa berupa percakapan, music atau efek suara. Multimedia tanpa audio akan terasa hambar seperti sayur tanpa garam. Hehehe … Format dasar audio ini biasanya WAVE dan MIDI.</p></br>
-            <p style="font-family:Arial"><b>Video</b> merupakan unsur yang membuat suatu informasi tampak terasa hidup dan lebih jelas. Tentu diiringi dengan audionya.</p></br>
-            <p style="font-family:Arial"><b>Animasi</b> merupakan simulasi gerakan yang dihasilkan  dengan menampilkan beberapa frame ke layer.</p>
-
-</div>
-<div class="whole-wrap">
-		<div class="container">
-       
-						<h3 class="mb-20 title_color">Dalam jurusan multimedia ini kita akan mempelajari hal – hal berikut :</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Dasar-dasar multimedia</li></p>
-								<li style="font-family:Arial"><p>Pengenalan dan Perakitan PC</li></p>
-                                <li style="font-family:Arial"><p>Etimologi Multimedia</li></p>
-                                <li style="font-family:Arial"><p>Fotografi  dan Teknik Pengambilan Gambar</li></p>
-                                <li style="font-family:Arial"><p>Belajar Animasi Dasar</li></p>
-                                <li style="font-family:Arial"><p>Alir Produksi Multimedia</li></p>
-                                <li style="font-family:Arial"><p>Pengelolaan Web</li></p>
-                                <li style="font-family:Arial"><p>Desain Animasi</li></p>
-                                <li style="font-family:Arial"><p>Video Shooting</li></p>
-                                <li style="font-family:Arial"><p>Audio dan Video Editing</li></p>
-                                <li style="font-family:Arial"><p>Menggambar Clean-up dan Sisip</li></p>
-                                <li style="font-family:Arial"><p>Perawatan peralatan multimedia</li></p>
-                                <li style="font-family:Arial"><p>Proposal pembuatan produk</li></p>
-                                <li style="font-family:Arial"><p>Seni Grafis dan Gambar 2D</li></p>
-                                <li style="font-family:Arial"><p>Stop Motion</li></p>
-                                <li style="font-family:Arial"><p>Efek Khusus</li></p>
-                                <li style="font-family:Arial"><p>Pembuatan Story Board</li></p>
-                                <li style="font-family:Arial"><p>Instalasi Sistem Operasi Dasar</li></p>
-                                <li style="font-family:Arial"><p>Final Project (Proyek Akhir pembuatan produk multimedia)</li></p>
-							</ul>
-						</div>
-                    </div>
-
-</div>
+	
 				<!-- single course -->
-				
-				
+				<!-- single course -->
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
@@ -255,7 +192,201 @@ untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dl
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	
+	<div class="popular_courses lite_bg">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Berita</h2></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#"><i class="lnr lnr-user"></i>355</a>
+									</span>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a>
+									</span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color1">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color2">$150</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--================ End Events Area =================-->
+
+    <!--================Contact Area =================-->
+	<section class="contact_area section_gap">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Hubungi Kami</h2></a>
+					</div>
+				</div>
+			</div>
+            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
+                data-mlat="-7.924831" data-mlon="113.879707">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Bondowoso, Jawa Timur</h6>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+    	                    <i class="lnr lnr-phone-handset"></i>
+        	                <h6>00 (440) 9865 562</h6>
+            	            <p>Mon to Fri 9am to 6 pm</p>
+                	    </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6>support@colorlib.com</a></h6>
+                            <p>Send us your query anytime!</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
