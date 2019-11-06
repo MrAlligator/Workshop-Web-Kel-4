@@ -179,7 +179,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<h2><a href="#">Pengumuman</a></h2>
+						<a href="#"><h2>Pengumuman</h2></a>
 					</div>
 				</div>
 			</div>
@@ -192,24 +192,9 @@
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
+								<a href="course-details.html">Penerimaan Siswa Baru 2019/2020</a>
 							</h4>
-							<p>Pengumuman penerimaan siswa baru 2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-								</div>
-								<div>
-									<a href="#"><span class="price">Selengkapnya</span></a>
-								</div>
-							</div>
+							<p>Pengumuman Penerimaan Mahasiswa Baru SMK Darus Salam 2019/2020</p>
 						</div>
 					</div>
 				</div>
@@ -221,28 +206,43 @@
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
+								<a href="course-details.html">Ujian Akhir Semester Genap 2018/2019</a>
 							</h4>
-							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a></span>
-								</div>
-								<div>
-									<a href=""><span class="price df_color1">Selengkapnya</span></a>
-								</div>
-							</div>
+							<p>Jadwal Ujian Semester Genap Tahun Pelajaran 2018/2019</p>
 						</div>
 					</div>
 				</div>
 				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Pemilihan Ketua Osis SMK Darus Salam 2018/2019</a>
+							</h4>
+							<p>Pemilihan Ketua Osis Dilaksanakan pada 10 Oktober 2018, dengan 2 pasangan Calon yang mendaftarkan.</p>
+						</div>
+					</div>
+				</div>
 				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Unjuk Kreasi Siswa Tahun Siswa 2018/2019</a>
+							</h4>
+							<p>Unjuk Kreasi Siswa Tahun Siswa 2018/2019 yang dilaksanakan pada 12 Desember 2018, berjalan meriah.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
@@ -258,7 +258,7 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite_bg2">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
@@ -273,10 +273,6 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
@@ -284,21 +280,6 @@
 							</h4>
 							<p>When television was young, there was a huge popular show based on the still popular fictional character of
 								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#"><i class="lnr lnr-user"></i>355</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a>
-									</span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -307,10 +288,6 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
@@ -318,21 +295,6 @@
 							</h4>
 							<p>When television was young, there was a huge popular show based on the still popular fictional character of
 								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color1">$150</span>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -341,10 +303,6 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
@@ -352,21 +310,6 @@
 							</h4>
 							<p>When television was young, there was a huge popular show based on the still popular fictional character of
 								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -375,10 +318,6 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
@@ -386,21 +325,6 @@
 							</h4>
 							<p>When television was young, there was a huge popular show based on the still popular fictional character of
 								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color2">$150</span>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
