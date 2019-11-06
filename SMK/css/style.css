@@ -131,8 +131,11 @@ button:focus {
     margin: auto; }
 
 .lite_bg {
-  background: #f9f9f9; }
+  background: #c0bdbd; }
 
+.lite_bg2 {
+  background: #817f7f;
+}
 /* End Main Title Area css
 ============================================================================================ */
 /* Start Gradient Area css
@@ -3209,7 +3212,7 @@ h6 {
     display: block;
     width: 25px;
     height: 3px;
-    background: #00aee0;
+    background: #92fc1a;
     margin: auto;
     margin-bottom: 4px;
     transition: all 400ms linear;

@@ -125,8 +125,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -181,12 +181,12 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<h2>Pengumuman</h2>
+						<a href="#"><h2>Pengumuman</h2></a>
 					</div>
 				</div>
 			</div>
@@ -196,32 +196,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Penerimaan Siswa Baru 2019/2020</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#"><i class="lnr lnr-user"></i>355</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a>
-									</span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
+							<p>Pengumuman Penerimaan Mahasiswa Baru SMK Darus Salam 2019/2020</p>
 						</div>
 					</div>
 				</div>
@@ -230,32 +210,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Ujian Akhir Semester Genap 2018/2019</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color1">$150</span>
-								</div>
-							</div>
+							<p>Jadwal Ujian Semester Genap Tahun Pelajaran 2018/2019</p>
 						</div>
 					</div>
 				</div>
@@ -264,32 +224,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Pemilihan Ketua Osis SMK Darus Salam 2018/2019</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
+							<p>Pemilihan Ketua Osis Dilaksanakan pada 10 Oktober 2018, dengan 2 pasangan Calon yang mendaftarkan.</p>
 						</div>
 					</div>
 				</div>
@@ -298,32 +238,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Unjuk Kreasi Siswa Tahun Siswa 2018/2019</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color2">$150</span>
-								</div>
-							</div>
+							<p>Unjuk Kreasi Siswa Tahun Siswa 2018/2019 yang dilaksanakan pada 12 Desember 2018, berjalan meriah.</p>
 						</div>
 					</div>
 				</div>
@@ -360,32 +280,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="course-details.html">Mengukir Prestasi Pada Open Championship se Jawa - Bali</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#"><i class="lnr lnr-user"></i>355</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a>
-									</span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -394,32 +294,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color1">$150</span>
-								</div>
-							</div>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -428,32 +308,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price">$150</span>
-								</div>
-							</div>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -462,32 +322,12 @@
 					<div class="single_course">
 						<div class="course_head overlay">
 							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-							<div class="authr_meta">
-								<img src="img/author1.png" alt="">
-								<span>Mart Taylor</span>
-							</div>
 						</div>
 						<div class="course_content">
 							<h4>
 								<a href="course-details.html">Learn React js beginners</a>
 							</h4>
-							<p>When television was young, there was a huge popular show based on the still popular fictional character of
-								Superman.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-											<i class="lnr lnr-user"></i>355
-										</a>
-									</span>
-									<span class="meta_info"><a href="#">
-											<i class="lnr lnr-bubble"></i>35
-										</a></span>
-								</div>
-								<div>
-									<span class="price df_color2">$150</span>
-								</div>
-							</div>
+							<p></p>
 						</div>
 					</div>
 				</div>
@@ -597,16 +437,6 @@
 						<li><a href="akademik.php">Akademik</a></li>
 						<li><a href="nonakademik.php">Non - Akademik</a></li>
 					</ul>
-				</div>
-			</div>
-			<div class="row footer-bottom d-flex justify-content-between">
-				<p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2018 All rights reserved | This template is
-					made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
-				<div class="col-lg-4 col-sm-12 footer-social">
-					<a href="#"><i class="fa fa-facebook"></i></a>
-					<a href="#"><i class="fa fa-twitter"></i></a>
-					<a href="#"><i class="fa fa-dribbble"></i></a>
-					<a href="#"><i class="fa fa-behance"></i></a>
 				</div>
 			</div>
 		</div>

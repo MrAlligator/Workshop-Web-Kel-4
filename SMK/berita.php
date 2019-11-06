@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/logosmk.png" type="image/png">
-	<title>SMK Darussalam</title>
+	<title>SMK Darus Salam</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -71,15 +71,15 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -98,7 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
@@ -144,20 +144,25 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Pramuka</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+	<section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2>
+								Selamat datang di <br>
+								SMK Darus Salam
+							</h2>
+							<p>
+								Slogan
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -169,140 +174,220 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Pramuka</h3>
-			<p style="font-family:Arial">
-            Apa itu pramuka? Pramuka adalah singkatan dari Praja Muda Karana dan merupakan organisasi atau gerakan kepanduan. Pramuka adalah sebuah organisasi yang merupakan wadah proses pendidikan kepramukaan yang dilaksanakan di Indonesia. 
-            Dalam dunia internasional, Pramuka disebut dengan istilah “Kepanduan” (Boy Scout).
-
-            </p>
-            <h3 class="text-heading title_color">Gerakan Pramuka</h3>
-            <p style="font-family:Arial">
-            memiliki kode Kode Kehormatan Pramuka, sebagaimana yang tertuang dalam Anggaran Dasar Pramuka, Gerakan Pramuka memiliki Kode Kehormatan yang terdiri atas janji yang disebut Satya dan Ketentuan Moral yang disebut Darma Kode Kehormatan Pramuka disesuaikan dengan golongan usia dan perkembangan rohani dan jasmaninya, yaitu:)
-
-            </p>
-
-		</div>
-    </section>
-    <div class="whole-wrap">
-		<div class="container">
-						<h3 class="mb-20 title_color">Darma kode Pramuka</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Kode Kehormatan Pramuka Siaga terdiri atas Dwisatya dan Dwidarma</li></p>
-								<li style="font-family:Arial"><p>Kode Kehormatan Pramuka Penggalang terdiri atas Trisatya Pramuka Penggalang dan Dasadarma</li></p>
-                                <li style="font-family:Arial"><p>Kode Kehormatan Pramuka Penegak dan Pandega terdiri atas Trisatya Pramuka Penegak dan Pramuka Pandega dan Dasadarma</li></p>
-                                <li style="font-family:Arial"><p>Kode Kehormatan Pramuka Dewasa terdiri atas Trisatya Anggota Dewasa dan Dasadarma</li></p>
-									
-							</ul>
-                    </div>
-</div>
-</div>
-<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Sejarah Pramuka</h3>
-			<p style="font-family:Arial">
-            dunia pertama kali dipelopori oleh Lord Baden Powell atau nama lengkapnya 
-            Robert Sthepenson Smyth Baden Powell of Giwell, seorang warga negara
-             Inggris yang pernah menjadi tentara. Sejak kecil Baden Powell
-              dikenal sebagai anak yang mencintai kegiatan luar ruangan
-               (outdoor) Ia sering bermain di hutan kecil,
-                di samping sekolahnya. Kemah pertama kepanduan
-                 yang dipimpin Baden Powell, terjadi pada tanggal
-                  1 Agustus 1907 yang bertempat di Brownsea Island, Inggris.
-                   Karena itulah, Tanggal 1 Agustus pun ditetapkan sebagai Hari Kepanduan Dunia.
-
-            </p>
-
-            <h3 class="text-heading title_color">Lambang Gerakan Pramuka</h3>
-			<p style="font-family:Arial">
-            Lambang Gerakan Pramuka adalah gambar silhouette Tunas Kelapa yang diciptakan oleh bapak Sunardjo, seorang pensiunan Departemen Pertanian.
-
-            </p>
-</div>
-<div class="whole-wrap">
-		<div class="container">
-       
-						<h3 class="mb-20 title_color">Arti dari lambang pramuka</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Buah Nyiur dalam keadaan tumbuh dinamakan cikal dan istilah cikal bakal di Indonesia berarti: penduduk asli yang pertama, yang menurunkan generasi baru. Dengan kata lain lambang buah Nyiur yang tumbuh itu mengkiaskan, bahwa tiap Pramuka merupakan inti bagi kelangsungan hidup bangsa Indonesia.</li></p>
-								<li style="font-family:Arial"><p>Buah Nyiur dapat bertahan lama dalam keadaan yang bagaimanapun juga, yang menggambarkan bahwa setiap Pramuka adalah seorang yang rokhaniah dan jasmaniah sehat, kuat dan ulet serta besar tekadnya dalam menghadapi segala tantangan dalam hidup dan dalam menempuh segala ujian dan kesukaran untuk mengabdi tanah air dan bangsa Indonesia.</li></p>
-                                <li style="font-family:Arial"><p>Nyiur dapat tumbuh di mana saja, yang membuktikan besarnya daya-upayanya dalam menyesuaikan dirinya dengan keadaan sekelilingnya, artinya tiap Pramuka dapat menyesuaikan diri dalam masyarakat dimana ia berada dan dalam keadaan yang bagaimanapun juga.</li></p>
-                                <li style="font-family:Arial"><p>Nyiur bertumbuh menjulan lurus ke atas dan merupakan salah satu pohon yang tertinggi di Indonesia. Ini mencerminkan bahwa tiap Pramuka mempunyai cita-cita yang tinggi dan lurus yakni yang mulia dan jujur dan ia tetap tegak tidak mudah diombang-ambingkan oleh sesuatu.</li></p>
-                                <li style="font-family:Arial"><p>Akar Nyiur yang bertumbuh kuat dan erat di dalam tanah melambangkan bahwa tekad dan keyakinan tiap Pramuka mempunyai dan berpegang kepada dasar-dasar dan landasan-landasan yang baik, benar, kuat, dan nyata, ialah tekat dan keyakinan yang dipakai olehnya untuk memperkuat diri guna mencapai cita-citanya.</li></p>
-                                <li style="font-family:Arial"><p>Nyiur adalah pohon serbaguna, dari ujung hingga akarnya. Jadi lambang itu mengkiaskan bahwa tiap Pramuka adalah manusia yang berguna dan membaktikan diri dan kegunaannya kepada kepentingan tanah air, bangsa dan Negara Kesatuan Republik Indonesia serta kepada umat manusia.</li></p>
-							</ul>
-						</div>
-                    </div>
-
-</div>
+	
 				<!-- single course -->
-<!--================ End Popular Courses Area =================-->
+				<!-- single course -->
+	<!--================ End Popular Courses Area =================-->
 
-<!--================ Start Fact Area =================-->
+	<!--================ Start Fact Area =================-->
+	
+	<!--================ End Fact Area =================-->
 
-<!--================ End Fact Area =================-->
-<!--================ Start Testimonial Area =================-->
+	<!--================ Start Testimonial Area =================-->
+	
+	<!--================ End Testimonial Area =================-->
 
-<!--================ End Testimonial Area =================-->
+	<!--================ Start Registration Area =================-->
+	
+	<!--================ End Registration Area =================-->
 
-<!--================ Start Registration Area =================-->
-
-<!--================ End Registration Area =================-->
-
-<!--================ Start Events Area =================-->
-<div class="whole-wrap">
+	<!--================ Start Events Area =================-->
+	<div class="popular_courses lite_bg">
 		<div class="container">
-			<div class="section-top-border">
-				<h3 class="title_color">Image Gallery</h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
-						</a>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Berita</h2></a>
 					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
-						</a>
+				</div>
+			</div>
+			<div class="row">
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#"><i class="lnr lnr-user"></i>355</a>
+									</span>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a>
+									</span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
-						</a>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color1">$150</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
-						</a>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price">$150</span>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
-						</a>
+				</div>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<div class="authr_meta">
+								<img src="img/author1.png" alt="">
+								<span>Mart Taylor</span>
+							</div>
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Learn React js beginners</a>
+							</h4>
+							<p>When television was young, there was a huge popular show based on the still popular fictional character of
+								Superman.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+											<i class="lnr lnr-user"></i>355
+										</a>
+									</span>
+									<span class="meta_info"><a href="#">
+											<i class="lnr lnr-bubble"></i>35
+										</a></span>
+								</div>
+								<div>
+									<span class="price df_color2">$150</span>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-<!--================Contact Area =================-->
+	<!--================ End Events Area =================-->
+
+    <!--================Contact Area =================-->
+	<section class="contact_area section_gap">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Hubungi Kami</h2></a>
+					</div>
+				</div>
+			</div>
+            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
+                data-mlat="-7.924831" data-mlon="113.879707">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Bondowoso, Jawa Timur</h6>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+    	                    <i class="lnr lnr-phone-handset"></i>
+        	                <h6>00 (440) 9865 562</h6>
+            	            <p>Mon to Fri 9am to 6 pm</p>
+                	    </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6>support@colorlib.com</a></h6>
+                            <p>Send us your query anytime!</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+    <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
@@ -312,9 +397,9 @@
 					<h4>Profil Sekolah</h4>
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
+						<li><a href="#">Profil Singkat</a></li>
+						<li><a href="#">Visi dan Misi</a></li>
+						<li><a href="#">Struktur</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
