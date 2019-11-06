@@ -174,73 +174,7 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses lite_bg">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<h2><a href="#">Pengumuman</a></h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
-							</h4>
-							<p>Pengumuman penerimaan siswa baru 2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-								</div>
-								<div>
-									<a href="#"><span class="price">Selengkapnya</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
-							</h4>
-							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a></span>
-								</div>
-								<div>
-									<a href=""><span class="price df_color1">Selengkapnya</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	
 				<!-- single course -->
 				<!-- single course -->
 	<!--================ End Popular Courses Area =================-->
