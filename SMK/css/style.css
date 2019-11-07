@@ -87,6 +87,13 @@ button:focus {
       margin-top: 0px; } }
 
 /*---------------------------------------------------- */
+.login {
+  margin: 250px auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: lightblue;
+}
 /*----------------------------------------------------*/
 .section_gap {
   padding: 120px 0; }
@@ -1034,7 +1041,7 @@ button:focus {
 .fact_area {
   position: relative;
   color: #fff;
-  background-image: url(../img/features-bg1.jpg);
+  background-color: #fff;
   background-size: cover;
   z-index: 1;
   padding: 120px 0 90px; }
@@ -1858,7 +1865,7 @@ button:focus {
 .contact_form .form-group {
   margin-bottom: 10px; }
   .contact_form .form-group .form-control {
-    line-height: 26px;
+    line-height: 35px;
     color: #999;
     border: 1px solid #eeeeee;
     font-family: "Crimson Text", serif;
