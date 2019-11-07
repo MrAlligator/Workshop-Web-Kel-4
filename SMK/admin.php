@@ -46,7 +46,7 @@
 								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Keluar</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
 								</ul>
 							</li>
 					</div>
