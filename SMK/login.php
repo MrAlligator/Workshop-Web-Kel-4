@@ -39,27 +39,44 @@ if( isset($_POST["login"])) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="section-top-border">
-		<div class="row">
-			<div class="col-lg-4 col-sm-6">
-				<h1 class="mb-30 title_color">Login</h1>
-                <form action="" method="post">
-                    <ul>
-                        <li>
-                            <label for="username">Username :</label>
-                            <input type="text" name="username" id="username">
-                        </li>
-                        <li>
-                            <label for="password">Password :</label>
-                            <input type="password" name="password" id="password">
-                        </li>
-                        <li>
-                            <button type="submit" name="login">LOGIN</button>
-                        </li>
-                    </ul>
-                </form>
+        <div class="section-top-border">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <h1 class="mb-30 title_color">Login</h1>
+                    <form action="" method="post">
+                        <ul>
+                            <li>
+                                <label for="username">Username :</label>
+                                <input type="text" name="username" id="username">
+                            </li>
+                            <li>
+                                <label for="password">Password :</label>
+                                <input type="password" name="password" id="password">
+                            </li>
+                            <li>
+                                <button type="submit" name="login">LOGIN</button>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
+
+        <!-- Optional JavaScript -->
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/popper.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/stellar.js"></script>
+		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+		<script src="js/owl-carousel-thumb.min.js"></script>
+		<script src="js/jquery.ajaxchimp.min.js"></script>
+		<script src="vendors/counter-up/jquery.counterup.js"></script>
+		<script src="js/mail-script.js"></script>
+		<!--gmaps Js-->
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+		<script src="js/gmaps.min.js"></script>
+		<script src="js/theme.js"></script>
 </body>
 </html>
