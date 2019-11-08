@@ -38,25 +38,30 @@ if( isset($_POST["login"])) {
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-        <div class="fact_area overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6">
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="single_fact">
-                            <h1 class="mb-30 title_color">Login</h1>
-                            <form class="row contact_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
-                                </div>
-                            </form>
+    <div class="fact_area overlay">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="single_fact">
+    <h1 class="mb-30 title_color">LOGIN</h1>
+
+<form action="" method="post">
+    <ul>
+        <li>
+            <label for="username">Username :</label>
+            <input type="text" name="username" id="username">
+        </li>
+        <li>
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password">
+        </li>
+        <li>
+            <button type="submit" name="login">LOGIN</button>
+        </li>
+    </ul>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
                     </div>
                 </div>
             </div>
@@ -77,6 +82,7 @@ if( isset($_POST["login"])) {
 		<!--gmaps Js-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 		<script src="js/gmaps.min.js"></script>
-		<script src="js/theme.js"></script>
+        <script src="js/theme.js"></script>
+</form>
 </body>
 </html>
