@@ -41,7 +41,8 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
+						<a href="login.php" class="text-uppercase" >Masuk</a>
+
 					</div>
 				</div>
 			</div>
