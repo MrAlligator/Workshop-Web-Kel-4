@@ -45,21 +45,21 @@ if( isset($_POST["login"])) {
                 </div>
                 <div class="col-lg-4 col-sm-6">
                     <div class="single_fact">
-    <h1 class="mb-30 title_color">LOGIN</h1>
+    <h1 class="mb-30 title_color text-center">LOGIN</h1>
 
 <form action="" method="post">
     <ul>
-        <li>
-            <label for="username">Username :</label>
-            <input type="text" name="username" id="username">
-        </li>
-        <li>
-            <label for="password">Password :</label>
-            <input type="password" name="password" id="password">
-        </li>
-        <li>
-            <button type="submit" name="login">LOGIN</button>
-        </li>
+        <div class="form-group">
+           <i class="fa fa-user"> username </i>
+            <input type="text" name="username" id="username" placeholder="Masukkan username">
+        </div>
+         <div class="form-group">
+            <i class="fa fa-lock"> password</i>
+            <input type="password" name="password" id="password" placeholder="Masukkan password">
+         </div>
+
+            <button class="mt-3" type="submit" name="login">LOGIN</button>
+        
     </ul>
                         </div>
                     </div>
