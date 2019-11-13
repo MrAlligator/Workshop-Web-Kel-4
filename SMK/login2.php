@@ -15,7 +15,7 @@ if($cek > 0){
     if($data['level']=="admin"){
         $_SESSION['username'] = $username;
 		$_SESSION['level']="admin";
-        header("location:admin.php");
+        header("location:admin/index.php");
 
     }else if($data['level']=="siswa"){
 		$_SESSION['username'] = $username;
