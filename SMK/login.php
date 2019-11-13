@@ -11,7 +11,7 @@ if( isset($_POST["login"])) {
     if($cek > 0){
     	$_SESSION['username'] = $username;
 	    $_SESSION['status'] = "login";
-            header("Location: admin.php");
+            header("Location: admin/index.php");
             exit;
 
         }
