@@ -170,7 +170,11 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color">Data Siswa</h3>
+                <h3 class="mb-30 title_color">Data Siswa</h3>
+                <div class="button-group-area mt-10">
+				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+                </div>
+</br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
@@ -182,7 +186,7 @@
 							<div class="country">Tempat</div>
 							<div class="country">Tanggal Lahir</div>
                             <div class="percentage">Alamat</div>
-                            <div class="percentage">Aksi</div>
+                            <div class="country">Aksi</div>
 						</div>
 	<?php 
 		include 'koneksi.php';
@@ -199,9 +203,9 @@
 							<div class="country"><?php echo $d['tmptlahir']; ?></div>
 							<div class="country"><?php echo $d['tgllahir']; ?></div>
                             <div class="percentage"><?php echo $d['alamat']; ?></div>
-                            <div class="percentage">
-                                <a href="edit.php?id=<?php echo $d['id']; ?>" class="genric-btn primary-border small">Edit</a>
-                                <a href="hapus.php?id=<?php echo $d['id']; ?>" class="genric-btn primary-border small">Hapus</a>
+                            <div class="country">
+                                <button><a href="edit.php?id=<?php echo $d['id']; ?>"">Edit</a></button>
+                                <button><a href="hapus.php?id=<?php echo $d['id']; ?>">Hapus</a></button>
                             </div>
 						</div>
 	<?php
@@ -215,58 +219,7 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    <footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Profil Sekolah</h4>
-					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data Sekolah</h4>
-					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Jurusan</h4>
-					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakurikuler</h4>
-					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Info</h4>
-					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Prestasi</h4>
-					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
-	</footer>
+    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
