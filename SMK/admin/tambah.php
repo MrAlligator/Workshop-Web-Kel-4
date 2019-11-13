@@ -151,12 +151,8 @@
 					<div class="col-lg-6">
 						<div class="banner_content">
 							<h2>
-								Selamat datang di <br>
-								SMK Darus Salam
+								Selamat datang Admin
 							</h2>
-							<p>
-								Slogan
-							</p>
 						</div>
 					</div>
 				</div>
@@ -170,42 +166,57 @@
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
-	<!-- Start Align Area -->
-	<div class="whole-wrap">
+    <!-- Start Align Area -->
+    <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color">Data Guru</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIP</div>
-							<div class="country">Jenis Kelamin</div>
-							<div class="visit">Agama</div>
-							<div class="country">Tempat Lahir</div>
-							<div class="country">Tanggal Lahir</div>
-							<div class="percentage">Alamat</div>
-						</div>
-						<?php 
-							include 'koneksi.php';
-							$no = 1;
-							$data = mysqli_query($koneksi,"select * from tb_guru");
-							while($d = mysqli_fetch_array($data)){
-						?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="visit"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_guru']; ?></div>
-							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
-						</div>
-						<?php
-							}
-						?>
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<h3 class="mb-30 title_color">Form Element</h3>
+						<form method="post" action="tambah_aksi.php">
+							<div class="mt-10">
+                                <input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
+                                required class="single-input">
+							</div>
+							<div class="mt-10">
+                                <input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
+                                required class="single-input">
+							</div>
+							<div class="mt-10">
+								<select name="jk">  
+									<option value="">Jenis Kelamin</option>  
+									<option value="laki">Laki - Laki</option>  
+									<option value="perempuan">Perempuan</option>  
+								</select>
+								<select name="agama">  
+									<option value="">Agama</option>  
+									<option value="islam">Islam</option>  
+									<option value="kristen">Kristen</option>  
+								</select>
+							</div>
+							<div class="mt-10">
+								<input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
+								required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+								<input type="text" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
+								required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+								<input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
+								required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+								<input type="text" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
+								required class="single-input">
+							</div>
+							<div class="button-group-area mt-10">
+				    			<input type="submit" value="Simpan">
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -214,57 +225,6 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    <footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Profil Sekolah</h4>
-					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data Sekolah</h4>
-					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Jurusan</h4>
-					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakurikuler</h4>
-					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Info</h4>
-					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Prestasi</h4>
-					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

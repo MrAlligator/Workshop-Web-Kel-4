@@ -5,7 +5,7 @@ if( isset($_POST["login"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $result = mysqli_query($koneksi, "SELECT * FROM tb_admin WHERE username = '$username'");
+    $result = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username = '$username'");
 
     $cek =  mysqli_num_rows($result);
     if($cek > 0){

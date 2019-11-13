@@ -171,12 +171,6 @@
 	<!-- Start Button -->
 	<!-- End Button -->
 	<!-- Start Align Area -->
-	<?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_karyawan");
-		while($d = mysqli_fetch_array($data)){
-	?>
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
@@ -193,6 +187,12 @@
 							<div class="country">Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
+						<?php 
+							include 'koneksi.php';
+							$no = 1;
+							$data = mysqli_query($koneksi,"select * from tb_karyawan");
+							while($d = mysqli_fetch_array($data)){
+						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama_kar']; ?></div>
@@ -203,14 +203,14 @@
 							<div class="country"><?php echo $d['tgllahir_kar']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_kar']; ?></div>
 						</div>
+						<?php
+							}
+						?>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php
-		}
-	?>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
