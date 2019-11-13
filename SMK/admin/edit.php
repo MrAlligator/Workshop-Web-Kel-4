@@ -170,48 +170,58 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color">Data Siswa</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-                </div>
-</br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="country">J Kelamin</div>
-							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
-                            <div class="percentage">Alamat</div>
-                            <div class="country">Aksi</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-                            <div class="percentage"><?php echo $d['alamat']; ?></div>
-                            <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>"">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
-                            </div>
-						</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+                        <h3 class="mb-30 title_color">Form Element</h3>
                         <?php
-                            }
+                        include 'koneksi.php';
+                        $id= $_GET['id'];
+                        $data = mysqli_query($koneksi,"select * from tb_siswa where id='$id'");
+                        while($d = mysqli_fetch_array($data)){
                         ?>
-                    </div>
+						<form method="post" action="update.php">
+							<div class="mt-10">
+                                <input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input">
+                                <input type="text" name="nama" value="<?php echo $d['nama']; ?>" required class="single-input">
+							</div>
+							<div class="mt-10">
+                                <input type="text" name="nis" value="<?php echo $d['nis']; ?>" required class="single-input">
+							</div>
+							<div class="mt-10">
+								<select name="jk">  
+									<option value="">Jenis Kelamin</option>  
+									<option value="Laki - Laki">Laki - Laki</option>  
+									<option value="Perempuan">Perempuan</option>  
+								</select>
+								<select name="agama">
+									<option value="">Agama</option>  
+									<option value="Islam">Islam</option>  
+									<option value="Kristen">Kristen</option>  
+								</select>
+							</div>
+							<div class="mt-10">
+								<input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
+								<input type="text" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
+								<input type="text" name="alamat" value="<?php echo $d['alamat']; ?>" required class="single-input">
+							</div>
+							<div class="input-group-icon mt-10">
+								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+								<input type="text" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input">
+							</div>
+							<div class="button-group-area mt-10">
+				    			<input type="submit" value="Simpan">
+							</div>
+                        </form>
+                        <?php 
+                        }
+                        ?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -219,7 +229,6 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
