@@ -24,7 +24,7 @@ if($cek > 0){
     }else if($data['level']=="guru"){
 		$_SESSION['username'] = $username;
 		$_SESSION['level']="guru";
-        header("location:guru.php");
+        header("location:admin/guru.php");
     }else{
 		header("location:index.php?pesan=gagal");
         }
