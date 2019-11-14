@@ -144,7 +144,7 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area">
+    <section class="banner_area4">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
