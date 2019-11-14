@@ -41,7 +41,14 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
+						<li class="nav-item submenu dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
+								</ul>
+						</li>
 					</div>
 				</div>
 			</div>
