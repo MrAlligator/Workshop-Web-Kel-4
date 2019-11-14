@@ -555,16 +555,10 @@ button:focus {
 
 .banner_area {
   position: relative;
-  background: url(../img/adminn.jpg) no-repeat center center;
+  background: url(../img/mm.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important; }
-  .banner_area2 {
-    position: relative;
-    background: url(../img/silat.jpg) no-repeat center center;
-    z-index: 1;
-    min-height: 392px;
-    padding-top: 0 !important; }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
@@ -662,6 +656,12 @@ button:focus {
             .banner_area .banner_inner .banner_content .page_link a:last-child:before {
               display: none; }
               /*batas banner1 */
+              .banner_area2 {
+                position: relative;
+                background: url(../img/) no-repeat center center;
+                z-index: 1;
+                min-height: 392px;
+                padding-top: 0 !important; }
               .banner_area2 .banner_inner {
                 position: relative;
                 overflow: hidden;
