@@ -188,15 +188,23 @@
                                 <input type="text" name="nis" value="<?php echo $d['nis']; ?>" required class="single-input">
 							</div>
 							<div class="mt-10">
-								<select name="jk">  
-									<option value="">Jenis Kelamin</option>  
-									<option value="Laki - Laki">Laki - Laki</option>  
-									<option value="Perempuan">Perempuan</option>  
+								<select name="jk">
+									<?php
+									$jk = $d['jk'];
+									if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
+									else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
+									if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
+									else echo "<option value = 'Perempuan'>Perempuan</option>";
+									?>
 								</select>
 								<select name="agama">
-									<option value="">Agama</option>  
-									<option value="Islam">Islam</option>  
-									<option value="Kristen">Kristen</option>  
+								<?php
+									$jk = $d['jk'];
+									if ($jk=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
+									else echo "<option value = 'Islam'>Islam</option>";
+									if ($jk=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
+									else echo "<option value = 'Kristen'>Kristen</option>";
+									?>
 								</select>
 							</div>
 							<div class="mt-10">
