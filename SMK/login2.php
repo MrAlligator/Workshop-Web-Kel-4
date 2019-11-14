@@ -1,37 +1,3 @@
-<?php
-session_start();
-include 'koneksi.php';
-if( isset($_POST["login"])) {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-$login = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username = '$username' and password='$password'");
-$cek =  mysqli_num_rows($login);
-
-if($cek > 0){ 
-    mysqli_query($koneksi, "SELECT * FROM tb_user WHERE password='$password' and username = '$username'");
-    $data = mysqli_fetch_assoc($login);
-    
-    if($data['level']=="admin"){
-        $_SESSION['username'] = $username;
-		$_SESSION['level']="admin";
-        header("location:admin/index.php");
-
-    }else if($data['level']=="siswa"){
-		$_SESSION['username'] = $username;
-		$_SESSION['level']="siswa";
-        header("location:siswa.php");
-    }else if($data['level']=="guru"){
-		$_SESSION['username'] = $username;
-		$_SESSION['level']="guru";
-        header("location:admin/guru.php");
-    }else{
-		header("location:index.php?pesan=gagal");
-        }
-
-    }
-}
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +20,7 @@ if($cek > 0){
 	<div class="kotak_login">
 		<p class="tulisan_login">Silahkan login</p>
  
-		<form action="" method="post">
+		<form action="proses.php" method="post">
 			<label>Username</label>
 			<input type="text" name="username" class="form_login" placeholder="Masukkan Username" required="required">
  
