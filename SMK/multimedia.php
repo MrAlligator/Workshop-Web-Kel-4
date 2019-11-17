@@ -185,15 +185,33 @@ untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dl
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color">Kajur</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="country">Tanggal Lahir</div>
-							<div class="kaokao">Alamat</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-defination">
+							<h4 class="mb-20">Profil Kajur</h4>
+							<?php
+								
+							?>
 						</div>
-						<div class="table-row">
-							<div class="country">Foto</div>
-							<div class="kaokao">ajsfbaijfnasifjnibiu</div>
+					</div>
+					<div class="col-md-6">
+						<div class="single-defination">
+							<h4 class="mb-20">&nbsp;</h4>
+							<table border="0" cellpadding="0" cellspacing="0" style="width:825px">
+								<tbody>
+									<tr>
+										<td colspan="2" style="width:150px">
+										<p>Nama Sekolah</p>
+										</td>
+										<td style="width:18px">
+										<p>:</p>
+										</td>
+										<td colspan="3" style="width:462px">
+										<p>SMK Negeri 1 Tuban</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
 						</div>
 					</div>
 				</div>
