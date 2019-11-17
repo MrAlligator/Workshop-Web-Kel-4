@@ -2420,10 +2420,15 @@ h6 {
   width: 40.36%;
   padding-right: 50px; }
 
+.progress-table .kaokao {
+  width: 60%;
+
+}
+
 .progress-table .table-head {
   display: flex; }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage, .progress-table .table-head .kaokao {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -2434,7 +2439,7 @@ h6 {
   border-top: 1px solid #edf3fd;
   display: flex; }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage, .progress-table .table-row .agama {
+.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage, .progress-table .table-row .agama, .progress-table .table-row .kaokao {
   display: flex;
   align-items: center; }
 

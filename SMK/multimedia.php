@@ -180,7 +180,26 @@ Kategori dalam multimedia terdapat
 untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dll.          
 
 		</div>
-    </section>
+	</section>
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color">Kajur</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="country">Tanggal Lahir</div>
+							<div class="kaokao">Alamat</div>
+						</div>
+						<div class="table-row">
+							<div class="country">Foto</div>
+							<div class="kaokao">ajsfbaijfnasifjnibiu</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
     <div class="whole-wrap">
 		<div class="container">
 						<h3 class="mb-20 title_color">Dalam kategori multimedia content production menggunakan media sebagai berikut : </h3>

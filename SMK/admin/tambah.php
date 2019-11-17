@@ -182,6 +182,9 @@
 						</div>
 						<?php
 							
+							if (isset($_GET(value=="Guru"))) {
+								
+							}
 						?>
 						<form method="post" action="tambah_aksi.php">
 							<div class="mt-10">
