@@ -190,18 +190,18 @@
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from tb_karyawan");
+							$data = mysqli_query($koneksi,"select * from db_karyawan");
 							while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_kar']; ?></div>
+							<div class="country"><?php echo $d['nama_karyawan']; ?></div>
 							<div class="visit"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_kar']; ?></div>
-							<div class="visit"><?php echo $d['agama_kar']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_kar']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_kar']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_kar']; ?></div>
+							<div class="country"><?php echo $d['jk_karyawan']; ?></div>
+							<div class="visit"><?php echo $d['agama_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tgllahir_karyawan']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
 						</div>
 						<?php
 							}
