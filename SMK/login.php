@@ -30,9 +30,13 @@ include 'koneksi.php';
     if(isset($_POST['login'])){
         $user = $_POST['username'];
         $pass = $_POST['password'];
-        $data = mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
-        
-        $r = mysqli_fetch_array($data);
+        $login = mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
+        $cek =  mysqli_num_rows($login);
+        if($cek > 0){ 
+            mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
+            $data = mysqli_fetch_assoc($login);
+        }
+        $r = mysqli_fetch_array($login);
         $username = $r['username'];
         $password = $r['password'];
         $level = $r['level'];
