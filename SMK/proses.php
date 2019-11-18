@@ -5,11 +5,11 @@ if( isset($_POST["login"])) {
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-$login = mysqli_query($koneksi, "SELECT * FROM tb_user WHERE username = '$username' and password = '$password'");
+$login = mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$username' AND password = '$password'");
 $cek =  mysqli_num_rows($login);
 
 if($cek > 0){ 
-    mysqli_query($koneksi, "SELECT * FROM tb_user WHERE password = '$password' and username = '$username'");
+    mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE password = '$password' AND username = '$username'");
     $data = mysqli_fetch_assoc($login);
     
     if($data['level']=="admin"){
