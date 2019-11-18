@@ -31,11 +31,6 @@ include 'koneksi.php';
         $user = $_POST['username'];
         $pass = $_POST['password'];
         $login = mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
-        $cek =  mysqli_num_rows($login);
-        if($cek > 0){ 
-            mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
-            $data = mysqli_fetch_assoc($login);
-        }
         $r = mysqli_fetch_array($login);
         $username = $r['username'];
         $password = $r['password'];
@@ -43,7 +38,8 @@ include 'koneksi.php';
         if($user == $username && $pass == $password){
             $_SESSION['level'] = $level;
             header('location:admin/index.php');
-        }else{
+        }
+        else{
             echo 'Username atau Password salah!!!';
         }    
     }
