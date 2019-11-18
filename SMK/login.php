@@ -6,7 +6,7 @@ include 'koneksi.php';
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SMK DARUS SALAM</title>
+    <title>SMK Darus Salam</title>
     <link rel="stylesheet" type="text/css" href="css/stylelogin2.css">
 </head>
 <body>
