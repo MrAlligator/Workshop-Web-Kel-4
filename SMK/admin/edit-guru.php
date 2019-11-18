@@ -179,10 +179,10 @@
                         $data = mysqli_query($koneksi,"select * from tb_guru where id='$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
-						<form method="post" action="update.php">
+						<form method="post" action="update-guru.php">
 							<div class="mt-10">
                                 <input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input">
-                                <input type="text" name="nama" value="<?php echo $d['nama']; ?>" required class="single-input">
+                                <input type="text" name="nama" value="<?php echo $d['nama_guru']; ?>" required class="single-input">
 							</div>
 							<div class="mt-10">
                                 <input type="text" name="nip" value="<?php echo $d['nip']; ?>" required class="single-input">
@@ -190,7 +190,7 @@
 							<div class="mt-10">
 								<select name="jk">
 									<?php
-									$jk = $d['jk'];
+									$jk = $d['jk_guru'];
 									if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
 									else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
 									if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
@@ -199,7 +199,7 @@
 								</select>
 								<select name="agama">
 								<?php
-									$jk = $d['jk'];
+									$jk = $d['jk_guru'];
 									if ($jk=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
 									else echo "<option value = 'Islam'>Islam</option>";
 									if ($jk=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
@@ -208,19 +208,19 @@
 								</select>
 							</div>
 							<div class="mt-10">
-								<input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input">
+								<input type="text" name="tempat" value="<?php echo $d['tmptlahir_guru']; ?>" required class="single-input">
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="text" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input">
+								<input type="text" name="tanggal" value="<?php echo $d['tgllahir_guru']; ?>" required class="single-input">
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-								<input type="text" name="alamat" value="<?php echo $d['alamat']; ?>" required class="single-input">
+								<input type="text" name="alamat" value="<?php echo $d['alamat_guru']; ?>" required class="single-input">
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input">
+								<input type="text" name="telepon" value="<?php echo $d['telp_guru']; ?>" required class="single-input">
 							</div>
 							<div class="button-group-area mt-10">
 				    			<input type="submit" value="Simpan">
