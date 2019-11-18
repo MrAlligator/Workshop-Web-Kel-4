@@ -13,7 +13,7 @@ $tgllahir = $_POST['tanggal'];
 $telp = $_POST['telepon'];
 
 // menginput data ke database
-mysqli_query($koneksi,"insert into tb_guru values('','$nama','$nip','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp')");
+mysqli_query($koneksi,"insert into tb_guru values('','$nama','$nip','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$nip')");
 
 // mengalihkan halaman kembali ke index.php
 header("location:guru.php");
