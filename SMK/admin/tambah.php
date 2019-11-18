@@ -173,19 +173,6 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
-						<div class="mt-10">
-							<select name="hak">  
-								<option value="Guru">Guru</option>  
-								<option value="Siswa">Siswa</option>  
-								<option value="Karyawan">Karyawan</option>  
-							</select>
-						</div>
-						<?php
-							
-							if (isset($_GET(value=="Guru"))) {
-								
-							}
-						?>
 						<form method="post" action="tambah_aksi.php">
 							<div class="mt-10">
                                 <input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
