@@ -80,6 +80,17 @@ button:focus {
     .mt-100 {
       margin-top: 0px; } }
 
+.input-tanggal{
+  padding: 10px;
+  font-size: 12pt;
+}
+.kiri{
+  float:left;
+}
+.kanan{
+  float:right;
+}
+
 .mt--100 {
   margin-top: -100px; }
   @media (max-width: 991px) {
@@ -3429,6 +3440,7 @@ h6 {
 
   /* End Main Menu Area css
   ============================================================================================ */
+
   /* Home Banner Area css
   ============================================================================================ */
   .home_banner_area .banner_inner .banner_content {
