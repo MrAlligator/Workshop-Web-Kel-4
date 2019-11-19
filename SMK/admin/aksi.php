@@ -9,7 +9,7 @@ if($_POST['upload']){
 	$file_tmp = $_FILES['file']['tmp_name'];	
 		if(in_array($ekstensi, $ekstensi_diperbolehkan) === true){
 			if($ukuran < 1044070){			
-				move_uploaded_file($file_tmp, 'img/'.$nama);
+				move_uploaded_file($file_tmp, 'img/gallery/'.$nama);
 				$query = mysqli_query($koneksi, "INSERT INTO tb_foto VALUES(NULL, '$nama')");
 				if($query){
 					echo 'FILE BERHASIL DI UPLOAD';
