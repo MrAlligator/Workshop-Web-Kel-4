@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="icon" href="img/logosmk.png" type="image/png">
+    <title>SMK Darus Salam</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/stylelogin.css" rel='stylesheet' type='text/css' />
