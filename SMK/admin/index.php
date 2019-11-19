@@ -154,7 +154,7 @@
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(../img/adminn.jpg) no-repeat center center;
+                                  background: url(../admin/img/admin.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
