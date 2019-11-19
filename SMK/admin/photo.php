@@ -144,25 +144,77 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang di <br>
-								SMK Darus Salam
-							</h2>
-							<p>
-								Slogan
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <style>
+	 .banner_area4 {
+                                  position: relative;
+                                  background: url(../admin/img/admin.jpg) no-repeat center center;
+                                  z-index: 1;
+                                  min-height: 392px;
+                                  padding-top: 0 !important; }
+                                 .banner_area4 .banner_inner {
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  min-height: 392px;
+                                  z-index: 1; }
+                                  .banner_area4 .banner_inner .overlay {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: #000;
+                                    opacity: 0.4; }
+                                  .banner_area4 .banner_inner .banner_content {
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #fff; }
+                                    .banner_area4 .banner_inner .banner_content h2 {
+                                      color: #fff;
+                                      font-size: 48px; }
+                                    @media (max-width: 991px) {
+                                      .banner_area4 .banner_inner .banner_content p {
+                                        display: none; } }
+                                    .banner_area4 .banner_inner .banner_content .page_link {
+                                      display: inline-block;
+                                      padding: 7px 20px;
+                                      border-top: 1px solid #fff;
+                                      border-bottom: 1px solid #fff;
+                                      margin-top: 20px; }
+                                      .banner_area4 .banner_inner .banner_content .page_link a {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-family: "Crimson Text", serif;
+                                        margin-right: 32px;
+                                        position: relative;
+                                        text-transform: uppercase; }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                          content: "\f178";
+                                          font: normal normal normal 14px/1 FontAwesome;
+                                          position: absolute;
+                                          right: -25px;
+                                          top: 50%;
+                                          transform: translateY(-50%); }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                          margin-right: 0px; }
+                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                            display: none; }
+	</style>
+    <section class="banner_area4">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>Selamat Datang Admin</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
@@ -171,6 +223,10 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="title_color">Galeri Foto</h3>
+				<form action="aksi.php" method="post" enctype="multipart/form-data">
+					<input type="file" name="file">
+					<input type="submit" name="upload" value="Upload">
+				</form>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
@@ -178,9 +234,10 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-4">
-						<a href="<?php echo "admin/img/".$d['nama_file']; ?>" class="img-gal">
-							<div class="single-gallery-image" style="background: url(<?php echo "admin/img/".$d['nama_file']; ?>);"></div>
+						<a href="<?php echo "img/".$d['nama_file']; ?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "img/".$d['nama_file']; ?>);"></div>
 						</a>
+						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">hapus</button>
 					</div>
 				<?php
 				}
