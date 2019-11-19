@@ -43,7 +43,7 @@
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
 						<li class="nav-item submenu dropdown">
 						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">GURU</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
@@ -153,59 +153,59 @@
     <!--================Home Banner Area =================-->
 	<style>
 	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../admin/img/admin.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
+                                position: relative;
+                                background: url(../guru/img/guru.png) no-repeat center center;
+                                z-index: 1;
+                                min-height: 392px;
+                                padding-top: 0 !important; }
+                                .banner_area4 .banner_inner {
+                                position: relative;
+                                overflow: hidden;
+                                width: 100%;
+                                min-height: 392px;
+                                z-index: 1; }
+                                .banner_area4 .banner_inner .overlay {
+                            	position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #000;
+                                opacity: 0.4; }
+                                .banner_area4 .banner_inner .banner_content {
+                                position: relative;
+                                z-index: 2;
+                                color: #fff; }
+                                .banner_area4 .banner_inner .banner_content h2 {
+                                color: #fff;
+                                font-size: 48px; }
+                                @media (max-width: 991px) {
+                                .banner_area4 .banner_inner .banner_content p {
+                                display: none; } }
+                                .banner_area4 .banner_inner .banner_content .page_link {
+                                display: inline-block;
+                                padding: 7px 20px;
+                                border-top: 1px solid #fff;
+                                border-bottom: 1px solid #fff;
+                                margin-top: 20px; }
+                                .banner_area4 .banner_inner .banner_content .page_link a {
+                                font-size: 14px;
+                                color: #fff;
+                                font-family: "Crimson Text", serif;
+                                margin-right: 32px;
+                                position: relative;
+                                text-transform: uppercase; }
+                                .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                content: "\f178";
+                                font: normal normal normal 14px/1 FontAwesome;
+                                position: absolute;
+                                right: -25px;
+                                top: 50%;
+                            	transform: translateY(-50%); }
+                                .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                margin-right: 0px; }
+                                .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                display: none; }
 	</style>
     <section class="banner_area4">
         <div class="banner_inner d-flex align-items-center">
@@ -214,7 +214,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
+                            <h2>Selamat Datang Guru</h2>
                             </div>
                         </div>
                     </div>

@@ -41,14 +41,7 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<li class="nav-item submenu dropdown">
-						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
-									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
-								</ul>
-						</li>
+						<a href="login.php" class="text-uppercase">Masuk</a>
 					</div>
 				</div>
 			</div>
@@ -78,7 +71,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -88,7 +81,7 @@
 									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -151,77 +144,21 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-	<style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../admin/img/admin.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-	</style>
-    <section class="banner_area4">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="home_banner_area">
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="banner_content">
+							<h2>
+								Selamat datang Admin
+							</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
     <!--================End Home Banner Area =================-->
 
 
@@ -229,11 +166,62 @@
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
-	<!-- Start Align Area -->
+    <!-- Start Align Area -->
+    <div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+                <h3 class="mb-30 title_color">Data Guru</h3>
+                <div class="button-group-area mt-10">
+				    <a href="tambah-guru.php" class="genric-btn default">Tambah</a>
+                </div>
+</br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIP</div>
+							<div class="country">J Kelamin</div>
+							<div class="visit">Agama</div>
+							<div class="country">Tempat</div>
+							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Alamat</div>
+							<div class="country">Telp</div>
+                            <div class="country">Aksi</div>
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            $data = mysqli_query($koneksi,"select * from tb_guru");
+                            while($d = mysqli_fetch_array($data)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
+							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="visit"><?php echo $d['agama_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
+							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
+							<div class="country"><?php echo $d['telp_guru']; ?></div>
+                            <div class="country">
+                                <button><a href="edit-guru.php?id=<?php echo $d['id'];?>"">Edit</a></button>
+                                <button><a href="hapus-guru.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                            </div>
+						</div>
+                        <?php
+                            }
+                        ?>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-
+    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
