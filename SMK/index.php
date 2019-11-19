@@ -336,7 +336,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Hubungi Kami</h2></a>
+						<a href="#"><h2>TENTANG KAMI</h2></a>
 					</div>
 				</div>
 			</div>
@@ -346,28 +346,28 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="contact_info">
-                        <div class="info_item">
-                            <i class="lnr lnr-home"></i>
-                            <h6>Tangsil Wetan, Wonosari</h6>
-                            <p>Bondowoso, Jawa Timur</p>
+                        <div class="info_item ml-2">
+                          <i><img src="img/loc.png" width="45px" ></i>
+                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
+                            <p class="ml-2">Bondowoso, Jawa Timur</p>
                         </div>
                     </div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-    	                    <i class="lnr lnr-phone-handset"></i>
-        	                <h6>(+62)8523 1821 348</h6>
-            	            <p>Senin - Jumat (08.00 - 15.00 WIB)</p>
+							<i><img src="img/wa.png" width="45px" ></i>
+        	                <h6 class="ml-2">(+62)8523 1821 348</h6>
+            	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
                 	    </div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-                            <i class="lnr lnr-envelope"></i>
-                            <h6>darussalamsmk11@yahoo.com</a></h6>
-                            <p>Email</p>
+							<i><img src="img/gmail.png" width="45px" ></i>
+                            <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
+                            <p class="ml-2">Email</p>
                         </div>
 					</div>
 				</div>
