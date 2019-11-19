@@ -27,16 +27,16 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
+						<a href="tel:+6285231821348">
 							<span class="lnr lnr-phone"></span>
 							<span class="text">
-								<span class="text">+953012 3654 896</span>
+								<span class="text">(+62)8523 1821 348</span>
 							</span>
 						</a>
-						<a href="mailto:support@colorlib.com">
+						<a href="mailto:darussalamsmk11@yahoo.com">
 							<span class="lnr lnr-envelope"></span>
 							<span class="text">
-								<span class="text">support@colorlib.com</span>
+								<span class="text">darussalamsmk11@yahoo.com</span>
 							</span>
 						</a>
 					</div>
@@ -348,8 +348,8 @@
                     <div class="contact_info">
                         <div class="info_item">
                             <i class="lnr lnr-home"></i>
-                            <h6>Bondowoso, Jawa Timur</h6>
-                            <p>Santa monica bullevard</p>
+                            <h6>Tangsil Wetan, Wonosari</h6>
+                            <p>Bondowoso, Jawa Timur</p>
                         </div>
                     </div>
 				</div>
@@ -357,8 +357,8 @@
 					<div class="contact_info">
 						<div class="info_item">
     	                    <i class="lnr lnr-phone-handset"></i>
-        	                <h6>00 (440) 9865 562</h6>
-            	            <p>Mon to Fri 9am to 6 pm</p>
+        	                <h6>(+62)8523 1821 348</h6>
+            	            <p>Senin - Jumat (08.00 - 15.00 WIB)</p>
                 	    </div>
 					</div>
 				</div>
@@ -366,8 +366,8 @@
 					<div class="contact_info">
 						<div class="info_item">
                             <i class="lnr lnr-envelope"></i>
-                            <h6>support@colorlib.com</a></h6>
-                            <p>Send us your query anytime!</p>
+                            <h6>darussalamsmk11@yahoo.com</a></h6>
+                            <p>Email</p>
                         </div>
 					</div>
 				</div>
