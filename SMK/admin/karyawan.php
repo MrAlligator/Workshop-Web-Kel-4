@@ -226,74 +226,50 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
-						<form method="post" action="tambah_aksi2.php">
-							<table>
-								<tr>
-									<td>Nama</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
-                        	        required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Jenis Kelamin</td>
-									<td>
-									<select name="jk">  
-										<option value="">Jenis Kelamin</option>  
-										<option value="Laki - Laki">Laki - Laki</option>  
-										<option value="Perempuan">Perempuan</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
-										<option value="Islam">Islam</option>  
-										<option value="Kristen">Kristen</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Alamat</td>
-									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Telepon</td>
-									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
-								</tr>
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
-								<script>
-									function hanyaAngka(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-										return false;
-										return true;
-									}
-								</script>
-							</table>
-						</form>
-					</div>
+                <h3 class="mb-30 title_color">Data Siswa</h3>
+                <div class="button-group-area mt-10">
+				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+                </div>
+</br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIS</div>
+							<div class="country">J Kelamin</div>
+							<div class="visit">Agama</div>
+							<div class="country">Tempat</div>
+							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Alamat</div>
+							<div class="country">Telp</div>
+                            <div class="country">Aksi</div>
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            $data = mysqli_query($koneksi,"select * from db_karyawan");
+                            while($d = mysqli_fetch_array($data)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_karyawan']; ?></div>
+							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><?php echo $d['jk_karyawan']; ?></div>
+							<div class="visit"><?php echo $d['agama_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tgllahir_karyawan']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
+							<div class="country"><?php echo $d['telp_karyawan']; ?></div>
+                            <div class="country">
+                                <button><a href="edit-karyawan.php?id=<?php echo $d['id'];?>"">Edit</a></button>
+                                <button><a href="hapus-karyawan.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                            </div>
+						</div>
+                        <?php
+                            }
+                        ?>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -301,6 +277,7 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
+    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

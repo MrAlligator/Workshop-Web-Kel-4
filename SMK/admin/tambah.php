@@ -144,21 +144,77 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang Admin
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <style>
+	 .banner_area4 {
+                                  position: relative;
+                                  background: url(../img/adminn.jpg) no-repeat center center;
+                                  z-index: 1;
+                                  min-height: 392px;
+                                  padding-top: 0 !important; }
+                                 .banner_area4 .banner_inner {
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  min-height: 392px;
+                                  z-index: 1; }
+                                  .banner_area4 .banner_inner .overlay {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: #000;
+                                    opacity: 0.4; }
+                                  .banner_area4 .banner_inner .banner_content {
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #fff; }
+                                    .banner_area4 .banner_inner .banner_content h2 {
+                                      color: #fff;
+                                      font-size: 48px; }
+                                    @media (max-width: 991px) {
+                                      .banner_area4 .banner_inner .banner_content p {
+                                        display: none; } }
+                                    .banner_area4 .banner_inner .banner_content .page_link {
+                                      display: inline-block;
+                                      padding: 7px 20px;
+                                      border-top: 1px solid #fff;
+                                      border-bottom: 1px solid #fff;
+                                      margin-top: 20px; }
+                                      .banner_area4 .banner_inner .banner_content .page_link a {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-family: "Crimson Text", serif;
+                                        margin-right: 32px;
+                                        position: relative;
+                                        text-transform: uppercase; }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                          content: "\f178";
+                                          font: normal normal normal 14px/1 FontAwesome;
+                                          position: absolute;
+                                          right: -25px;
+                                          top: 50%;
+                                          transform: translateY(-50%); }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                          margin-right: 0px; }
+                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                            display: none; }
+	</style>
+    <section class="banner_area4">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>Selamat Datang Admin</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -174,60 +230,68 @@
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
 						<form method="post" action="tambah_aksi.php">	
-							<div class="mt-10">
-                            <p>	
-								<label>Nama</label>
-								<input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
-								required class="single-input">
-							</p>
-							</div>
-							<div class="mt-10">
-                                <input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
-                                required class="single-input">
-							</div>
-							<div class="mt-10">
-								<select name="jk">  
-									<option value="">Jenis Kelamin</option>  
-									<option value="Laki - Laki">Laki - Laki</option>  
-									<option value="Perempuan">Perempuan</option>  
-								</select>
-								<select name="agama">  
-									<option value="">Agama</option>  
-									<option value="Islam">Islam</option>  
-									<option value="Kristen">Kristen</option>  
-								</select>
-							</div>
-							<div class="mt-10">
-								<input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-								<input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
-								required class="single-input">
-							</div>
-							<div class="button-group-area mt-10">
-				    			<input type="submit" value="Simpan">
-							</div>
-							<script>
-								function hanyaAngka(evt) {
-									var charCode = (evt.which) ? evt.which : event.keyCode
-									if (charCode > 31 && (charCode < 48 || charCode > 57))
+							<table>
+								<tr>
+									<td>Nama</td>
+    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>NIP</td>
+									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+                        	        required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Jenis Kelamin</td>
+									<td>
+									<select name="jk">  
+										<option value="">Jenis Kelamin</option>  
+										<option value="Laki - Laki">Laki - Laki</option>  
+										<option value="Perempuan">Perempuan</option>  
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Agama</td>
+									<td>
+									<select name="agama">  
+										<option value="">Agama</option>  
+										<option value="Islam">Islam</option>  
+										<option value="Kristen">Kristen</option>  
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Tempat Lahir</td>
+									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Alamat</td>
+									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Telepon</td>
+									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
+								</tr>
+								<tr>
+					    			<td><input type="submit" value="Simpan"></td>
+								</tr>
+								<script>
+									function hanyaAngka(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
 
-									return false;
-								return true;
-								}
-							</script>
+										return false;
+										return true;
+									}
+								</script>
+							</table>
 						</form>
 					</div>
 				</div>

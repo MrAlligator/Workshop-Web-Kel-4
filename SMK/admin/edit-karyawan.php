@@ -228,56 +228,67 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
-						<form method="post" action="tambah_aksi2.php">
+                        <h3 class="mb-30 title_color">Form Element</h3>
+                        <?php
+                        include 'koneksi.php';
+                        $id= $_GET['id'];
+                        $data = mysqli_query($koneksi,"select * from db_karyawan where id='$id'");
+                        while($d = mysqli_fetch_array($data)){
+                        ?>
+						<form method="post" action="update-karyawan.php">
 							<table>
 								<tr>
 									<td>Nama</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_karyawan']; ?>" required class="single-input"></td>
+									<td><input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
-                        	        required class="single-input"></td>
+									<td><input type="text" name="nip" value="<?php echo $d['nip']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
 									<td>
-									<select name="jk">  
-										<option value="">Jenis Kelamin</option>  
-										<option value="Laki - Laki">Laki - Laki</option>  
-										<option value="Perempuan">Perempuan</option>  
+									<select name="jk">
+										<?php
+										$jk = $d['jk_karyawan'];
+										if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
+										else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
+										if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
+										else echo "<option value = 'Perempuan'>Perempuan</option>";
+										?>
 									</select>
 									</td>
 								</tr>
 								<tr>
 									<td>Agama</td>
 									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
-										<option value="Islam">Islam</option>  
-										<option value="Kristen">Kristen</option>  
+									<select name="agama">
+									<?php
+										$agama = $d['agama_karyawan'];
+										if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
+										else echo "<option value = 'Islam'>Islam</option>";
+										if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
+										else echo "<option value = 'Kristen'>Kristen</option>";
+										?>
 									</select>
 									</td>
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
-									required class="single-input"></td>
+									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir_karyawan']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Tanggal Lahir</td>
-									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-									required class="single-input"></td>
+									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir_karyawan']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Alamat</td>
-									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
-									required class="single-input"></td>
+									<td><input type="text" name="alamat" value="<?php echo $d['alamat_karyawan']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Telepon</td>
-									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
+									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_karyawan']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
@@ -286,13 +297,16 @@
 									function hanyaAngka(evt) {
 										var charCode = (evt.which) ? evt.which : event.keyCode
 										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
+										
 										return false;
-										return true;
+									return true;
 									}
 								</script>
 							</table>
-						</form>
+                        </form>
+                        <?php 
+                        }
+                        ?>
 					</div>
 				</div>
 			</div>
