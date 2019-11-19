@@ -200,7 +200,7 @@
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="text" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
+								<input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
 								required class="single-input">
 							</div>
 							<div class="input-group-icon mt-10">
@@ -210,12 +210,20 @@
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
-								required class="single-input">
+								<input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input">
 							</div>
 							<div class="button-group-area mt-10">
 				    			<input type="submit" value="Simpan">
 							</div>
+							<script>
+								function hanyaAngka(evt) {
+									var charCode = (evt.which) ? evt.which : event.keyCode
+									if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+									return false;
+								return true;
+								}
+							</script>
 						</form>
 					</div>
 				</div>

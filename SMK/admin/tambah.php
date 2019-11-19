@@ -173,10 +173,13 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
-						<form method="post" action="tambah_aksi.php">
+						<form method="post" action="tambah_aksi.php">	
 							<div class="mt-10">
-                                <input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
-                                required class="single-input">
+                            <p>	
+								<label>Nama</label>
+								<input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
+								required class="single-input">
+							</p>
 							</div>
 							<div class="mt-10">
                                 <input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
@@ -200,7 +203,7 @@
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="text" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
+								<input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
 								required class="single-input">
 							</div>
 							<div class="input-group-icon mt-10">
@@ -210,12 +213,21 @@
 							</div>
 							<div class="input-group-icon mt-10">
 								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
+								<input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
 								required class="single-input">
 							</div>
 							<div class="button-group-area mt-10">
 				    			<input type="submit" value="Simpan">
 							</div>
+							<script>
+								function hanyaAngka(evt) {
+									var charCode = (evt.which) ? evt.which : event.keyCode
+									if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+									return false;
+								return true;
+								}
+							</script>
 						</form>
 					</div>
 				</div>

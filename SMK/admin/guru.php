@@ -185,7 +185,8 @@
 							<div class="visit">Agama</div>
 							<div class="country">Tempat</div>
 							<div class="country">Tanggal Lahir</div>
-                            <div class="percentage">Alamat</div>
+							<div class="percentage">Alamat</div>
+							<div class="country">Telp</div>
                             <div class="country">Aksi</div>
 						</div>
                         <?php 
@@ -202,7 +203,8 @@
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
 							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
 							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
-                            <div class="percentage"><?php echo $d['alamat_guru']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
+							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
                                 <button><a href="edit-guru.php?id=<?php echo $d['id'];?>"">Edit</a></button>
                                 <button><a href="hapus-guru.php?id=<?php echo $d['id'];?>">Hapus</a></button>
