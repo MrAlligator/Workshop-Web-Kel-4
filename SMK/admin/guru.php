@@ -262,7 +262,7 @@
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <button><a href="edit-guru.php?id=<?php echo $d['id'];?>"">Edit</a></button>
+                                <button><a href="edit-guru.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus-guru.php?id=<?php echo $d['id'];?>">Hapus</a></button>
                             </div>
 						</div>

@@ -172,46 +172,19 @@
 			<div class="section-top-border">
 				<h3 class="title_color">Galeri Foto</h3>
 				<div class="row gallery-item">
+				<?php
+				include 'koneksi.php';
+				$data = mysqli_query($koneksi,"select * from tb_foto ");
+				while($d = mysqli_fetch_array($data)){
+				?>
 					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
+						<a href="<?php echo "admin/img/".$d['nama_file']; ?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "admin/img/".$d['nama_file']; ?>);"></div>
 						</a>
 					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
-						</a>
-					</div>
+				<?php
+				}
+				?>
 				</div>
 			</div>
 		</div>

@@ -227,16 +227,17 @@
 					<input type="file" name="file">
 					<input type="submit" name="upload" value="Upload">
 				</form>
+				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
 				$data = mysqli_query($koneksi,"select * from tb_foto ");
 				while($d = mysqli_fetch_array($data)){
 				?>
-				<div class="row gallery-item">
 					<div class="col-md-4">
-						<a href="<?php echo "img/".$d['nama_file']; ?> " class="img-gal">
-							<div class="single-gallery-image" style="background: <?php echo "/img".$d['nama_file']; ?>"></div>
+						<a href="<?php echo "img/".$d['nama_file']; ?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "img/".$d['nama_file']; ?>);"></div>
 						</a>
+						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">hapus</button>
 					</div>
 				<?php
 				}
