@@ -1,48 +1,40 @@
-<?php
-session_start();
-include 'koneksi.php';
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>SMK Darus Salam</title>
-    <link rel="stylesheet" type="text/css" href="css/stylelogin2.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/stylelogin.css" rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700|Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="kotak_login">
-		<p class="tulisan_login">Silahkan login</p>
-        <form action="" method="post">
-            <label>Username</label>
-            <input type="text" name="user" class="form_login" placeholder="Masukkan Username" required="required">
-            <label>Password</label>
-            <input type="password" name="pass" class="form_login" placeholder="Masukkan Password" required="required">
-            <input type="submit" name="login" class="tombol_login" value="LOGIN" />
-            <br/>
-            <br/>
-            <center>
-                <a class="link" href="index.php">KEMBALI</a>
-            </center>
-        </form>
+    <div class="main">
+        <div class="user">
+            <img src="images/user.png" alt="">
+        </div>
+        <div class="login">
+            <div class="inset">
+                <form action="cek_log.php" method="POST">
+                    <div>
+                        <span><label>Username</label></span>
+                        <span><input type="text" class="textbox" name="username" autofocus="autofocus"></span>
+                    </div>
+                    <div>
+                        <span><label>Password</label></span>
+                        <span><input type="password" name="password" class="password"></span>
+                    </div>
+                    <hr>
+                    <div class="sign">
+                        <div class="submit">
+                            <input type="submit" value="LOGIN" >
+                        </div>
+                        <span class="forget-pass">
+                            <a href="index.php">Kembali</a>
+                        </span>
+                        <div class="clear"> </div>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-
-    <?php
-    if(isset($_POST['login'])){
-        $user = $_POST['username'];
-        $pass = $_POST['password'];
-        $login = mysqli_query($koneksi, "SELECT * FROM tb_userlevel WHERE username = '$user' AND password = '$pass'");
-        $r = mysqli_fetch_array($login);
-        $username = $r['username'];
-        $password = $r['password'];
-        $level = $r['level'];
-        if($user == $username && $pass == $password){
-            $_SESSION['level'] = $level;
-            header('location:admin/index.php');
-        }
-        else{
-            echo 'Username atau Password salah!!!';
-        }    
-    }
-    ?>
 </body>
 </html>
