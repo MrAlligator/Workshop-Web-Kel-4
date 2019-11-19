@@ -426,7 +426,16 @@
 					</ul>
 				</div>
 			</div>
-		</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font color=#fff>
+							<p>@ 2019 || SMK DARUS SALAM - All Rights Reserved</p>
+							<p>Powered by Kelompok 4</p>
+							<p>BETA Version</p>
+						</font>
+					</div>
+				</div>
+
 	</footer>
 	<!--================ End footer Area  =================-->
 
