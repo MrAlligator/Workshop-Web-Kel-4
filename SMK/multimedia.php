@@ -151,7 +151,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Multimedia</h2>
+                            <h2>MULTIMEDIA</h2>
                         </div>
                     </div>
                 </div>
@@ -207,7 +207,7 @@ untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dl
 										<p>:</p>
 										</td>
 										<td colspan="3" style="width:462px">
-										<p>SMK Negeri 1 Tuban</p>
+										<p>SMK Darus Salam Bondowoso</p>
 										</td>
 									</tr>
 								</tbody>
@@ -347,6 +347,11 @@ untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dl
 			</div>
 			
 		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 
