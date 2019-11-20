@@ -23,38 +23,6 @@
 
 	<!--================ Start Header Menu Area =================-->
 	<header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+6285231821348">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">(+62)8523 1821 348</span>
-							</span>
-						</a>
-						<a href="mailto:support@colorlib.com"> 
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">darussalamsmk11@yahoo.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Admin</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
-									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
