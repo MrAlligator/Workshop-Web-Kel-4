@@ -151,7 +151,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Pancak Silat</h2>
+                            <h2>PENCAK SILAT</h2>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Pancak Silat</h3>
+			<h3 class="text-heading title_color">Pengertian Pencak Silat</h3>
 			<p style="font-family:Arial">
             Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
 Meski demikian, masing-masing negara juga mempunyai sebutannya sendiri sesuai dengan bahasa lokal mereka seperti gayong dan cekak (Malaysia dan Singapura), bersilat (Thailand), dan pasilat (Filipina).
@@ -204,7 +204,7 @@ Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu
 </div>
 <section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Sejarah Pancak silat</h3>
+			<h3 class="text-heading title_color">Sejarah Pencak silat</h3>
 			<p style="font-family:Arial">
             Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
 Selain seabgai upaya untuk mempertahankan diri, seni bela diri ini juga menjadi salah satu seni budaya yang terus dilestarikan hingga sekarang.
@@ -350,6 +350,11 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
 			</div>
 		
 		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 
