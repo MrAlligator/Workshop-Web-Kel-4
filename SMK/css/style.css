@@ -427,7 +427,7 @@ button:focus {
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),  no-repeat scroll center; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/admin.jpg) no-repeat scroll center; }
   .home_banner_area .banner_inner {
     position: relative;
     z-index: 10;
