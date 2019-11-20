@@ -23,8 +23,6 @@
 
 	<!--================ Start Header Menu Area =================-->
 	<header class="header_area">
-<<<<<<< HEAD
-=======
 		<div class="header-top">
 			<div class="container">
 				<div class="row align-items-center">
@@ -35,11 +33,7 @@
 								<span class="text">(+62)8523 1821 348</span>
 							</span>
 						</a>
-<<<<<<< HEAD
 						<a href="mailto:support@colorlib.com"> 
-=======
-						<a href="mailto:darussalamsmk11@yahoo.com">
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
 							<span class="lnr lnr-envelope"></span>
 							<span class="text">
 								<span class="text">darussalamsmk11@yahoo.com</span>
@@ -47,7 +41,6 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-<<<<<<< HEAD
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -58,16 +51,10 @@
 								</ul>
 							</li>
 						</ul>
-=======
-						<a href="../admin/aturdata.php" class="text-uppercase" >Edit Data</a>
-
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
 					</div>
 				</div>
 			</div>
 		</div>
-
->>>>>>> 2b35779d009e3c90551aebd2e9f6e577ea1ba4d7
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -353,7 +340,6 @@
 	</div>
 	<!--================ End Events Area =================-->
 
-<<<<<<< HEAD
     <!--================Home Banner Area =================-->
 	<style>
 	 .banner_area4 {
@@ -420,28 +406,6 @@
                         <div class="banner_content text-center">
                             <h2>Selamat Datang Admin</h2>
                             </div>
-=======
-    <!--================Contact Area =================-->
-	<section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>TENTANG KAMI</h2></a>
-					</div>
-				</div>
-			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item ml-2">
-                          <i><img src="img/loc.png" width="45px" ></i>
-                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
-                            <p class="ml-2">Bondowoso, Jawa Timur</p>
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
                         </div>
                     </div>
 				</div>
