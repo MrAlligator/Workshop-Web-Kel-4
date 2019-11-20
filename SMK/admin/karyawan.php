@@ -41,7 +41,14 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
+						<li class="nav-item submenu dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
+								</ul>
+						</li>
 					</div>
 				</div>
 			</div>
@@ -226,9 +233,9 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color">Data Siswa</h3>
+                <h3 class="mb-30 title_color">Data Karyawan</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+				    <a href="tambah.php" class="genric-btn default">Tambah Karyawan</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
@@ -236,7 +243,7 @@
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
+							<div class="visit">NIP</div>
 							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
 							<div class="country">Tempat</div>
@@ -248,7 +255,7 @@
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
-                            $data = mysqli_query($koneksi,"select * from db_karyawan");
+                            $data = mysqli_query($koneksi,"SELECT * FROM db_karyawan");
                             while($d = mysqli_fetch_array($data)){
                         ?>
 						<div class="table-row">
@@ -262,7 +269,7 @@
 							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
 							<div class="country"><?php echo $d['telp_karyawan']; ?></div>
                             <div class="country">
-                                <button><a href="edit-karyawan.php?id=<?php echo $d['id'];?>"">Edit</a></button>
+                                <button><a href="edit-karyawan.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus-karyawan.php?id=<?php echo $d['id'];?>">Hapus</a></button>
                             </div>
 						</div>

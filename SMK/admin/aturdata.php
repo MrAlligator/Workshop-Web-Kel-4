@@ -23,6 +23,30 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+						<a href="../admin/index.php">
+							<span class="text">
+								<span class="text">KEMBALI</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<li class="nav-item submenu dropdown">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Keluar</a></li>
+								</ul>
+						</li>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -90,18 +114,26 @@
 									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Info</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Prestasi</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+								</ul>
+							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
-									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-								</ul>
 							</li>
 						</ul>
 					</div>
@@ -114,59 +146,59 @@
     <!--================Home Banner Area =================-->
 	<style>
 	 .banner_area4 {
-                                position: relative;
-                                background: url(../guru/img/guru.png) no-repeat center center;
-                                z-index: 1;
-                                min-height: 392px;
-                                padding-top: 0 !important; }
-                                .banner_area4 .banner_inner {
-                                position: relative;
-                                overflow: hidden;
-                                width: 100%;
-                                min-height: 392px;
-                                z-index: 1; }
-                                .banner_area4 .banner_inner .overlay {
-                            	position: absolute;
-                                left: 0;
-                                right: 0;
-                                top: 0;
-                                bottom: 0;
-                                background: #000;
-                                opacity: 0.4; }
-                                .banner_area4 .banner_inner .banner_content {
-                                position: relative;
-                                z-index: 2;
-                                color: #fff; }
-                                .banner_area4 .banner_inner .banner_content h2 {
-                                color: #fff;
-                                font-size: 48px; }
-                                @media (max-width: 991px) {
-                                .banner_area4 .banner_inner .banner_content p {
-                                display: none; } }
-                                .banner_area4 .banner_inner .banner_content .page_link {
-                                display: inline-block;
-                                padding: 7px 20px;
-                                border-top: 1px solid #fff;
-                                border-bottom: 1px solid #fff;
-                                margin-top: 20px; }
-                                .banner_area4 .banner_inner .banner_content .page_link a {
-                                font-size: 14px;
-                                color: #fff;
-                                font-family: "Crimson Text", serif;
-                                margin-right: 32px;
-                                position: relative;
-                                text-transform: uppercase; }
-                                .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                content: "\f178";
-                                font: normal normal normal 14px/1 FontAwesome;
-                                position: absolute;
-                                right: -25px;
-                                top: 50%;
-                            	transform: translateY(-50%); }
-                                .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                margin-right: 0px; }
-                                .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                display: none; }
+                                  position: relative;
+                                  background: url(../admin/img/admin.jpg) no-repeat center center;
+                                  z-index: 1;
+                                  min-height: 392px;
+                                  padding-top: 0 !important; }
+                                 .banner_area4 .banner_inner {
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  min-height: 392px;
+                                  z-index: 1; }
+                                  .banner_area4 .banner_inner .overlay {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: #000;
+                                    opacity: 0.4; }
+                                  .banner_area4 .banner_inner .banner_content {
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #fff; }
+                                    .banner_area4 .banner_inner .banner_content h2 {
+                                      color: #fff;
+                                      font-size: 48px; }
+                                    @media (max-width: 991px) {
+                                      .banner_area4 .banner_inner .banner_content p {
+                                        display: none; } }
+                                    .banner_area4 .banner_inner .banner_content .page_link {
+                                      display: inline-block;
+                                      padding: 7px 20px;
+                                      border-top: 1px solid #fff;
+                                      border-bottom: 1px solid #fff;
+                                      margin-top: 20px; }
+                                      .banner_area4 .banner_inner .banner_content .page_link a {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-family: "Crimson Text", serif;
+                                        margin-right: 32px;
+                                        position: relative;
+                                        text-transform: uppercase; }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                          content: "\f178";
+                                          font: normal normal normal 14px/1 FontAwesome;
+                                          position: absolute;
+                                          right: -25px;
+                                          top: 50%;
+                                          transform: translateY(-50%); }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                          margin-right: 0px; }
+                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                            display: none; }
 	</style>
     <section class="banner_area4">
         <div class="banner_inner d-flex align-items-center">
@@ -175,7 +207,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Guru</h2>
+                            <h2>Selamat Datang Admin</h2>
                             </div>
                         </div>
                     </div>
@@ -187,27 +219,6 @@
 
 
 	<!-- Start Sample Area -->
-	<div class="popular_courses lite_bg3">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="card mb-3" style="max-width: 540px;">
-  					<div class="row no-gutters">
-    					<div class="col-md-4">
-      					<img src="..." class="card-img" alt="...">
-    					</div>
-    					<div class="col-md-8">
-							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-								<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-							</div>
-    					</div>
-  					</div>
-				</div>
-			</div>
-		</div>
-	</div>								
-
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
@@ -215,62 +226,7 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Profil Sekolah</h4>
-					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data Sekolah</h4>
-					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Jurusan</h4>
-					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakurikuler</h4>
-					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Info</h4>
-					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Prestasi</h4>
-					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
-					</ul>
-				</div>
-			</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
 
-	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
