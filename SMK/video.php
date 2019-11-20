@@ -270,6 +270,11 @@
 			</div>
 			
 		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	
