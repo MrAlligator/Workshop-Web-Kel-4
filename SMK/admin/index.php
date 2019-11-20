@@ -396,23 +396,34 @@
                                           margin-right: 0px; }
                                           .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
                                             display: none; }
-	</style>
-    <section class="banner_area4">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
+    </style>
+    <!--================Contact Area =================-->
+    <section class="contact_area section_gap">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>TENTANG KAMI</h2></a>
+					</div>
+				</div>
+			</div>
+            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
+                data-mlat="-7.924831" data-mlon="113.879707">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact_info">
+                        <div class="info_item ml-2">
+                          <i><img src="../img/loc.png" width="45px" ></i>
+                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
+                            <p class="ml-2">Bondowoso, Jawa Timur</p>
                         </div>
                     </div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-							<i><img src="img/wa.png" width="45px" ></i>
+							<i><img src="../img/wa.png" width="45px" ></i>
         	                <h6 class="ml-2">(+62)8523 1821 348</h6>
             	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
                 	    </div>
@@ -421,7 +432,7 @@
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-							<i><img src="img/gmail.png" width="45px" ></i>
+							<i><img src="../img/gmail.png" width="45px" ></i>
                             <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
                             <p class="ml-2">Email</p>
                         </div>
