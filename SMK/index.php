@@ -149,15 +149,10 @@
 		<div class="banner_inner">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6">
+					<div class="col-lg-12 text-center">
 						<div class="banner_content">
-							<h2>
-								Selamat datang di <br>
-								SMK Darus Salam
-							</h2>
-							<p>
-								Slogan
-							</p>
+							<img src="img/logosmk.png" height="180px"><br><br>
+							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
 						</div>
 					</div>
 				</div>
