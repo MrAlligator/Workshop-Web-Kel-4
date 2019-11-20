@@ -144,25 +144,20 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang di <br>
-								SMK Darus Salam
-							</h2>
-							<p>
-								Slogan
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>GURU</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -264,6 +259,11 @@
 				</div>
 			</div>
 		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	
