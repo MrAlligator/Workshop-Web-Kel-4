@@ -23,48 +23,6 @@
 
 	<!--================ Start Header Menu Area =================-->
 	<header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+6285231821348">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">(+62)8523 1821 348</span>
-							</span>
-						</a>
-<<<<<<< HEAD
-						<a href="mailto:support@colorlib.com"> 
-=======
-						<a href="mailto:darussalamsmk11@yahoo.com">
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">darussalamsmk11@yahoo.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-<<<<<<< HEAD
-						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Admin</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengaturan</a></li>
-									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-								</ul>
-							</li>
-						</ul>
-=======
-						<a href="../admin/aturdata.php" class="text-uppercase" >Edit Data</a>
-
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -152,6 +110,14 @@
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
+							</li>
+                            <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -342,7 +308,6 @@
 	</div>
 	<!--================ End Events Area =================-->
 
-<<<<<<< HEAD
     <!--================Home Banner Area =================-->
 	<style>
 	 .banner_area4 {
@@ -399,19 +364,9 @@
                                           margin-right: 0px; }
                                           .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
                                             display: none; }
-	</style>
-    <section class="banner_area4">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
-=======
+    </style>
     <!--================Contact Area =================-->
-	<section class="contact_area section_gap">
+    <section class="contact_area section_gap">
         <div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
@@ -427,17 +382,16 @@
                 <div class="col-md-4">
                     <div class="contact_info">
                         <div class="info_item ml-2">
-                          <i><img src="img/loc.png" width="45px" ></i>
+                          <i><img src="../img/loc.png" width="45px" ></i>
                             <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
                             <p class="ml-2">Bondowoso, Jawa Timur</p>
->>>>>>> 6fa2f9ebc82384b1c0ef921ba699c5c1b19464ff
                         </div>
                     </div>
 				</div>
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-							<i><img src="img/wa.png" width="45px" ></i>
+							<i><img src="../img/wa.png" width="45px" ></i>
         	                <h6 class="ml-2">(+62)8523 1821 348</h6>
             	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
                 	    </div>
@@ -446,7 +400,7 @@
 				<div class="col-md-4">
 					<div class="contact_info">
 						<div class="info_item">
-							<i><img src="img/gmail.png" width="45px" ></i>
+							<i><img src="../img/gmail.png" width="45px" ></i>
                             <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
                             <p class="ml-2">Email</p>
                         </div>
