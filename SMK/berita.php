@@ -76,10 +76,11 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
