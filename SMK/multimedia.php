@@ -173,9 +173,8 @@
 	<section class="sample-text-area">
 		<div class="container">
 			<h3 class="text-heading title_color">PENGERTIAN MULTIMEDIA</h3>
-			<p class="text-justify" style="font-family:Arial">
-            Multimedia secara utuh berarti kombinasi atau penggabungan dari beberapa media seperti teks, audio, video, animasi, gambar yang disajikan dalam penggunaan komputer dengan bantuan tool dan link sehingga menghasilkan presentasi yang menarik.
-Kategori dalam multimedia terdapat 2 macam, yaitu Multimedia Communication dan  Multimedia Content Production. Pengertian dari Multimedia Communication adalah penggunaan media yang memiliki fungsi mempublikasikan informasi. Dalam kategori ini media yang digunakan adalah TV, Radio, Film, Game, Musik, Entertaiment, Tutorial, Internet, dan Media Cetak.</p><p class="text-justify" style="font-family:Arial"> Dengan adanya multimedia communication ini akan mempermudah penggua dalam menyampaikan dan mendapatkan informasi. Selanjutnya Multimedia Content Production adalah penggunaan beberapa media yang berbeda seperti Teks, Animasi, Audio, Video, gambar (grafik) yang dipadukan 
+			<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Multimedia secara utuh berarti kombinasi atau penggabungan dari beberapa media seperti teks, audio, video, animasi, gambar yang disajikan dalam penggunaan komputer dengan bantuan tool dan link sehingga menghasilkan presentasi yang menarik.
+Kategori dalam multimedia terdapat 2 macam, yaitu Multimedia Communication dan  Multimedia Content Production. Pengertian dari Multimedia Communication adalah penggunaan media yang memiliki fungsi mempublikasikan informasi. Dalam kategori ini media yang digunakan adalah TV, Radio, Film, Game, Musik, Entertaiment, Tutorial, Internet, dan Media Cetak.</p><p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dengan adanya multimedia communication ini akan mempermudah penggua dalam menyampaikan dan mendapatkan informasi. Selanjutnya Multimedia Content Production adalah penggunaan beberapa media yang berbeda seperti Teks, Animasi, Audio, Video, gambar (grafik) yang dipadukan 
 untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dll.</p>
 		</div>
 	</section>

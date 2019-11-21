@@ -133,7 +133,7 @@
 						<a href="<?php echo "img/gallery".$d['nama_file']; ?>" class="img-gal">
 							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
 						</a>
-						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">hapus</button>
+						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">Hapus</button>
 					</div>
 				<?php
 				}

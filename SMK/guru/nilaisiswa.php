@@ -73,7 +73,7 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
+                <h3 class="mb-30 title_color text-center">NILAI SISWA</h3>
                 <div class="button-group-area mt-10">
 				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
                 </div>

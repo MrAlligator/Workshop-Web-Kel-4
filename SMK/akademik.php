@@ -175,7 +175,7 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color">Prestasi Akademik</h3>
+				<h3 class="mb-30 title_color text-center">Prestasi Akademik</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">

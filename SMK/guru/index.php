@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -313,7 +313,7 @@
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(../admin/img/adminn.jpg) no-repeat center center;
+                                  background: url(../guru/img/sekolah.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }

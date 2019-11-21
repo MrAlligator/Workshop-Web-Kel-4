@@ -194,8 +194,7 @@
 								<li style="font-family:Arial"><p>Kode Kehormatan Pramuka Siaga terdiri atas Dwisatya dan Dwidarma</li></p>
 								<li style="font-family:Arial"><p>Kode Kehormatan Pramuka Penggalang terdiri atas Trisatya Pramuka Penggalang dan Dasadarma</li></p>
                                 <li style="font-family:Arial"><p>Kode Kehormatan Pramuka Penegak dan Pandega terdiri atas Trisatya Pramuka Penegak dan Pramuka Pandega dan Dasadarma</li></p>
-                                <li style="font-family:Arial"><p>Kode Kehormatan Pramuka Dewasa terdiri atas Trisatya Anggota Dewasa dan Dasadarma</li></p>
-									
+                                <li style="font-family:Arial"><p>Kode Kehormatan Pramuka Dewasa terdiri atas Trisatya Anggota Dewasa dan Dasadarma</li></p>				
 							</ul>
                     </div>
 </div>

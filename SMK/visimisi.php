@@ -172,7 +172,7 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color">Visi dan misi sekolah</h3>
+			<h3 class="text-heading title_color text-center">Visi dan Misi<p>SMK Darus Salam</p></h3>
 			<p style="font-family:Arial">         
 
 		</div>
@@ -182,7 +182,7 @@
 						<h3 class="mb-20 title_color">Visi </h3>
 1.	Mendidik  siswa yang beriman,bertaqwa kepada Allah SWT dan berakhlaquk karimah.<br>
 2.	Menghasilkan siswa yang cerdas,cermat,kreatif dan berkepribadian teguh.<br>
-3.	Menghasilkan siswa yang terampil,mandiriuntuk berhasil mengatasi kelaparan dan membebaskan diri dari keemiskinan.<br><br><br>
+3.	Menghasilkan siswa yang terampil,mandiriuntuk berhasil mengatasi kelaparan dan membebaskan diri dari kemiskinan.<br><br><br>
 									
                     </div>
 		<div class="container">			
@@ -192,7 +192,7 @@
 3.	Menjalin kerjasama yang baik antara pelaku pendidikan intern maupun ekstern.<br>
 4.	Meningkatkan kedisiplinan dengan melaksanakan peraturan-peraturan yang telah disepakati bersama.<br>
 5.	Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.<br>
-6. Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
+6.  Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
 
 </div>
 				<!-- single course -->

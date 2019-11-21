@@ -52,26 +52,26 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -79,32 +79,32 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -159,7 +159,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Pengumuman</h2></a>
+						<a href="../pengumuman.php"><h2>Pengumuman</h2></a>
 					</div>
 				</div>
 			</div>
@@ -243,7 +243,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Berita</h2></a>
+						<a href="../berita.php"><h2>Berita</h2></a>
 					</div>
 				</div>
 			</div>
@@ -313,7 +313,7 @@
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(../admin/img/adminn.jpg) no-repeat center center;
+                                  background: url(../img/sekolah.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
@@ -419,46 +419,46 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
 					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
+						<li><a href="../sejarah.php">Sejarah</a></li>
+						<li><a href="../profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="../visimisi.php">Visi dan Misi</a></li>
+						<li><a href="../struktur.php">Struktur</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Data Sekolah</h4>
 					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
+						<li><a href="../siswa.php">Siswa</a></li>
+						<li><a href="../guru.php">Guru</a></li>
+						<li><a href="../karyawan.php">Karyawan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Jurusan</h4>
 					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
+						<li><a href="../multimedia.php">Multimedia</a></li>
 						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Ekstrakurikuler</h4>
 					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+						<li><a href="../pramuka.php">Pramuka</a></li>
+						<li><a href="../pencak_silat.php">Pencak Silat</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Info</h4>
 					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
+						<li><a href="../pengumuman.php">Pengumuman</a></li>
+						<li><a href="../berita.php">Berita</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="../akademik.php">Akademik</a></li>
+						<li><a href="../nonakademik.php">Non - Akademik</a></li>
 					</ul>
 				</div>
 			</div>

@@ -173,13 +173,12 @@
 	<section class="sample-text-area">
 		<div class="container">
 			<h3 class="text-heading title_color">Pengertian Pencak Silat</h3>
-			<p style="font-family:Arial">
-            Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
+			<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
 Meski demikian, masing-masing negara juga mempunyai sebutannya sendiri sesuai dengan bahasa lokal mereka seperti gayong dan cekak (Malaysia dan Singapura), bersilat (Thailand), dan pasilat (Filipina).
 Pencak silat berasal dari dua kata, yakni pencak dan silat. Pengertian pencak ialah gerak dasar bela diri dan terikat dengan peraturan. 
 Sedangkan silat berarti gerak beladiri sempurna yang bersumber dari kerohanian.
 Dalam perkembangannya, silat ini lebih mengutamakan unsur seni dalam penampilan keindahan gerakan, sementara itu silat ialah inti dari ajaran bela diri dalam pertarungan.
-Pengurus Besar IPSI menyebutkan pengertian pencak silat sebagai:
+<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pengurus Besar IPSI menyebutkan pengertian pencak silat sebagai :
 “Pencak silat ialah hasil budaya manusia di Indonesia untuk membela, lalu mempertahankan eksistensi (kemandiriannya) serta integritasnya (manunggal) untuk lingkungan hidup sekitarnya guna mencapai keselarasan hidup dalam meningkatkan iman & taqwa terhadap Tuhan YME”.
 Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu sebagai permainan (keahlian) dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan ataupun tanpa senjata.
 
@@ -206,8 +205,7 @@ Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu
 <section class="sample-text-area">
 		<div class="container">
 			<h3 class="text-heading title_color">Sejarah Pencak silat</h3>
-			<p style="font-family:Arial">
-            Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
+			<p class="text-justify" style="font-family:Arial">Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
 Selain seabgai upaya untuk mempertahankan diri, seni bela diri ini juga menjadi salah satu seni budaya yang terus dilestarikan hingga sekarang.
 Dan seperti yang telah kita ketahui, silat ini tak hanya berkembang di negara Indonesia saja.
 Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam, Singapura, ataupun negara lainnya.
