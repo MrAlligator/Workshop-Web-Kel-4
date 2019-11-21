@@ -81,7 +81,7 @@
 									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -114,7 +114,7 @@
 									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
@@ -145,6 +145,9 @@
 
     <!--================Home Banner Area =================-->
     
+    <section>
+	
+    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -159,7 +162,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
-						<form method="post" action="aksi2.php">	
+						<form method="post" action="tambah_aksi4.php" enctype="multipart/form-data">	
 							<table>
 								<tr>
 									<td>Judul</td>
@@ -175,13 +178,8 @@
 								</tr>
 								<tr>
 									<td>Foto</td>
-                                    <td><input type="file" name="file"></td>
-                                </tr>
-                                <tr>
-                                    <td><h3>&NonBreakingSpace;</h3></td>
-                                </tr>
-                                <tr>
-                                    <td><input type="submit" name="upload" value="Upload"></td>
+									<td><input type="file" name="file"></td>
+									<td><input type="submit" name="upload" value="Upload"></td>
                                 </tr>
 							</table>
 						</form>
