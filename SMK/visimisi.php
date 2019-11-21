@@ -191,7 +191,8 @@
 2.	Menyelenggharakan pendidikan untuk meningkatkan kemampuan konstruktif,kompetitif,daya piker dan daya nalar positif siswa.<br>
 3.	Menjalin kerjasama yang baik antara pelaku pendidikan intern maupun ekstern.<br>
 4.	Meningkatkan kedisiplinan dengan melaksanakan peraturan-peraturan yang telah disepakati bersama.<br>
-5.	Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.
+5.	Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.<br>
+6. Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
 
 </div>
 				<!-- single course -->
