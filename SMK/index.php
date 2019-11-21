@@ -331,7 +331,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>TENTANG KAMI</h2></a>
+						<h2>TENTANG KAMI</h2>
 					</div>
 				</div>
 			</div>
