@@ -23,30 +23,6 @@
 
 	<!--================ Start Header Menu Area =================-->
 	<header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+6285231821348">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">(+62)8523 1821 348</span>
-							</span>
-						</a>
-						<a href="mailto:darussalamsmk11@yahoo.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">darussalamsmk11@yahoo.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,31 +47,31 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -103,38 +79,46 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakulikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -152,7 +136,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>PROFIL SINGKAT</h2>
+                            <h2>VISI - MISI</h2>
                         </div>
                     </div>
                 </div>
@@ -172,38 +156,29 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-center">SMK Darus Salam Bondowoso</h3>
+			<h3 class="text-heading title_color text-center">VISI dan MISI<br><p>SMK Darus Salam</p></h3>
 			<p style="font-family:Arial">         
 
 		</div>
     </section>
     <div class="whole-wrap">
 		<div class="container">
-						<h3 class="mb-20 title_color">Identitas Sekolah : </h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Nama Sekolah&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: SMK Darus Salam    </li></p>
-								<li style="font-family:Arial"><p>Alamat&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : Tangsil Wetan Rt.08 Rw. 03</li></p>
-                                <li style="font-family:Arial"><p>Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : darussalamsmk11@yahoo.com</li></p>
-                                <li style="font-family:Arial"><p>NIS&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : 400390 </li></p>
-                                <li style="font-family:Arial"><p>Berdiri pada&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: SMK Daru Salam Berdiri Mulai 2011</li></p>	
-							</ul>
-                    	</div>
-		</div>
-	</div>
-	<div class="whole-wrap">
-		<div class="container">
-						<h3 class="mb-20 title_color">Identitas Kepala Sekolah : </h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Nama&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: AHMAD MAHFUD, S. Pd </li></p>
-								<li style="font-family:Arial"><p>Tanggal lahir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Bondowoso, 23 Oktober 1992 </li></p>
-                                <li style="font-family:Arial"><p>Pendidikan Terakhir&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Sarjana (S-1) </li></p>
-                                <li style="font-family:Arial"><p>Alamat Rumah&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Sarjana (S-1) </li></p>
-							</ul>
-                    	</div>
-		</div>
-	</div>
+						<h3 class="mb-20 title_color">Visi </h3>
+1.	Mendidik  siswa yang beriman,bertaqwa kepada Allah SWT dan berakhlaquk karimah.<br>
+2.	Menghasilkan siswa yang cerdas,cermat,kreatif dan berkepribadian teguh.<br>
+3.	Menghasilkan siswa yang terampil,mandiriuntuk berhasil mengatasi kelaparan dan membebaskan diri dari kemiskinan.<br><br><br>
+									
+                    </div>
+		<div class="container">			
+					<h3 class="mb-20 title_color">Misi </h3>
+1.	Melaksanakan pendidikan dengan berdasarkan kurikulum SMK dari DEPDIKNAS RI dipadukan dengan muatan agama islam yang diperluas sehingga menghasilkan siswa yang beriman dan bertaqwa kepada Allah SWT. <br>
+2.	Menyelenggharakan pendidikan untuk meningkatkan kemampuan konstruktif,kompetitif,daya piker dan daya nalar positif siswa.<br>
+3.	Menjalin kerjasama yang baik antara pelaku pendidikan intern maupun ekstern.<br>
+4.	Meningkatkan kedisiplinan dengan melaksanakan peraturan-peraturan yang telah disepakati bersama.<br>
+5.	Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.<br>
+6.  Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
+
+</div>
 				<!-- single course -->
 				
 				
@@ -227,56 +202,6 @@
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Profil Sekolah</h4>
-					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data Sekolah</h4>
-					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Jurusan</h4>
-					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakulikuler</h4>
-					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Info</h4>
-					<ul>
-						<li><a href="pengumuman.php">Pengumuman</a></li>
-						<li><a href="berita.php">Berita</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Prestasi</h4>
-					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
-					</ul>
-				</div>
-			</div>
-			
-		</div>
 		<div class="row">
 					<div class="col-md-12 text-center">
 						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>

@@ -175,7 +175,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Pengumuman</h2></a>
+						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
 					</div>
 				</div>
 			</div>
@@ -184,7 +184,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -198,7 +198,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -212,7 +212,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -226,7 +226,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -259,7 +259,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Berita</h2></a>
+						<a href="berita.php"><h2>BERITA</h2></a>
 					</div>
 				</div>
 			</div>
@@ -268,7 +268,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -282,7 +282,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -296,7 +296,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -310,7 +310,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -409,8 +409,8 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Info</h4>
 					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">

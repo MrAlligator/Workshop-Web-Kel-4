@@ -172,7 +172,7 @@
 	<!--================ Start Popular Courses Area =================-->
 	<section class="sample-text-area">
 		<div class="container">
-			<h3 class="text-heading title_color text-center">Visi dan Misi<p>SMK Darus Salam</p></h3>
+			<h3 class="text-heading title_color text-center">VISI dan MISI<br><p>SMK Darus Salam</p></h3>
 			<p style="font-family:Arial">         
 
 		</div>
@@ -254,8 +254,8 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Info</h4>
 					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
