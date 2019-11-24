@@ -13,11 +13,11 @@ if ($file_type=="application/pdf") {
 
  {
 $query = mysqli_query($koneksi,"INSERT INTO `tb_materi` VALUES('','$nama','$nip','$jurusan','$kelas', '$b')");
- echo "<script>alert('File $b $kelas berhasil di Upload!');location='inputmateri.php';</script>";
+ echo "<script>alert('File $b  berhasil di Upload!');location='inputmateri.php';</script>";
  //Jalankan perintah insert ke database
  }
  else {
- echo "<script>alert('File $b $kelas Gagal di Upload!');location='inputmateri.php';</script>";
+ echo "<script>alert('File $b  Gagal di Upload!');location='inputmateri.php';</script>";
  }
 }
 else {
