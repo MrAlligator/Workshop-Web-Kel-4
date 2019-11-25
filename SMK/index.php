@@ -265,61 +265,28 @@
 			</div>
 			<div class="row">
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Mengukir Prestasi Pada Open Championship se Jawa - Bali</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
+				<?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_berita");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="#"><?php echo $d['judul']?></a>
 							</h4>
-							<p></p>
+							<p><?php echo $d['cuplikan']?></p>
 						</div>
 					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
+                </div>
+                <?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
