@@ -175,71 +175,40 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<h2><a href="#">Pengumuman</a></h2>
-					</div>
-				</div>
+                        <a href="#"><h2>Pengumuman</h2></a>
+                        <div class="button-group-area mt-10">
+                            <a href="tambah-pengumuman.php" class="genric-btn default">Tambah Pengumuman</a>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "img/pengumuman/".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
+								<a href="#"><?php echo $d['judul']?></a>
 							</h4>
-							<p>Pengumuman penerimaan siswa baru 2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-								</div>
-								<div>
-									<a href="#"><span class="price">Selengkapnya</span></a>
-								</div>
-							</div>
+							<p><?php echo $d['cuplikan']?></p>
 						</div>
 					</div>
-				</div>
-                
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
-							</h4>
-							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a></span>
-								</div>
-								<div>
-									<a href=""><span class="price df_color1">Selengkapnya</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<!-- single course -->
+                </div>
+                <?php
+                    }
+                ?>
+			</div>
+		</div>
+	</div>
+				
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
