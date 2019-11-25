@@ -162,7 +162,7 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
+						<h3 class="mb-30 title_color">Form Berita</h3>
 						<form method="post" action="tambah_aksi4.php" enctype="multipart/form-data">	
 							<table>
 								<tr>
