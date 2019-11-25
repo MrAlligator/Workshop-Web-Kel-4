@@ -145,20 +145,6 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>PENGUMUMAN</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -228,49 +214,7 @@
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->
-	<section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>Hubungi Kami</h2></a>
-					</div>
-				</div>
-			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item">
-                            <i class="lnr lnr-home"></i>
-                            <h6>Bondowoso, Jawa Timur</h6>
-                            <p>Santa monica bullevard</p>
-                        </div>
-                    </div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-    	                    <i class="lnr lnr-phone-handset"></i>
-        	                <h6>00 (440) 9865 562</h6>
-            	            <p>Mon to Fri 9am to 6 pm</p>
-                	    </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-                            <i class="lnr lnr-envelope"></i>
-                            <h6>support@colorlib.com</a></h6>
-                            <p>Send us your query anytime!</p>
-                        </div>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
+
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
