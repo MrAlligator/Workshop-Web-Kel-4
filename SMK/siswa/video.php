@@ -112,60 +112,19 @@
     <!--================Home Banner Area =================-->
     
     <!--================End Home Banner Area =================-->
-
-
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
-	<!-- Start Button -->
-	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!-- Start Align Area -->
+	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-                </div>
-</br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="country">J Kelamin</div>
-							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
-							<div class="percentage">Alamat</div>
-							<div class="country">Telp</div>
-                            <div class="country">Aksi</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
-							<div class="country"><?php echo $d['telp']; ?></div>
-                            <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
-                            </div>
-						</div>
-                        <?php
-                            }
-                        ?>
-                    </div>
+				<h3 class="title_color text-center">GALERI VIDEO</h3>
+				<form action="aksi.php" method="post" enctype="multipart/form-data">
+					<input type="file" name="file">
+					<input type="submit" name="upload" value="Upload">
+				</form>
+				<div class="row gallery-item">
+				
 				</div>
 			</div>
 		</div>

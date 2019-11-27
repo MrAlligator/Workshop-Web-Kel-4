@@ -110,7 +110,7 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    
+
     <!--================End Home Banner Area =================-->
 
 
@@ -122,9 +122,9 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
+                <h3 class="mb-30 title_color text-center">DATA KARYAWAN</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+				    <a href="tambah.php" class="genric-btn default">Tambah Karyawan</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
@@ -132,7 +132,7 @@
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
+							<div class="visit">NIP</div>
 							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
 							<div class="country">Tempat</div>
@@ -144,22 +144,22 @@
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
+                            $data = mysqli_query($koneksi,"SELECT * FROM db_karyawan");
                             while($d = mysqli_fetch_array($data)){
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
-							<div class="country"><?php echo $d['telp']; ?></div>
+							<div class="country"><?php echo $d['nama_karyawan']; ?></div>
+							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><?php echo $d['jk_karyawan']; ?></div>
+							<div class="visit"><?php echo $d['agama_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir_karyawan']; ?></div>
+							<div class="country"><?php echo $d['tgllahir_karyawan']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
+							<div class="country"><?php echo $d['telp_karyawan']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                                <button><a href="edit-karyawan.php?id=<?php echo $d['id'];?>">Edit</a></button>
+                                <button><a href="hapus-karyawan.php?id=<?php echo $d['id'];?>">Hapus</a></button>
                             </div>
 						</div>
                         <?php

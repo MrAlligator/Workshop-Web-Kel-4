@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item active"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -107,91 +107,104 @@
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
+	<!--================ End Header Menu Area =================-->
 
-    <!--================Home Banner Area =================-->
-    
-    <!--================End Home Banner Area =================-->
+	<!--================ Start Home Banner Area =================-->
+	
+	<!--================ End Home Banner Area =================-->
 
+	<!--================ Start Feature Area =================-->
+	
+	<!--================ End Feature Area =================-->
 
-	<!-- Start Sample Area -->
-	<!-- End Sample Area -->
-	<!-- Start Button -->
-	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!--================ Start Department Area =================-->
+	
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	
+				<!-- single course -->
+				<!-- single course -->
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	
+	<!--================ End Registration Area =================-->
+
+	<!--================ Start Events Area =================-->
+	<div class="popular_courses lite_bg">
 		<div class="container">
-			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-                </div>
-</br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="country">J Kelamin</div>
-							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
-							<div class="percentage">Alamat</div>
-							<div class="country">Telp</div>
-                            <div class="country">Aksi</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
-							<div class="country"><?php echo $d['telp']; ?></div>
-                            <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
-                            </div>
-						</div>
-                        <?php
-                            }
-                        ?>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+                        <a href="#"><h2>Berita</h2></a>
+                        <div class="button-group-area mt-10">
+                            <a href="tambah-berita.php" class="genric-btn default">Tambah Berita</a>
+                        </div>
                     </div>
-				</div>
+                </div>
+			</div>
+			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_berita");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto']; ?>" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="#"><?php echo $d['judul']?></a>
+							</h4>
+							<p><?php echo $d['cuplikan']?></p>
+						</div>
+					</div>
+                </div>
+                <?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
-	<!-- End Align Area -->
+	<!--================ End Events Area =================-->
+
+    <!--================Contact Area =================-->
+	
+    <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
-    
-		<!--================ End footer Area  =================-->
 	
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/stellar.js"></script>
-		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-		<script src="js/owl-carousel-thumb.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="vendors/counter-up/jquery.counterup.js"></script>
-		<script src="js/mail-script.js"></script>
-		<!--gmaps Js-->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-		<script src="js/gmaps.min.js"></script>
-		<script src="js/theme.js"></script>
-	</body>
-	
-	</html>
+	<!--================ End footer Area  =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
