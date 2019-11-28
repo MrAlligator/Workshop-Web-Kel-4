@@ -17,14 +17,14 @@ if (!empty($_FILES["file"]["tmp_name"]))
 		    ?>
 				        <script language="javascript">
                     alert('Berhasil menambahkan');
-                    document.location="index.php?link=lihatBerita.php";
+                    document.location="berita.php";
                 </script>
         <?php
         } else {
         ?>
 				        <script language="javascript">
                     alert('Gagal menambahkan');
-                    document.location="index.php?link=tambahBerita.php";
+                    document.location="berita.php";
                 </script>
         <?php
         }
@@ -32,7 +32,7 @@ if (!empty($_FILES["file"]["tmp_name"]))
         ?>
 			      <script language="javascript">
                 alert('Gambar harus berformat .jpg .png .gif');
-                document.location="index.php?tambahBerita.php";
+                document.location="tambah-berita.php";
             </script>
         <?php
     }
