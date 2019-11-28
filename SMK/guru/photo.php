@@ -47,46 +47,64 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+						<li class="nav-item"><a class="nav-link" href="../guru/index.php">Home</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Profil</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../guru/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/struktur.php">Struktur</a></li>
+								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/karyawan.php">Karyawan</a></li>
+								</ul>
+							</li>
+							</li><li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Jurusan</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../guru/multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
+								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -94,10 +112,11 @@
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
+                            <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">GURU</a>
 								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -110,7 +129,20 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    
+    <section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>PHOTO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
@@ -118,11 +150,7 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color text-center">GALERI FOTO</h3>
-				<form action="aksi.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" name="upload" value="Upload">
-				</form>
+				<h3 class="title_color">Galeri Foto</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
@@ -130,10 +158,9 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-4">
-						<a href="<?php echo "img/gallery".$d['nama_file']; ?>" class="img-gal">
-							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
+						<a href="<?php echo "admin/img/gallery/".$d['nama_file']; ?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "admin/img/gallery/".$d['nama_file']; ?>);"></div>
 						</a>
-						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">Hapus</button>
 					</div>
 				<?php
 				}
@@ -145,7 +172,13 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
