@@ -13,7 +13,7 @@ if (!empty($_FILES["gbr_berita"]["tmp_name"]))
     {           
         $gambar = $namafolder . basename($_FILES['gbr_berita']['name']);       
         if (move_uploaded_file($_FILES['gbr_berita']['tmp_name'], $gambar)) {
-           mysql_query("insert into tbl_berita values ('','$judul_berita','$isi_berita','$tgl_berita','$gambar')",$koneksi); 
+           mysqli_query($koneksi,"insert into tbl_berita values ('','$judul_berita','$isi_berita','$tgl_berita','$gambar')"); 
 		   ?>
 				<script language="javascript">
                     alert('Berhasil menambahkan');

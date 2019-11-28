@@ -9,15 +9,15 @@ if(isset($_GET['hal']))
 }
 $offset   = ($noPage - 1) * $dataPerPage;
 include "koneksi.php";
-$ambil_data = mysql_query("select * from tbl_berita order by id_berita desc limit $offset, $dataPerPage",$koneksi);
-$hitung_record = mysql_query("SELECT COUNT(*) AS jumData FROM tbl_berita",$koneksi);
-$data          = mysql_fetch_array($hitung_record);
+$ambil_data = mysqli_query($koneksi,"select * from tbl_berita order by id_berita desc limit $offset, $dataPerPage");
+$hitung_record = mysqli_query($koneksi,"SELECT COUNT(*) AS jumData FROM tbl_berita");
+$data          = mysqli_fetch_array($hitung_record);
 $jumData       = $data['jumData'];
 $jumPage  = ceil($jumData/$dataPerPage);
 # ceil digunakan untuk membulatkan hasil pembagian
 #------- akhir page number -------------------------------------------------------------------------------------#
 
-while($hasil_data = mysql_fetch_array($ambil_data)){
+while($hasil_data = mysqli_fetch_array($ambil_data)){
 ?>
 	<div class="row-fluid">
       <div class="span4">

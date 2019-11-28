@@ -1,6 +1,6 @@
 <?php
 include "koneksi.php";
-$ambil_recent = mysql_query("select id_berita,judul,tanggal from tbl_berita order by rand() limit 20",$koneksi);
+$ambil_recent = mysqli_query($koneksi,"select id_berita,judul,tanggal from tbl_berita order by rand() limit 20");
 
 ?>
 <div class="well sidebar-nav">
@@ -11,7 +11,7 @@ $ambil_recent = mysql_query("select id_berita,judul,tanggal from tbl_berita orde
         <li class="nav-header">Baca Juga</li>
         <ul type="square">
         	<?php
-				while($hasil_recent= mysql_fetch_array($ambil_recent)){
+				while($hasil_recent= mysqli_fetch_array($ambil_recent)){
         			echo "<li><a href='index.php?link=lihatDetailBerita.php&id=$hasil_recent[id_berita]'>".$hasil_recent['judul']."</a></li>";
 				}
 			?>

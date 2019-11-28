@@ -1,13 +1,9 @@
-<?php
-$server   = "localhost";
-$username = "root";
-$password = "password";
-$database = "db_universitas";
-
-$koneksi = mysql_connect($server,$username,$password) or die ('Koneksi gagal');
-
-if($koneksi){
-	mysql_select_db($database) or die ('Database belum dibuat');	
+<?php 
+$koneksi = mysqli_connect("127.0.0.1","root","","malasngoding");
+ 
+// Check connection
+if (mysqli_connect_errno()){
+	echo "Koneksi database gagal : " . mysqli_connect_error();
 }
-
+ 
 ?>

@@ -1,7 +1,7 @@
 <?php
 include "koneksi.php";
-$ambil_data = mysql_query("select * from tbl_berita where id_berita='$_GET[id]'",$koneksi);
-$hasil_data = mysql_fetch_array($ambil_data);
+$ambil_data = mysqli_query($koneksi,"select * from tbl_berita where id_berita='$_GET[id]'");
+$hasil_data = mysqli_fetch_array($ambil_data);
 ?>
 
 <div class="paragraphs">
