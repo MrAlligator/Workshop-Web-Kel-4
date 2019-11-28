@@ -132,11 +132,11 @@
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="visit">NIP</div>
+							<div class="country">NIP</div>
 							<div class="country">J Kelamin</div>
-							<div class="visit">Agama</div>
 							<div class="country">Tempat</div>
 							<div class="country">Tanggal Lahir</div>
+							<div class="visit">Agama</div>
 							<div class="percentage">Alamat</div>
 							<div class="country">Telp</div>
                             <div class="country">Aksi</div>
@@ -150,16 +150,16 @@
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir']; ?></div>
+							<div class="country"><?php echo $d['tgllahir']; ?></div>
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <button><a href="edit-guru.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus-guru.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                                <a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>"><button>Edit</button></a>
+                                <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"/><button>Hapus</button></a>
                             </div>
 						</div>
                         <?php
