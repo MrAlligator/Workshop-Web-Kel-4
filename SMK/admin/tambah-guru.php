@@ -233,13 +233,22 @@
 						<form method="post" action="tambah_aksi2.php">
 							<table>
 								<tr>
+									<td>Jabatan</td>
+									<td>
+										<select name="jabatan">  
+											<option value="">Jabatan</option>  
+											<option value="guru">Guru</option>  
+											<option value="karyawan">Karyawan</option>  
+										</select>
+									</td>
+								</tr>
+								<tr>
 									<td>Nama</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
-                        	        required class="single-input"></td>
+									<td><input type="text" maxlength= name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
@@ -248,16 +257,6 @@
 										<option value="">Jenis Kelamin</option>  
 										<option value="Laki - Laki">Laki - Laki</option>  
 										<option value="Perempuan">Perempuan</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
-										<option value="Islam">Islam</option>  
-										<option value="Kristen">Kristen</option>  
 									</select>
 									</td>
 								</tr>
@@ -272,6 +271,16 @@
 									required class="single-input"></td>
 								</tr>
 								<tr>
+									<td>Agama</td>
+									<td>
+									<select name="agama">  
+										<option value="">Agama</option>  
+										<option value="Islam">Islam</option>  
+										<option value="Kristen">Kristen</option>  
+									</select>
+									</td>
+								</tr>
+								<tr>
 									<td>Alamat</td>
 									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
 									required class="single-input"></td>
@@ -279,6 +288,11 @@
 								<tr>
 									<td>Telepon</td>
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input type="password" maxlength="8" id="pass" name="pass" placeholder ="Password "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input"></td>
+									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
@@ -291,6 +305,33 @@
 										return false;
 										return true;
 									}
+
+									(function() {
+										var _show = function( element, field ) {
+											this.element = element;
+											this.field = field;
+											this.toggle();    
+										};
+										_show.prototype = {
+											toggle: function() {
+												var self = this;
+												self.element.addEventListener( "change", function() {
+													if( self.element.checked ) {
+														self.field.setAttribute( "type", "text" );
+													} else {
+														self.field.setAttribute( "type", "password" );    
+													}
+												}, false);
+											}
+										};
+										
+										document.addEventListener( "DOMContentLoaded", function() {
+											var checkbox = document.querySelector( "#show-pass" ),
+												pass = document.querySelector( "#pass" ),
+												_form = document.querySelector( "form" );
+												var toggler = new _show( checkbox, pass );
+										});
+									})();
 								</script>
 							</table>
 						</form>
