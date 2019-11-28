@@ -23,30 +23,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">+953012 3654 896</span>
-							</span>
-						</a>
-						<a href="mailto:support@colorlib.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">support@colorlib.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,31 +47,31 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="../guru/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -103,38 +79,46 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
+							</li>
+                            <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">GURU</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -145,21 +129,20 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang Admin
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>GURU</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -167,35 +150,29 @@
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!-- Start Align Area -->
+	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color">Data Guru</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah-guru.php" class="genric-btn default">Tambah</a>
-                </div>
-</br>
+				<h3 class="mb-30 title_color text-center">Data Guru</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
 							<div class="visit">NIP</div>
-							<div class="country">J Kelamin</div>
+							<div class="country">Jenis Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
+							<div class="country">Tempat Lahir</div>
 							<div class="country">Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
-							<div class="country">Telp</div>
-                            <div class="country">Aksi</div>
 						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_guru");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
+						<?php 
+							include 'koneksi.php';
+							$no = 1;
+							$data = mysqli_query($koneksi,"select * from tb_guru");
+							while($d = mysqli_fetch_array($data)){
+						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama_guru']; ?></div>
@@ -205,16 +182,11 @@
 							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
 							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
-							<div class="country"><?php echo $d['telp_guru']; ?></div>
-                            <div class="country">
-                                <button><a href="edit-guru.php?id=<?php echo $d['id'];?>"">Edit</a></button>
-                                <button><a href="hapus-guru.php?id=<?php echo $d['id'];?>">Hapus</a></button>
-                            </div>
 						</div>
-                        <?php
-                            }
-                        ?>
-                    </div>
+						<?php
+							}
+						?>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -222,7 +194,13 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
