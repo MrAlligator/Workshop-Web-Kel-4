@@ -231,16 +231,28 @@
                         <h3 class="mb-30 title_color">Form Element</h3>
                         <?php
                         include 'koneksi.php';
-                        $id= $_GET['id'];
-                        $data = mysqli_query($koneksi,"select * from tb_guru where id='$id'");
+                        $id= $_GET['id_guru'];
+                        $data = mysqli_query($koneksi,"select * from tb_guru where id_guru='$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
 						<form method="post" action="update-guru.php">
 							<table>
 								<tr>
+									<td>Jabatan</td>
+									<td>
+									<?php
+										$status = $d['status'];
+										if ($status=="guru") echo "<option value = 'guru' selected>Guru</option>";
+										else echo "<option value = 'guru'>Guru</option>";
+										if ($status=="karyawan") echo "<option value = 'karyawan' selected>Karyawan</option>";
+										else echo "<option value = 'karyawan'>karyawan</option>";
+										?>
+									</td>
+								</tr>
+								<tr>
 									<td>Nama</td>
 									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_guru']; ?>" required class="single-input"></td>
-									<td><input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input"></td>
+									<td><input type="hidden" name="id" value="<?php echo $d['id_guru']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
@@ -261,6 +273,14 @@
 									</td>
 								</tr>
 								<tr>
+									<td>Tempat Lahir</td>
+									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
 									<td>Agama</td>
 									<td>
 									<select name="agama">
@@ -275,20 +295,17 @@
 									</td>
 								</tr>
 								<tr>
-									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
 									<td>Alamat</td>
 									<td><input type="text" name="alamat" value="<?php echo $d['alamat_guru']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Telepon</td>
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_guru']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input type="password" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required class="single-input"></td>
+									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
@@ -301,6 +318,33 @@
 										return false;
 									return true;
 									}
+
+									(function() {
+										var _show = function( element, field ) {
+											this.element = element;
+											this.field = field;
+											this.toggle();    
+										};
+										_show.prototype = {
+											toggle: function() {
+												var self = this;
+												self.element.addEventListener( "change", function() {
+													if( self.element.checked ) {
+														self.field.setAttribute( "type", "text" );
+													} else {
+														self.field.setAttribute( "type", "password" );    
+													}
+												}, false);
+											}
+										};
+										
+										document.addEventListener( "DOMContentLoaded", function() {
+											var checkbox = document.querySelector( "#show-pass" ),
+												pass = document.querySelector( "#pass" ),
+												_form = document.querySelector( "form" );
+												var toggler = new _show( checkbox, pass );
+										});
+									})();
 								</script>
 							</table>
                         </form>
