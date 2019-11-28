@@ -9,7 +9,7 @@ $tipe_file = $_FILES['file']['type'];
 $tmp_file = $_FILES['file']['tmp_name'];
 
 // Set path folder tempat menyimpan gambarnya
-$path = "img/gallery".$nama_file;
+$path = "img/gallery/".$nama_file;
 
 if($tipe_file == "image/jpeg" || $tipe_file == "image/png"){ // Cek apakah tipe file yang diupload adalah JPG / JPEG / PNG
   // Jika tipe file yang diupload JPG / JPEG / PNG, lakukan :
