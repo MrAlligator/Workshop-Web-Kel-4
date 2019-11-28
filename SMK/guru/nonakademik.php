@@ -27,16 +27,16 @@
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
+						<a href="tel:+6285231821348">
 							<span class="lnr lnr-phone"></span>
 							<span class="text">
-								<span class="text">+953012 3654 896</span>
+								<span class="text">(+62)8523 1821 348</span>
 							</span>
 						</a>
-						<a href="mailto:support@colorlib.com">
+						<a href="mailto:darussalamsmk11@yahoo.com">
 							<span class="lnr lnr-envelope"></span>
 							<span class="text">
-								<span class="text">support@colorlib.com</span>
+								<span class="text">darussalamsmk11@yahoo.com</span>
 							</span>
 						</a>
 					</div>
@@ -82,7 +82,7 @@
 									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
 									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -123,7 +123,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
@@ -145,71 +145,14 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../img/adminn.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-	</style>
-    <section class="banner_area4">
+    <section class="banner_area3">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
+                            <h2>PRESTASI<br>NON-AKADEMIK</h2>
                         </div>
                     </div>
                 </div>
@@ -223,70 +166,163 @@
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!-- Start Align Area -->
+	<!--?php 
+		include 'koneksi.php';
+		$no = 1;
+		$data = mysqli_query($koneksi,"select * from tb_siswa");
+		while($d = mysqli_fetch_array($data)){
+	?-->
+	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
-						<form action="fileupload.php" method="post" enctype="multipart/form-data">	
-							<table>
-								<tr>
-									<td>Nama Materi</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama Materi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
-                        	        required class="single-input"></td>
-								</tr>
-								<tr><td>Jurusan</td>
-									<td>
-									<select name="jurusan">  
-										<option value="">Jurusan</option>  
-										<option value="MM">MM</option>     
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>kelas</td>
-									<td>
-									<select name="kelas">  
-										<option value="">Kelas</option>  
-										<option value="X">X</option>  
-										<option value="XI">XI</option> 
-										<option value="XII">XII</option>   
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Upload MATERI</td>
-									<td><input type="file" name="file" size="50" /></td>
-								</tr>
-								
-								<tr>
-					    			<td><input type="submit" value="Upload"></td>
-								</tr>
-								<script>
-									function hanyaAngka(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-										return false;
-										return true;
-									}
-								</script>
-							</table>
-						</form>
+				<h3 class="mb-30 title_color text-center">Prestasi Pramuka</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIS</div>
+							<div class="percentage">Prestasi</div>
+						</div>
+						<div class="table-row">
+							<div class="serial"></div>
+							<div class="country"></div>
+							<div class="visit"></div>
+							<div class="percentage"></div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!--?php
+		}
+    ?-->
+    <!--?php 
+		include 'koneksi.php';
+		$no = 1;
+		$data = mysqli_query($koneksi,"select * from tb_siswa");
+		while($d = mysqli_fetch_array($data)){
+	?-->
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color text-center">Prestasi Pencak Silat</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIS</div>
+							<div class="percentage">Prestasi</div>
+						</div>
+						<div class="table-row">
+							<div class="serial"></div>
+							<div class="country"></div>
+							<div class="visit"></div>
+							<div class="percentage"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--?php
+		}
+    ?-->
+    <!--?php 
+		include 'koneksi.php';
+		$no = 1;
+		$data = mysqli_query($koneksi,"select * from tb_siswa");
+		while($d = mysqli_fetch_array($data)){
+	?-->
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color text-center">Prestasi Lainnya</h3>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIS</div>
+							<div class="percentage">Prestasi</div>
+						</div>
+						<div class="table-row">
+							<div class="serial"></div>
+							<div class="country"></div>
+							<div class="visit"></div>
+							<div class="percentage"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--?php
+		}
+	?-->
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+						<li><a href="#">Pemensinan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik.php">Akademik</a></li>
+						<li><a href="nonakademik.php">Non - Akademik</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
@@ -308,4 +344,3 @@
 	</body>
 	
 	</html>
-	

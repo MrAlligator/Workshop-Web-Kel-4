@@ -23,6 +23,17 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between" method="" action="">
+						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
+					</form>
+				</div>
+			</div>
+
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -36,18 +47,56 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
-							<li class="nav-item">
-								<a href="siswa.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Daftar Siswa</a>
-							</li>
-							<li class="nav-item">
-								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Nilai Siswa</a>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Data</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
+								aria-expanded="false">Jurusan</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Galeri</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Info</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Prestasi</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link search" id="search">
+									<i class="lnr lnr-magnifier"></i>
+								</a>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -109,7 +158,7 @@
 							<div class="percentage"><?php echo $d['alamat']; ?></div>
 							<div class="country"><?php echo $d['telp']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>"">Edit</a></button>
+                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
                             </div>
 						</div>

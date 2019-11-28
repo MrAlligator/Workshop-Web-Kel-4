@@ -145,21 +145,77 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang Admin
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+    <style>
+	 .banner_area4 {
+                                  position: relative;
+                                  background: url(../img/adminn.jpg) no-repeat center center;
+                                  z-index: 1;
+                                  min-height: 392px;
+                                  padding-top: 0 !important; }
+                                 .banner_area4 .banner_inner {
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  min-height: 392px;
+                                  z-index: 1; }
+                                  .banner_area4 .banner_inner .overlay {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: #000;
+                                    opacity: 0.4; }
+                                  .banner_area4 .banner_inner .banner_content {
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #fff; }
+                                    .banner_area4 .banner_inner .banner_content h2 {
+                                      color: #fff;
+                                      font-size: 48px; }
+                                    @media (max-width: 991px) {
+                                      .banner_area4 .banner_inner .banner_content p {
+                                        display: none; } }
+                                    .banner_area4 .banner_inner .banner_content .page_link {
+                                      display: inline-block;
+                                      padding: 7px 20px;
+                                      border-top: 1px solid #fff;
+                                      border-bottom: 1px solid #fff;
+                                      margin-top: 20px; }
+                                      .banner_area4 .banner_inner .banner_content .page_link a {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-family: "Crimson Text", serif;
+                                        margin-right: 32px;
+                                        position: relative;
+                                        text-transform: uppercase; }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                          content: "\f178";
+                                          font: normal normal normal 14px/1 FontAwesome;
+                                          position: absolute;
+                                          right: -25px;
+                                          top: 50%;
+                                          transform: translateY(-50%); }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                          margin-right: 0px; }
+                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                            display: none; }
+	</style>
+    <section class="banner_area4">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>Selamat Datang Admin</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -181,60 +237,73 @@
                         while($d = mysqli_fetch_array($data)){
                         ?>
 						<form method="post" action="update.php">
-							<div class="mt-10">
-                                <input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input">
-                                <input type="text" name="nama" value="<?php echo $d['nama']; ?>" required class="single-input">
-							</div>
-							<div class="mt-10">
-                                <input type="text" name="nis" value="<?php echo $d['nis']; ?>" required class="single-input">
-							</div>
-							<div class="mt-10">
-								<select name="jk">
+						<table>
+								<tr>
+									<td>Nama</td>
+									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama']; ?>" required class="single-input"></td>
+									<td><input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>NIP</td>
+									<td><input type="text" name="nip" value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Jenis Kelamin</td>
+									<td>
+									<select name="jk">
+										<?php
+										$jk = $d['jk'];
+										if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
+										else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
+										if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
+										else echo "<option value = 'Perempuan'>Perempuan</option>";
+										?>
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Agama</td>
+									<td>
+									<select name="agama">
 									<?php
-									$jk = $d['jk'];
-									if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
-									else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
-									if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
-									else echo "<option value = 'Perempuan'>Perempuan</option>";
-									?>
-								</select>
-								<select name="agama">
-								<?php
-									$jk = $d['jk'];
-									if ($jk=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
-									else echo "<option value = 'Islam'>Islam</option>";
-									if ($jk=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
-									else echo "<option value = 'Kristen'>Kristen</option>";
-									?>
-								</select>
-							</div>
-							<div class="mt-10">
-								<input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="date" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-								<input type="text" name="alamat" value="<?php echo $d['alamat']; ?>" required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input">
-							</div>
-							<div class="button-group-area mt-10">
-				    			<input type="submit" value="Simpan">
-							</div>
-							<script>
-								function hanyaAngka(evt) {
-									var charCode = (evt.which) ? evt.which : event.keyCode
-									if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-									return false;
-								return true;
-								}
-							</script>
+										$agama = $d['agama'];
+										if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
+										else echo "<option value = 'Islam'>Islam</option>";
+										if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
+										else echo "<option value = 'Kristen'>Kristen</option>";
+										?>
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Tempat Lahir</td>
+									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Alamat</td>
+									<td><input type="text" name="alamat" value="<?php echo $d['alamat']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Telepon</td>
+									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+					    			<td><input type="submit" value="Simpan"></td>
+								</tr>
+								<script>
+									function hanyaAngka(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
+										
+										return false;
+									return true;
+									}
+								</script>
+							</table>
                         </form>
                         <?php 
                         }

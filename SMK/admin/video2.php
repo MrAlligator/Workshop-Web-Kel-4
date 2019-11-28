@@ -23,6 +23,17 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
+		<div class="main_menu">
+			<div class="search_input" id="search_input_box">
+				<div class="container">
+					<form class="d-flex justify-content-between" method="" action="">
+						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<button type="submit" class="btn"></button>
+						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
+					</form>
+				</div>
+			</div>
+
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -36,18 +47,56 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
-							<li class="nav-item">
-								<a href="siswa.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Daftar Siswa</a>
-							</li>
-							<li class="nav-item">
-								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Nilai Siswa</a>
+						<li class="nav-item active"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Data</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
+								aria-expanded="false">Jurusan</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Galeri</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Info</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Prestasi</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+								</ul>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link search" id="search">
+									<i class="lnr lnr-magnifier"></i>
+								</a>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -63,53 +112,19 @@
     <!--================Home Banner Area =================-->
     
     <!--================End Home Banner Area =================-->
-
-
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
-	<!-- Start Button -->
-	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!-- Start Align Area -->
+	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">NILAI SISWA</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Nilai</a>
-                </div>
-</br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="country">Mata Pelajaran</div>
-							<div class="visit">Kelas</div>
-							<div class="country">Jurusan</div>
-							<div class="country">Nilai</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_nilai");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="country"><?php echo $d['mapel']; ?></div>
-							<div class="visit"><?php echo $d['kelas']; ?></div>
-							<div class="country"><?php echo $d['jurusan']; ?></div>
-							<div class="country"><?php echo $d['nilai']; ?></div>
-                            <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
-                            </div>
-						</div>
-                        <?php
-                            }
-                        ?>
-                    </div>
+				<h3 class="title_color text-center">GALERI VIDEO</h3>
+				<form action="aksi.php" method="post" enctype="multipart/form-data">
+					<input type="file" name="file">
+					<input type="submit" name="upload" value="Upload">
+				</form>
+				<div class="row gallery-item">
+				
 				</div>
 			</div>
 		</div>
