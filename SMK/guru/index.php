@@ -47,31 +47,31 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -79,32 +79,32 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/akademik.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/nonakademik.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -114,9 +114,9 @@
 							</li>
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">GURU</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -159,7 +159,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
+						<a href="#"><h2>Pengumuman</h2></a>
 					</div>
 				</div>
 			</div>
@@ -168,7 +168,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -182,7 +182,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -196,7 +196,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -210,7 +210,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -243,7 +243,7 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="berita.php"><h2>BERITA</h2></a>
+						<a href="#"><h2>Berita</h2></a>
 					</div>
 				</div>
 			</div>
@@ -252,7 +252,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -266,7 +266,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -280,7 +280,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -294,7 +294,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -313,7 +313,7 @@
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(../img/sekolah.jpg) no-repeat center center;
+                                  background: url(../guru/img/sekolah.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
@@ -416,7 +416,7 @@
 	<footer class="footer-area section_gap">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="https://www.instagram.com/febreroaraya_/" target="newtab"><u>Febrero Araya K</u></a></font>
 					</div>
 				</div>
 
