@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -61,7 +61,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia2.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -85,8 +85,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -130,10 +130,10 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-4">
-						<a href="<?php echo "img/gallery".$d['nama_file']; ?>" class="img-gal">
+						<a href="<?php echo "img/gallery/".$d['nama_file']; ?>" class="img-gal">
 							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
 						</a>
-						<button><a href="hapus-gambar.php?id=<?php echo $d['id'];?>">Hapus</button>
+						<a href="hapus-gambar.php?id_foto=<?php echo $d['id_foto'];?>" onClick="return confirm('Hapus Foto?')"/><button type="button" class="btn btn-danger btn-sm">Hapus</button></a>
 					</div>
 				<?php
 				}

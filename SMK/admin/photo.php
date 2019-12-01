@@ -158,8 +158,8 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-4">
-						<a href="<?php echo "admin/img/gallery/".$d['nama_file']; ?>" class="img-gal">
-							<div class="single-gallery-image" style="background: url(<?php echo "admin/img/gallery/".$d['nama_file']; ?>);"></div>
+						<a href="<?php echo "img/gallery/".$d['nama_file']; ?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
 						</a>
 					</div>
 				<?php

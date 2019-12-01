@@ -17,6 +17,6 @@ $pass = $_POST['pass'];
 mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$pass')");
 
 // mengalihkan halaman kembali ke index.php
-header("location:guru.php");
+header("location:guru2.php");
 
 ?>

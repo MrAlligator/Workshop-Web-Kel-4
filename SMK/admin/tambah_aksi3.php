@@ -16,6 +16,6 @@ $telp = $_POST['telepon'];
 mysqli_query($koneksi,"insert into db_karyawan values('','$nama','$nip','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$nip')");
 
 // mengalihkan halaman kembali ke index.php
-header("location:karyawan.php");
+header("location:karyawan2.php");
 
 ?>

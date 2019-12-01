@@ -17,6 +17,6 @@ $telp = $_POST['telepon'];
 mysqli_query($koneksi,"update db_karyawan set nama_karyawan='$nama', nip='$nip', jk_karyawan='$jk', agama_karyawan='$agama', tmptlahir_karyawan='$tmptlahir', tgllahir_karyawan='$tgllahir', alamat_karyawan='$alamat', telp_karyawan='$telp' where id='$id'");
 
 // mengalihkan halaman kembali ke index.php
-header("location:karyawan.php");
+header("location:karyawan2.php");
 
 ?>

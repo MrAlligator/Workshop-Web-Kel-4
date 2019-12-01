@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -61,7 +61,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia2.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
@@ -85,8 +85,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
