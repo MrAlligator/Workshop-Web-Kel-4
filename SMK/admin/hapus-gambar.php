@@ -13,9 +13,9 @@ $foto = $data['nama_file'];
 unlink("img/gallery/".$foto);
 $hapus = mysqli_query($koneksi, "delete from tb_foto where id_foto='$id'");
 if($hapus) { 
-    echo '<script type="text/javascript">alert("Data Berhasil di Hapus.");document.location.href="../admin/photo.php"</script>';
+    echo '<script type="text/javascript">alert("Data Berhasil di Hapus.");document.location.href="../admin/photo2.php"</script>';
 } else {
-    echo '<script type="text/javascript">alert("Data Gagal di Hapus.");document.location.href="../admin/photo.php"</script>';
+    echo '<script type="text/javascript">alert("Data Gagal di Hapus.");document.location.href="../admin/photo2.php"</script>';
 }
 
 ?>

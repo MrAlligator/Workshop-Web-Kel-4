@@ -10,6 +10,6 @@ $id = $_GET['id_guru'];
 mysqli_query($koneksi,"delete from tb_guru where id_guru='$id'");
  
 // mengalihkan halaman kembali ke index.php
-header("location:guru.php");
+header("location:guru2.php");
  
 ?>
