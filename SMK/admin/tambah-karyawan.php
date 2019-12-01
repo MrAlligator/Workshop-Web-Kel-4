@@ -121,16 +121,25 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
-						<form method="post" action="tambah_aksi2.php">
+						<form method="post" action="tambah_aksi3.php">
 							<table>
 								<tr>
+									<td>Jabatan</td>
+									<td>
+										<select name="jabatan">  
+											<option value="">Jabatan</option>  
+											<option value="guru">Guru</option>  
+											<option value="karyawan">Karyawan</option>  
+										</select>
+									</td>
+								</tr>
+								<tr>
 									<td>Nama</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
-                        	        required class="single-input"></td>
+									<td><input type="text" maxlength= name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
@@ -143,16 +152,6 @@
 									</td>
 								</tr>
 								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
-										<option value="Islam">Islam</option>  
-										<option value="Kristen">Kristen</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
 									<td>Tempat Lahir</td>
 									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
 									required class="single-input"></td>
@@ -161,6 +160,16 @@
 									<td>Tanggal Lahir</td>
 									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
 									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Agama</td>
+									<td>
+									<select name="agama">  
+										<option value="">Agama</option>  
+										<option value="Islam">Islam</option>  
+										<option value="Kristen">Kristen</option>  
+									</select>
+									</td>
 								</tr>
 								<tr>
 									<td>Alamat</td>

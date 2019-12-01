@@ -132,13 +132,15 @@
 								<tr>
 									<td>Jabatan</td>
 									<td>
-									<?php
+										<select name="jabatan">
+										<?php
 										$status = $d['status'];
 										if ($status=="guru") echo "<option value = 'guru' selected>Guru</option>";
 										else echo "<option value = 'guru'>Guru</option>";
 										if ($status=="karyawan") echo "<option value = 'karyawan' selected>Karyawan</option>";
 										else echo "<option value = 'karyawan'>karyawan</option>";
 										?>
+										</select>
 									</td>
 								</tr>
 								<tr>

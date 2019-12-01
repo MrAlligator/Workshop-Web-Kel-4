@@ -149,17 +149,17 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
+							<div class="country"><?php echo $d['nama_siswa']; ?></div>
 							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
-							<div class="country"><?php echo $d['telp']; ?></div>
+							<div class="country"><?php echo $d['jk_siswa']; ?></div>
+							<div class="visit"><?php echo $d['agama_siswa']; ?></div>
+							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
+							<div class="country"><?php echo $d['tgllhr_siswa']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
+							<div class="country"><?php echo $d['telp_siswa']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                                <a href="edit.php?id_siswa=<?php echo $d['id_siswa'];?>"><button>Edit</button></a>
+                                <a href="hapus.php?id_siswa=<?php echo $d['id_siswa'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
                             </div>
 						</div>
                         <?php

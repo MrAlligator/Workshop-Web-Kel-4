@@ -129,7 +129,7 @@
     	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIP</td>
+									<td>NIS</td>
 									<td><input type="text" name="nip" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
                         	        required class="single-input"></td>
 								</tr>

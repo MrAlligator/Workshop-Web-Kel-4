@@ -11,9 +11,10 @@ $agama = $_POST['agama'];
 $tmptlahir = $_POST['tempat'];
 $tgllahir = $_POST['tanggal'];
 $telp = $_POST['telepon'];
-
+$status = $_POST['jabatan'];
+$pass = $_POST['pass'];
 // menginput data ke database
-mysqli_query($koneksi,"insert into db_karyawan values('','$nama','$nip','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$nip')");
+mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$nip')");
 
 // mengalihkan halaman kembali ke index.php
 header("location:karyawan2.php");

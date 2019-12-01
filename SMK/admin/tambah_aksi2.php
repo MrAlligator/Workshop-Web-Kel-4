@@ -14,7 +14,7 @@ $telp = $_POST['telepon'];
 $status = $_POST['jabatan'];
 $pass = $_POST['pass'];
 // menginput data ke database
-mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$pass')");
+mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$nip')");
 
 // mengalihkan halaman kembali ke index.php
 header("location:guru2.php");

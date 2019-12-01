@@ -184,11 +184,6 @@
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>Password</td>
-									<td><input type="password" maxlength="8" id="pass" name="pass" placeholder ="Password "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'" required class="single-input"></td>
-									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
-								</tr>
-								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
 								</tr>
 								<script>
@@ -199,33 +194,6 @@
 										return false;
 										return true;
 									}
-
-									(function() {
-										var _show = function( element, field ) {
-											this.element = element;
-											this.field = field;
-											this.toggle();    
-										};
-										_show.prototype = {
-											toggle: function() {
-												var self = this;
-												self.element.addEventListener( "change", function() {
-													if( self.element.checked ) {
-														self.field.setAttribute( "type", "text" );
-													} else {
-														self.field.setAttribute( "type", "password" );    
-													}
-												}, false);
-											}
-										};
-										
-										document.addEventListener( "DOMContentLoaded", function() {
-											var checkbox = document.querySelector( "#show-pass" ),
-												pass = document.querySelector( "#pass" ),
-												_form = document.querySelector( "form" );
-												var toggler = new _show( checkbox, pass );
-										});
-									})();
 								</script>
 							</table>
 						</form>
