@@ -1,4 +1,5 @@
 <!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -23,30 +24,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">+953012 3654 896</span>
-							</span>
-						</a>
-						<a href="mailto:support@colorlib.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">support@colorlib.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,17 +48,8 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
-								</ul>
-							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -90,20 +58,12 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakurikuler</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -135,30 +95,19 @@
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
-    <section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6">
-						<div class="banner_content">
-							<h2>
-								Selamat datang Admin
-							</h2>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
     <!--================End Home Banner Area =================-->
 
 
@@ -174,60 +123,68 @@
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Form Element</h3>
 						<form method="post" action="tambah_aksi.php">	
-							<div class="mt-10">
-                            <p>	
-								<label>Nama</label>
-								<input type="text" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'"
-								required class="single-input">
-							</p>
-							</div>
-							<div class="mt-10">
-                                <input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
-                                required class="single-input">
-							</div>
-							<div class="mt-10">
-								<select name="jk">  
-									<option value="">Jenis Kelamin</option>  
-									<option value="Laki - Laki">Laki - Laki</option>  
-									<option value="Perempuan">Perempuan</option>  
-								</select>
-								<select name="agama">  
-									<option value="">Agama</option>  
-									<option value="Islam">Islam</option>  
-									<option value="Kristen">Kristen</option>  
-								</select>
-							</div>
-							<div class="mt-10">
-								<input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-calendar" aria-hidden="true"></i></div>
-								<input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-thumb-tack" aria-hidden="true"></i></div>
-								<input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
-								required class="single-input">
-							</div>
-							<div class="input-group-icon mt-10">
-								<div class="icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
-								<input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder="Telepon" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'"
-								required class="single-input">
-							</div>
-							<div class="button-group-area mt-10">
-				    			<input type="submit" value="Simpan">
-							</div>
-							<script>
-								function hanyaAngka(evt) {
-									var charCode = (evt.which) ? evt.which : event.keyCode
-									if (charCode > 31 && (charCode < 48 || charCode > 57))
+							<table>
+								<tr>
+									<td>Nama</td>
+    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>NIP</td>
+									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+                        	        required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Jenis Kelamin</td>
+									<td>
+									<select name="jk">  
+										<option value="">Jenis Kelamin</option>  
+										<option value="Laki - Laki">Laki - Laki</option>  
+										<option value="Perempuan">Perempuan</option>  
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Agama</td>
+									<td>
+									<select name="agama">  
+										<option value="">Agama</option>  
+										<option value="Islam">Islam</option>  
+										<option value="Kristen">Kristen</option>  
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Tempat Lahir</td>
+									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Alamat</td>
+									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
+									required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Telepon</td>
+									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
+								</tr>
+								<tr>
+					    			<td><input type="submit" value="Simpan"></td>
+								</tr>
+								<script>
+									function hanyaAngka(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
 
-									return false;
-								return true;
-								}
-							</script>
+										return false;
+										return true;
+									}
+								</script>
+							</table>
 						</form>
 					</div>
 				</div>

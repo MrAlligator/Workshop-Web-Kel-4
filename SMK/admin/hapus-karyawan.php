@@ -10,6 +10,6 @@ $id = $_GET['id'];
 mysqli_query($koneksi,"delete from db_karyawan where id='$id'");
  
 // mengalihkan halaman kembali ke index.php
-header("location:karyawan.php");
+header("location:karyawan2.php");
  
 ?>

@@ -23,30 +23,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">+953012 3654 896</span>
-							</span>
-						</a>
-						<a href="mailto:support@colorlib.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">support@colorlib.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,63 +47,46 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
-								</ul>
-							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
-								</ul>
-							</li>
-							</li><li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakurikuler</a>
+								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia2.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -135,86 +94,19 @@
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
-	<style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../img/adminn.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-	</style>
-    <section class="banner_area4">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -231,16 +123,28 @@
                         <h3 class="mb-30 title_color">Form Element</h3>
                         <?php
                         include 'koneksi.php';
-                        $id= $_GET['id'];
-                        $data = mysqli_query($koneksi,"select * from tb_guru where id='$id'");
+                        $id= $_GET['id_guru'];
+                        $data = mysqli_query($koneksi,"select * from tb_guru where id_guru='$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
 						<form method="post" action="update-guru.php">
 							<table>
 								<tr>
+									<td>Jabatan</td>
+									<td>
+									<?php
+										$status = $d['status'];
+										if ($status=="guru") echo "<option value = 'guru' selected>Guru</option>";
+										else echo "<option value = 'guru'>Guru</option>";
+										if ($status=="karyawan") echo "<option value = 'karyawan' selected>Karyawan</option>";
+										else echo "<option value = 'karyawan'>karyawan</option>";
+										?>
+									</td>
+								</tr>
+								<tr>
 									<td>Nama</td>
 									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_guru']; ?>" required class="single-input"></td>
-									<td><input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input"></td>
+									<td><input type="hidden" name="id" value="<?php echo $d['id_guru']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
@@ -261,6 +165,14 @@
 									</td>
 								</tr>
 								<tr>
+									<td>Tempat Lahir</td>
+									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Tanggal Lahir</td>
+									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
 									<td>Agama</td>
 									<td>
 									<select name="agama">
@@ -275,20 +187,17 @@
 									</td>
 								</tr>
 								<tr>
-									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
 									<td>Alamat</td>
 									<td><input type="text" name="alamat" value="<?php echo $d['alamat_guru']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Telepon</td>
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_guru']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Password</td>
+									<td><input type="password" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required class="single-input"></td>
+									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
@@ -301,6 +210,33 @@
 										return false;
 									return true;
 									}
+
+									(function() {
+										var _show = function( element, field ) {
+											this.element = element;
+											this.field = field;
+											this.toggle();    
+										};
+										_show.prototype = {
+											toggle: function() {
+												var self = this;
+												self.element.addEventListener( "change", function() {
+													if( self.element.checked ) {
+														self.field.setAttribute( "type", "text" );
+													} else {
+														self.field.setAttribute( "type", "password" );    
+													}
+												}, false);
+											}
+										};
+										
+										document.addEventListener( "DOMContentLoaded", function() {
+											var checkbox = document.querySelector( "#show-pass" ),
+												pass = document.querySelector( "#pass" ),
+												_form = document.querySelector( "form" );
+												var toggler = new _show( checkbox, pass );
+										});
+									})();
 								</script>
 							</table>
                         </form>

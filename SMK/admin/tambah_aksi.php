@@ -16,6 +16,6 @@ $telp = $_POST['telepon'];
 mysqli_query($koneksi,"insert into tb_siswa values('','$nama','$nis','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp')");
 
 // mengalihkan halaman kembali ke index.php
-header("location:siswa.php");
+header("location:siswa2.php");
 
 ?>
