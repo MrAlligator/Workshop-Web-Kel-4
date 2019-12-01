@@ -185,10 +185,6 @@
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
-                            <div class="country">
-                                <a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>"><button>Edit</button></a>
-                                <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"/><button>Hapus</button></a>
-                            </div
 						</div>
 						<?php
 							}
