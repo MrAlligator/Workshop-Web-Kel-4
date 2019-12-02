@@ -23,30 +23,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+9530123654896">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">+953012 3654 896</span>
-							</span>
-						</a>
-						<a href="mailto:support@colorlib.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">support@colorlib.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,72 +47,32 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
-								</ul>
-							<li class="nav-item active submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Data</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
-								</ul>
-							</li>
-							</li><li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakurikuler</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Galeri</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Info</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
-								</ul>
+						<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item">
+								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Daftar Siswa</a>
 							</li>
 							<li class="nav-item">
+								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Nilai Siswa</a>
+							</li>
+							<li class="nav-item">
+								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Upload Materi</a>
+							</li>
+                            <li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-						</ul>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">GURU</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
+							</li>
+                        </ul>
 					</div>
 				</div>
 			</nav>
@@ -145,77 +81,7 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../img/adminn.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-	</style>
-    <section class="banner_area4">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
     <!--================End Home Banner Area =================-->
 
 
@@ -229,30 +95,30 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-                        <h3 class="mb-30 title_color">Form Element</h3>
+                        <h3 class="mb-30 title_color">Edit Data Siswa</h3>
                         <?php
                         include 'koneksi.php';
-                        $id= $_GET['id'];
-                        $data = mysqli_query($koneksi,"select * from tb_siswa where id='$id'");
+                        $id= $_REQUEST['id_siswa'];
+                        $data = mysqli_query($koneksi,"SELECT * FROM tb_siswa WHERE id = '$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
 						<form method="post" action="update.php">
 						<table>
 								<tr>
 									<td>Nama</td>
-									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama']; ?>" required class="single-input"></td>
-									<td><input type="hidden" name="id" value="<?php echo $d['id']; ?>" required class="single-input"></td>
+									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_siswa']; ?>" required class="single-input"></td>
+									<td><input type="hidden" name="id" value="<?php echo $d['id_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+									<td>NIS</td>
+									<td><input type="text" name="nis" value="<?php echo $d['nis']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
 									<td>
-									<select name="jk">
+									<select name="jk_siswa">
 										<?php
-										$jk = $d['jk'];
+										$jk = $d['jk_siswa'];
 										if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
 										else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
 										if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
@@ -264,9 +130,9 @@
 								<tr>
 									<td>Agama</td>
 									<td>
-									<select name="agama">
+									<select name="agama_siswa">
 									<?php
-										$agama = $d['agama'];
+										$agama = $d['agama_siswa'];
 										if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
 										else echo "<option value = 'Islam'>Islam</option>";
 										if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
@@ -277,19 +143,19 @@
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"></td>
+									<td><input type="text" name="tempat" value="<?php echo $d['tmptlhr_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Tanggal Lahir</td>
-									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input"></td>
+									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllhr_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Alamat</td>
-									<td><input type="text" name="alamat" value="<?php echo $d['alamat']; ?>" required class="single-input"></td>
+									<td><input type="text" name="alamat" value="<?php echo $d['alamat_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Telepon</td>
-									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp']; ?>" required class="single-input"></td>
+									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>

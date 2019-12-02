@@ -48,61 +48,32 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Data</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Galeri</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Info</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
-								</ul>
+						<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item">
+								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Daftar Siswa</a>
 							</li>
 							<li class="nav-item">
+								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Nilai Siswa</a>
+							</li>
+							<li class="nav-item">
+								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Upload Materi</a>
+							</li>
+                            <li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">GURU</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
-						</ul>
+                        </ul>
 					</div>
 				</div>
 			</nav>
@@ -121,7 +92,7 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
+						<h3 class="mb-30 title_color">Tambah Siswa</h3>
 						<form method="post" action="tambah_aksi.php">	
 							<table>
 								<tr>
@@ -129,15 +100,14 @@
     	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+									<td>NIS</td>
+									<td><input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
                         	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
 									<td>
-									<select name="jk">  
-										<option value="">Jenis Kelamin</option>  
+									<select name="jk">    
 										<option value="Laki - Laki">Laki - Laki</option>  
 										<option value="Perempuan">Perempuan</option>  
 									</select>
@@ -146,8 +116,7 @@
 								<tr>
 									<td>Agama</td>
 									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
+									<select name="agama">    
 										<option value="Islam">Islam</option>  
 										<option value="Kristen">Kristen</option>  
 									</select>
@@ -173,7 +142,7 @@
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
 								</tr>
 								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
+					    			<td><input type="submit" name="simpan" value="Simpan"></td>
 								</tr>
 								<script>
 									function hanyaAngka(evt) {
