@@ -129,20 +129,7 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>BERITA</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -172,41 +159,20 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_pengumuman where id_peng='$_GET[id_peng]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <section class="sample-text-area">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>Berita</h2></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<!-- single course -->
-				<?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita'];?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-                </div>
-                <?php
-                    }
-                ?>
-			</div>
+            <img src="<?=$hasil_data['foto'];?>" style="width:600px; height: 300px;"/></br></br>
+			<h3 class="text-heading title_color"><?=$hasil_data['judul'];?></h3>
+			<p class="sample-text">
+                <?=$hasil_data['isi'];?>
+            </p>
 		</div>
-	</div>
+	</section>
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->

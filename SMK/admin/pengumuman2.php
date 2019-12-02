@@ -148,9 +148,8 @@
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="#"><?php echo $d['judul']?></a>
+								<a href="lihatpengumuman2.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p><?php echo $d['cuplikan']?></p>
 						</div>
 					</div>
                 </div>
