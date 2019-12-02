@@ -135,8 +135,8 @@
 									<td><input type="hidden" name="id" value="<?php echo $d['id_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+									<td>NIS</td>
+									<td><input type="text" name="nip" readonly value="<?php echo $d['nis']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
