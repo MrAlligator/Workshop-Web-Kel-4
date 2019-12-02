@@ -56,6 +56,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -124,6 +125,10 @@
 						<h3 class="mb-30 title_color">Form Element</h3>
 						<form method="post" action="tambah_aksi.php">	
 							<table>
+								<tr>
+									<td>Status</td>
+									<td><input type="text" name="jabatan" readonly value="siswa" required class="single-input"></td>
+								</tr>
 								<tr>
 									<td>Nama</td>
     	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
