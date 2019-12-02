@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="css/video-js.min.css" type="text/css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -119,12 +120,27 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="title_color text-center">GALERI VIDEO</h3>
-				<form action="aksi.php" method="post" enctype="multipart/form-data">
+				<form action="aksi2.php" method="post" enctype="multipart/form-data">
 					<input type="file" name="file">
 					<input type="submit" name="upload" value="Upload">
 				</form>
 				<div class="row gallery-item">
-				
+				<?php
+				include 'koneksi.php';
+				$data = mysqli_query($koneksi,"select * from tb_video ");
+				while($d = mysqli_fetch_array($data)){
+				?>
+					<div class="col-md-6">
+						<a href="<?php echo "img/video/".$d['nama_file']; ?>" class="img-gal">
+						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
+							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
+						</video>
+						</a>
+						<a href="hapus-video.php?id_video=<?php echo $d['id_video'];?>" onClick="return confirm('Hapus Video?')"/><button>Hapus</button></a>
+					</div>
+				<?php
+				}
+				?>
 				</div>
 			</div>
 		</div>
@@ -147,6 +163,7 @@
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="vendors/counter-up/jquery.counterup.js"></script>
 		<script src="js/mail-script.js"></script>
+		<script src="js/video.js"></script>
 		<!--gmaps Js-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 		<script src="js/gmaps.min.js"></script>
