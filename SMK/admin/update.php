@@ -5,7 +5,7 @@ include 'koneksi.php';
 // menangkap data yang di kirim dari form
 $id = $_POST['id'];
 $nama = $_POST['nama'];
-$nis = $_POST['nis'];
+$nis = $_POST['nip'];
 $alamat = $_POST['alamat'];
 $jk = $_POST['jk'];
 $agama = $_POST['agama'];
