@@ -191,8 +191,8 @@
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nis']; ?></div>
-							<div class="visit"><?php echo $d['nama_siswa']; ?></div>
+							<div class="country"><?php echo $d['nama_siswa']; ?></div>
+							<div class="visit"><?php echo $d['nis']; ?></div>
 							<div class="country"><?php echo $d['jk_siswa']; ?></div>
 							<div class="visit"><?php echo $d['agama_siswa']; ?></div>
 							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
