@@ -158,8 +158,7 @@
 	<!-- End Align Area -->
 
     <!--================ Start footer Area  =================-->
-        <footer>
-                                          </footer>
+        <footer></footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
