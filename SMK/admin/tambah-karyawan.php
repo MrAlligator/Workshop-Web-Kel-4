@@ -55,6 +55,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -125,13 +126,7 @@
 							<table>
 								<tr>
 									<td>Jabatan</td>
-									<td>
-										<select name="jabatan">  
-											<option value="">Jabatan</option>  
-											<option value="guru">Guru</option>  
-											<option value="karyawan">Karyawan</option>  
-										</select>
-									</td>
+									<td><input type="text" name="jabatan" readonly value="karyawan" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nama</td>
@@ -139,7 +134,7 @@
 								</tr>
 								<tr>
 									<td>NIP</td>
-									<td><input type="text" maxlength= name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'" required class="single-input"></td>
+									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
