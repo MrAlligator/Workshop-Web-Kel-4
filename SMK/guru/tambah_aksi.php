@@ -1,21 +1,24 @@
 <?php 
 // koneksi database
 include 'koneksi.php';
-if(isset($_POST['simpan']))
+
 // menangkap data yang di kirim dari form
-$nama = $_POST['nama_siswa'];
-$nis = $_POST['nis'];
+$nama = $_POST['nama'];
+$nis = $_POST['nip'];
 $alamat = $_POST['alamat'];
-$jk = $_POST['jk_siswa'];
-$agama = $_POST['agama_siswa'];
-$tmptlahir = $_POST['tmptlhr_siswa'];
-$tgllahir = $_POST['tgllhr_siswa'];
-$telp = $_POST['telp_siswa'];
+$jk = $_POST['jk'];
+$agama = $_POST['agama'];
+$tmptlahir = $_POST['tempat'];
+$tgllahir = $_POST['tanggal'];
+$telp = $_POST['telepon'];
+$status = $_POST['jabatan'];
 
 // menginput data ke database
-mysqli_query($koneksi,"INSERT INTO tb_siswa VALUES('','$nama','$nis','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp')");
-
-// mengalihkan halaman kembali ke index.php
-header("location:siswa2.php");
-
+$ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE nis='$nis'"));
+if($ceknis > 0){
+    echo "<script>alert('NIS Sudah Digunakan');document.location.href='../guru/tambah.php'</script>";
+}else{
+    mysqli_query($koneksi,"insert into tb_siswa values('','$nis','$nama','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$status','$nis')");
+    echo "<script>alert('Data berhasil diupload');document.location.href='../guru/siswa2.php'</script>";
+}
 ?>
