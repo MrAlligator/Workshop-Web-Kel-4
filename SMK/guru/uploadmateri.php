@@ -23,17 +23,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="main_menu">
-			<div class="search_input" id="search_input_box">
-				<div class="container">
-					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
-						<button type="submit" class="btn"></button>
-						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
-					</form>
-				</div>
-			</div>
-
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
@@ -47,7 +36,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
@@ -60,7 +49,7 @@
 								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Upload Materi</a>
 							</li>
-                            <li class="nav-item">
+							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
@@ -72,7 +61,7 @@
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
-                        </ul>
+						</ul>
 					</div>
 				</div>
 			</nav>
@@ -93,41 +82,32 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
+                <h3 class="mb-30 title_color text-center">MATERI</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+				    <a href="tambah.php" class="genric-btn default">Tambah Materi</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="country">J Kelamin</div>
-							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
-							<div class="percentage">Alamat</div>
-							<div class="country">Telp</div>
-                            <div class="country">Aksi</div>
+							<div class="country">Nama Guru</div>
+							<div class="country">Mata Pelajaran</div>
+							<div class="visit">Kelas</div>
+							<div class="country">Nama Materi</div>
 						</div>
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
+                            $data = mysqli_query($koneksi,"select * from tb_materi");
                             while($d = mysqli_fetch_array($data)){
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['jk']; ?></div>
-							<div class="visit"><?php echo $d['agama']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
-							<div class="percentage"><?php echo $d['alamat']; ?></div>
-							<div class="country"><?php echo $d['telp']; ?></div>
+							<div class="country"><?php echo $d['mapel']; ?></div>
+							<div class="visit"><?php echo $d['kelas']; ?></div>
+							<div class="country"><?php echo $d['nama_materi']; ?></div>
                             <div class="country">
                                 <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>

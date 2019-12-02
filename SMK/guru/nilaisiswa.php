@@ -46,6 +46,10 @@
 								aria-expanded="false">Nilai Siswa</a>
 							</li>
 							<li class="nav-item">
+								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Upload Materi</a>
+							</li>
+							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
