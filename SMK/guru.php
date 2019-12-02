@@ -195,8 +195,8 @@
 							<div class="visit"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_guru']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir']; ?></div>
+							<div class="country"><?php echo $d['tgllahir']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>
 						<?php
