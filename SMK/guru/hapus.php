@@ -7,9 +7,11 @@ $id = $_GET['id_siswa'];
  
  
 // menghapus data dari database
-mysqli_query($koneksi,"DELETE FROM tb_siswa where id='$id'");
- 
-// mengalihkan halaman kembali ke index.php
-header("location:siswa2.php");
- 
+$hapus = mysqli_query($koneksi, "delete from tb_siswa where id_siswa='$id'");
+if($hapus) { 
+    echo '<script type="text/javascript">alert("Data Berhasil di Hapus.");document.location.href="../guru/siswa2.php"</script>';
+} else {
+    echo '<script type="text/javascript">alert("Data Gagal di Hapus.");document.location.href="../guru/siswa2.php"</script>';
+}
+
 ?>
