@@ -125,7 +125,7 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">DATA KARYAWAN</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Karyawan</a>
+				    <a href="tambah-karyawan.php" class="genric-btn default">Tambah Karyawan</a>
                 </div>
 </br>
 <div class="progress-table-wrap">
@@ -159,8 +159,8 @@
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <button><a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>">Edit</a></button>
-                                <button><a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')">Hapus</a></button>
+                                <button><a href="edit-karyawan.php?id_guru=<?php echo $d['id_guru'];?>">Edit</a></button>
+                                <button><a href="hapus-karyawan.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')">Hapus</a></button>
                             </div>
 						</div>
                         <?php
