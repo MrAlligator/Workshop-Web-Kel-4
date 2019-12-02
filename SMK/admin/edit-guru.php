@@ -150,7 +150,7 @@
 								</tr>
 								<tr>
 									<td>NIP</td>
-									<td><input type="text" name="nip" value="<?php echo $d['nip']; ?>" required class="single-input"></td>
+									<td><input type="text" name="nip" readonly value="<?php echo $d['nip']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
