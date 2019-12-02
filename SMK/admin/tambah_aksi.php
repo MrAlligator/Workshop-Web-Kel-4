@@ -11,12 +11,13 @@ $agama = $_POST['agama'];
 $tmptlahir = $_POST['tempat'];
 $tgllahir = $_POST['tanggal'];
 $telp = $_POST['telepon'];
-$pass = $_POST['pass'];
 
 // menginput data ke database
-mysqli_query($koneksi,"insert into tb_siswa values('','$nis','$nama','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$nis')");
-
-// mengalihkan halaman kembali ke index.php
-header("location:siswa2.php");
-
+$ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE nis='$nis'"));
+if($ceknis > 0){
+    echo "<script>alert('NIS Sudah Digunakan');document.location.href='../admin/tambah.php'</script>";
+}else{
+    mysqli_query($koneksi,"insert into tb_siswa values('','$nis','$nama','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$nis')");
+    echo "<script>alert('Data berhasil diupload');document.location.href='../admin/siswa2.php'</script>";
+}
 ?>
