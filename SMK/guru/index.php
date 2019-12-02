@@ -168,7 +168,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -182,7 +182,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -196,7 +196,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -210,7 +210,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -252,7 +252,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -266,7 +266,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -280,7 +280,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -294,7 +294,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
 						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -313,7 +313,7 @@
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(../guru/img/sekolah.jpg) no-repeat center center;
+                                  background: url(img/sekolah.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
