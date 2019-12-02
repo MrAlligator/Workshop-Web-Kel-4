@@ -84,7 +84,7 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">MATERI</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Materi</a>
+				    <a href="inputmateri.php" class="genric-btn default">Tambah Materi</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">

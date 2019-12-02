@@ -229,25 +229,17 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
+						<h3 class="mb-30 title_color">Form Upload MAteri</h3>
 						<form action="fileupload.php" method="post" enctype="multipart/form-data">	
 							<table>
 								<tr>
-									<td>Nama Materi</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama Materi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td>Nip</td>
+    	                            <td><input type="text" size="40" name="nip" placeholder="nip" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+									<td>nama-materi</td>
+									<td><input type="text" name="nama_materi" placeholder="nama materi" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
                         	        required class="single-input"></td>
-								</tr>
-								<tr><td>Jurusan</td>
-									<td>
-									<select name="jurusan">  
-										<option value="">Jurusan</option>  
-										<option value="MM">MM</option>     
-									</select>
-									</td>
 								</tr>
 								<tr>
 									<td>kelas</td>
