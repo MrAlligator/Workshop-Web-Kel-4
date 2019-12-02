@@ -136,10 +136,6 @@
     	                            <td><input type="text" size="100" name="judul"></td>
 								</tr>
 								<tr>
-									<td>Cuplikan</td>
-									<td><textarea rows="5" cols="100" name="cuplikan"></textarea></td>
-								</tr>
-								<tr>
 									<td>Isi</td>
 									<td><textarea rows="15" cols="100" name="isi"></textarea></td>
 								</tr>
