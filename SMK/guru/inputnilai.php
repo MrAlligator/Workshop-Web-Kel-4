@@ -96,7 +96,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Input Nilai</h3>
-						<form action="fileupload.php" method="post" enctype="multipart/form-data">	
+						<form action="simpannilai.php" method="post" enctype="multipart/form-data">	
 							<table>
 								<tr>
 									<td>NIS</td>
@@ -109,7 +109,7 @@
 										$jsArray = "var prdName = new Array();\n";
 										while ($data=mysqli_fetch_array($sql)) {
 											echo '<option value="'.$data['nis'].'">'.$data['nis'].'</option> ';
-											$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "'};\n";
+											$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "',kelas:'".addslashes($data['kelas'])."'};\n";
 										}
 										?>
 										</select>
@@ -117,36 +117,39 @@
 								</tr>
 								<tr>
 									<td>Nama</td>
-									<td><input type="text" name="nama" id="nama" required class="single-input"></td>
+									<td><input type="text" name="nama" id="nama" readonly="" placeholder="Nama" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Kelas</td>
-									<td>
-									<select name="kelas">    
-										<option value="X">X</option>  
-										<option value="XI">XI</option> 
-										<option value="XII">XII</option>   
-									</select>
-									</td>
+									<td><input type="text" name="kelas" id="kelas" readonly="" placeholder="Kelas" required class="single-input"></td></td>
+								</tr>
+								<tr>
+									<td>Mata Pelajaran</td>
+									<td><input type="text" name="mapel" placeholder="Mata Pelajaran" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai Ulangan Harian</td>
-									<td><input type="text" name="" placeholder="Nilai Ulangan Harian" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+									<td><input type="text" name="uh" placeholder="Nilai Ulangan Harian" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
                         	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UTS</td>
-									<td><input type="text" name="" placeholder="Nilai UTS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+									<td><input type="text" name="uts" placeholder="Nilai UTS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UTS'"
                         	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UAS</td>
-									<td><input type="text" name="" placeholder="Nilai UAS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'"
+									<td><input type="text" name="uas" placeholder="Nilai UAS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UAS'"
                         	        required class="single-input"></td>
 								</tr>
-								
 								<tr>
-					    			<td><input type="submit" value="Cetak Nilai"></td>
+									<td>Nilai Sikap</td>
+									<td><input type="text" name="sikap" placeholder="Nilai Sikap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai SIkap'"
+                        	        required class="single-input"></td>
+								</tr>
+								<tr>
+					    			<td><input type="submit" value="Simpan Nilai"></td>
 								</tr>
 								<script>
 									function hanyaAngka(evt) {
@@ -157,8 +160,9 @@
 										return true;
 									}
 									<?php echo $jsArray; ?>  
-									function changeValue(x){  
-									document.getElementById('nama').value = prdName[x].nama;   
+									function changeValue(id){  
+										document.getElementById('nama').value = prdName[id].nama;
+										document.getElementById('kelas').value = prdName[id].kelas;
 									};
 								</script>
 							</table>

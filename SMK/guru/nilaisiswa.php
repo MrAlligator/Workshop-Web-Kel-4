@@ -92,8 +92,8 @@
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="country">Mata Pelajaran</div>
 							<div class="visit">Kelas</div>
+							<div class="country">Mata Pelajaran</div>
 							<div class="country">Nilai UH</div>
 							<div class="country">Nilai UTS</div>
 							<div class="country">Nilai UAS</div>
@@ -108,8 +108,8 @@
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="country"><?php echo $d['mapel']; ?></div>
 							<div class="visit"><?php echo $d['kelas']; ?></div>
+							<div class="country"><?php echo $d['mapel']; ?></div>
 							<div class="country"><?php echo $d['nilai_ulgn_harian']; ?></div>
 							<div class="country"><?php echo $d['nilai_uts']; ?></div>
 							<div class="country"><?php echo $d['nilai_uas']; ?></div>
