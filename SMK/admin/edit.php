@@ -131,13 +131,31 @@
 						<form method="post" action="update.php">
 						<table>
 								<tr>
+									<td>Status</td>
+									<td><input type="text" name="jabatan" readonly value="<?php echo $d['status']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>NIS</td>
+									<td><input type="text" name="nip" readonly value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+								</tr>
+								<tr>
 									<td>Nama</td>
 									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_siswa']; ?>" required class="single-input"></td>
 									<td><input type="hidden" name="id" value="<?php echo $d['id_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIS</td>
-									<td><input type="text" name="nip" readonly value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+									<td>Kelas</td>
+									<td>
+										<select id="kelas" name="kelas">
+											<?php
+											include "koneksi.php";
+											$sql=mysqli_query($koneksi, "SELECT * FROM tb_kelas");
+											while ($data=mysqli_fetch_array($sql)) {
+												echo '<option value="'.$data['kelas'].'">'.$data['kelas'].'</option> ';
+											}
+											?>
+										</select>
+									</td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>

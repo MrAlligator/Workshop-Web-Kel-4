@@ -100,7 +100,24 @@
 							<table>
 								<tr>
 									<td>NIS</td>
-    	                            <td><input type="text" size="40" name="" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td>
+										<select id="nis" name="nis" onchange="changeValue(this.value)">
+										<option disabled="" selected="">Pilih</option>
+										<?php
+										include "koneksi.php";
+										$sql=mysqli_query($koneksi, "SELECT * FROM tb_siswa");
+										$jsArray = "var prdName = new Array();\n";
+										while ($data=mysqli_fetch_array($sql)) {
+											echo '<option value="'.$data['nis'].'">'.$data['nis'].'</option> ';
+											$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "'};\n";
+										}
+										?>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Nama</td>
+									<td><input type="text" name="nama" id="nama" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Kelas</td>
@@ -139,6 +156,10 @@
 										return false;
 										return true;
 									}
+									<?php echo $jsArray; ?>  
+									function changeValue(x){  
+									document.getElementById('nama').value = prdName[x].nama;   
+									};
 								</script>
 							</table>
 						</form>

@@ -130,13 +130,28 @@
 									<td><input type="text" name="jabatan" readonly value="siswa" required class="single-input"></td>
 								</tr>
 								<tr>
+									<td>NIS</td>
+									<td><input type="text" name="nip" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
+                        	        required class="single-input"></td>
+								</tr>
+								<tr>
 									<td>Nama</td>
     	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
-									<td>NIS</td>
-									<td><input type="text" name="nip" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
-                        	        required class="single-input"></td>
+									<td>Kelas</td>
+									<td>
+										<select id="kelas" name="kelas">
+										<option disabled="" selected="">Kelas</option>
+										<?php
+										include "koneksi.php";
+										$sql=mysqli_query($koneksi, "SELECT * FROM tb_kelas");
+										while ($data=mysqli_fetch_array($sql)) {
+											echo '<option value="'.$data['kelas'].'">'.$data['kelas'].'</option> ';
+										}
+										?>
+										</select>
+									</td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>

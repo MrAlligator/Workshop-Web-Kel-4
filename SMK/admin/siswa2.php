@@ -125,9 +125,28 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-                </div>
-</br>
+					<a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+				</div>
+				<br>
+				<form method="get"> 
+					<table>
+						<tr>
+							<td><label>Pilih Kelas</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="kelas">
+								<option value="">Kelas</option>
+								<option value="X">X</option>  
+								<option value="XI">XI</option>  
+								<option value="XII">XII</option>
+								</select>
+							</td>
+							<td><input type="submit" value="FILTER"></td>
+						</tr>
+					</table>
+				</form>
+<br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
@@ -145,8 +164,13 @@
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_siswa");
-                            while($d = mysqli_fetch_array($data)){
+                            if(isset($_GET['kelas'])){
+								$kelas = $_GET['kelas'];
+								$sql = mysqli_query($koneksi,"select * from tb_siswa where kelas='$kelas'");
+							}else{
+								$sql = mysqli_query($koneksi,"select * from tb_siswa");
+							}
+                            while($d = mysqli_fetch_array($sql)){
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
