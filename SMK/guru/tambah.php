@@ -92,22 +92,27 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Tambah Siswa</h3>
+						<h3 class="mb-30 title_color">Form Element</h3>
 						<form method="post" action="tambah_aksi.php">	
 							<table>
+								<tr>
+									<td>Status</td>
+									<td><input type="text" name="jabatan" readonly value="siswa" required class="single-input"></td>
+								</tr>
 								<tr>
 									<td>Nama</td>
     	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIS</td>
-									<td><input type="text" name="nis" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
+									<td><input type="text" name="nip" placeholder="NIS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIS'"
                         	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
 									<td>
-									<select name="jk">    
+									<select name="jk">  
+										<option value="">Jenis Kelamin</option>  
 										<option value="Laki - Laki">Laki - Laki</option>  
 										<option value="Perempuan">Perempuan</option>  
 									</select>
@@ -116,7 +121,8 @@
 								<tr>
 									<td>Agama</td>
 									<td>
-									<select name="agama">    
+									<select name="agama">  
+										<option value="">Agama</option>  
 										<option value="Islam">Islam</option>  
 										<option value="Kristen">Kristen</option>  
 									</select>
@@ -142,7 +148,7 @@
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
 								</tr>
 								<tr>
-					    			<td><input type="submit" name="simpan" value="Simpan"></td>
+					    			<td><input type="submit" value="Simpan"></td>
 								</tr>
 								<script>
 									function hanyaAngka(evt) {

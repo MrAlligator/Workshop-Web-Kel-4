@@ -95,11 +95,11 @@
 			<div class="section-top-border">
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
-                        <h3 class="mb-30 title_color">Edit Data Siswa</h3>
+                        <h3 class="mb-30 title_color">Form Element</h3>
                         <?php
                         include 'koneksi.php';
-                        $id= $_REQUEST['id_siswa'];
-                        $data = mysqli_query($koneksi,"SELECT * FROM tb_siswa WHERE id = '$id'");
+                        $id= $_GET['id_siswa'];
+                        $data = mysqli_query($koneksi,"select * from tb_siswa where id_siswa='$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
 						<form method="post" action="update.php">
@@ -111,12 +111,12 @@
 								</tr>
 								<tr>
 									<td>NIS</td>
-									<td><input type="text" name="nis" value="<?php echo $d['nis']; ?>" required class="single-input"></td>
+									<td><input type="text" name="nip" readonly value="<?php echo $d['nis']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
 									<td>
-									<select name="jk_siswa">
+									<select name="jk">
 										<?php
 										$jk = $d['jk_siswa'];
 										if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
@@ -130,7 +130,7 @@
 								<tr>
 									<td>Agama</td>
 									<td>
-									<select name="agama_siswa">
+									<select name="agama">
 									<?php
 										$agama = $d['agama_siswa'];
 										if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
@@ -158,6 +158,11 @@
 									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_siswa']; ?>" required class="single-input"></td>
 								</tr>
 								<tr>
+									<td>Password</td>
+									<td><input type="password" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required class="single-input"></td>
+									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
+								</tr>
+								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
 								</tr>
 								<script>
@@ -168,6 +173,33 @@
 										return false;
 									return true;
 									}
+
+									(function() {
+										var _show = function( element, field ) {
+											this.element = element;
+											this.field = field;
+											this.toggle();    
+										};
+										_show.prototype = {
+											toggle: function() {
+												var self = this;
+												self.element.addEventListener( "change", function() {
+													if( self.element.checked ) {
+														self.field.setAttribute( "type", "text" );
+													} else {
+														self.field.setAttribute( "type", "password" );    
+													}
+												}, false);
+											}
+										};
+										
+										document.addEventListener( "DOMContentLoaded", function() {
+											var checkbox = document.querySelector( "#show-pass" ),
+												pass = document.querySelector( "#pass" ),
+												_form = document.querySelector( "form" );
+												var toggler = new _show( checkbox, pass );
+										});
+									})();
 								</script>
 							</table>
                         </form>

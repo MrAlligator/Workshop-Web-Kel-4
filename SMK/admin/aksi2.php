@@ -37,7 +37,7 @@ if($tipe_file == "video/mp4" || $tipe_file == "video/3gpp" || $tipe_file == "vid
     }
 }else{
   // Jika tipe file yang diupload bukan JPG / JPEG / PNG, lakukan :
-  echo '<script type="text/javascript">alert("Maaf, Tipe video yang diupload harus MP4 / 3GP / X-FLV.");document.location.href="../admin/video2.php"</script>';
+  echo '<script type="text/javascript">alert("Maaf, Tipe video yang diupload harus MP4 / 3GP / X-FLV.");</script>';
 
 }
 

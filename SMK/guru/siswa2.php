@@ -129,8 +129,8 @@
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
 							<div class="country"><?php echo $d['telp_siswa']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id_siswa'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id_siswa'];?>">Hapus</a></button>
+                                <a href="edit.php?id_siswa=<?php echo $d['id_siswa'];?>"><button>Edit</button></a>
+                                <a href="hapus.php?id_siswa=<?php echo $d['id_siswa'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
                             </div>
 						</div>
                         <?php

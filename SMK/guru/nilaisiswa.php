@@ -84,7 +84,7 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">NILAI SISWA</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah.php" class="genric-btn default">Tambah Nilai</a>
+				    <a href="tambahnilai.php" class="genric-btn default">Tambah Nilai</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
@@ -94,8 +94,9 @@
 							<div class="country">Nama</div>
 							<div class="country">Mata Pelajaran</div>
 							<div class="visit">Kelas</div>
-							<div class="country">Jurusan</div>
-							<div class="country">Nilai</div>
+							<div class="country">Nilai UH</div>
+							<div class="country">Nilai UTS</div>
+							<div class="country">Nilai UAS</div>
 						</div>
                         <?php 
                             include 'koneksi.php';
@@ -108,8 +109,9 @@
 							<div class="country"><?php echo $d['nama']; ?></div>
 							<div class="country"><?php echo $d['mapel']; ?></div>
 							<div class="visit"><?php echo $d['kelas']; ?></div>
-							<div class="country"><?php echo $d['jurusan']; ?></div>
-							<div class="country"><?php echo $d['nilai']; ?></div>
+							<div class="country"><?php echo $d['nilai_ulgn_harian']; ?></div>
+							<div class="country"><?php echo $d['nilai_uts']; ?></div>
+							<div class="country"><?php echo $d['nilai_uas']; ?></div>
                             <div class="country">
                                 <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
