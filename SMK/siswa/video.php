@@ -23,6 +23,30 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+						<a href="tel:+6285231821348">
+							<span class="lnr lnr-phone"></span>
+							<span class="text">
+								<span class="text">(+62)8523 1821 348</span>
+							</span>
+						</a>
+						<a href="mailto:darussalamsmk11@yahoo.com">
+							<span class="lnr lnr-envelope"></span>
+							<span class="text">
+								<span class="text">darussalamsmk11@yahoo.com</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<a href="login.php" class="text-uppercase">Masuk</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -47,7 +71,17 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Profil</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -57,7 +91,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
@@ -66,6 +100,14 @@
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Ekstrakurikuler</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+								</ul>
+							</li>
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
@@ -94,13 +136,6 @@
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-								</ul>
-							</li>
 						</ul>
 					</div>
 				</div>
@@ -110,7 +145,20 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    
+    <section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>VIDEO</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--================End Home Banner Area =================-->
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
@@ -118,13 +166,48 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color text-center">GALERI VIDEO</h3>
-				<form action="aksi.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" name="upload" value="Upload">
-				</form>
+				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
-				
+					<div class="col-md-4">
+						<a href="img/elements/g1.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g2.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g3.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/elements/g4.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/elements/g5.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g6.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g7.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/elements/g8.jpg" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -132,7 +215,63 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+						<li><a href="#">Pemensinan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik.php">Akademik</a></li>
+						<li><a href="nonakademik.php">Non - Akademik</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

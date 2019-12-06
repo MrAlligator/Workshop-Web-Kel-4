@@ -71,7 +71,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -145,6 +145,20 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
+	<section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>PENGUMUMAN</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -161,40 +175,71 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-                        <a href="#"><h2>Pengumuman</h2></a>
-                        <div class="button-group-area mt-10">
-                            <a href="tambah-pengumuman.php" class="genric-btn default">Tambah Pengumuman</a>
-                        </div>
-                    </div>
-                </div>
+						<h2><a href="#">Pengumuman</a></h2>
+					</div>
+				</div>
 			</div>
 			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "img/pengumuman/".$d['foto']; ?>" alt="">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="#"><?php echo $d['judul']?></a>
+								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
 							</h4>
-							<p><?php echo $d['cuplikan']?></p>
+							<p>Pengumuman penerimaan siswa baru 2019.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+										</a>
+									</span>
+									<span class="meta_info">
+										<a href="#">
+										</a>
+									</span>
+								</div>
+								<div>
+									<a href="#"><span class="price">Selengkapnya</span></a>
+								</div>
+							</div>
 						</div>
 					</div>
-                </div>
-                <?php
-                    }
-                ?>
-			</div>
-		</div>
-	</div>
-				
+				</div>
+                
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+						<div class="course_head overlay">
+							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
+							</h4>
+							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
+							<div class="course_meta d-flex justify-content-between">
+								<div>
+									<span class="meta_info">
+										<a href="#">
+										</a>
+									</span>
+									<span class="meta_info">
+										<a href="#">
+										</a></span>
+								</div>
+								<div>
+									<a href=""><span class="price df_color1">Selengkapnya</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- single course -->
+				<!-- single course -->
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
@@ -214,7 +259,49 @@
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->
-
+	<section class="contact_area section_gap">
+        <div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+						<a href="#"><h2>Hubungi Kami</h2></a>
+					</div>
+				</div>
+			</div>
+            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
+                data-mlat="-7.924831" data-mlon="113.879707">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>Bondowoso, Jawa Timur</h6>
+                            <p>Santa monica bullevard</p>
+                        </div>
+                    </div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+    	                    <i class="lnr lnr-phone-handset"></i>
+        	                <h6>00 (440) 9865 562</h6>
+            	            <p>Mon to Fri 9am to 6 pm</p>
+                	    </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="contact_info">
+						<div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6>support@colorlib.com</a></h6>
+                            <p>Send us your query anytime!</p>
+                        </div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->

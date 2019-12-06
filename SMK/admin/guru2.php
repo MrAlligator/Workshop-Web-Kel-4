@@ -125,7 +125,7 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">DATA GURU</h3>
                 <div class="button-group-area mt-10">
-				    <a href="tambah-guru.php" class="genric-btn default">Tambah</a>
+				    <a href="tambah-guru.php" class="genric-btn default">Tambah Guru</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
