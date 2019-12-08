@@ -100,91 +100,91 @@
 							<table>
 								<tr>
 									<td>No Daftar</td>
-    	                            <td><input type="text" size="40" name="no_daftar" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="no_daftar" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Nama Lengkap</td>
-    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Tanggal Lahir</td>
-    	                            <td><input type="text" size="40" name="tgllahir" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="tgllahir" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
-    	                            <td><input type="text" size="40" name="jk" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="jk" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Agama</td>
-    	                            <td><input type="text" size="40" name="agama" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="agama" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Anak Ke</td>
-    	                            <td><input type="text" size="40" name="anak_ke" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="anak_ke" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Status Dalam Keluarga</td>
-    	                            <td><input type="text" size="40" name="status_dlm_keluarga" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="status_dlm_keluarga" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Alamat Siswa</td>
-    	                            <td><input type="text" size="40" name="alamat_siswa" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="alamat_siswa" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Telepon Siswa</td>
-    	                            <td><input type="text" size="40" name="telp_siswa" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="telp_siswa" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Sekolah Asal</td>
-    	                            <td><input type="text" size="40" name="sekolah_asal" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="sekolah_asal" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Alamat Sekolah</td>
-    	                            <td><input type="text" size="40" name="alamat_sekolah" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="alamat_sekolah" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Tahun Lulus</td>
-    	                            <td><input type="text" size="40" name="tahun_lulus" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="tahun_lulus" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Total Nilai UN</td>
-    	                            <td><input type="text" size="40" name="total_nilai_un" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="total_nilai_un" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Nama Ayah</td>
-    	                            <td><input type="text" size="40" name="nama_ayah" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="nama_ayah" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Nama Ibu</td>
-    	                            <td><input type="text" size="40" name="nama_ibu" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="nama_ibu" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Alamat Orang Tua</td>
-    	                            <td><input type="text" size="40" name="alamat_ortu" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="alamat_ortu" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Telepon Orang Tua</td>
-    	                            <td><input type="text" size="40" name="telp_ortu" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="telp_ortu" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Pekerjaan Ayah</td>
-    	                            <td><input type="text" size="40" name="perkerjaan_ayah" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="perkerjaan_ayah" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Pekerjaan Ibu</td>
-    	                            <td><input type="text" size="40" name="pekerjaan_ibu" placeholder="" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="pekerjaan_ibu" placeholder="" required class=""></td>
 								</tr>
 								<tr>
 									<td>Nama Wali</td>
-    	                            <td><input type="text" size="40" name="nama_wali" placeholder=""  class="single-input"></td>
+    	                            <td><input type="text" size="40" name="nama_wali" placeholder=""  class=""></td>
 								</tr>
 								<tr>
 									<td>Alamat Wali</td>
-    	                            <td><input type="text" size="40" name="alamat_wali" placeholder=""  class="single-input"></td>
+    	                            <td><input type="text" size="40" name="alamat_wali" placeholder=""  class=""></td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
