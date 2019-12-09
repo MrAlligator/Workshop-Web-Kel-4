@@ -47,47 +47,18 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/index.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Data</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../siswa/index.php">KEMBALI</a></li>
+							<li class="nav-item">
+								<a href="../siswa/jadwal.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Jadwal</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
+							<li class="nav-item">
+								<a href="../siswa/materi.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Materi</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Galeri</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Info</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item">
+								<a href="../siswa/nilai.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Nilai</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
@@ -96,7 +67,7 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">SISWA</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -173,7 +144,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Admin</h2>
+                            <h2>Selamat Datang Siswa</h2>
                             </div>
                         </div>
                     </div>
