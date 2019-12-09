@@ -112,7 +112,7 @@
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-                            <li class="nav-item submenu dropdown">
+                            <li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">

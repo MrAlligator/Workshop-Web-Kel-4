@@ -67,7 +67,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item submenu dropdown">
+							</li><li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">

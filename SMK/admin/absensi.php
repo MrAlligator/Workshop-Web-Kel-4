@@ -58,14 +58,14 @@
 									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Kehadiran</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="absensi.php">Daftar Hadir</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
@@ -112,33 +112,17 @@
     <!--================Home Banner Area =================-->
     
     <!--================End Home Banner Area =================-->
+
+
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
-	<!-- Start Align Area -->
-	<div class="whole-wrap">
+	<!-- Start Button -->
+	<!-- End Button -->
+    <!-- Start Align Area -->
+    <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color text-center">GALERI FOTO</h3>
-				<form action="aksi.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" name="upload" value="Upload">
-				</form>
-				<div class="row gallery-item">
-				<?php
-				include 'koneksi.php';
-				$data = mysqli_query($koneksi,"select * from tb_foto ");
-				while($d = mysqli_fetch_array($data)){
-				?>
-					<div class="col-md-4">
-						<a href="<?php echo "img/gallery/".$d['nama_file']; ?>" class="img-gal">
-							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
-						</a>
-						<a href="hapus-gambar.php?id_foto=<?php echo $d['id_foto'];?>" onClick="return confirm('Hapus Foto?')"/><button type="button" class="btn btn-danger btn-sm">Hapus</button></a>
-					</div>
-				<?php
-				}
-				?>
-				</div>
+                <h3 class="mb-30 title_color text-center">DATA GURU</h3>
 			</div>
 		</div>
 	</div>
