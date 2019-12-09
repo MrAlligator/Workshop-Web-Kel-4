@@ -1,3 +1,6 @@
+<?php
+require 'koneksi.php';
+?>
 <!doctype html>
 <html lang="en">
 
@@ -123,176 +126,98 @@
 	<!-- End Button -->
     <!-- Start Align Area -->
 	
-	<style>
-                    .ina {height:50;width:450;font-size:14pt;color:purple;}
-                    </style>
-                    
-                    <center><font size=3 face="arial black" color=black>JADWAL PELAJARAN SMK DARUS SALAM</font></center>
-                    <hr width=400 size=3 color=black>
-                    <br>
-                    
-                    <center><font size=1,5 face="arial" color=black><b><i>Klik Pada Hari Yang diinginkan :</font>
-                    <form name=han>
-                    <center><table border=1 bgcolor=blue>
-                    <tr> <td><input type=button value=Senin name=sn  onclick="sen()">
-                     <td><input type=button value=Selasa name=sl onclick="sel()">
-                     <td><input type=button value=Rabu name=ra   onclick="rab()">
-                    
-                    <tr> <td><input type=button value=Kamis name=ka  onclick="kam()">
-                     <td><input type=button value=Jum'at name=ju onclick="jum()">
-                     <td><input type=button value=Sabtu name=sa  onclick="sab()">
-                    
-                    </table>
-                    
-                    <br>
-                    <input type=text name=hasil class=ina>
-                    <br>
-                    <center><font size=1 face="arial" color=black><b>
-                    <br>
-                    <br>
-                    
-                    <code>
-                    
-                    <script laguage=javascript>
-                    function nif()
-                    {
-                    
-                            if(document.han.ma.value=="B.Indonesia")
-                    
-                     {
-                      document.han.ng.value="AI NURALIYAH,S.PD, N.AMOY PUSPITA SARI,Am.Pd, RENI HAERANI,S.Pd, SRI WINDARTI,S.Pd, YULIAS RAHMAWAN,S.Pd";
-                     }
-                       
-                      
-                     if(document.han.ma.value=="B.Inggris")
-                    
-                     {
-                      document.han.ng.value="ATIN SUPRIHATIN,S.Pd, MARULLAH,S.Pd, EYEH NURHIDAYAH,S.Pd";
-                     }
-                    
-                       
-                     if(document.han.ma.value=="B.Sunda")
-                    
-                     {
-                      document.han.ng.value="NOVIANTY,S.Pd, ROHAETI,S.Ag";
-                     }
-                    
-                     
-                       if(document.han.ma.value=="AgamaIslam")
-                    
-                     {
-                      document.han.ng.value="GANA ISLAH GENTAMI,S.Ag,M.Pd";
-                     }
-                    
-                     
-                       if(document.han.ma.value=="SeniBudaya")
-                    
-                     {
-                      document.han.ng.value="DELIA,S.Pd";
-                     }
-                    
-                    
-                     if(document.han.ma.value=="Matematika")
-                    
-                     {
-                      document.han.ng.value="DUDI HERYANTO,M.Pd, SUKAESIH,S.Si, TINIKE LATIFAH SARI,S.Pd";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="IPS")
-                    
-                     {
-                      document.han.ng.value="GRIYA SURYANI,S.Pt, RINI FITHRI,S.Pd";
-                     }
-                    
-                    
-                      if(document.han.ma.value=="Biologi")
-                    
-                     {
-                      document.han.ng.value="Drs.Hj.NURCHABIBAH,M.Pd, LANI RISLANI,S.Pd, NOVI RAHMAWATI,S.Pd";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="Fisika")
-                    
-                     {
-                      document.han.ng.value="OPA MUSTOPA,S.Pd, UJANG SUMITRA,S.Pd";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="Penjaskes")
-                    
-                     {
-                      document.han.ng.value="DUDI SUTANTO,S.Sas";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="TIK")
-                    
-                     {
-                      document.han.ng.value="ANI WIDODO, UCI SANUSI";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="PKN")
-                    
-                     {
-                      document.han.ng.value="SITI NURCHANIFAH,S.Pd";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="BK")
-                    
-                     {
-                      document.han.ng.value="Dra.DIAN MAIDARNIS";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="TU")
-                    
-                     {
-                      document.han.ng.value="ED HERMANSYAH, EUIS SOPIAH SE, IHA SOLEHA, ";
-                     }
-                    
-                    
-                       if(document.han.ma.value=="Karawitan")
-                    
-                     {
-                      document.han.ng.value="HERI SASTRAWAN,S.Pd";
-                     }
-                    }
-                    
-                    </script>
-                    
-                    <style>
-                    .sri {width:210}
-                    </style>
-                    
-                    
-                    <form name=han>
-                    <center><table border=1 bgcolor=blue width=300>
-                    
-                    <tr> <td width=80><font face="arial" color=white> Mapel  <td> <select name=ma onclick="nif()">   <option value=B.Indonesia>B.Indonesia</option>
-                    <option value=B.Inggris>B.Inggris</option>
-                     <option value=B.Sunda>B.Sunda</option>
-                    <option value=AgamaIslam>AgamaIslam</option>
-                     <option value=SeniBudaya>SeniBudaya</option>
-                     <option value=Matematika>Matematika</option>
-                     <option value=IPS>IPS</option>
-                     <option value=Biologi>Biologi</option>
-                     <option value=Fisika>Fisika</option>
-                     <option value=Penjaskes>Penjaskes</option>
-                     <option value=TIK>TIK</option>
-                     <option value=PKN>PKN</option
-                     ><option value=BK>BK</option>
-                     <option value=TU>TU</option>
-                    <option value=Karawitan>Karawitan</option>
-                             
-					<tr> <td><font face="arial" color=white> Nama Guru <td> <input type=text name=ng class=sri>
-					<tr> <td><font face="arial" color=white> Hari <td> <input type=text name=ng class=sri>
-					
-                    </table>
-                    </code>
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<h3 class="mb-30 title_color">Tambah Jadwal Pelajaran</h3>
+						<form method="post" action="tambah_aksi.php">	
+							<table>
+							<tr>
+									<td>Nama Guru</td>
+									<td>
+									<select name="Nama Guru"> 
+									<option value="">-Pilih-</option>
+										<?php
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
+										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
+
+										}  
+										?> 
+										
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Mata Pelajaran</td>
+									<td>
+									<select name="mapel" id="mapel" required>  
+										<option value="">-Pilih-</option>
+										<?php
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
+										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
+
+										}  
+										?>
+									</select>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>Hari</td>
+									<td>
+									<select name="Hari">  
+									<option value="">-Pilih-</option>
+										<option value="">Hari</option>  
+										<option value="Senin">Senin</option>
+										<option value="Selasa">Selasa</option>   
+										<option value="Rabu">Rabu</option>
+										<option value="Kamis">Kamis</option>
+										<option value="Jumat">Jumat</option>
+										<option value="Sabtu">Sabtu</option>
+										 
+									</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Waktu</td>
+									<td>
+									<select name="-Pilih-"> 
+									<option value="">-Pilih-</option> 
+										<option value="Jam Pertama">Jam Pertama</option>  
+										<option value="Jam Kedua">Jam Kedua</option>
+										<option value="Jam Ketiga">Jam Ketiga</option>   
+										<option value="Jam Keempat">Jam Keempat</option>
+										<option value="Jam Kelima">Jam Kelima</option>
+										<option value="Jam Keenam">Jam Keenam</option>
+										 
+									</select>
+									</td>
+								</tr>
+								
+								
+								<tr>
+					    			<td><input type="submit" value="Simpan"></td>
+								</tr>
+								<script>
+									function hanyaAngka(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+										return false;
+										return true;
+									}
+								</script>
+							</table>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- End Align Area -->
 
     <!--================ Start footer Area  =================-->
