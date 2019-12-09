@@ -62,7 +62,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/inputcalonsiswa.php">Calon Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="../guru/siswa.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="../guru/guru.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="../guru/karyawan.php">Karyawan</a></li>

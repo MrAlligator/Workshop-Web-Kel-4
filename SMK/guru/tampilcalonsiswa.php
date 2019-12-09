@@ -137,6 +137,7 @@
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
                             <h2>CALON SISWA</h2>
+							<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
                         </div>
                     </div>
                 </div>
@@ -166,7 +167,7 @@
 							<div class="country">Jenis Kelamin</div>
 							<div class="country">Agama</div>
 							<div class="country">Aksi</div>
-
+							
 
 							
 						</div>
