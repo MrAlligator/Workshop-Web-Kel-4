@@ -47,76 +47,29 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../guru/index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
-								</ul>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Data</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
+							<li class="nav-item">
+								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Daftar Siswa</a>
 							</li>
-							</li><li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
+							<li class="nav-item">
+								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Nilai Siswa</a>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakurikuler</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Galeri</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Info</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item">
+								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Upload Materi</a>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-                            <li class="nav-item submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
+								aria-expanded="false">GURU</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -129,21 +82,7 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>CALON SISWA</h2>
-							<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--================End Home Banner Area =================-->
 
 
@@ -156,6 +95,7 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color text-center">Data Calon Siswa</h3>
+				<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">

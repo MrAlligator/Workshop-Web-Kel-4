@@ -36,11 +36,12 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
 							</li>
+							<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
 							<li class="nav-item">
 								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Nilai Siswa</a>

@@ -47,11 +47,12 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
 							</li>
+							<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
 							<li class="nav-item">
 								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Nilai Siswa</a>
@@ -60,7 +61,7 @@
 								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Upload Materi</a>
 							</li>
-                            <li class="nav-item">
+							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
@@ -72,7 +73,7 @@
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
-                        </ul>
+						</ul>
 					</div>
 				</div>
 			</nav>
