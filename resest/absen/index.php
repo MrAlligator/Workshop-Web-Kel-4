@@ -2,13 +2,12 @@
 //mengambil koneksi dari koneksi.php
 include 'koneksi.php';
 //mengambil value dari nim table siswa di tampilkan dalam bentuk checkbox
-$sql="SELECT nim,nama from siswa";
-$query = mysqli_query($conn, $sql);
-$result = $query;
-if ($query->num_rows>0) {
+$sql="SELECT nim,nama FROM siswa";
+$result = $conn->query($sql);
+if ($result->num_rows>0) {
  echo "<form action='' method='get'>";
  $no = 0;
- while ($row = mysqli_fetch_array($query)) {
+ while ($row = $result->fetch_assoc()) {
   echo $row['nim']." ".$row['nama']."<input type='checkbox' name='nim[]' value='".$row['nim']."'/><br/>";
   $no++;
  }
@@ -24,7 +23,7 @@ if (isset($_GET['submit'])) {
   if ($conn->query($insert)===TRUE) {
   }
   else{
-   echo "error".$isert."<br/>".$conn->error;
+   echo "error".$insert."<br/>".$conn->error;
   }
  }
 }

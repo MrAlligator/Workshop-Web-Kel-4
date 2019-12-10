@@ -48,7 +48,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -58,7 +58,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Kehadiran</a>
 								<ul class="dropdown-menu">
@@ -122,7 +122,77 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA GURU</h3>
+                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
+                <div class="button-group-area mt-10">
+					<a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+				</div>
+				<br>
+				<form method="get"> 
+					<table>
+						<tr>
+							<td><label>Pilih Kelas</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="kelas">
+								<option value="">Kelas</option>
+								<option value="X">X</option>  
+								<option value="XI">XI</option>  
+								<option value="XII">XII</option>
+								</select>
+							</td>
+							<td><input type="submit" value="FILTER"></td>
+						</tr>
+					</table>
+				</form>
+<br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="visit">NIS</div>
+							<div class="country">Kelas</div>
+                            <div class="percentage">Aksi</div>
+						</div>
+						<form action="" method="post">
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            if(isset($_GET['kelas'])){
+								$kelas = $_GET['kelas'];
+								$sql = mysqli_query($koneksi,"select * from tb_siswa where kelas='$kelas'");
+							}else{
+								$sql = mysqli_query($koneksi,"select * from tb_siswa");
+							}
+                            while($d = mysqli_fetch_array($sql)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_siswa']; ?></div>
+							<div class="visit"><?php echo $d['nis']; ?></div>
+							<div class="country"><?php echo $d['kelas']; ?></div>
+                            <div class="percentage">
+								<input type="checkbox" name="hadir[]" value="Hadir">Hadir<br>
+								<input type="checkbox" name="hadir[]" value="Sakit">Sakit<br>
+								<input type="checkbox" name="hadir[]" value="Izin">Izin<br>
+								<input type="checkbox" name="hadir[]" value="Tanpa Keterangan">Tanpa Keterangan<br>
+                            </div>
+						</div>
+                        <?php
+                            }
+						?>
+							<input type="submit" name="submit" value="Submit">
+						</form>
+						<?php
+							if (isset($_POST['submit'])) {
+								foreach ($_POST['hadir'] as $value) {
+									mysqli_query($koneksi, "INSERT into tb_absen(ket) VALUES('".$value."')");
+								}
+							}
+						?>
+                    </div>
+				</div>
 			</div>
 		</div>
 	</div>
