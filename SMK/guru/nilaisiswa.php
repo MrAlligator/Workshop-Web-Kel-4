@@ -106,11 +106,17 @@
                             $data = mysqli_query($koneksi,"select * from tb_nilai");
                             while($d = mysqli_fetch_array($data)){
                         ?>
+						<?php
+							$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
+							while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+
+							}  
+						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama']; ?></div>
 							<div class="visit"><?php echo $d['kelas']; ?></div>
-							<div class="country"><?php echo $d['mapel']; ?></div>
+							<div class="country"><?php echo $data_kategori['nama_mapel']; ?></div>
 							<div class="country"><?php echo $d['nilai_ulgn_harian']; ?></div>
 							<div class="country"><?php echo $d['nilai_uts']; ?></div>
 							<div class="country"><?php echo $d['nilai_uas']; ?></div>
