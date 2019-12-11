@@ -135,7 +135,7 @@
 								</tr>
 								<tr>
 									<td>Nama</td>
-    	                            <td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+    	                            <td><input type="text" size="40" onkeypress='return harufHuruf(event)' name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Kelas</td>
@@ -194,11 +194,16 @@
 								<tr>
 					    			<td><input type="submit" value="Simpan"></td>
 								</tr>
-								<script>
+								<script language="javascript">
 									function hanyaAngka(evt) {
 										var charCode = (evt.which) ? evt.which : event.keyCode
 										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
+										return false;
+										return true;
+									}
+									function Alphabet(nilai, pesan) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
 										return false;
 										return true;
 									}
