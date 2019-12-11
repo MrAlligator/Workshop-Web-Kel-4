@@ -93,15 +93,15 @@
 							<table>
 								<tr>
 									<td>No Daftar</td>
-    	                            <td><input type="text" size="40" name="no_daftar" placeholder="No Daftar" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="no_daftar" placeholder="No Daftar"  class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nama Lengkap</td>
-    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder="Nama Lengkap" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder="Nama Lengkap"  class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="Tempat Lahir" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="Tempat Lahir"  class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Tanggal Lahir</td>
@@ -131,7 +131,7 @@
 								</tr>
 								<tr>
 									<td>Anak Ke</td>
-    	                            <td><input type="text" size="40" name="anak_ke" placeholder="Anak Ke" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="anak_ke" placeholder="Anak Ke"  class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Status Dalam Keluarga</td>
@@ -143,7 +143,7 @@
 								</tr>
 								<tr>
 									<td>Telepon Siswa</td>
-    	                            <td><input type="text" size="40" name="telp_siswa" placeholder="Telpon Siswa" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="telp_siswa" maxlength="12" placeholder="Telpon Siswa" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Sekolah Asal</td>
@@ -175,7 +175,7 @@
 								</tr>
 								<tr>
 									<td>Telepon Orang Tua</td>
-    	                            <td><input type="text" size="40" name="telp_ortu" placeholder="Telepon Orang Tua" required class="single-input"></td>
+    	                            <td><input type="text" size="40" name="telp_ortu" maxlength="12" placeholder="Telepon Orang Tua" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Pekerjaan Ayah</td>

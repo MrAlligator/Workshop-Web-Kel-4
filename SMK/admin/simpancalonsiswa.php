@@ -22,10 +22,14 @@ $perkerjaan_ayah = $_POST['perkerjaan_ayah'];
 $pekerjaan_ibu = $_POST['pekerjaan_ibu'];
 $nama_wali = $_POST['nama_wali'];
 $alamat_wali = $_POST['alamat_wali'];
+if($no_daftar=="" || $nama_lengkap=="" || $tmptlahir=="" || $tgllahir=="" || $jk=="" || $agama=="" || $anak_ke=="" || $status_dlm_keluarga=="" || $alamat_siswa=="" || $telp_siswa=="" ||$sekolah_asal =="" ||$alamat_sekolah=="" || $tahun_lulus=="" || $total_nilai_un=="" || $nama_ayah=="" || $nama_ibu=="" || $alamat_ortu=="" || $telp_ortu=="" || $perkerjaan_ayah=="" ||$pekerjaan_ibu==""){
+	echo "<script>alert('data tidak lengkap!');location='inputcalonsiswa.php';</script>";
+}else{
 $query = mysqli_query($koneksi,"INSERT INTO tb_calon_siswa VALUES('','$no_daftar','$nama_lengkap','$tmptlahir', '$tgllahir','$jk','$agama','$anak_ke','$status_dlm_keluarga','$alamat_siswa','$telp_siswa','$sekolah_asal','$alamat_sekolah','$tahun_lulus','$total_nilai_un','$nama_ayah','$nama_ibu','$alamat_ortu','$telp_ortu','$perkerjaan_ayah','$pekerjaan_ibu','$nama_wali','$alamat_wali')");
 if ($query){
 	echo "<script>alert('Berhasil Tersimpan!');location='tampilcalonsiswa.php';</script>";
 }else{
 	echo "gagal";
+}
 }
 ?>
