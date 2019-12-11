@@ -150,17 +150,19 @@
 					<div class="progress-table">
 						<div class="table-head">
                             <div class="serial">No</div>
-							<div class="country">Nama Guru</div>
 							<div class="country">Mata Pelajaran</div>
-							<div class="country">semester</div>
+							<div class="country">Nama Guru</div>
+							<div class="country">Semester</div>
+							<div class="country">Hari</div>
 							<div class="country">Waktu</div>
+							<div class="country">Aksi</div>
 						</div>
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
-                            if(isset($_GET['kelas'])){
-								$kelas = $_GET['kelas'];
-								$sql = mysqli_query($koneksi,"select * from tb_jadwal where kelas='$kelas'");
+                            if(isset($_GET['semester'])){
+								$kelas = $_GET['semester'];
+								$sql = mysqli_query($koneksi,"select * from tb_jadwal where semester='$semester'");
 							}else{
 								$sql = mysqli_query($koneksi,"select * from tb_jadwal");
 							}
@@ -168,9 +170,10 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_mapel']; ?></div>
 							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="country"><?php echo $d['mata_pelajaran']; ?></div>
 							<div class="country"><?php echo $d['semester']; ?></div>
+							<div class="country"><?php echo $d['hari']; ?></div>
 							<div class="country"><?php echo $d['durasi']; ?></div>
                             <div class="country">
                                 <a href="edit.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
