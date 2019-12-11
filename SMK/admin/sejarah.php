@@ -165,6 +165,10 @@
 			<p style="text-align:justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Maka sejak saat itu, Pondok Pesantren Talang Mas Darus Salam didirikan pada tahun 2008, dengan bantuan para sesepuh dan warga masyarakat sekitar berusaha mendirikan pondok pesantren tersebut demi berlanjutnya generasi bangsa yang intelek dan religius khususnya dalam menegakkan ajaran agama Allah dan menjalankan ahlus sunnah waljamaah. Pondok Pesantren Talang Mas Darus Salam tetap berjalan hingga saat ini karena banyaknya dukungan dari para warga sekitar untuk tetap eksis dalam menjalankan pendidikan agama.</p></br>
 			<p style="text-align:justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pondok pesantren Talang Mas Darus Salam merupakan Pondok pesantren yang baru berdiri sejak tahun 2008 di bawah pengasuh K. Muhammad Kholis. Seiring berjalannya waktu, Pada tahun 2011 Barulah didirikan sebuah lembaga pendidikan Sekolah Menengah Kejuruan Darus Salam yang hingga sekarang telah meluluskan satu angkatan pertama sebanyak 17 siswa, sekitar 70% siswa tersebut bermukim di Pondok Pesantren Talang Mas Darus Salam. Pada tahun 2012 didirikanlah sebuah lembaga pendidikan yaitu Sekolah Menengah Pertama Darus Salam Untuk Menjaga Kualitas dan Kuantitas Pondok pesantren Talang Mas Darus Salam maka Kami jajaran Pengurus Pondok Pesantren Talang Mas Darus Salam mengajukan permohonan kepada Bapak Kepala Kantor Agama Kabupaten Bondowoso agar menjadi pondok pesantren yang memiliki status pengakuan dari pemerintah khususnya dilingkungan kementrian Agama Kabupaten Bondowoso.</p></br>
 		</div>
+		<br>
+<br>
+<br>
+<br>
 				<!-- single course -->
 				
 				

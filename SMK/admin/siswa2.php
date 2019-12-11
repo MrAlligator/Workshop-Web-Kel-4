@@ -141,7 +141,7 @@
 								<option value="XII">XII</option>
 								</select>
 							</td>
-							<td><input type="submit" value="FILTER"></td>
+							<td><input type="submit" value="Saring"></td>
 						</tr>
 					</table>
 				</form>
