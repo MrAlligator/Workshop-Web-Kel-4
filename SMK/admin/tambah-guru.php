@@ -132,7 +132,7 @@
 								</tr>
 								<tr>
 									<td>Nama</td>
-									<td><input type="text" size="40" name="nama" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
+									<td><input type="text" size="40" name="nama" onkeypress="return hanyaHuruf(event)"  placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>NIP</td>
@@ -150,7 +150,7 @@
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
+									<td><input type="text" name="tempat"  onkeypress="return hanyaHuruf(event)" placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
 									required class="single-input"></td>
 								</tr>
 								<tr>
@@ -170,7 +170,7 @@
 								</tr>
 								<tr>
 									<td>Alamat</td>
-									<td><input type="text" name="alamat" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
+									<td><input type="text" name="alamat"  onkeypress="return hanyaHuruf(event)" placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
 									required class="single-input"></td>
 								</tr>
 								<tr>
@@ -185,6 +185,12 @@
 										var charCode = (evt.which) ? evt.which : event.keyCode
 										if (charCode > 31 && (charCode < 48 || charCode > 57))
 
+										return false;
+										return true;
+									}
+									function hanyaHuruf(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
 										return false;
 										return true;
 									}

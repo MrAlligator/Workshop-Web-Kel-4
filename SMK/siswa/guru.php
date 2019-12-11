@@ -170,7 +170,7 @@
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from tb_guru");
+							$data = mysqli_query($koneksi,"select * from tb_guru where status = 'guru'");
 							while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
