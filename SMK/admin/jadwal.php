@@ -1,6 +1,3 @@
-<?php
-require 'koneksi.php';
-?>
 <!doctype html>
 <html lang="en">
 
@@ -51,7 +48,7 @@ require 'koneksi.php';
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -76,7 +73,7 @@ require 'koneksi.php';
 									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
@@ -114,9 +111,6 @@ require 'koneksi.php';
 
     <!--================Home Banner Area =================-->
     
-    <section>
-	
-    </section>
     <!--================End Home Banner Area =================-->
 
 
@@ -125,108 +119,76 @@ require 'koneksi.php';
 	<!-- Start Button -->
 	<!-- End Button -->
     <!-- Start Align Area -->
-	
-	<div class="whole-wrap">
+    <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Tambah Jadwal Pelajaran</h3>
-						<form method="post" action="tambah_aksi.php">	
-							<table>
-							<tr>
-									<td>Nama Guru</td>
-									<td>
-									<select name="Nama Guru"> 
-									<option value="">-Pilih-</option>
-										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
-										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
-
-										}  
-										?> 
-										
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Mata Pelajaran</td>
-									<td>
-									<select name="mapel" id="mapel" required>  
-										<option value="">-Pilih-</option>
-										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
-										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
-
-										}  
-										?>
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Semester</td>
-									<td>
-									<select name="Hari">  
-									<option value="">-Pilih-</option>
-										<option value="1">1</option>  
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>  
-										<option value="5">5</option>
-										<option value="6">6</option>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Hari</td>
-									<td>
-									<select name="Hari">  
-									<option value="">-Pilih-</option>
-										<option value="">Hari</option>  
-										<option value="Senin">Senin</option>
-										<option value="Selasa">Selasa</option>   
-										<option value="Rabu">Rabu</option>
-										<option value="Kamis">Kamis</option>
-										<option value="Jumat">Jumat</option>
-										<option value="Sabtu">Sabtu</option>
-										 
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Waktu</td>
-									<td>
-									<select name="-Pilih-"> 
-									<option value="">-Pilih-</option> 
-										<option value="Jam Pertama">Jam Pertama</option>  
-										<option value="Jam Kedua">Jam Kedua</option>
-										<option value="Jam Ketiga">Jam Ketiga</option>   
-										<option value="Jam Keempat">Jam Keempat</option>
-										<option value="Jam Kelima">Jam Kelima</option>
-										<option value="Jam Keenam">Jam Keenam</option>
-										 
-									</select>
-									</td>
-								</tr>
-								
-								
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
-								
-							</table>
-						</form>
-					</div>
+                <h3 class="mb-30 title_color text-center">JADWAL SEKOLAH</h3>
+                <div class="button-group-area mt-10">
+					<a href="tambah-jadwal.php" class="genric-btn default">Tambah Jadwal</a>
+				</div>
+				<br>
+				<form method="get"> 
+					<table>
+						<tr>
+							<td><label>Pilih Kelas</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="kelas">
+								<option value="">Kelas</option>
+								<option value="X">X</option>  
+								<option value="XI">XI</option>  
+								<option value="XII">XII</option>
+								</select>
+							</td>
+							<td><input type="submit" value="FILTER"></td>
+						</tr>
+					</table>
+				</form>
+<br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+                            <div class="serial">No</div>
+							<div class="country">Nama Guru</div>
+							<div class="country">Mata Pelajaran</div>
+							<div class="country">semester</div>
+							<div class="country">Waktu</div>
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            if(isset($_GET['kelas'])){
+								$kelas = $_GET['kelas'];
+								$sql = mysqli_query($koneksi,"select * from tb_jadwal where kelas='$kelas'");
+							}else{
+								$sql = mysqli_query($koneksi,"select * from tb_jadwal");
+							}
+                            while($d = mysqli_fetch_array($sql)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
+							<div class="country"><?php echo $d['mata_pelajaran']; ?></div>
+							<div class="country"><?php echo $d['semester']; ?></div>
+							<div class="country"><?php echo $d['durasi']; ?></div>
+                            <div class="country">
+                                <a href="edit.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
+                                <a href="hapus.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
+                            </div>
+						</div>
+                        <?php
+                            }
+                        ?>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!-- End Align Area -->
 
-    <!--================ Start footer Area  =================-->
-        <footer></footer>
+	<!--================ Start footer Area  =================-->
+    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
