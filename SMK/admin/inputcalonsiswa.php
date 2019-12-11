@@ -52,6 +52,7 @@
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
 							</li>
+							<li class="nav-item"><a class="nav-link" href="../admin/tampilcalonsiswa.php">Calon Siswa</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>

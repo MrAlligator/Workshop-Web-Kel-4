@@ -73,21 +73,7 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>CALON SISWA</h2>
-							<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+
     <!--================End Home Banner Area =================-->
 
 
@@ -100,6 +86,7 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color text-center">Data Calon Siswa</h3>
+				<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">

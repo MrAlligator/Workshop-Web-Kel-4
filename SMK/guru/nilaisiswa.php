@@ -36,11 +36,12 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
 							</li>
+							<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
 							<li class="nav-item">
 								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Nilai Siswa</a>
@@ -105,11 +106,17 @@
                             $data = mysqli_query($koneksi,"select * from tb_nilai");
                             while($d = mysqli_fetch_array($data)){
                         ?>
+						<?php
+							$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
+							while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+
+							}  
+						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama']; ?></div>
 							<div class="visit"><?php echo $d['kelas']; ?></div>
-							<div class="country"><?php echo $d['mapel']; ?></div>
+							<div class="country"><?php echo $data_kategori['nama_mapel']; ?></div>
 							<div class="country"><?php echo $d['nilai_ulgn_harian']; ?></div>
 							<div class="country"><?php echo $d['nilai_uts']; ?></div>
 							<div class="country"><?php echo $d['nilai_uas']; ?></div>
