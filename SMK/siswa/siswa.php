@@ -155,24 +155,48 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color text-center">Data Siswa</h3>
+				<form method="get"> 
+					<table>
+						<tr>
+							<td><label>Pilih Kelas</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="kelas">
+								<option value="">Kelas</option>
+								<option value="X">X</option>  
+								<option value="XI">XI</option>  
+								<option value="XII">XII</option>
+								</select>
+							</td>
+							<td><input type="submit" value="FILTER"></td>
+						</tr>
+					</table>
+				</form>
+<br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
 							<div class="visit">NIS</div>
-							<div class="country">Jenis Kelamin</div>
+							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat Lahir</div>
+							<div class="country">Tempat</div>
 							<div class="country">Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
-						<?php 
-							include 'koneksi.php';
-							$no = 1;
-							$data = mysqli_query($koneksi,"select * from tb_siswa");
-							while($d = mysqli_fetch_array($data)){
-						?>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            if(isset($_GET['kelas'])){
+								$kelas = $_GET['kelas'];
+								$sql = mysqli_query($koneksi,"select * from tb_siswa where kelas='$kelas'");
+							}else{
+								$sql = mysqli_query($koneksi,"select * from tb_siswa");
+							}
+                            while($d = mysqli_fetch_array($sql)){
+                        ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama_siswa']; ?></div>
@@ -182,11 +206,10 @@
 							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
 							<div class="country"><?php echo $d['tgllhr_siswa']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
-						</div>
-						<?php
-							}
-						?>
-					</div>
+                        <?php
+                            }
+                        ?>
+                    </div>
 				</div>
 			</div>
 		</div>

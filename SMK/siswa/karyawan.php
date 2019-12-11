@@ -136,7 +136,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>KARYAWAN</h2>
+                            <h2>GURU</h2>
                         </div>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Data Karyawan</h3>
+				<h3 class="mb-30 title_color text-center">Data Guru</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
@@ -170,18 +170,18 @@
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from db_karyawan");
+							$data = mysqli_query($koneksi,"select * from tb_guru where status='karyawan'");
 							while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_karyawan']; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
 							<div class="visit"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_karyawan']; ?></div>
-							<div class="visit"><?php echo $d['agama_karyawan']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_karyawan']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_karyawan']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
+							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="visit"><?php echo $d['agama_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir']; ?></div>
+							<div class="country"><?php echo $d['tgllahir']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>
 						<?php
 							}
