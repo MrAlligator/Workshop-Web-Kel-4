@@ -191,6 +191,12 @@ ridho sang Kuasa dan keikhlasan yang tulus dijiwa demi anak bangsa.
 Terima kasih semoga Allah ‘Azza Wa Jalla menyertai doa kita semua. 
 Aamiin..</p>
             </div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
 				<!-- single course -->
 				
 				

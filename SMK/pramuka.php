@@ -238,6 +238,7 @@
                     </div>
 
 </div>
+
 				<!-- single course -->
 <!--================ End Popular Courses Area =================-->
 
@@ -302,6 +303,10 @@
 			</div>
 		</div>
 	</div>
+	<br>
+<br>
+<br>
+<br>
 <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
