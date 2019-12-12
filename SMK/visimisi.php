@@ -195,6 +195,10 @@
 6.  Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
 
 </div>
+<br>
+<br>
+<br>
+<br>
 				<!-- single course -->
 				
 				

@@ -228,6 +228,7 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
                     </div>
 
 </div>
+
 				<!-- single course -->
 				
 				
@@ -295,6 +296,10 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
 			</div>
 		</div>
 	</div>
+	<br>
+<br>
+<br>
+<br>
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->

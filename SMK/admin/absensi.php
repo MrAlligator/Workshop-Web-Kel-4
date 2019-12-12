@@ -122,75 +122,49 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button-group-area mt-10">
-					<a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-				</div>
+                <h3 class="mb-30 title_color text-center">Absensi Siswa</h3>
 				<br>
-				<form method="get"> 
-					<table>
-						<tr>
-							<td><label>Pilih Kelas</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="kelas">
-								<option value="">Kelas</option>
-								<option value="X">X</option>  
-								<option value="XI">XI</option>  
-								<option value="XII">XII</option>
-								</select>
-							</td>
-							<td><input type="submit" value="FILTER"></td>
-						</tr>
-					</table>
-				</form>
-<br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="country">Kelas</div>
-                            <div class="percentage">Aksi</div>
-						</div>
-						<form action="" method="post">
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            if(isset($_GET['kelas'])){
-								$kelas = $_GET['kelas'];
-								$sql = mysqli_query($koneksi,"select * from tb_siswa where kelas='$kelas'");
-							}else{
-								$sql = mysqli_query($koneksi,"select * from tb_siswa");
-							}
-                            while($d = mysqli_fetch_array($sql)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_siswa']; ?></div>
-							<div class="visit"><?php echo $d['nis']; ?></div>
-							<div class="country"><?php echo $d['kelas']; ?></div>
-                            <div class="percentage">
-								<input type="checkbox" name="hadir[]" value="Hadir">Hadir<br>
-								<input type="checkbox" name="hadir[]" value="Sakit">Sakit<br>
-								<input type="checkbox" name="hadir[]" value="Izin">Izin<br>
-								<input type="checkbox" name="hadir[]" value="Tanpa Keterangan">Tanpa Keterangan<br>
-                            </div>
-						</div>
-                        <?php
-                            }
-						?>
-							<input type="submit" name="submit" value="Submit">
+				<form id="absen" method="post" action="aksi3.php">	
+							<table>
+								<tr>
+								<td>NIS</td>
+									<td>
+										<select id="nis" name="nis" onchange="changeValue(this.value)">
+										<option disabled="" selected="">Pilih</option>
+										<?php
+										include "koneksi.php";
+										$sql=mysqli_query($koneksi, "SELECT * FROM tb_siswa");
+										$jsArray = "var prdName = new Array();\n";
+										while ($data=mysqli_fetch_array($sql)) {
+											echo '<option value="'.$data['nis'].'">'.$data['nis'].'</option> ';
+											$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "',kelas:'".addslashes($data['kelas'])."'};\n";
+										}
+										?>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>Nama</td>
+									<td><input type="text" name="nama" id="nama" readonly="" placeholder="Nama" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Kelas</td>
+									<td><input type="text" name="kelas" id="kelas" readonly="" placeholder="Kelas" required class="single-input"></td>
+								</tr>
+								<tr>
+									<td>Kehadiran</td>
+									<td>
+										<input type="checkbox" name="hadir" value="Hadir">Hadir<br>
+										<input type="checkbox" name="hadir" value="Sakit">Sakit<br>
+										<input type="checkbox" name="hadir" value="Izin">Izin<br>
+										<input type="checkbox" name="hadir" value="Tanpa Keterangan">Tanpa Keterangan<br>
+									</td>
+								</tr>
+								<tr>
+					    			<td><input type="submit" value="Simpan"></td>
+								</tr>
+							</table>
 						</form>
-						<?php
-							if (isset($_POST['submit'])) {
-								foreach ($_POST['hadir'] as $value) {
-									mysqli_query($koneksi, "INSERT into tb_absen(ket) VALUES('".$value."')");
-								}
-							}
-						?>
                     </div>
 				</div>
 			</div>
@@ -221,3 +195,26 @@
 	</body>
 	
 	</html>
+	<script type="text/javascript"> 
+		<?php echo $jsArray; ?>  
+		function changeValue(id){  
+		document.getElementById('nama').value = prdName[id].nama;
+		document.getElementById('kelas').value = prdName[id].kelas;
+		}
+		function batascheckbox(checkgroup, limit){
+		var checkgroup=checkgroup
+		var limit=limit
+			for (var i=0; i<checkgroup.length; i++){
+				checkgroup[i].onclick=function(){
+				var checkedcount=0
+				for (var i=0; i<checkgroup.length; i++)
+					checkedcount+=(checkgroup[i].checked)? 1 : 0
+				if (checkedcount>limit){
+					alert("Pilihan tidak boleh lebih dari "+limit+"")
+					this.checked=false
+					}
+				}
+			}
+		}
+		batascheckbox(document.forms.absen.hadir, 1)
+	</script>
