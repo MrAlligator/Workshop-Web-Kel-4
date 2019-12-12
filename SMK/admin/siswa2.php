@@ -154,8 +154,8 @@
 							<div class="visit">NIS</div>
 							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="country">Tmpt Lahir</div>
+							<div class="country">Tgl Lahir</div>
 							<div class="percentage">Alamat</div>
 							<div class="country">Telp</div>
                             <div class="country">Aksi</div>
