@@ -132,12 +132,27 @@ require 'koneksi.php';
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Tambah Jadwal Pelajaran</h3>
-						<form method="post" action="tambah_aksi.php">	
+						<form action="simpanjadwal.php" method="post" enctype="multipart/form-data">	
 							<table>
+							<tr>
+									<td>Mata Pelajaran</td>
+									<td>
+									<select name="nama_mapel"  required>  
+										<option value="">-Pilih-</option>
+										<?php
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
+										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
+
+										}  
+										?>
+									</select>
+									</td>
+								</tr>
 							<tr>
 									<td>Nama Guru</td>
 									<td>
-									<select name="Nama Guru"> 
+									<select name="nama_guru"  required> 
 									<option value="">-Pilih-</option>
 										<?php
 										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
@@ -150,25 +165,11 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
-								<tr>
-									<td>Mata Pelajaran</td>
-									<td>
-									<select name="mapel" id="mapel" required>  
-										<option value="">-Pilih-</option>
-										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
-										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
-
-										}  
-										?>
-									</select>
-									</td>
-								</tr>
+								
 								<tr>
 									<td>Semester</td>
 									<td>
-									<select name="Hari">  
+									<select name="semester" required>  
 									<option value="">-Pilih-</option>
 										<option value="1">1</option>  
 										<option value="2">2</option>
@@ -182,9 +183,8 @@ require 'koneksi.php';
 								<tr>
 									<td>Hari</td>
 									<td>
-									<select name="Hari">  
-									<option value="">-Pilih-</option>
-										<option value="">Hari</option>  
+									<select name="hari"  required>  
+									<option value="">-Pilih-</option>  
 										<option value="Senin">Senin</option>
 										<option value="Selasa">Selasa</option>   
 										<option value="Rabu">Rabu</option>
@@ -198,7 +198,7 @@ require 'koneksi.php';
 								<tr>
 									<td>Waktu</td>
 									<td>
-									<select name="-Pilih-"> 
+									<select name="durasi"  required> 
 									<option value="">-Pilih-</option> 
 										<option value="Jam Pertama">Jam Pertama</option>  
 										<option value="Jam Kedua">Jam Kedua</option>
