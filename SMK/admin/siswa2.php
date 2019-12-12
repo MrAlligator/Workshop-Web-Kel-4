@@ -108,7 +108,25 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
+	<style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+		.button ul a{
+		padding: 8px;
+		background: rgb(0, 101, 255);
+		color: white;
+		}
+	</style>
     <!--================Home Banner Area =================-->
     
     <!--================End Home Banner Area =================-->
@@ -123,8 +141,11 @@
 		<div class="container">
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button-group-area mt-10">
-					<a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
+                <div class="button">
+					<ul class="left">
+						<a href="tambah.php">Tambah Siswa</a>
+						<a href="form-import.php">Import Data</a>
+					</ul>
 				</div>
 				<br>
 				<form method="get"> 

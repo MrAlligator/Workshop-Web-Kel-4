@@ -72,13 +72,13 @@
             echo "<tr>";
             echo "<td>".$no."</td>";
             echo "<td>".$data['nis']."</td>";
-            echo "<td>".$data['nama']."</td>";
-            echo "<td>".$data['jk']."</td>";
-            echo "<td>".$data['agama']."</td>";
-            echo "<td>".$data['tmptlahir']."</td>";
-            echo "<td>".$data['tgllahir']."</td>";
-            echo "<td>".$data['telp']."</td>";
-            echo "<td>".$data['alamat']."</td>";
+            echo "<td>".$data['nama_siswa']."</td>";
+            echo "<td>".$data['jk_siswa']."</td>";
+            echo "<td>".$data['agama_siswa']."</td>";
+            echo "<td>".$data['tmptlhr_siswa']."</td>";
+            echo "<td>".$data['tgllhr_siswa']."</td>";
+            echo "<td>".$data['telp_siswa']."</td>";
+            echo "<td>".$data['alamat_siswa']."</td>";
             echo "</tr>";
             
             $no++;

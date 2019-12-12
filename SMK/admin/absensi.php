@@ -165,6 +165,43 @@
 								</tr>
 							</table>
 						</form>
+						<br>
+						<br>
+						<br>
+						<div class="progress-table-wrap">
+							<div class="progress-table">
+								<div class="table-head">
+									<div class="serial">No</div>
+									<div class="country">Tanggal</div>
+									<div class="country">NIS</div>
+									<div class="country">Nama</div>
+									<div class="country">Kelas</div>
+									<div class="country">Keterangan</div>
+									<div class="country">Aksi</div>
+								</div>
+								<?php 
+									include 'koneksi.php';
+									$no = 1;
+									$data = mysqli_query($koneksi,"select * from tb_absen");
+									while($d = mysqli_fetch_array($data)){
+								?>
+								<div class="table-row">
+									<div class="serial"><?php echo $no++; ?></div>
+									<div class="country"><?php echo $d['tgl_absen']; ?></div>
+									<div class="country"><?php echo $d['nisabsen_siswa']; ?></div>
+									<div class="country"><?php echo $d['namaabsen_siswa']; ?></div>
+									<div class="country"><?php echo $d['kelasabsen_siswa']; ?></div>
+									<div class="country"><?php echo $d['ket']; ?></div>
+									<div class="country">
+										<button><a href="edit-absen.php?id_absen=<?php echo $d['id_absen'];?>">Edit</a></button>
+										<button><a href="hapus-absen.php?id_absen=<?php echo $d['id_absen'];?>" onClick="return confirm('Hapus Data?')">Hapus</a></button>
+									</div>
+								</div>
+								<?php
+									}
+								?>
+							</div>
+						</div>
                     </div>
 				</div>
 			</div>

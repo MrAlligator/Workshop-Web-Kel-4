@@ -80,17 +80,6 @@ button:focus {
     .mt-100 {
       margin-top: 0px; } }
 
-.input-tanggal{
-  padding: 10px;
-  font-size: 12pt;
-}
-.kiri{
-  float:left;
-}
-.kanan{
-  float:right;
-}
-
 .mt--100 {
   margin-top: -100px; }
   @media (max-width: 991px) {
@@ -153,6 +142,9 @@ button:focus {
 
 .lite_bg2 {
   background: #817f7f;
+}
+.lite_bg3 {
+  background: white;
 }
 /* End Main Title Area css
 ============================================================================================ */
@@ -438,7 +430,7 @@ button:focus {
   min-height: 780px;
   display: flex;
   position: relative;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../admin/img/sekolah.jpg) no-repeat scroll center; }
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sekolah.jpg) no-repeat scroll center; }
   .home_banner_area .banner_inner {
     position: relative;
     z-index: 10;
@@ -566,10 +558,16 @@ button:focus {
 
 .banner_area {
   position: relative;
-  background: url(../img/mm.jpg) no-repeat center center;
+  background: url(../img/pramuka.jpg) no-repeat center center;
   z-index: 1;
   min-height: 392px;
   padding-top: 0 !important; }
+  .banner_area2 {
+    position: relative;
+    background: url(../img/silat.jpg) no-repeat center center;
+    z-index: 1;
+    min-height: 392px;
+    padding-top: 0 !important; }
   .banner_area .banner_inner {
     position: relative;
     overflow: hidden;
@@ -667,12 +665,6 @@ button:focus {
             .banner_area .banner_inner .banner_content .page_link a:last-child:before {
               display: none; }
               /*batas banner1 */
-              .banner_area2 {
-                position: relative;
-                background: url(../img/) no-repeat center center;
-                z-index: 1;
-                min-height: 392px;
-                padding-top: 0 !important; }
               .banner_area2 .banner_inner {
                 position: relative;
                 overflow: hidden;
@@ -778,7 +770,7 @@ button:focus {
                                   display: none; }
                                  /*banner area 3 */
                                 
-                                 
+                                 /*banner area 4  */
 
 /* End Home Banner Area css
 ============================================================================================ */
@@ -2409,7 +2401,7 @@ h6 {
   background: #fff;
   border-left: 2px solid #f8b600; }
 
-@media (max-width: 1100px) {
+@media (max-width: 991px) {
   .progress-table-wrap {
     overflow-x: scroll; } }
 .progress-table {
@@ -2431,10 +2423,15 @@ h6 {
   width: 40.36%;
   padding-right: 50px; }
 
+.progress-table .kaokao {
+  width: 60%;
+  padding-right: 50px;
+}
+
 .progress-table .table-head {
   display: flex; }
 
-.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage {
+.progress-table .table-head .serial, .progress-table .table-head .country, .progress-table .table-head .visit, .progress-table .table-head .percentage, .progress-table .table-head .kaokao {
   color: #222222;
   line-height: 40px;
   text-transform: uppercase;
@@ -2445,7 +2442,7 @@ h6 {
   border-top: 1px solid #edf3fd;
   display: flex; }
 
-.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage, .progress-table .table-row .agama {
+.progress-table .table-row .serial, .progress-table .table-row .country, .progress-table .table-row .visit, .progress-table .table-row .percentage, .progress-table .table-row .agama, .progress-table .table-row .kaokao {
   display: flex;
   align-items: center; }
 
@@ -2571,7 +2568,7 @@ h6 {
 
 .input-group-icon .icon {
   position: absolute;
-  left: 0px;
+  left: 20px;
   top: 0;
   line-height: 40px;
   z-index: 3; }
@@ -3440,7 +3437,6 @@ h6 {
 
   /* End Main Menu Area css
   ============================================================================================ */
-
   /* Home Banner Area css
   ============================================================================================ */
   .home_banner_area .banner_inner .banner_content {

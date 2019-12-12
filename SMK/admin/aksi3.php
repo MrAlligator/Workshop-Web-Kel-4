@@ -7,6 +7,12 @@
     $nis = $_POST['nis'];
     $ket = $_POST['hadir'];
 
-    mysqli_query($koneksi,"INSERT into tb_absen values('','$nama','$nis','$kelas','$ket','$date')");
-    echo "<script>alert('Data berhasil diupload');document.location.href='../admin/absensi.php'</script>";
+    $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_absen WHERE nisabsen_siswa='$nis'"));
+        if($ceknis > 0){
+            echo "<script>alert('NIS Sudah Digunakan');document.location.href='../admin/absensi.php'</script>";
+        }else{
+            mysqli_query($koneksi,"insert into tb_absen values('','$nama','$nis','$kelas','$ket','$date')");
+            echo "<script>alert('Data berhasil diupload');document.location.href='../admin/absensi.php'</script>";
+        }
+?>
 ?>
