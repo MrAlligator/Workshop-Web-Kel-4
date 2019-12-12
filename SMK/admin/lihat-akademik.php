@@ -73,7 +73,7 @@
 									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
@@ -81,7 +81,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
@@ -107,76 +107,83 @@
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
+	<!--================ End Header Menu Area =================-->
 
-    <!--================Home Banner Area =================-->
-    
-    <section>
+	<!--================ Start Home Banner Area =================-->
 	
-    </section>
-    <!--================End Home Banner Area =================-->
+	<!--================ End Home Banner Area =================-->
 
+	<!--================ Start Feature Area =================-->
+	
+	<!--================ End Feature Area =================-->
 
-	<!-- Start Sample Area -->
-	<!-- End Sample Area -->
-	<!-- Start Button -->
-	<!-- End Button -->
-    <!-- Start Align Area -->
-    <div class="whole-wrap">
+	<!--================ Start Department Area =================-->
+	
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	
+				<!-- single course -->
+				<!-- single course -->
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	
+	<!--================ End Registration Area =================-->
+
+	<!--================ Start Events Area =================-->
+    <?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_prestasi where id_prestasi='$_GET[id_prestasi]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <section class="sample-text-area">
 		<div class="container">
-			<div class="section-top-border">
-				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Prestasi</h3>
-						<form method="post" action="prestasi.php" enctype="multipart/form-data">	
-							<table>
-								<tr>
-									<td>Judul Prestasi</td>
-    	                            <td><input type="text" size="100" name="judul_prestasi"></td>
-								</tr>
-								<tr>
-									<td>Isi Prestasi</td>
-									<td><textarea rows="15" cols="100" name="isi_prestasi"></textarea></td>
-								</tr>
-								<tr>
-									<td>Tanggal </td>
-									<td><input type="date" name="tanggal_prestasi" placeholder="Tanggal" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Foto</td>
-									<td><input type="file" name="file"></td>
-									<td><input type="submit" name="upload" value="Upload"></td>
-                                </tr>
-							</table>
-						</form>
-					</div>
-				</div>
-			</div>
+            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
+			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
+			<p class="sample-text">
+                <?=$hasil_data['isi_prestasi'];?>
+            </p>
+            <p class="sample-text">
+                <?=$hasil_data['tanggal_prestasi'];?>
+            </p>
 		</div>
-	</div>
-	<!-- End Align Area -->
+	</section>
+	<!--================ End Events Area =================-->
 
-    <!--================ Start footer Area  =================-->
-        <footer></footer>
-		<!--================ End footer Area  =================-->
+    <!--================Contact Area =================-->
 	
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/stellar.js"></script>
-		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-		<script src="js/owl-carousel-thumb.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="vendors/counter-up/jquery.counterup.js"></script>
-		<script src="js/mail-script.js"></script>
-		<!--gmaps Js-->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-		<script src="js/gmaps.min.js"></script>
-		<script src="js/theme.js"></script>
-	</body>
+    <!--================Contact Area =================-->
+
+	<!--================ Start footer Area  =================-->
 	
-	</html>
+	<!--================ End footer Area  =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>

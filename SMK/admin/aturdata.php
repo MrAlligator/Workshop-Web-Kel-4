@@ -85,7 +85,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
 									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
 								</ul>
 							</li>
