@@ -78,9 +78,9 @@
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
 									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -96,7 +96,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -173,148 +172,46 @@
 	<div class="popular_courses lite_bg">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<h2><a href="#">Pengumuman</a></h2>
-					</div>
-				</div>
 			</div>
 			<div class="row">
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru Tahun 2019</a>
-							</h4>
-							<p>Pengumuman penerimaan siswa baru 2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-								</div>
-								<div>
-									<a href="#"><span class="price">Selengkapnya</span></a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-                
+				<?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/courses/trainer1.jpg" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?=$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Ujian Akhir Semester 2018/2019</a>
+								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng']; ?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p>Ujian Akhir Semester 2 tahun pelajarab 2018/2019.</p>
-							<div class="course_meta d-flex justify-content-between">
-								<div>
-									<span class="meta_info">
-										<a href="#">
-										</a>
-									</span>
-									<span class="meta_info">
-										<a href="#">
-										</a></span>
-								</div>
-								<div>
-									<a href=""><span class="price df_color1">Selengkapnya</span></a>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
-				<!-- single course -->
-				<!-- single course -->
-	<!--================ End Popular Courses Area =================-->
-
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
-	<!--================ Start Events Area =================-->
-	
-	<!--================ End Events Area =================-->
-
-    <!--================Contact Area =================-->
-	<section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>Hubungi Kami</h2></a>
-					</div>
-				</div>
+				<?php
+                    }
+                ?>
 			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item">
-                            <i class="lnr lnr-home"></i>
-                            <h6>Bondowoso, Jawa Timur</h6>
-                            <p>Santa monica bullevard</p>
-                        </div>
-                    </div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-    	                    <i class="lnr lnr-phone-handset"></i>
-        	                <h6>00 (440) 9865 562</h6>
-            	            <p>Mon to Fri 9am to 6 pm</p>
-                	    </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-                            <i class="lnr lnr-envelope"></i>
-                            <h6>support@colorlib.com</a></h6>
-                            <p>Send us your query anytime!</p>
-                        </div>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
-    <!--================Contact Area =================-->
+		</div>
+	</div>
+	
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-		<div class="container">
+	<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="#">Profil Singkat</a></li>
-						<li><a href="#">Visi dan Misi</a></li>
-						<li><a href="#">Struktur</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -329,7 +226,6 @@
 					<h4>Jurusan</h4>
 					<ul>
 						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -342,8 +238,8 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Info</h4>
 					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">

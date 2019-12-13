@@ -96,7 +96,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -119,8 +118,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="#">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -180,20 +179,23 @@
     <div class="whole-wrap">
 		<div class="container">
 						<h3 class="mb-20 title_color">Visi </h3>
-1.	Mendidik  siswa yang beriman,bertaqwa kepada Allah SWT dan berakhlaquk karimah.<br>
-2.	Menghasilkan siswa yang cerdas,cermat,kreatif dan berkepribadian teguh.<br>
-3.	Menghasilkan siswa yang terampil,mandiriuntuk berhasil mengatasi kelaparan dan membebaskan diri dari kemiskinan.<br><br><br>
+<ol>
+	<li>Mendidik  siswa yang beriman,bertaqwa kepada Allah SWT dan berakhlaquk karimah.<br></li>
+	<li>Menghasilkan siswa yang cerdas,cermat,kreatif dan berkepribadian teguh.<br></li>
+	<li>Menghasilkan siswa yang terampil,mandiriuntuk berhasil mengatasi kelaparan dan membebaskan diri dari kemiskinan.<br><br><br></li>
+</ol>
 									
                     </div>
 		<div class="container">			
 					<h3 class="mb-20 title_color">Misi </h3>
-1.	Melaksanakan pendidikan dengan berdasarkan kurikulum SMK dari DEPDIKNAS RI dipadukan dengan muatan agama islam yang diperluas sehingga menghasilkan siswa yang beriman dan bertaqwa kepada Allah SWT. <br>
-2.	Menyelenggharakan pendidikan untuk meningkatkan kemampuan konstruktif,kompetitif,daya piker dan daya nalar positif siswa.<br>
-3.	Menjalin kerjasama yang baik antara pelaku pendidikan intern maupun ekstern.<br>
-4.	Meningkatkan kedisiplinan dengan melaksanakan peraturan-peraturan yang telah disepakati bersama.<br>
-5.	Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.<br>
-6.  Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa
-
+<ol>
+	<li>Melaksanakan pendidikan dengan berdasarkan kurikulum SMK dari DEPDIKNAS RI dipadukan dengan muatan agama islam yang diperluas sehingga menghasilkan siswa yang beriman dan bertaqwa kepada Allah SWT. <br></li>
+	<li>Menyelenggharakan pendidikan untuk meningkatkan kemampuan konstruktif,kompetitif,daya piker dan daya nalar positif siswa.<br></li>
+	<li>Menjalin kerjasama yang baik antara pelaku pendidikan intern maupun ekstern.<br></li>
+	<li>Meningkatkan kedisiplinan dengan melaksanakan peraturan-peraturan yang telah disepakati bersama.<br></li>
+	<li>Menyiapkan siswa untuk dapat melanjutkan ke Perguruan Tinggi.<br></li>
+	<li>Menjadikan Siswa/Siswi unggul dibidang Teknologi Informasi dan Komunikasi serta Siap Kerja. Berkualitas, Disiplin dan memiliki keimanan terhadap  tuhan yang Maha Esa</li>
+</ol>
 </div>
 <br>
 <br>
@@ -245,7 +247,6 @@
 					<h4>Jurusan</h4>
 					<ul>
 						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">

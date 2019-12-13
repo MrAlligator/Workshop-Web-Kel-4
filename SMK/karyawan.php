@@ -96,7 +96,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -186,18 +185,18 @@
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from db_karyawan");
+							$data = mysqli_query($koneksi,"SELECT * FROM tb_guru WHERE status='karyawan'");
 							while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_karyawan']; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
 							<div class="visit"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_karyawan']; ?></div>
-							<div class="visit"><?php echo $d['agama_karyawan']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir_karyawan']; ?></div>
-							<div class="country"><?php echo $d['tgllahir_karyawan']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_karyawan']; ?></div>
+							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="visit"><?php echo $d['agama_guru']; ?></div>
+							<div class="country"><?php echo $d['tmptlahir']; ?></div>
+							<div class="country"><?php echo $d['tgllahir']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>
 						<?php
 							}
@@ -234,7 +233,6 @@
 					<h4>Jurusan</h4>
 					<ul>
 						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">

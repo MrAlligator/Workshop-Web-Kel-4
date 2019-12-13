@@ -95,9 +95,7 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
-								</ul>
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -186,7 +184,7 @@
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"select * from tb_guru");
+							$data = mysqli_query($koneksi,"select * from tb_guru where status = 'guru'");
 							while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
@@ -234,7 +232,6 @@
 					<h4>Jurusan</h4>
 					<ul>
 						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">

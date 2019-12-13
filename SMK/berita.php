@@ -96,7 +96,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -212,8 +211,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="hapus-berita.php?id_berita=<?php echo $d['id_berita'];?>" onClick="return confirm('Hapus Berita?')"><button>Hapus</button></a>
-                <?php
+				<?php
                     }
                 ?>
 			</div>
@@ -232,9 +230,9 @@
 					<h4>Profil Sekolah</h4>
 					<ul>
 						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="#">Profil Singkat</a></li>
-						<li><a href="#">Visi dan Misi</a></li>
-						<li><a href="#">Struktur</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -249,7 +247,6 @@
 					<h4>Jurusan</h4>
 					<ul>
 						<li><a href="multimedia.php">Multimedia</a></li>
-						<li><a href="#">Pemensinan</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -262,8 +259,8 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Info</h4>
 					<ul>
-						<li><a href="#">Pengumuman</a></li>
-						<li><a href="#">Berita</a></li>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
