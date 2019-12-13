@@ -170,7 +170,8 @@
 							</h4>
 						</div>
 					</div>
-                </div>
+				</div>
+				<a href="hapus-berita.php?id_berita=<?php echo $d['id_berita'];?>" onClick="return confirm('Hapus Berita?')"><button>Hapus</button></a>
                 <?php
                     }
                 ?>

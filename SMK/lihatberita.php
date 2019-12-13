@@ -145,82 +145,27 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>BERITA</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
-
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
-	<!--================ Start Popular Courses Area =================-->
-	
-				<!-- single course -->
-				<!-- single course -->
-	<!--================ End Popular Courses Area =================-->
-
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
-	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+    
+    <div class="whole-wrap">
 		<div class="container">
-			<div class="row justify-content-center">
-			</div>
-			<div class="row">
-				<!-- single course -->
-				<?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?=$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
+			<div class="section-top-border">
+            <?php
+            include "koneksi.php";
+            $ambil_data = mysqli_query($koneksi,"select * from tb_berita where id_berita='$_GET[id_berita]'");
+            $hasil_data = mysqli_fetch_array($ambil_data);
+            ?>
+				<h3 class="mb-30 title_color"><?=$hasil_data['judul'];?></h3>
+				<div class="row">
+					<div class="col-md-3">
+						<img src="<?=$hasil_data['foto'];?>" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-9 mt-sm-20 left-align-p">
+						<p><?=$hasil_data['isi'];?></p>
 					</div>
 				</div>
-				<a href="hapus-berita.php?id_berita=<?php echo $d['id_berita'];?>" onClick="return confirm('Hapus Berita?')"><button>Hapus</button></a>
-                <?php
-                    }
-                ?>
-			</div>
-		</div>
-	</div>
-	<!--================ End Events Area =================-->
-
+            </div>
+        </div>
+    </div>
     <!--================Contact Area =================-->
     <!--================Contact Area =================-->
 
