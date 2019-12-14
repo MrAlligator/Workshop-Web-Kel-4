@@ -72,7 +72,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -165,61 +164,27 @@
 			</div>
 			<div class="row">
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru 2019/2020</a>
-							</h4>
-							<p>Pengumuman Penerimaan Mahasiswa Baru SMK Darus Salam 2019/2020</p>
-						</div>
-					</div>
-				</div>
+				<?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Ujian Akhir Semester Genap 2018/2019</a>
+								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p>Jadwal Ujian Semester Genap Tahun Pelajaran 2018/2019</p>
 						</div>
 					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Pemilihan Ketua Osis SMK Darus Salam 2018/2019</a>
-							</h4>
-							<p>Pemilihan Ketua Osis Dilaksanakan pada 10 Oktober 2018, dengan 2 pasangan Calon yang mendaftarkan.</p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Unjuk Kreasi Siswa Tahun Siswa 2018/2019</a>
-							</h4>
-							<p>Unjuk Kreasi Siswa Tahun Siswa 2018/2019 yang dilaksanakan pada 12 Desember 2018, berjalan meriah.</p>
-						</div>
-					</div>
-				</div>
+                </div>
+                <?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
@@ -249,61 +214,28 @@
 			</div>
 			<div class="row">
 				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Mengukir Prestasi Pada Open Championship se Jawa - Bali</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
+				<?php
+                    include 'koneksi.php';
+					$data = mysqli_query($koneksi,"select * from tb_berita");
+					$i = 4;
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
+								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita'];?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p></p>
 						</div>
 					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
+                </div>
+                <?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>

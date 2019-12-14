@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="css/video-js.min.css" type="text/css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -259,6 +260,7 @@
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="vendors/counter-up/jquery.counterup.js"></script>
 		<script src="js/mail-script.js"></script>
+		<script src="js/video.js"></script>
 		<!--gmaps Js-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 		<script src="js/gmaps.min.js"></script>

@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="css/video-js.min.css" type="text/css">
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -152,46 +153,21 @@
 			<div class="section-top-border">
 				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/elements/g1.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g1.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g2.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g2.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g3.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g3.jpg);"></div>
-						</a>
-					</div>
+				<?php
+				include 'koneksi.php';
+				$data = mysqli_query($koneksi,"select * from tb_video ");
+				while($d = mysqli_fetch_array($data)){
+				?>
 					<div class="col-md-6">
-						<a href="img/elements/g4.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g4.jpg);"></div>
+						<a href="<?php echo "img/video/".$d['nama_file']; ?>" class="img-gal">
+						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
+							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
+						</video>
 						</a>
 					</div>
-					<div class="col-md-6">
-						<a href="img/elements/g5.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g5.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g6.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g6.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g7.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g7.jpg);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/elements/g8.jpg" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/elements/g8.jpg);"></div>
-						</a>
-					</div>
+				<?php
+				}
+				?>
 				</div>
 			</div>
 		</div>
@@ -220,6 +196,7 @@
 		<script src="js/jquery.ajaxchimp.min.js"></script>
 		<script src="vendors/counter-up/jquery.counterup.js"></script>
 		<script src="js/mail-script.js"></script>
+		<script src="js/video.js"></script>
 		<!--gmaps Js-->
 		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 		<script src="js/gmaps.min.js"></script>
