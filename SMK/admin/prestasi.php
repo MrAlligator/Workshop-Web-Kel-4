@@ -4,6 +4,7 @@ include "koneksi.php";
 // Ambil Data yang Dikirim dari Form
 $judul_prestasi = addslashes($_POST['judul_prestasi']);
 $isi_prestasi = addslashes($_POST['isi_prestasi']);
+$jenis_p = addslashes($_POST['jenis_p']);
 $tanggal_prestasi = date('d M Y H:i');
   
 $namafolder="img/berita/"; //folder tempat menyimpan file
@@ -14,7 +15,7 @@ if (!empty($_FILES["file"]["tmp_name"]))
     {           
         $gambar = $namafolder . basename($_FILES['file']['name']);       
         if (move_uploaded_file($_FILES['file']['tmp_name'], $gambar)) {
-           mysqli_query($koneksi,"insert into tb_prestasi values ('','$judul_prestasi','$isi_prestasi','$tanggal_prestasi','$gambar')"); 
+           mysqli_query($koneksi,"insert into tb_prestasi values ('','$judul_prestasi','$isi_prestasi','$jenis_p','$tanggal_prestasi','$gambar')"); 
 		   ?>
 				<script language="javascript">
                     alert('Berhasil menambahkan');

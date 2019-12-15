@@ -152,6 +152,22 @@
                     </div>
                 </div>
 			</div>
+			<table>
+						<tr>
+							<td><label>Pilih Prestasi</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="jenis_p">
+								<option value="">Jenis Prestasi</option>
+								<option value="akademik">Akademik</option>  
+								<option value="non-akademik">Non-Akademik</option>
+								</select>
+							</td>
+							<td><input type="submit" value="Saring"></td>
+						</tr>
+					</table>
+					
 			<div class="row">
                 <?php
                     include 'koneksi.php';

@@ -139,6 +139,16 @@
 									<td><textarea rows="15" cols="100" name="isi_prestasi"></textarea></td>
 								</tr>
 								<tr>
+									<td>Jenis Prestasi</td>
+									<td>
+									<select name="jenis_p">
+										<option value="">Jenis Prestasi</option>      
+										<option value="akademik">akademik</option>  
+										<option value="non-akademik">non-akademik</option> 
+									</select>
+									</td>
+								</tr>
+								<tr>
 									<td>Tanggal </td>
 									<td><input type="date" name="tanggal_prestasi" placeholder="Tanggal" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
 									required class="single-input"></td>

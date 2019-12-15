@@ -153,6 +153,7 @@
                 <?=$hasil_data['isi_prestasi'];?>
             </p>
             <p class="sample-text">
+			<?=$hasil_data['jenis_p'];?>
                 <?=$hasil_data['tanggal_prestasi'];?>
             </p>
 		</div>
