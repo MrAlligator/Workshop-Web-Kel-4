@@ -154,8 +154,8 @@
                     </div>
                 </div>
 			</div>
-			<!-- <table>
-			<form method="get"> 
+            <table>
+			<form method="POST"> 
 						<tr>
 							<td><label>Pilih Prestasi</label></td>
 						</tr>
@@ -167,24 +167,36 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" value="Saring"></td>
+							<td><input type="submit" name ="submit" value="Saring"></td>
 						</tr>
 					</table>
-					</form> -->
+					</form>
 					
 			<div class="row">
                 <?php
                     include 'koneksi.php';
                     $data = mysqli_query($koneksi,"select * from tb_prestasi");
                     while($d = mysqli_fetch_array($data)){
-					
+                    }	
                 ?>
+                <?php
+					
+				  include 'koneksi.php';
+				  if(isset($_POST['submit'])){
+				  	$jenis_p = $_POST['jenis_p'];
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				  }else{
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  }
+				  while($d = mysqli_fetch_array($sql)){
+				  
+				?>
 				
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto_prestasi']; ?>" alt="">
+							<img class="img-fluid w-100" style="height=150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -194,19 +206,10 @@
 					</div>
                 </div>
 				<?php
-				// include 'koneksi.php';
-				// if(isset($_GET['jenis_p'])){
-				// 	$jenis_p = $_GET['jenis_p'];
-				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-				// }else{
-				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
-				// }
-				// while($d = mysqli_fetch_array($sql)){
-				// }
+				
+				 }
 				?>
-                <?php
-                    }
-                ?>
+               
 			</div>
 		</div>
 	</div>

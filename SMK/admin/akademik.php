@@ -147,13 +147,13 @@
 					<div class="main_title">
                         <a href="#"><h2>Prestasi Akademik</h2></a>
                         <div class="button-group-area mt-10">
-                            <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi Akademik</a>
+                           <h4> <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi Akademik</a></h4>
                         </div>
                     </div>
                 </div>
 			</div>
-			<!-- <table>
-			<form method="get"> 
+			 <table>
+			<form method="POST"> 
 						<tr>
 							<td><label>Pilih Prestasi</label></td>
 						</tr>
@@ -165,10 +165,10 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" value="Saring"></td>
+							<td><input type="submit" name ="submit" value="Saring"></td>
 						</tr>
 					</table>
-					</form> -->
+					</form>
 					
 			<div class="row">
                 <?php
@@ -177,12 +177,23 @@
                     while($d = mysqli_fetch_array($data)){
 					
                 ?>
-				
+				<?php
+					}
+				  include 'koneksi.php';
+				  if(isset($_POST['submit'])){
+				  	$jenis_p = $_POST['jenis_p'];
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				  }else{
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  }
+				  while($d = mysqli_fetch_array($sql)){
+				  
+				?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto_prestasi']; ?>" alt="">
+							<img class="img-fluid w-100"style="height:150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
 						</div>
 						<div class="course_content">
 						<h4><?php echo $d['jenis_p']?></h4>
@@ -193,20 +204,7 @@
 					</div>
                 </div>
 				<a href="hapus-akademik.php?id_prestasi=<?php echo $d['id_prestasi'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
-				<?php
-				// include 'koneksi.php';
-				// if(isset($_GET['jenis_p'])){
-				// 	$jenis_p = $_GET['jenis_p'];
-				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-				// }else{
-				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
-				// }
-				// while($d = mysqli_fetch_array($sql)){
-				// }
-				?>
-                <?php
-                    }
-                ?>
+				  <?php }?>
 			</div>
 		</div>
 	</div>
