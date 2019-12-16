@@ -117,86 +117,50 @@
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<div class="section-top-border">
+			<br><br>
+				<h3 class="mb-30 title_color"><center>Form Karyawan</center></h3>
 				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Element</h3>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
 						<form method="post" action="tambah_aksi3.php">
-							<table>
-								<tr>
-									<td>Jabatan</td>
-									<td><input type="text" name="jabatan" readonly value="karyawan" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Nama</td>
-									<td><input type="text" size="40" name="nama" onkeypress="return hanyaHuruf(event)" placeholder="Nama" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nama'" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" placeholder="NIP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'NIP'" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Jenis Kelamin</td>
-									<td>
-									<select name="jk">  
-										<option value="">Jenis Kelamin</option>  
-										<option value="Laki - Laki">Laki - Laki</option>  
-										<option value="Perempuan">Perempuan</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" onkeypress="return hanyaHuruf(event)"  placeholder="Tempat Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tempat Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" name="tanggal" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">  
-										<option value="">Agama</option>  
-										<option value="Islam">Islam</option>  
-										<option value="Kristen">Kristen</option>  
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Alamat</td>
-									<td><input type="text" name="alamat" onkeypress="return hanyaHuruf(event)"  placeholder="Alamat" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Alamat'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Telepon</td>
-									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" placeholder ="Telepon "onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telepon'" required class="single-input"></td>
-								</tr>
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
-								<script>
-									function hanyaAngka(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-										return false;
-										return true;
-									}
-									function hanyaHuruf(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
-										return false;
-										return true;
-									}
-								</script>
-							</table>
-						</form>
+							<label>Status</label><br>
+							<input type="text" name="jabatan" readonly value="karyawan" class="form-control">
+							<label>NIP</label><br>
+							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required>
+							<label>Nama</label><br>
+							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required>
+							<label>Jenis Kelamin</label><br>
+							<select name="jk" required>  
+								<option value="" disabled>Jenis Kelamin</option>  
+								<option value="Laki - Laki">Laki - Laki</option>  
+								<option value="Perempuan">Perempuan</option>  
+							</select><br><br>
+							<label>Agama</label><br>
+							<select name="agama" required>  
+								<option value="" disabled>Agama</option>  
+								<option value="Islam">Islam</option>  
+								<option value="Kristen">Kristen</option>
+								<option value="Hindu">Hindu</option>
+								<option value="Budha">Budha</option>
+								<option value="Katolik">Katolik</option>
+							</select><br><br>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
+							<label>Tempat Lahir</label><br>
+							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required>
+							<label>Tanggal Lahir</label><br>
+							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required>
+							<label>Alamat</label><br>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required></textarea>
+							<label>Nomor Telepon</label><br>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
+							<button class="btn btn-primary" type="submit">Simpan</button>
+							</form>
+						</div>	
 					</div>
 				</div>
-			</div>
 		</div>
 	</div>
 	<!-- End Align Area -->
@@ -223,3 +187,17 @@
 	</body>
 	
 	</html>
+	<script>
+		function hanyaAngka(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if (charCode > 31 && (charCode < 48 || charCode > 57))
+			return false;
+			return true;
+		}
+		function hanyaHuruf(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+			return true;
+		}
+	</script>

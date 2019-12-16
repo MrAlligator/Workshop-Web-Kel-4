@@ -129,18 +129,18 @@
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="guru" class="form-control">
 							<label>NIP</label><br>
-							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai">
+							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)">
+							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required>
 							<label>Jenis Kelamin</label><br>
-							<select name="jk">  
-								<option value="">Jenis Kelamin</option>  
+							<select name="jk" required>  
+								<option value="" disabled>Jenis Kelamin</option>  
 								<option value="Laki - Laki">Laki - Laki</option>  
 								<option value="Perempuan">Perempuan</option>  
 							</select><br><br>
 							<label>Agama</label><br>
-							<select name="agama">  
-								<option value="">Agama</option>  
+							<select name="agama" required>  
+								<option value="" disabled>Agama</option>  
 								<option value="Islam">Islam</option>  
 								<option value="Kristen">Kristen</option>
 								<option value="Hindu">Hindu</option>
@@ -152,14 +152,14 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 							<label>Tempat Lahir</label><br>
-							<input type="text" name=""class="form-control" placeholder="Tempat Lahir">
+							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required>
 							<label>Tanggal Lahir</label><br>
-							<input type="date" class="form-control" placeholder="Tanggal Lahir">
+							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required>
 							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat"></textarea>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)"><br>
-							<button class="btn btn-success" type="submit">Simpan</button>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
+							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	
 					</div>
