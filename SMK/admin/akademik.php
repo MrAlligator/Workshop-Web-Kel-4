@@ -192,6 +192,7 @@
 						</div>
 					</div>
                 </div>
+				<a href="hapus-akademik.php?id_prestasi=<?php echo $d['id_prestasi'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
 				<?php
 				// include 'koneksi.php';
 				// if(isset($_GET['jenis_p'])){
