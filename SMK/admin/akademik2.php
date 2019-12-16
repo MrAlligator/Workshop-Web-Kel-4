@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">KEMBALI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -140,24 +140,71 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-    <?php
-    include "koneksi.php";
-    $ambil_data = mysqli_query($koneksi,"select * from tb_prestasi where id_prestasi='$_GET[id_prestasi]'");
-    $hasil_data = mysqli_fetch_array($ambil_data);
-    ?>
-    <section class="sample-text-area">
+	<div class="popular_courses lite_bg">
 		<div class="container">
-            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
-			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
-			<p class="sample-text">
-                <?=$hasil_data['isi_prestasi'];?>
-            </p>
-            <p class="sample-text">
-			<?=$hasil_data['jenis_p'];?>
-                <?=$hasil_data['tanggal_prestasi'];?>
-            </p>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+                        <a href="#"><h2>Prestasi Akademik</h2></a>
+                    </div>
+                </div>
+			</div>
+			<!-- <table>
+			<form method="get"> 
+						<tr>
+							<td><label>Pilih Prestasi</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="jenis_p">
+								<option value="">Jenis Prestasi</option>
+								<option value="akademik">Akademik</option>  
+								<option value="non-akademik">Non-Akademik</option>
+								</select>
+							</td>
+							<td><input type="submit" value="Saring"></td>
+						</tr>
+					</table>
+					</form> -->
+					
+			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
+                    while($d = mysqli_fetch_array($data)){
+					
+                ?>
+				
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto_prestasi']; ?>" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+							</h4>
+						</div>
+					</div>
+                </div>
+				<?php
+				// include 'koneksi.php';
+				// if(isset($_GET['jenis_p'])){
+				// 	$jenis_p = $_GET['jenis_p'];
+				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				// }else{
+				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				// }
+				// while($d = mysqli_fetch_array($sql)){
+				// }
+				?>
+                <?php
+                    }
+                ?>
+			</div>
 		</div>
-	</section>
+	</div>
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->

@@ -152,7 +152,8 @@
                     </div>
                 </div>
 			</div>
-			<table>
+			<!-- <table>
+			<form method="get"> 
 						<tr>
 							<td><label>Pilih Prestasi</label></td>
 						</tr>
@@ -167,13 +168,16 @@
 							<td><input type="submit" value="Saring"></td>
 						</tr>
 					</table>
+					</form> -->
 					
 			<div class="row">
                 <?php
                     include 'koneksi.php';
                     $data = mysqli_query($koneksi,"select * from tb_prestasi");
                     while($d = mysqli_fetch_array($data)){
+					
                 ?>
+				
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
@@ -181,12 +185,24 @@
 							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto_prestasi']; ?>" alt="">
 						</div>
 						<div class="course_content">
+						<h4><?php echo $d['jenis_p']?></h4>
 							<h4>
 								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?></a>
 							</h4>
 						</div>
 					</div>
                 </div>
+				<?php
+				// include 'koneksi.php';
+				// if(isset($_GET['jenis_p'])){
+				// 	$jenis_p = $_GET['jenis_p'];
+				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				// }else{
+				// 	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				// }
+				// while($d = mysqli_fetch_array($sql)){
+				// }
+				?>
                 <?php
                     }
                 ?>
