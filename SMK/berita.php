@@ -190,6 +190,7 @@
 	<div class="popular_courses lite_bg">
 		<div class="container">
 			<div class="row justify-content-center">
+
 			</div>
 			<div class="row">
 				<!-- single course -->
@@ -202,16 +203,16 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?=$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
+								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita'];?>"><?php echo $d['judul']?></a>
 							</h4>
 						</div>
 					</div>
-				</div>
-				<?php
+                </div>
+                <?php
                     }
                 ?>
 			</div>

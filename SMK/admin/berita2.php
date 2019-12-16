@@ -147,7 +147,7 @@
 					<div class="main_title">
                         <a href="#"><h2>Berita</h2></a>
                         <div class="button-group-area mt-10">
-                            <a href="tambah-berita.php" class="genric-btn default">Tambah Berita</a>
+                            <a href="tambah-berita.php"><button class="btn btn-success">Tambah Berita</button></a>
                         </div>
                     </div>
                 </div>
@@ -171,7 +171,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="hapus-berita.php?id_berita=<?php echo $d['id_berita'];?>" onClick="return confirm('Hapus Berita?')"><button>Hapus</button></a>
+				<a href="hapus-berita.php?id_berita=<?php echo $d['id_berita'];?>" onClick="return confirm('Hapus Berita?')"><button class="btn btn-danger">Hapus</button></a>
                 <?php
                     }
                 ?>

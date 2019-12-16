@@ -120,8 +120,8 @@
 			<div class="section-top-border">
 				<h3 class="title_color text-center">GALERI FOTO</h3>
 				<form action="aksi.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" name="upload" value="Upload">
+					<input class="btn btn-primary btn-sm" type="file" name="file">
+					<input class="btn btn-success" type="submit" name="upload" value="Upload">
 				</form>
 				<div class="row gallery-item">
 				<?php
@@ -133,7 +133,7 @@
 						<a href="<?php echo "img/gallery/".$d['nama_file']; ?>" class="img-gal">
 							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
 						</a>
-						<a href="hapus-gambar.php?id_foto=<?php echo $d['id_foto'];?>" onClick="return confirm('Hapus Foto?')"/><button type="button" class="btn btn-danger btn-sm">Hapus</button></a>
+						<a href="hapus-gambar.php?id_foto=<?php echo $d['id_foto'];?>" onClick="return confirm('Hapus Foto?')"/><button type="button" class="btn btn-danger">Hapus</button></a>
 					</div>
 				<?php
 				}

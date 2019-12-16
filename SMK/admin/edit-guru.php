@@ -117,137 +117,74 @@
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<div class="section-top-border">
+			<br><br>
+				<h3 class="mb-30 title_color"><center>Form Guru</center></h3>
 				<div class="row">
-					<div class="col-lg-8 col-md-8">
-                        <h3 class="mb-30 title_color">Form Element</h3>
-                        <?php
+					<?php
                         include 'koneksi.php';
                         $id= $_GET['id_guru'];
                         $data = mysqli_query($koneksi,"select * from tb_guru where id_guru='$id'");
                         while($d = mysqli_fetch_array($data)){
                         ?>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
 						<form method="post" action="update-guru.php">
-							<table>
-								<tr>
-									<td>Jabatan</td>
-									<td>
-										<select name="jabatan">
-										<?php
-										$status = $d['status'];
-										if ($status=="guru") echo "<option value = 'guru' selected>Guru</option>";
-										else echo "<option value = 'guru'>Guru</option>";
-										if ($status=="karyawan") echo "<option value = 'karyawan' selected>Karyawan</option>";
-										else echo "<option value = 'karyawan'>karyawan</option>";
-										?>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Nama</td>
-									<td><input type="text" size="40" name="nama" value="<?php echo $d['nama_guru']; ?>" required class="single-input"></td>
-									<td><input type="hidden" name="id" value="<?php echo $d['id_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>NIP</td>
-									<td><input type="text" name="nip" readonly value="<?php echo $d['nip']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Jenis Kelamin</td>
-									<td>
-									<select name="jk">
-										<?php
-										$jk = $d['jk_guru'];
-										if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
-										else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
-										if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
-										else echo "<option value = 'Perempuan'>Perempuan</option>";
-										?>
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Tempat Lahir</td>
-									<td><input type="text" name="tempat" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" size="30" name="tanggal" value="<?php echo $d['tgllahir']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">
-									<?php
-										$agama = $d['agama_guru'];
-										if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
-										else echo "<option value = 'Islam'>Islam</option>";
-										if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
-										else echo "<option value = 'Kristen'>Kristen</option>";
-										?>
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Alamat</td>
-									<td><input type="text" name="alamat" value="<?php echo $d['alamat_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Telepon</td>
-									<td><input type="text" maxlength="12" onkeypress="return hanyaAngka(event)" name="telepon" value="<?php echo $d['telp_guru']; ?>" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Password</td>
-									<td><input type="password" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required class="single-input"></td>
-									<td><input type="checkbox" id="show-pass" name="show-pass"> Show password</td>
-								</tr>
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
-								<script>
-									function hanyaAngka(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if (charCode > 31 && (charCode < 48 || charCode > 57))
-										
-										return false;
-									return true;
-									}
-
-									(function() {
-										var _show = function( element, field ) {
-											this.element = element;
-											this.field = field;
-											this.toggle();    
-										};
-										_show.prototype = {
-											toggle: function() {
-												var self = this;
-												self.element.addEventListener( "change", function() {
-													if( self.element.checked ) {
-														self.field.setAttribute( "type", "text" );
-													} else {
-														self.field.setAttribute( "type", "password" );    
-													}
-												}, false);
-											}
-										};
-										
-										document.addEventListener( "DOMContentLoaded", function() {
-											var checkbox = document.querySelector( "#show-pass" ),
-												pass = document.querySelector( "#pass" ),
-												_form = document.querySelector( "form" );
-												var toggler = new _show( checkbox, pass );
-										});
-									})();
-								</script>
-							</table>
-                        </form>
-                        <?php 
-                        }
-                        ?>
+							<label>Status</label><br>
+							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
+							<label>NIP</label><br>
+							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nip'] ?>" onkeypress="return hanyaAngka(event)" required>
+							<label>Nama</label><br>
+							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" onkeypress="return hanyaHuruf(event)" required>
+							<label>Kelas</label><br>
+							<label>Jenis Kelamin</label><br>
+							<select name="jk" required>  
+								<?php
+									$jk = $d['jk_guru'];
+									if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
+									else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
+									if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
+									else echo "<option value = 'Perempuan'>Perempuan</option>";
+								?>
+							</select><br><br>
+							<label>Agama</label><br>
+							<select name="agama" required>  
+								<?php
+									$agama = $d['agama_guru'];
+									if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
+									else echo "<option value = 'Islam'>Islam</option>";
+									if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
+									else echo "<option value = 'Kristen'>Kristen</option>";
+									if ($agama=="Hindu") echo "<option value = 'Hindu' selected>Hindu</option>";
+									else echo "<option value = 'Hindu'>Hindu</option>";
+									if ($agama=="Budha") echo "<option value = 'Budha' selected>Budha</option>";
+									else echo "<option value = 'Budha'>Budha</option>";
+									if ($agama=="Katolik") echo "<option value = 'Katolik' selected>Katolik</option>";
+									else echo "<option value = 'Katolik'>Katolik</option>";
+								?>
+							</select><br><br>
+						</div>
 					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
+							<label>Tempat Lahir</label><br>
+							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmptlahir'] ?>" required>
+							<label>Tanggal Lahir</label><br>
+							<input type="date" name="tanggal" class="form-control" value="<?php echo $d['tgllahir'] ?>" required>
+							<label>Alamat</label><br>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" required><?php echo $d['alamat_guru'] ?></textarea>
+							<label>Nomor Telepon</label><br>
+							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_guru'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
+							<label>Password</label><br>
+							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
+							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
+							<button class="btn btn-primary" type="submit">Simpan</button>
+							</form>
+						</div>	
+					</div>
+					<?php 
+                    }
+                    ?>
 				</div>
-			</div>
 		</div>
 	</div>
 	<!-- End Align Area -->
@@ -272,5 +209,40 @@
 		<script src="js/gmaps.min.js"></script>
 		<script src="js/theme.js"></script>
 	</body>
+	<script>
+	function hanyaAngka(evt) {
+		var charCode = (evt.which) ? evt.which : event.keyCode
+		if (charCode > 31 && (charCode < 48 || charCode > 57))
+		
+		return false;
+		return true;
+	}
+
+	(function() {
+		var _show = function( element, field ) {
+			this.element = element;
+			this.field = field;
+			this.toggle();    
+		};
+	_show.prototype = {
+		toggle: function() {
+			var self = this;
+			self.element.addEventListener( "change", function() {
+			if( self.element.checked ) {
+			self.field.setAttribute( "type", "text" );
+			} else {
+			self.field.setAttribute( "type", "password" );    
+			}
+			}, false);
+		}
+	};
 	
+	document.addEventListener( "DOMContentLoaded", function() {
+		var checkbox = document.querySelector( "#show-pass" ),
+		pass = document.querySelector( "#pass" ),
+		_form = document.querySelector( "form" );
+		var toggler = new _show( checkbox, pass );
+	});
+	})();
+	</script>
 	</html>

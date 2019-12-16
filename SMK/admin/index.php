@@ -157,8 +157,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<!-- single course -->
-				<?php
+                <?php
                     include 'koneksi.php';
                     $data = mysqli_query($koneksi,"select * from tb_pengumuman");
                     while($d = mysqli_fetch_array($data)){
@@ -167,7 +166,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -176,7 +175,7 @@
 						</div>
 					</div>
                 </div>
-                <?php
+				<?php
                     }
                 ?>
 			</div>
@@ -207,27 +206,25 @@
 				</div>
 			</div>
 			<div class="row">
-				<!-- single course -->
-				<?php
+                <?php
                     include 'koneksi.php';
-					$data = mysqli_query($koneksi,"select * from tb_berita");
-					$i = 4;
+                    $data = mysqli_query($koneksi,"select * from tb_berita");
                     while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita'];?>"><?php echo $d['judul']?></a>
+								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
 							</h4>
 						</div>
 					</div>
-                </div>
-                <?php
+				</div>
+				<?php
                     }
                 ?>
 			</div>
