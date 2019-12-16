@@ -152,6 +152,7 @@
 						</div>
 					</div>
                 </div>
+				<a href="hapus-pengumuman.php?id_peng=<?php echo $d['id_peng'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
                 <?php
                     }
                 ?>

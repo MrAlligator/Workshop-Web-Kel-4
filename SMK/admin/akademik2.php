@@ -47,15 +47,14 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">KEMBALI</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -69,24 +68,16 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
-								</ul>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
 							<li class="nav-item">
@@ -110,6 +101,20 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
+    <section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>PRESTASI</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	
 	<!--================ End Home Banner Area =================-->
 
@@ -140,24 +145,74 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-    <?php
-    include "koneksi.php";
-    $ambil_data = mysqli_query($koneksi,"select * from tb_prestasi where id_prestasi='$_GET[id_prestasi]'");
-    $hasil_data = mysqli_fetch_array($ambil_data);
-    ?>
-    <section class="sample-text-area">
+	<div class="popular_courses lite_bg">
 		<div class="container">
-            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
-			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
-			<p class="sample-text">
-                <?=$hasil_data['isi_prestasi'];?>
-            </p>
-            <p class="sample-text">
-			<?=$hasil_data['jenis_p'];?>
-                <?=$hasil_data['tanggal_prestasi'];?>
-            </p>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+                        <a href="#"><h2>Prestasi Akademik</h2></a>
+                    </div>
+                </div>
+			</div>
+            <table>
+			<form method="POST"> 
+						<tr>
+							<td><label>Pilih Prestasi</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="jenis_p">
+								<option value="">Jenis Prestasi</option>
+								<option value="akademik">Akademik</option>  
+								<option value="non-akademik">Non-Akademik</option>
+								</select>
+							</td>
+							<td><input type="submit" name ="submit" value="Saring"></td>
+						</tr>
+					</table>
+					</form>
+					
+			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
+                    while($d = mysqli_fetch_array($data)){
+                    }	
+                ?>
+                <?php
+					
+				  include 'koneksi.php';
+				  if(isset($_POST['submit'])){
+				  	$jenis_p = $_POST['jenis_p'];
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				  }else{
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  }
+				  while($d = mysqli_fetch_array($sql)){
+				  
+				?>
+				
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" style="height=150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+							</h4>
+						</div>
+					</div>
+                </div>
+				<?php
+				
+				 }
+				?>
+               
+			</div>
 		</div>
-	</section>
+	</div>
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->

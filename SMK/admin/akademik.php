@@ -145,14 +145,15 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-                        <a href="#"><h2>Prestasi Akademik</h2></a>
+                        <a href="#"><h2>PRESTASI</h2></a>
                         <div class="button-group-area mt-10">
-                            <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi Akademik</a>
+                           <h4> <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi</a></h4>
                         </div>
                     </div>
                 </div>
 			</div>
-			<table>
+			 <table>
+			<form method="POST"> 
 						<tr>
 							<td><label>Pilih Prestasi</label></td>
 						</tr>
@@ -164,32 +165,46 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" value="Saring"></td>
+							<td><input type="submit" name ="submit" value="Saring"></td>
 						</tr>
 					</table>
+					</form>
 					
 			<div class="row">
                 <?php
                     include 'koneksi.php';
                     $data = mysqli_query($koneksi,"select * from tb_prestasi");
                     while($d = mysqli_fetch_array($data)){
+					
                 ?>
+				<?php
+					}
+				  include 'koneksi.php';
+				  if(isset($_POST['submit'])){
+				  	$jenis_p = $_POST['jenis_p'];
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				  }else{
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  }
+				  while($d = mysqli_fetch_array($sql)){
+				  
+				?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "img/berita/".$d['foto_prestasi']; ?>" alt="">
+							<img class="img-fluid w-100"style="height:150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
 						</div>
 						<div class="course_content">
+						<h4><?php echo $d['jenis_p']?></h4>
 							<h4>
 								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?></a>
 							</h4>
 						</div>
 					</div>
                 </div>
-                <?php
-                    }
-                ?>
+				<a href="hapus-akademik.php?id_prestasi=<?php echo $d['id_prestasi'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
+				  <?php }?>
 			</div>
 		</div>
 	</div>
