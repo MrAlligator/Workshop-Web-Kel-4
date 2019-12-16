@@ -108,91 +108,91 @@
 								<tr>
 
 									<td>No Daftar</td>
-    	                            <td><input type="text" size="40" name="no_daftar" placeholder=""  value="<?php echo $d['no_daftar']; ?>" class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="no_daftar" placeholder=""  value="<?php echo $d['no_daftar']; ?>" class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Nama Lengkap</td>
-    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder=""  value="<?php echo $d['nama_lengkap']; ?>" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder=""  value="<?php echo $d['nama_lengkap']; ?>" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Tempat Lahir</td>
-    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="" value="<?php echo $d['tmptlahir']; ?>" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="" value="<?php echo $d['tmptlahir']; ?>" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Tanggal Lahir</td>
-    	                            <td><input type="text" size="40" name="tgllahir" value="<?php echo $d['tgllahir']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="tgllahir" value="<?php echo $d['tgllahir']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Jenis Kelamin</td>
-    	                            <td><input type="text" size="40" name="jk" value="<?php echo $d['jk']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="jk" value="<?php echo $d['jk']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Agama</td>
-    	                            <td><input type="text" size="40" name="agama" value="<?php echo $d['agama']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="agama" value="<?php echo $d['agama']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Anak Ke</td>
-    	                            <td><input type="text" size="40" name="anak_ke" value="<?php echo $d['anak_ke']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="anak_ke" value="<?php echo $d['anak_ke']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Status Dalam Keluarga</td>
-    	                            <td><input type="text" size="40" name="status_dlm_keluarga" value="<?php echo $d['status_dlm_keluarga']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="status_dlm_keluarga" value="<?php echo $d['status_dlm_keluarga']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Alamat Siswa</td>
-    	                            <td><input type="text" size="40" name="alamat_siswa" value="<?php echo $d['alamat_siswa']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="alamat_siswa" value="<?php echo $d['alamat_siswa']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Telepon Siswa</td>
-    	                            <td><input type="text" size="40" name="telp_siswa" value="<?php echo $d['telp_siswa']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="telp_siswa" value="<?php echo $d['telp_siswa']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Sekolah Asal</td>
-    	                            <td><input type="text" size="40" name="sekolah_asal" value="<?php echo $d['sekolah_asal']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="sekolah_asal" value="<?php echo $d['sekolah_asal']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Alamat Sekolah</td>
-    	                            <td><input type="text" size="40" name="alamat_sekolah" value="<?php echo $d['alamat_sekolah']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="alamat_sekolah" value="<?php echo $d['alamat_sekolah']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Tahun Lulus</td>
-    	                            <td><input type="text" size="40" name="tahun_lulus" value="<?php echo $d['tahun_lulus']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="tahun_lulus" value="<?php echo $d['tahun_lulus']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Total Nilai UN</td>
-    	                            <td><input type="text" size="40" name="total_nilai_un" value="<?php echo $d['total_nilai_un']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="total_nilai_un" value="<?php echo $d['total_nilai_un']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Nama Ayah</td>
-    	                            <td><input type="text" size="40" name="nama_ayah" value="<?php echo $d['nama_ayah']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="nama_ayah" value="<?php echo $d['nama_ayah']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Nama Ibu</td>
-    	                            <td><input type="text" size="40" name="nama_ibu" value="<?php echo $d['nama_ibu']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="nama_ibu" value="<?php echo $d['nama_ibu']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Alamat Orang Tua</td>
-    	                            <td><input type="text" size="40" name="alamat_ortu" value="<?php echo $d['alamat_ortu']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="alamat_ortu" value="<?php echo $d['alamat_ortu']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Telepon Orang Tua</td>
-    	                            <td><input type="text" size="40" name="telp_ortu" value="<?php echo $d['telp_ortu']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="telp_ortu" value="<?php echo $d['telp_ortu']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Pekerjaan Ayah</td>
-    	                            <td><input type="text" size="40" name="perkerjaan_ayah" value="<?php echo $d['perkerjaan_ayah']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="perkerjaan_ayah" value="<?php echo $d['perkerjaan_ayah']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Pekerjaan Ibu</td>
-    	                            <td><input type="text" size="40" name="pekerjaan_ibu" value="<?php echo $d['pekerjaan_ibu']; ?>" placeholder="" required class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="pekerjaan_ibu" value="<?php echo $d['pekerjaan_ibu']; ?>" placeholder="" required class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Nama Wali</td>
-    	                            <td><input type="text" size="40" name="nama_wali" value="<?php echo $d['nama_wali']; ?>" placeholder=""  class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="nama_wali" value="<?php echo $d['nama_wali']; ?>" placeholder=""  class="form-control"disabled></td>
 								</tr>
 								<tr>
 									<td>Alamat Wali</td>
-    	                            <td><input type="text" size="40" name="alamat_wali" value="<?php echo $d['alamat_wali']; ?>" placeholder=""  class="single-input"disabled></td>
+    	                            <td><input type="text" size="40" name="alamat_wali" value="<?php echo $d['alamat_wali']; ?>" placeholder=""  class="form-control"disabled></td>
 								</tr>
 								<?php
 							}

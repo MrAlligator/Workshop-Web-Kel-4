@@ -85,117 +85,76 @@
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<div class="section-top-border">
+			<br><br>
+				<h3 class="mb-30 title_color"><center>Form Siswa</center></h3>
 				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Input Calon Siswa</h3>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
 						<form action="simpancalonsiswa.php" method="post" enctype="multipart/form-data">	
-							<table>
-								<tr>
-									<td>No Daftar</td>
-    	                            <td><input type="text" size="40" name="no_daftar" placeholder="No Daftar"  class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Nama Lengkap</td>
-    	                            <td><input type="text" size="40" name="nama_lengkap" placeholder="Nama Lengkap"  class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tempat Lahir</td>
-    	                            <td><input type="text" size="40" name="tmptlahir" placeholder="Tempat Lahir"  class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tanggal Lahir</td>
-									<td><input type="date" name="tgllahir" placeholder="Tanggal Lahir" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Tanggal Lahir'"
-									required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Jenis Kelamin</td>
-									<td>
-									<select name="jk">
-										<option value="">Jenis Kelamin</option>      
-										<option value="laki-laki">Laki-laki</option>  
-										<option value="prempuan">Prempuan</option> 
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Agama</td>
-									<td>
-									<select name="agama">    
-										<option value="islam">Islam</option>  
-										<option value="hindu">Hindu</option> 
-										<option value="kristen">Kristen</option>   
-										<option value="buddha">Buddha</option> 
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Anak Ke</td>
-    	                            <td><input type="text" size="40" name="anak_ke" placeholder="Anak Ke"  class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Status Dalam Keluarga</td>
-    	                            <td><input type="text" size="40" name="status_dlm_keluarga" placeholder="Status Dalam Keluarga" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Alamat Siswa</td>
-    	                            <td><input type="text" size="40" name="alamat_siswa" placeholder="Alamat Siswa" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Telepon Siswa</td>
-    	                            <td><input type="text" size="40" name="telp_siswa" maxlength="12" placeholder="Telpon Siswa" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Sekolah Asal</td>
-    	                            <td><input type="text" size="40" name="sekolah_asal" placeholder="Sekolah Asal" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Alamat Sekolah</td>
-    	                            <td><input type="text" size="40" name="alamat_sekolah" placeholder="Alamat Sekolah" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Tahun Lulus</td>
-    	                            <td><input type="text" size="40" name="tahun_lulus" placeholder="Tahun Lulus" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Total Nilai UN</td>
-    	                            <td><input type="text" size="40" name="total_nilai_un" placeholder="Total Nilai UN" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Nama Ayah</td>
-    	                            <td><input type="text" size="40" name="nama_ayah" placeholder="Nama Ayah" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Nama Ibu</td>
-    	                            <td><input type="text" size="40" name="nama_ibu" placeholder="Nama Ibu" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Alamat Orang Tua</td>
-    	                            <td><input type="text" size="40" name="alamat_ortu" placeholder="Alamat Orang Tua" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Telepon Orang Tua</td>
-    	                            <td><input type="text" size="40" name="telp_ortu" maxlength="12" placeholder="Telepon Orang Tua" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Pekerjaan Ayah</td>
-    	                            <td><input type="text" size="40" name="perkerjaan_ayah" placeholder="Pekerjaan Ayah" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Pekerjaan Ibu</td>
-    	                            <td><input type="text" size="40" name="pekerjaan_ibu" placeholder="Pekerjaan Ibu" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Nama Wali</td>
-    	                            <td><input type="text" size="40" name="nama_wali" placeholder="Nama Wali"  class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Alamat Wali</td>
-    	                            <td><input type="text" size="40" name="alamat_wali" placeholder="Alamat Wali"  class="single-input"></td>
-								</tr>
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
+						<label>Nomer Daftar</label><br>
+							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar">
+							<label>Nama Lengkap</label><br>
+							<input type="text" name="nama_lengkap" class="form-control" placeholder="NamaLengkap"   required>
+							<label>Tempat Lahir</label><br>
+							<input type="text" name="tmptlahir" class="form-control" placeholder="Tempat Lahir" required>
+							<label>Tanggal Lahir</label><br>
+							<input type="date" name="tgllahir" class="form-control" placeholder="Tanggal Lahir" required>
+							<label>Jenis Kelamin</label><br>
+							<select name="jk" required>  
+								<option value="">Jenis Kelamin</option>  
+								<option value="Laki - Laki">Laki - Laki</option>  
+								<option value="Perempuan">Perempuan</option>  
+							</select><br><br>
+							<label>Agama</label><br>
+							<select name="agama" required>  
+								<option value="">Agama</option>  
+								<option value="Islam">Islam</option>  
+								<option value="Kristen">Kristen</option>
+								<option value="Hindu">Hindu</option>
+								<option value="Budha">Budha</option>
+								<option value="Katolik">Katolik</option>
+							</select><br><br>
+							<br>
+							<label>Anak Ke</label><br>
+							<input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke" required>
+							<label>Status Dalam Keluarga</label><br>
+							<input type="text" name="status_dlm_keluarga" class="form-control" placeholder="Status Dalam Keluarga" required>
+							<label>Alamat Siswa</label><br>
+							<input type="text" name="alamat_siswa" class="form-control" placeholder="Alamat Siswa" required>
+							<label>Telpon Siswa</label><br>
+							<input type="text" name="telp_siswa" class="form-control" placeholder="Telpon Siswa" maxlength="12" required>
+							<label>Sekolah Asal</label><br>
+							<input type="text" name="sekolah_asal" class="form-control" placeholder="Sekolah Asal" required>
+							<label>Alamat Sekolah</label><br>
+							<input type="text" name="alamat_sekolah" class="form-control" placeholder="Alamat Sekolah" required>
+							<label>Tahun Lulus</label><br>
+							<input type="text" name="tahun_lulus" class="form-control" placeholder="Tahun Lulus" maxlength="4" required>
+							<label>Nilai UN</label><br>
+							<input type="text" name="total_nilai_un" class="form-control" placeholder="Nilai UN" required>
+						
+							</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
+							
+							<label>Nama Ayah</label><br>
+							<input type="text" name="nama_ayah" class="form-control" placeholder="Nama Ayah" required>
+							<label>Nama Ibu</label><br>
+							<input type="text" name="nama_ibu" class="form-control" placeholder="Nama Ibu" required>
+							<label>Alamat Orang Tua</label><br>
+							<input type="text" name="alamat_ortu" class="form-control" placeholder="Alamat Orang Tua" required>
+							<label>Telpon Orang Tua</label><br>
+							<input type="text" name="telp_ortu" class="form-control" placeholder="Telpon Orang Tua" maxlength="12" required>
+							<label>Pekerjaan Ayah</label><br>
+							<input type="text" name="perkerjaan_ayah" class="form-control" placeholder="Pekerjaan Ayah" >
+							<label>Pekerjaan Ibu</label><br>
+							<input type="text" name="pekerjaan_ibu" class="form-control" placeholder="Pekerjaan Ibu" >
+							<label>Nama Wali</label><br>
+							<input type="text" name="nama_wali" class="form-control" placeholder="Nama Wali" >
+							<label>Alamat Wali</label><br>
+							<input type="text" name="alamat_wali" class="form-control" placeholder="Alamat Wali" ><br>
+							<button class="btn btn-primary" type="submit" value="simpan">Simpan</button>
+								
 								<script>
 									function hanyaAngka(evt) {
 										var charCode = (evt.which) ? evt.which : event.keyCode
@@ -205,8 +164,10 @@
 										return true;
 									}
 								</script>
-							</table>
+							
 						</form>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
