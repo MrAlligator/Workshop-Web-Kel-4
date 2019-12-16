@@ -145,9 +145,9 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-                        <a href="#"><h2>Prestasi Akademik</h2></a>
+                        <a href="#"><h2>PRESTASI</h2></a>
                         <div class="button-group-area mt-10">
-                           <h4> <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi Akademik</a></h4>
+                           <h4> <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi</a></h4>
                         </div>
                     </div>
                 </div>
