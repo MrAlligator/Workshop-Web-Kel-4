@@ -176,8 +176,8 @@
 							<div class="country"><?php echo $d['hari']; ?></div>
 							<div class="country"><?php echo $d['durasi']; ?></div>
                             <div class="country">
-                                <a href="edit.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
-                                <a href="hapus.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
+                                <a href="edit-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
+                                <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
                             </div>
 						</div>
                         <?php
