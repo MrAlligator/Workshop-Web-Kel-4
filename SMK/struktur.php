@@ -169,72 +169,40 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
+	<div class="whole-wrap">
 		<div class="container">
-			<h3 class="text-heading title_color">Struktur</h3>
-			<p style="font-family:Arial">         
-
-		</div>
-    </section>
-    <div class="whole-wrap">
-		<div class="container">
-						<h3 class="mb-20 title_color">Dalam kategori multimedia content production menggunakan media sebagai berikut : </h3>
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+					<center><h3 class="mb-20 title_color">Struktur Organisasi</h3></center>
+					<center><h3 class="mb-20 title_color">SMK Darus Salam Tahun Pelajaran 2019 / 2020</h3></center>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						
+					</div>
+					<div class="col-md-6 col-xs-12">
 						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Media tulisan (Teks)</li></p>
-								<li style="font-family:Arial"><p>Media Suara (Audio)</li></p>
-                                <li style="font-family:Arial"><p>Media Video</li></p>
-                                <li style="font-family:Arial"><p>Media Gambar (Grafik)</li></p>
-                                <li style="font-family:Arial"><p>Media Animasi</li>
-                                <li style="font-family:Arial"><p>Media Efek Khusus (Special Effect)</li>
-                                <li style="font-family:Arial"><p>Media Interaktif (Interactivity)</li>	
-							</ul>
-                    </div>
-</div>
-</div>
-<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Multimedia ini tak akan jauh dari seni dan imajinasi kita. Menurut Hofstetter (2001) Multimedia terdiri dari 5 unsur, yaitu :</h3>
-            <p style="font-family:Arial"><b>Teks</b> merupakan unsur dasar untuk meyampaikan informasi. Dalam penempatan teks pun tidak sembarangan. Harus teliti mampu menemukan kunci empatik konsumen dengan imajinasi kita. Atau biasa dipelajari dalam materi Tipografi.</p></br>
-            <p style="font-family:Arial"><b>Gambar (Grafik)</b> merupakan informasi yang tidak dijelaskan dengan kata-kata. Kadangkala ketika kita di berkendara di jalan raya melihat baligo besar berisi informasi hanya dengan melihat gambar saja tanpa membaca kata-katanya kita sudah dapat menyimpulkan isi dari baligo tersebut.</p></br>
-            <p style="font-family:Arial"> <b>Audio</b> merupakan unsur yang bisa berupa percakapan, music atau efek suara. Multimedia tanpa audio akan terasa hambar seperti sayur tanpa garam. Hehehe … Format dasar audio ini biasanya WAVE dan MIDI.</p></br>
-            <p style="font-family:Arial"><b>Video</b> merupakan unsur yang membuat suatu informasi tampak terasa hidup dan lebih jelas. Tentu diiringi dengan audionya.</p></br>
-            <p style="font-family:Arial"><b>Animasi</b> merupakan simulasi gerakan yang dihasilkan  dengan menampilkan beberapa frame ke layer.</p>
-
-</div>
-<div class="whole-wrap">
-		<div class="container">
-       
-						<h3 class="mb-20 title_color">Dalam jurusan multimedia ini kita akan mempelajari hal – hal berikut :</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Dasar-dasar multimedia</li></p>
-								<li style="font-family:Arial"><p>Pengenalan dan Perakitan PC</li></p>
-                                <li style="font-family:Arial"><p>Etimologi Multimedia</li></p>
-                                <li style="font-family:Arial"><p>Fotografi  dan Teknik Pengambilan Gambar</li></p>
-                                <li style="font-family:Arial"><p>Belajar Animasi Dasar</li></p>
-                                <li style="font-family:Arial"><p>Alir Produksi Multimedia</li></p>
-                                <li style="font-family:Arial"><p>Pengelolaan Web</li></p>
-                                <li style="font-family:Arial"><p>Desain Animasi</li></p>
-                                <li style="font-family:Arial"><p>Video Shooting</li></p>
-                                <li style="font-family:Arial"><p>Audio dan Video Editing</li></p>
-                                <li style="font-family:Arial"><p>Menggambar Clean-up dan Sisip</li></p>
-                                <li style="font-family:Arial"><p>Perawatan peralatan multimedia</li></p>
-                                <li style="font-family:Arial"><p>Proposal pembuatan produk</li></p>
-                                <li style="font-family:Arial"><p>Seni Grafis dan Gambar 2D</li></p>
-                                <li style="font-family:Arial"><p>Stop Motion</li></p>
-                                <li style="font-family:Arial"><p>Efek Khusus</li></p>
-                                <li style="font-family:Arial"><p>Pembuatan Story Board</li></p>
-                                <li style="font-family:Arial"><p>Instalasi Sistem Operasi Dasar</li></p>
-                                <li style="font-family:Arial"><p>Final Project (Proyek Akhir pembuatan produk multimedia)</li></p>
-							</ul>
+							<ol class="ordered-list">
+								<li><span>Komite							:	Abdur Rahman S.Pd.</span></li>
+								<li><span>Kepala Sekolah					:	Ahmad Mahfud S.Pd.</span></li>
+								<li><span>Wakil Bidang Kurikulum			:	Nur Yuliana Dewi S.Pd.</span></li>
+								<li><span>Wakil Bidang Humas				:	Abdul Muis S.Pd.</span></li>
+								<li><span>Wakil Bidang Kesiswaan			:	Yosi Adi Ariesta S.Pd.</span></li>
+								<li><span>Wakil Bidang Sarana dan Prasarana	:	Hanisah S.Pd.</span></li>
+								<li><span>Kepala Departemen					:	Ansori</span></li>
+								<li><span>Kepala Laboratorium				:	Selvia Yugus A</span></li>
+								<li><span>Kepala Tata Usaha					:	Siti Hanafiah</span></li>
+							</ol>
 						</div>
-                    </div>
-
-</div>
-				<!-- single course -->
-				
-				
+					</div>
+					<div class="col-md-2 col-xs-12">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
