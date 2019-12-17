@@ -154,9 +154,9 @@
 					<div class="col-md-12 col-xs-12">
 						<form method="post" action="tambah_aksi5.php" enctype="multipart/form-data">	
 							<label>Judul</label><br>
-							<input type="text" name="judul" class="form-control" placeholder="Judul Pengumuman" required>
+							<input type="text" name="judul" class="form-control" placeholder="Judul Pengumuman" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Isi</label><br>
-							<textarea type="text" name="isi" class="form-control" cols="40" rows="10" placeholder="Isi" required></textarea>
+							<textarea type="text" name="isi" class="form-control" cols="40" rows="10" placeholder="Isi" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Foto</label><br>
 							<input class="btn btn-primary" type="file" name="file"><br><br>
 							<button class="btn btn-success" type="submit">Simpan</button>

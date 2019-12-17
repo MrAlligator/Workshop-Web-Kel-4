@@ -126,9 +126,9 @@
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="karyawan" class="form-control">
 							<label>NIP</label><br>
-							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required>
+							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Jenis Kelamin</label><br>
 							<select name="jk" required>  
 								<option value="" disabled>Jenis Kelamin</option>  
@@ -149,13 +149,13 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required>
+							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required>
+							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required></textarea>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	
