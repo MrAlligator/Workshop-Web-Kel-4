@@ -132,7 +132,7 @@
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
 							<label>NIS</label><br>
-							<input type="text" name="nip" class="form-control" value="<?php echo $d['nis'] ?>" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nis'] ?>" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
 							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_siswa'] ?>" onkeypress="return hanyaHuruf(event)" required>
 							<label>Kelas</label><br>

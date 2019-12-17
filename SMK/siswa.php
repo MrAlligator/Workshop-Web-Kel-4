@@ -185,7 +185,7 @@
 								<option value="XII">XII</option>
 								</select>
 							</td>
-							<td><input type="submit" value="FILTER"></td>
+							<td><input class="btn btn-success" type="submit" value="FILTER"></td>
 						</tr>
 					</table>
 				</form>

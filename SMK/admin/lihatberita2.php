@@ -145,15 +145,26 @@
     $ambil_data = mysqli_query($koneksi,"select * from tb_berita where id_berita='$_GET[id_berita]'");
     $hasil_data = mysqli_fetch_array($ambil_data);
     ?>
-    <section class="sample-text-area">
+    <div class="whole-wrap">
 		<div class="container">
-            <img src="<?=$hasil_data['foto'];?>" style="width:600px; height: 300px;"/></br></br>
-			<h3 class="text-heading title_color"><?=$hasil_data['judul'];?></h3>
-			<p class="sample-text">
-                <?=$hasil_data['isi'];?>
-            </p>
+			<div class="section-top-border">
+				<center><h3 class="mb-30 title_color"><?=$hasil_data['judul'];?></h3></center>
+				<div class="row">
+					<div class="col-md-12 col-xs-12">
+						<center><img src="<?=$hasil_data['foto'];?>" width="500px" height="375px" alt="" class="img-fluid"></center>
+						<br>
+						<br>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8"><p align="left"><?=$hasil_data['isi'];?></p></div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
 		</div>
-	</section>
+	</div>
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->

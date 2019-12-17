@@ -190,10 +190,10 @@
 	<div class="popular_courses lite_bg">
 		<div class="container">
 			<div class="row justify-content-center">
+
 			</div>
 			<div class="row">
-				<!-- single course -->
-				<?php
+                <?php
                     include 'koneksi.php';
                     $data = mysqli_query($koneksi,"select * from tb_berita");
                     while($d = mysqli_fetch_array($data)){
@@ -202,7 +202,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?=$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "admin/".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>

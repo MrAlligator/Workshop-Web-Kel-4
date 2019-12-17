@@ -120,9 +120,10 @@
 			<div class="section-top-border">
 				<h3 class="title_color text-center">GALERI VIDEO</h3>
 				<form action="aksi2.php" method="post" enctype="multipart/form-data">
-					<input type="file" name="file">
-					<input type="submit" name="upload" value="Upload">
+					<input class="btn btn-primary btn-sm" type="file" name="file">
+					<input class="btn btn-success" type="submit" name="upload" value="Upload">
 				</form>
+				<br>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
@@ -135,7 +136,7 @@
 							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
 						</video>
 						</a>
-						<a href="hapus-video.php?id_video=<?php echo $d['id_video'];?>" onClick="return confirm('Hapus Video?')"/><button>Hapus</button></a>
+						<a href="hapus-video.php?id_video=<?php echo $d['id_video'];?>" onClick="return confirm('Hapus Video?')"/><button class="btn btn-danger">Hapus</button></a>
 					</div>
 				<?php
 				}

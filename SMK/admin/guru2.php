@@ -108,7 +108,20 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
+	<style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+	</style>
     <!--================Home Banner Area =================-->
     
     <!--================End Home Banner Area =================-->
@@ -123,9 +136,14 @@
 		<div class="container">
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">DATA GURU</h3>
-                <div class="button-group-area mt-10">
-				    <a href="tambah-guru.php" class="genric-btn default">Tambah Guru</a>
-                </div>
+                <div>
+					<ul class="right">
+						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
+						<a href="form-importguru.php"><button class="btn btn-primary">Import</button></a>
+						<a href="unduhguru.php"><button class="btn btn-primary">Export</button></a>
+					</ul>
+				</div>
+				<br>
 </br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
@@ -158,8 +176,8 @@
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <button><a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>">Edit</a></button>
-                                <button><a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')">Hapus</a></button>
+                                <a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>"><button class="btn btn-warning">Edit</button></a>
+                                <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
                         <?php

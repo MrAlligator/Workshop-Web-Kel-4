@@ -118,7 +118,7 @@
     <div class="whole-wrap">
 		<div class="container">
 			<br><br>
-				<h3 class="mb-30 title_color"><center>Form Siswa</center></h3>
+				<h3 class="mb-30 title_color"><center>Form Karyawan</center></h3>
 				<div class="row">
 					<?php
                         include 'koneksi.php';
@@ -128,13 +128,14 @@
                         ?>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="tambah_aksi.php">
+						<form method="post" action="update-guru.php">
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
-							<label>NIS</label><br>
-							<input type="text" name="nip" class="form-control" value="<?php echo $d['nip'] ?>" onkeypress="return hanyaAngka(event)" required>
+							<label>NIP</label><br>
+							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nip'] ?>" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
 							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" onkeypress="return hanyaHuruf(event)" required>
+							<label>Kelas</label><br>
 							<label>Jenis Kelamin</label><br>
 							<select name="jk" required>  
 								<?php
@@ -166,15 +167,15 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmptlhr_guru'] ?>" required>
+							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmptlahir'] ?>" required>
 							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tanggal" class="form-control" value="<?php echo $d['tgllhr_guru'] ?>" required>
+							<input type="date" name="tanggal" class="form-control" value="<?php echo $d['tgllahir'] ?>" required>
 							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" value="<?php echo $d['alamat_guru'] ?>" required></textarea>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" required><?php echo $d['alamat_guru'] ?></textarea>
 							<label>Nomor Telepon</label><br>
 							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_guru'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
 							<label>Password</label><br>
-							<input type="text" id="pass" name="pass" class="form-control" value="<?php echo $d['password'] ?>" maxlength="8" required>
+							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>

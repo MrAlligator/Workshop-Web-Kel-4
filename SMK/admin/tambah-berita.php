@@ -125,25 +125,17 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
+			<h3 class="mb-30 title_color text-center">Form Berita</h3>
 				<div class="row">
-					<div class="col-lg-8 col-md-8">
-						<h3 class="mb-30 title_color">Form Berita</h3>
+					<div class="col-md-12 col-xs-12">
 						<form method="post" action="tambah_aksi4.php" enctype="multipart/form-data">	
-							<table>
-								<tr>
-									<td>Judul</td>
-    	                            <td><input type="text" size="100" name="judul"></td>
-								</tr>
-								<tr>
-									<td>Isi</td>
-									<td><textarea rows="15" cols="100" name="isi"></textarea></td>
-								</tr>
-								<tr>
-									<td>Foto</td>
-									<td><input type="file" name="file"></td>
-									<td><input type="submit" name="upload" value="Upload"></td>
-                                </tr>
-							</table>
+							<label>Judul</label><br>
+							<input type="text" name="judul" class="form-control" placeholder="Judul Berita" required>
+							<label>Isi</label><br>
+							<textarea type="text" name="isi" class="form-control" cols="40" rows="10" placeholder="Isi" required></textarea>
+							<label>Foto</label><br>
+							<input class="btn btn-primary" type="file" name="file"><br><br>
+							<button class="btn btn-success" type="submit">Simpan</button>
 						</form>
 					</div>
 				</div>

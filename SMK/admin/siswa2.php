@@ -121,11 +121,6 @@
 			float: right;
 			display: block;
 		}
-		.button ul a{
-		padding: 8px;
-		background: rgb(0, 101, 255);
-		color: white;
-		}
 	</style>
     <!--================Home Banner Area =================-->
     
@@ -140,11 +135,12 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button">
-					<ul class="left">
-						<a href="tambah.php">Tambah Siswa</a>
-						<a href="form-import.php">Import Data</a>
+				<h3 class="mb-30 title_color text-center">DATA SISWA</h3>
+				<div>
+					<ul class="right">
+						<a href="tambah.php"><button class="btn btn-primary">Tambah</button></a>
+						<a href="form-import.php"><button class="btn btn-primary">Import</button></a>
+						<a href="unduh.php"><button class="btn btn-primary">Export</button></a>
 					</ul>
 				</div>
 				<br>
@@ -162,7 +158,7 @@
 								<option value="XII">XII</option>
 								</select>
 							</td>
-							<td><input type="submit" value="Saring"></td>
+							<td><input type="submit" value="Saring" class="btn btn-success"></td>
 						</tr>
 					</table>
 				</form>
@@ -203,8 +199,8 @@
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
 							<div class="country"><?php echo $d['telp_siswa']; ?></div>
                             <div class="country">
-                                <a href="edit.php?id_siswa=<?php echo $d['id_siswa'];?>"><button>Edit</button></a>
-                                <a href="hapus.php?id_siswa=<?php echo $d['id_siswa'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
+                                <a href="edit.php?id_siswa=<?php echo $d['id_siswa'];?>"><button class="btn btn-warning">Edit</button></a><br>
+                                <a href="hapus.php?id_siswa=<?php echo $d['id_siswa'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
                         <?php

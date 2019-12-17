@@ -48,7 +48,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -58,7 +58,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Kehadiran</a>
 								<ul class="dropdown-menu">
@@ -124,49 +124,43 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">Absensi Siswa</h3>
 				<br>
-				<form id="absen" method="post" action="aksi3.php">	
-							<table>
-								<tr>
-								<td>NIS</td>
-									<td>
-										<select id="nis" name="nis" onchange="changeValue(this.value)">
-										<option disabled="" selected="">Pilih</option>
-										<?php
-										include "koneksi.php";
-										$sql=mysqli_query($koneksi, "SELECT * FROM tb_siswa");
-										$jsArray = "var prdName = new Array();\n";
-										while ($data=mysqli_fetch_array($sql)) {
-											echo '<option value="'.$data['nis'].'">'.$data['nis'].'</option> ';
-											$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "',kelas:'".addslashes($data['kelas'])."'};\n";
-										}
-										?>
-										</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Nama</td>
-									<td><input type="text" name="nama" id="nama" readonly="" placeholder="Nama" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Kelas</td>
-									<td><input type="text" name="kelas" id="kelas" readonly="" placeholder="Kelas" required class="single-input"></td>
-								</tr>
-								<tr>
-									<td>Kehadiran</td>
-									<td>
-										<input type="checkbox" name="hadir" value="Hadir">Hadir<br>
-										<input type="checkbox" name="hadir" value="Sakit">Sakit<br>
-										<input type="checkbox" name="hadir" value="Izin">Izin<br>
-										<input type="checkbox" name="hadir" value="Tanpa Keterangan">Tanpa Keterangan<br>
-									</td>
-								</tr>
-								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
-								</tr>
-							</table>
-						</form>
-						<br>
-						<br>
+				<div class="row">
+				<div class="col-md-6 col-xs-12">
+					<div class="form-group">
+						<form id="absen" method="post" action="aksi3.php">
+							<label>NIS</label><br>
+							<select id="nis" name="nis" onchange="changeValue(this.value)">
+								<option disabled="" selected="">Pilih</option>
+								<?php
+									include "koneksi.php";
+									$sql=mysqli_query($koneksi, "SELECT * FROM tb_siswa");
+									$jsArray = "var prdName = new Array();\n";
+									while ($data=mysqli_fetch_array($sql)) {
+										echo '<option value="'.$data['nis'].'">'.$data['nis'].'</option> ';
+										$jsArray .= "prdName['" . $data['nis'] . "'] = {nama:'" . addslashes($data['nama_siswa']) . "',kelas:'".addslashes($data['kelas'])."'};\n";
+									}
+								?>
+							</select><br><br>
+							<label>Nama</label><br>
+							<input type="text" id="nama" name="nama" class="form-control" readonly required>
+							<label>Kelas</label><br>
+							<input type="text" id="kelas" name="kelas" class="form-control" readonly required>
+						</div>
+					</div>
+				<div class="col-md-6 col-xs-12">
+					<div class="form-group">
+						<label>Kehadiran</label><br>
+						<input type="checkbox" name="hadir" value="Hadir">Hadir<br>
+						<input type="checkbox" name="hadir" value="Sakit">Sakit<br>
+						<input type="checkbox" name="hadir" value="Izin">Izin<br>
+						<input type="checkbox" name="hadir" value="Tanpa Keterangan">Tanpa Keterangan<br><br><br>
+						<button class="btn btn-success" type="submit">Simpan</button>
+					</form>
+					<a href="hapusabs.php"><button class="btn btn-danger">Reset Data Harian</button></a>
+					<a href="cetakabs.php"><button class="btn btn-primary">Cetak</button></a>
+					</div>
+				</div>
+			</div>
 						<br>
 						<div class="progress-table-wrap">
 							<div class="progress-table">
@@ -177,7 +171,6 @@
 									<div class="country">Nama</div>
 									<div class="country">Kelas</div>
 									<div class="country">Keterangan</div>
-									<div class="country">Aksi</div>
 								</div>
 								<?php 
 									include 'koneksi.php';
@@ -192,10 +185,6 @@
 									<div class="country"><?php echo $d['namaabsen_siswa']; ?></div>
 									<div class="country"><?php echo $d['kelasabsen_siswa']; ?></div>
 									<div class="country"><?php echo $d['ket']; ?></div>
-									<div class="country">
-										<button><a href="edit-absen.php?id_absen=<?php echo $d['id_absen'];?>">Edit</a></button>
-										<button><a href="hapus-absen.php?id_absen=<?php echo $d['id_absen'];?>" onClick="return confirm('Hapus Data?')">Hapus</a></button>
-									</div>
 								</div>
 								<?php
 									}

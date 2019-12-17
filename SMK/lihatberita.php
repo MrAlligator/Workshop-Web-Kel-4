@@ -145,26 +145,31 @@
 
 	<!--================ Start Home Banner Area =================-->
     
+    <?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_berita where id_berita='$_GET[id_berita]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-            <?php
-            include "koneksi.php";
-            $ambil_data = mysqli_query($koneksi,"select * from tb_berita where id_berita='$_GET[id_berita]'");
-            $hasil_data = mysqli_fetch_array($ambil_data);
-            ?>
-				<h3 class="mb-30 title_color"><?=$hasil_data['judul'];?></h3>
+				<center><h3 class="mb-30 title_color"><?=$hasil_data['judul'];?></h3></center>
 				<div class="row">
-					<div class="col-md-3">
-						<img src="<?=$hasil_data['foto'];?>" alt="" class="img-fluid">
-					</div>
-					<div class="col-md-9 mt-sm-20 left-align-p">
-						<p><?=$hasil_data['isi'];?></p>
+					<div class="col-md-12 col-xs-12">
+						<center><img src="<?php echo "admin/".$hasil_data['foto']; ?>" width="500px" height="375px" alt="" class="img-fluid"></center>
+						<br>
+						<br>
+						
 					</div>
 				</div>
-            </div>
-        </div>
-    </div>
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8"><p align="left"><?=$hasil_data['isi'];?></p></div>
+					<div class="col-md-2"></div>
+				</div>
+			</div>
+		</div>
+	</div>
     <!--================Contact Area =================-->
     <!--================Contact Area =================-->
 
