@@ -133,14 +133,14 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
                         <a href="#"><h2>PRESTASI</h2></a>
                         <div class="button-group-area mt-10">
-                           <h4> <a href="tambah-prestasi.php" class="genric-btn default">Tambah Prestasi</a></h4>
+                           <h4><a href="tambah-prestasi.php"><button class="btn btn-primary">Tambah Prestasi</button></a></h4>
                         </div>
                     </div>
                 </div>
@@ -158,7 +158,7 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" name ="submit" value="Filter prestasi"></td>
+							<td><input class="btn btn-success" type="submit" name ="submit" value="Saring Prestasi"></td>
 						</tr>
 					</table>
 					</form>
