@@ -92,7 +92,7 @@
 						<div class="form-group">
 						<form action="simpancalonsiswa.php" method="post" enctype="multipart/form-data">	
 						<label>Nomer Daftar</label><br>
-							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar" maxlength="5" onkeypress="return hanyaAngka(event)">
+							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar" maxlength="5" onkeypress="return hanyaAngka(event)"required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama Lengkap</label><br>
 							<input type="text" name="nama_lengkap" class="form-control" placeholder="NamaLengkap"   required>
 							<label>Tempat Lahir</label><br>
