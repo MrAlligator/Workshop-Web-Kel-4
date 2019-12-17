@@ -122,8 +122,8 @@
 							<div class="country"><?php echo $d['nilai_uas']; ?></div>
 							<div class="country"><?php echo $d['nilai_sikap']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
+                                <button><a href="edit.php?id=<?php echo $d['nama'];?>">Edit</a></button>
+                                <button><a href="hapus.php?id=<?php echo $d['nama'];?>">Hapus</a></button>
                             </div>
 						</div>
                         <?php
