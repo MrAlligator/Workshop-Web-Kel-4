@@ -167,7 +167,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
@@ -218,7 +218,7 @@
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
                         <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "admin/img/berita/".$d['foto']; ?>" alt="">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
