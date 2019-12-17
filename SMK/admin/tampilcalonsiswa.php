@@ -47,11 +47,41 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Kembali</a></li>
-							<li class="nav-item">
-								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Daftar Siswa</a>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Data</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+								</ul>
 							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Kehadiran</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="absensi.php">Daftar Hadir</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Galeri</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
+								</ul>
+							</li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Info</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
+								</ul>
+							</li>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -59,7 +89,7 @@
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Admin</a>
+								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -86,7 +116,7 @@
 		<div class="container">
 			<div class="section-top-border">
 				<h3 class="mb-30 title_color text-center">Data Calon Siswa</h3>
-				<a class="genric-btn danger circle arrow" href="inputcalonsiswa.php">Tambah Calon siswa<span class="lnr lnr-arrow-right"></span></a>
+				<a class="btn btn-primary" href="inputcalonsiswa.php">Tambah Calon siswa</a>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
