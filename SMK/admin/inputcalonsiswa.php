@@ -92,7 +92,7 @@
 						<div class="form-group">
 						<form action="simpancalonsiswa.php" method="post" enctype="multipart/form-data">	
 						<label>Nomer Daftar</label><br>
-							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar">
+							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar" maxlength="5" onkeypress="return hanyaAngka(event)">
 							<label>Nama Lengkap</label><br>
 							<input type="text" name="nama_lengkap" class="form-control" placeholder="NamaLengkap"   required>
 							<label>Tempat Lahir</label><br>
@@ -113,30 +113,30 @@
 								<option value="Hindu">Hindu</option>
 								<option value="Budha">Budha</option>
 								<option value="Katolik">Katolik</option>
-							</select><br><br>
-							<br>
+							</select><br><br><br><br>
+							
 							<label>Anak Ke</label><br>
-							<input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke" required>
+							<input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke" maxlength="1" onkeypress="return hanyaAngka(event)" required>
 							<label>Status Dalam Keluarga</label><br>
 							<input type="text" name="status_dlm_keluarga" class="form-control" placeholder="Status Dalam Keluarga" required>
 							<label>Alamat Siswa</label><br>
 							<input type="text" name="alamat_siswa" class="form-control" placeholder="Alamat Siswa" required>
 							<label>Telpon Siswa</label><br>
-							<input type="text" name="telp_siswa" class="form-control" placeholder="Telpon Siswa" maxlength="12" required>
+							<input type="text" name="telp_siswa" class="form-control" placeholder="Telpon Siswa" maxlength="12" onkeypress="return hanyaAngka(event)" required>
 							<label>Sekolah Asal</label><br>
 							<input type="text" name="sekolah_asal" class="form-control" placeholder="Sekolah Asal" required>
-							<label>Alamat Sekolah</label><br>
-							<input type="text" name="alamat_sekolah" class="form-control" placeholder="Alamat Sekolah" required>
-							<label>Tahun Lulus</label><br>
-							<input type="text" name="tahun_lulus" class="form-control" placeholder="Tahun Lulus" maxlength="4" required>
-							<label>Nilai UN</label><br>
-							<input type="text" name="total_nilai_un" class="form-control" placeholder="Nilai UN" required>
+							
 						
 							</div>
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-							
+						<label>Alamat Sekolah</label><br>
+							<input type="text" name="alamat_sekolah" class="form-control" placeholder="Alamat Sekolah" required>
+							<label>Tahun Lulus</label><br>
+							<input type="text" name="tahun_lulus" class="form-control" placeholder="Tahun Lulus" maxlength="4" onkeypress="return hanyaAngka(event)" required>
+							<label>Nilai UN</label><br>
+							<input type="text" name="total_nilai_un" class="form-control" placeholder="Nilai UN" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama Ayah</label><br>
 							<input type="text" name="nama_ayah" class="form-control" placeholder="Nama Ayah" required>
 							<label>Nama Ibu</label><br>
@@ -144,7 +144,7 @@
 							<label>Alamat Orang Tua</label><br>
 							<input type="text" name="alamat_ortu" class="form-control" placeholder="Alamat Orang Tua" required>
 							<label>Telpon Orang Tua</label><br>
-							<input type="text" name="telp_ortu" class="form-control" placeholder="Telpon Orang Tua" maxlength="12" required>
+							<input type="text" name="telp_ortu" class="form-control" placeholder="Telpon Orang Tua" maxlength="12" onkeypress="return hanyaAngka(event)" required>
 							<label>Pekerjaan Ayah</label><br>
 							<input type="text" name="perkerjaan_ayah" class="form-control" placeholder="Pekerjaan Ayah" >
 							<label>Pekerjaan Ibu</label><br>
@@ -152,7 +152,7 @@
 							<label>Nama Wali</label><br>
 							<input type="text" name="nama_wali" class="form-control" placeholder="Nama Wali" >
 							<label>Alamat Wali</label><br>
-							<input type="text" name="alamat_wali" class="form-control" placeholder="Alamat Wali" ><br>
+							<input type="text" name="alamat_wali" class="form-control" placeholder="Alamat Wali" ><br><br>
 							<button class="btn btn-primary" type="submit" value="simpan">Simpan</button>
 								
 								<script>

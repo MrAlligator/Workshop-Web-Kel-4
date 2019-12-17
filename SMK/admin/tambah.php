@@ -161,7 +161,7 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required>
+							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
 							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required>
 							<label>Alamat</label><br>
