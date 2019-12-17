@@ -127,9 +127,9 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="banner_content text-center">
-                            <h2>STRUKTUR</h2>
+                            <h2>Struktur Organisasi<br>SMK Darus Salam Tahun 2019/2020</h2>
                         </div>
                     </div>
                 </div>
@@ -150,12 +150,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-md-12 col-xs-12">
-					<center><h3 class="mb-20 title_color">Struktur Organisasi</h3></center>
-					<center><h3 class="mb-20 title_color">SMK Darus Salam Tahun Pelajaran 2019 / 2020</h3></center>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-12">
 						

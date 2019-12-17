@@ -165,13 +165,10 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>Berita</h2></a>
-					</div>
 				</div>
 			</div>
 			<div class="row">

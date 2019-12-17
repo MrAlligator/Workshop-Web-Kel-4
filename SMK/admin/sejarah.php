@@ -129,7 +129,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>SEJARAH SINGKAT</h2>
+                            <h2>Sejarah<br> SMK Darus Salam</h2>
                         </div>
                     </div>
                 </div>
@@ -147,12 +147,8 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-center">Sejarah SMK Darus Salam Bondowoso</h3>
-			<p style="font-family:Arial">         
-		</div>
-    </section>
+	<br>
+	<br>
 		<div class="container">
             <p style="text-align:justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dalam upaya membangun masyarakat beragama, beradap dan berwawasan luas ditengah derasnya arus informasi komunikasi di era globalisasi, diperlukan kader-kader bangsa yang potensial untuk mendukung tercapainya kultur masyarakat ilmiah dan religi dalam proses pengembangan sumber daya manuasia. Wonosari merupakan salah satu kecamatan di Kabupaten Bondowoso yang masyarakatnya kurang mendapatkan ilmu pengetahuan agama khususnya di Dusun Jambi Asem dan sekitarnya, karena pada waktu itu pendidikan agama sangatlah minim.</p></br>
 			<p style="text-align:justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Maka sejak saat itu, Pondok Pesantren Talang Mas Darus Salam didirikan pada tahun 2008, dengan bantuan para sesepuh dan warga masyarakat sekitar berusaha mendirikan pondok pesantren tersebut demi berlanjutnya generasi bangsa yang intelek dan religius khususnya dalam menegakkan ajaran agama Allah dan menjalankan ahlus sunnah waljamaah. Pondok Pesantren Talang Mas Darus Salam tetap berjalan hingga saat ini karena banyaknya dukungan dari para warga sekitar untuk tetap eksis dalam menjalankan pendidikan agama.</p></br>
