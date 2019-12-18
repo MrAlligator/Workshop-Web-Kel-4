@@ -30,7 +30,7 @@
                             <input type="submit" value="LOGIN" >
                         </div>
                         <span class="forget-pass">
-                            <a href="index.php">Kembali</a>
+                            <a class="genric-btn danger circle" href="index.php" >Kembali</a>
                         </span>
                         <div class="clear"> </div>
                     </div>
