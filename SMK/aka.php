@@ -98,7 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
@@ -122,7 +122,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="aka.php">Prestasi</a></li>
+							<li class="nav-item active"><a class="nav-link" href="aka.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -137,20 +137,21 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area2">
+    <section class="banner_area3">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>PENCAK SILAT</h2>
+                            <h2>PRESTASI</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+	
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -162,68 +163,9 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Pengertian Pencak Silat</h3>
-			<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
-Meski demikian, masing-masing negara juga mempunyai sebutannya sendiri sesuai dengan bahasa lokal mereka seperti gayong dan cekak (Malaysia dan Singapura), bersilat (Thailand), dan pasilat (Filipina).
-Pencak silat berasal dari dua kata, yakni pencak dan silat. Pengertian pencak ialah gerak dasar bela diri dan terikat dengan peraturan. 
-Sedangkan silat berarti gerak beladiri sempurna yang bersumber dari kerohanian.
-Dalam perkembangannya, silat ini lebih mengutamakan unsur seni dalam penampilan keindahan gerakan, sementara itu silat ialah inti dari ajaran bela diri dalam pertarungan.
-<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pengurus Besar IPSI menyebutkan pengertian pencak silat sebagai :
-“Pencak silat ialah hasil budaya manusia di Indonesia untuk membela, lalu mempertahankan eksistensi (kemandiriannya) serta integritasnya (manunggal) untuk lingkungan hidup sekitarnya guna mencapai keselarasan hidup dalam meningkatkan iman & taqwa terhadap Tuhan YME”.
-Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu sebagai permainan (keahlian) dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan ataupun tanpa senjata.
-
-           
-
-		</div>
-    </section>
-    <div class="whole-wrap">
-		<div class="container">
-						<h3 class="mb-20 title_color">Beberapa istilah resmi yang berkaitan dengan silat dari berbagai daerah di Indonesia, diantaranya yaitu:</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>Di provinsi Sumatera Barat terdapat istilah Silek & Gayuang</li></p>
-								<li style="font-family:Arial"><p>Pesisir timur provinsi Sumatra Barat serta Malaysia terdapat istilah Bersilat</li></p>
-                                <li style="font-family:Arial"><p>Di Jawa Barat terdapatistilah Maempok serta Penca</li></p>
-                                <li style="font-family:Arial"><p>Di Jawa Tengah, Yogyakarta, provinsi Jawa Timur terdapat istilah Pencak</li></p>
-                                <li style="font-family:Arial"><p>Di Madura dengan Pulau Bawean terdapat istilah Mancak</li>
-                                <li style="font-family:Arial"><p>Di Bali terdapat istilah Mancak ataupun Encak</li>
-                                <li style="font-family:Arial"><p>Di NTB dan Dompu terdapat istilah Mpaa Sila</li>	
-							</ul>
-                    </div>
-</div>
-</div>
-<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color">Sejarah Pencak silat</h3>
-			<p class="text-justify" style="font-family:Arial">Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
-Selain seabgai upaya untuk mempertahankan diri, seni bela diri ini juga menjadi salah satu seni budaya yang terus dilestarikan hingga sekarang.
-Dan seperti yang telah kita ketahui, silat ini tak hanya berkembang di negara Indonesia saja.
-Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam, Singapura, ataupun negara lainnya.
-
-            </p>
-
-</div>
-<div class="whole-wrap">
-		<div class="container">
-       
-						<h3 class="mb-20 title_color">Organiasi silat lainnya diantaranya sebagai berikut:</h3>
-						<div class="">
-							<ul class="unordered-list">
-								<li style="font-family:Arial"><p>IPSI (Ikatan Pencak Silat Indonesia) di Indonesia</li></p>
-								<li style="font-family:Arial"><p>PESAKA (Persekutuan Silat Kebangsaan Malaysia) di Malaysia</li></p>
-                                <li style="font-family:Arial"><p>PERSIS (Persekutuan Silat Singapore) di Singapura</li></p>
-                                <li style="font-family:Arial"><p>PERSIB (Persekutuan Silat Bruei Darussalam) di Brunei Darussalam</li></p>
-							</ul>
-						</div>
-                    </div>
-
-</div>
-
+	
 				<!-- single course -->
-				
-				
+				<!-- single course -->
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
@@ -239,118 +181,82 @@ Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam,
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="whole-wrap">
+	<div class="popular_courses lite_bg">
 		<div class="container">
-			<div class="section-top-border">
-				<h3 class="title_color">Image Gallery</h3>
-				<div class="row gallery-item">
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
+			<div class="row justify-content-center">
+				<div class="col-lg-6">
+					<div class="main_title">
+                        <a href="#"><h2>Prestasi SMK Darus Salam</h2></a>
+                    </div>
+                </div>
+			</div>
+            <table>
+			<form method="POST"> 
+						<tr>
+							<td><label>Pilih Prestasi</label></td>
+						</tr>
+						<tr>
+							<td>
+								<select name="jenis_p">
+								<option value="">Jenis Prestasi</option>
+								<option value="akademik">Akademik</option>  
+								<option value="non-akademik">Non-Akademik</option>
+								</select>
+							</td>
+							<td><input type="submit" name ="submit" value="Filter Prestasi"></td>
+						</tr>
+					</table>
+					</form>
+					
+			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
+                    while($d = mysqli_fetch_array($data)){
+                    }	
+                ?>
+                <?php
+					
+				  include 'koneksi.php';
+				  if(isset($_POST['submit'])){
+				  	$jenis_p = $_POST['jenis_p'];
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+				  }else{
+				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  }
+				  while($d = mysqli_fetch_array($sql)){
+				  
+				?>
+				
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" style="height=150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+							</h4>
+						</div>
 					</div>
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-6">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-					<div class="col-md-4">
-						<a href="img/logosmk.png" class="img-gal">
-							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
-						</a>
-					</div>
-				</div>
+                </div>
+				<?php
+				
+				 }
+				?>
+               
 			</div>
 		</div>
 	</div>
-	<br>
-<br>
-<br>
-<br>
+	<!--================ End Events Area =================-->
+
+    <!--================Contact Area =================-->
+	
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
-	<footer class="footer-area section_gap">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Profil Sekolah</h4>
-					<ul>
-						<li><a href="sejarah.php">Sejarah</a></li>
-						<li><a href="profilsingkat.php">Profil Singkat</a></li>
-						<li><a href="visimisi.php">Visi dan Misi</a></li>
-						<li><a href="struktur.php">Struktur</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Data Sekolah</h4>
-					<ul>
-						<li><a href="siswa.php">Siswa</a></li>
-						<li><a href="guru.php">Guru</a></li>
-						<li><a href="karyawan.php">Karyawan</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Jurusan</h4>
-					<ul>
-						<li><a href="multimedia.php">Multimedia</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakurikuler</h4>
-					<ul>
-						<li><a href="pramuka.php">Pramuka</a></li>
-						<li><a href="pencak_silat.php">Pencak Silat</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Info</h4>
-					<ul>
-						<li><a href="pengumuman.php">Pengumuman</a></li>
-						<li><a href="berita.php">Berita</a></li>
-					</ul>
-				</div>
-				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Prestasi</h4>
-					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
-					</ul>
-				</div>
-			</div>
-		
-		</div>
-		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
-	</footer>
+	
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

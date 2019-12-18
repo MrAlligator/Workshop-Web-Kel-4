@@ -48,7 +48,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/tampilcalonsiswa.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -123,19 +123,19 @@
 						<label>Nomer Daftar</label><br>
 							<input type="text" name="no_daftar"   class="form-control" placeholder="Nomer Daftar" maxlength="5" onkeypress="return hanyaAngka(event)"required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama Lengkap</label><br>
-							<input type="text" name="nama_lengkap" class="form-control" placeholder="NamaLengkap"   required>
+							<input type="text" name="nama_lengkap" class="form-control" placeholder="NamaLengkap"   required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tmptlahir" class="form-control" placeholder="Tempat Lahir" required>
+							<input type="text" name="tmptlahir" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tgllahir" class="form-control" placeholder="Tanggal Lahir" required>
+							<input type="date" name="tgllahir" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Jenis Kelamin</label><br>
-							<select name="jk" required>  
+							<select name="jk" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">  
 								<option value="">Jenis Kelamin</option>  
 								<option value="Laki - Laki">Laki - Laki</option>  
 								<option value="Perempuan">Perempuan</option>  
 							</select><br><br>
 							<label>Agama</label><br>
-							<select name="agama" required>  
+							<select name="agama" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">  
 								<option value="">Agama</option>  
 								<option value="Islam">Islam</option>  
 								<option value="Kristen">Kristen</option>
@@ -145,15 +145,15 @@
 							</select><br><br><br><br>
 							
 							<label>Anak Ke</label><br>
-							<input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke" maxlength="1" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="anak_ke" class="form-control" placeholder="Anak Ke" maxlength="1" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Status Dalam Keluarga</label><br>
-							<input type="text" name="status_dlm_keluarga" class="form-control" placeholder="Status Dalam Keluarga" required>
+							<input type="text" name="status_dlm_keluarga" class="form-control" placeholder="Status Dalam Keluarga" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Alamat Siswa</label><br>
-							<input type="text" name="alamat_siswa" class="form-control" placeholder="Alamat Siswa" required>
+							<input type="text" name="alamat_siswa" class="form-control" placeholder="Alamat Siswa" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Telpon Siswa</label><br>
-							<input type="text" name="telp_siswa" class="form-control" placeholder="Telpon Siswa" maxlength="12" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="telp_siswa" class="form-control" placeholder="Telpon Siswa" maxlength="12" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Sekolah Asal</label><br>
-							<input type="text" name="sekolah_asal" class="form-control" placeholder="Sekolah Asal" required>
+							<input type="text" name="sekolah_asal" class="form-control" placeholder="Sekolah Asal" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							
 						
 							</div>
@@ -161,27 +161,27 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 						<label>Alamat Sekolah</label><br>
-							<input type="text" name="alamat_sekolah" class="form-control" placeholder="Alamat Sekolah" required>
+							<input type="text" name="alamat_sekolah" class="form-control" placeholder="Alamat Sekolah" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tahun Lulus</label><br>
-							<input type="text" name="tahun_lulus" class="form-control" placeholder="Tahun Lulus" maxlength="4" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="tahun_lulus" class="form-control" placeholder="Tahun Lulus" maxlength="4" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nilai UN</label><br>
-							<input type="text" name="total_nilai_un" class="form-control" placeholder="Nilai UN" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="total_nilai_un" class="form-control" placeholder="Nilai UN" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama Ayah</label><br>
-							<input type="text" name="nama_ayah" class="form-control" placeholder="Nama Ayah" required>
+							<input type="text" name="nama_ayah" class="form-control" placeholder="Nama Ayah" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama Ibu</label><br>
-							<input type="text" name="nama_ibu" class="form-control" placeholder="Nama Ibu" required>
+							<input type="text" name="nama_ibu" class="form-control" placeholder="Nama Ibu" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Alamat Orang Tua</label><br>
-							<input type="text" name="alamat_ortu" class="form-control" placeholder="Alamat Orang Tua" required>
+							<input type="text" name="alamat_ortu" class="form-control" placeholder="Alamat Orang Tua" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Telpon Orang Tua</label><br>
-							<input type="text" name="telp_ortu" class="form-control" placeholder="Telpon Orang Tua" maxlength="12" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="telp_ortu" class="form-control" placeholder="Telpon Orang Tua" maxlength="12" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Pekerjaan Ayah</label><br>
-							<input type="text" name="perkerjaan_ayah" class="form-control" placeholder="Pekerjaan Ayah" >
+							<input type="text" name="perkerjaan_ayah" class="form-control" placeholder="Pekerjaan Ayah" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')" >
 							<label>Pekerjaan Ibu</label><br>
-							<input type="text" name="pekerjaan_ibu" class="form-control" placeholder="Pekerjaan Ibu" >
+							<input type="text" name="pekerjaan_ibu" class="form-control" placeholder="Pekerjaan Ibu" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')" >
 							<label>Nama Wali</label><br>
-							<input type="text" name="nama_wali" class="form-control" placeholder="Nama Wali" >
+							<input type="text" name="nama_wali" class="form-control" placeholder="Nama Wali" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')" >
 							<label>Alamat Wali</label><br>
-							<input type="text" name="alamat_wali" class="form-control" placeholder="Alamat Wali" ><br><br>
+							<input type="text" name="alamat_wali" class="form-control" placeholder="Alamat Wali" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')" ><br><br>
 							<button class="btn btn-primary" type="submit" value="simpan">Simpan</button>
 								
 								<script>
