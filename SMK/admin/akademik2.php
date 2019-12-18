@@ -65,6 +65,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
