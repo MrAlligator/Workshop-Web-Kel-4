@@ -129,7 +129,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>SAMBUTAN</h2>
+                            <h2>Sambutan<br> Kepala Sekolah</h2>
                         </div>
                     </div>
                 </div>
@@ -147,10 +147,8 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<p style="font-family:Arial">         
-		</div>
+	<br>
+	<br>
     </section>
 		<div class="container">
         <p align="justify">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Alhamdulillahi robbil alamin kami panjatkan kehadlirat Allah SWT, bahwasannya dengan rahmat dan karunia-Nya lah 

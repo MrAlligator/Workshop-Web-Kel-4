@@ -166,15 +166,8 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-                        <a href="#"><h2>Prestasi SMK Darus Salam</h2></a>
-                    </div>
-                </div>
-			</div>
             <table>
 			<form method="POST"> 
 						<tr>
@@ -188,7 +181,7 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" name ="submit" value="Filter Prestasi"></td>
+							<td><input class="btn btn-success" type="submit" name ="submit" value="Saring Prestasi"></td>
 						</tr>
 					</table>
 					</form>

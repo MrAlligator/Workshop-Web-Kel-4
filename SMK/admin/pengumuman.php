@@ -147,7 +147,7 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6">

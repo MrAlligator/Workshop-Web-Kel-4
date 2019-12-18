@@ -130,7 +130,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>VIDEO</h2>
+                            <h2>Galeri Video</h2>
                         </div>
                     </div>
                 </div>
@@ -144,7 +144,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';

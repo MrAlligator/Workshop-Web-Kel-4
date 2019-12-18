@@ -147,7 +147,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Data Siswa</h3>
 				<form method="get"> 
 					<table>
 						<tr>
@@ -162,7 +161,7 @@
 								<option value="XII">XII</option>
 								</select>
 							</td>
-							<td><input type="submit" value="FILTER"></td>
+							<td><input class="btn btn-success" type="submit" value="Saring"></td>
 						</tr>
 					</table>
 				</form>
