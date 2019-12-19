@@ -19,7 +19,7 @@ $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE n
 if($ceknis > 0){
     echo "<script>alert('NIS Sudah Digunakan');document.location.href='../admin/tambah.php'</script>";
 }else{
-    mysqli_query($koneksi,"insert into tb_siswa values('','$nis','$nama','$kelas','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$status','$nis')");
+    mysqli_query($koneksi,"insert into tb_siswa values('','$nis','$nama','$kelas','$jk','$agama','$tmptlahir','$tgllahir','$alamat','$telp','$status','$nis','$nis')");
     echo "<script>alert('Data berhasil diupload');document.location.href='../admin/siswa2.php'</script>";
 }
 ?>
