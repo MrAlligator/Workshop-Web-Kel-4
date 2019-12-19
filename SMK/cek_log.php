@@ -11,6 +11,7 @@ $result2  = mysqli_fetch_array($cek2);
 if(mysqli_num_rows($cek)==1){
     $_SESSION['username'] = $result['username'];
     $_SESSION['password'] = $result['password'];
+    $_SESSION['nama'] = $result['nama_guru'];
     $_SESSION['level']    = 'guru';
     header('location:guru/index.php');
 }

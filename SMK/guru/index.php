@@ -1,3 +1,12 @@
+
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -137,6 +146,7 @@
 						<div class="banner_content">
 							<img src="img/logosmk.png" height="180px"><br><br>
 							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
+							<h1><?php echo $_SESSION['nama']; ?></h1>
 						</div>
 					</div>
 				</div>
