@@ -50,11 +50,17 @@
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
-					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+					<form class="d-flex justify-content-between" method="get" action="berita.php">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+							echo "<b>Hasil pencarian : '.$cari.'</b>";
+						}
+					?>
 				</div>
 			</div>
 
@@ -187,8 +193,13 @@
 			</div>
 			<div class="row">
                 <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
+					include 'koneksi.php';
+					if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$data = mysqli_query($koneksi, "select * from tb_berita where judul like '%".$cari."%'");				
+					}else{
+						$data = mysqli_query($koneksi, "select * from tb_berita");		
+					}
                     while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->

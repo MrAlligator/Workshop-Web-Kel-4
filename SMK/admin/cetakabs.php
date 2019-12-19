@@ -65,8 +65,9 @@
                     </tr>
                     <?php
                         include 'koneksi.php';
+                        $tgl = date("Y-m-d");
                         $no = 1;
-                        $data = mysqli_query($koneksi,"select * from tb_absen");
+                        $data = mysqli_query($koneksi,"select * from tb_absen where tgl_absen = '$tgl'");
                         while($d = mysqli_fetch_array($data)){
                     ?>
                     <tr>

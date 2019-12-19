@@ -151,7 +151,6 @@
 						<input type="checkbox" name="hadir" value="Tanpa Keterangan">Tanpa Keterangan<br><br><br>
 						<button class="btn btn-success" type="submit">Simpan</button>
 					</form>
-					<a href="hapusabs.php"><button id="reset" class="btn btn-danger">Reset Data Harian</button></a>
 					<a href="cetakabs.php"><button id="hapus" class="btn btn-primary">Cetak</button></a>
 					</div>
 				</div>
