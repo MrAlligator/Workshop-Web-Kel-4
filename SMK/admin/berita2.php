@@ -104,36 +104,6 @@
 	</header>
 	<!--================ End Header Menu Area =================-->
 
-	<!--================ Start Home Banner Area =================-->
-	
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
-
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
-	<!--================ Start Popular Courses Area =================-->
-	
-				<!-- single course -->
-				<!-- single course -->
-	<!--================ End Popular Courses Area =================-->
-
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
 	<!--================ Start Events Area =================-->
 	<div class="popular_courses lite_bg">
 		<div class="container">
@@ -175,12 +145,16 @@
 	</div>
 	<!--================ End Events Area =================-->
 
-    <!--================Contact Area =================-->
-	
-    <!--================Contact Area =================-->
-
 	<!--================ Start footer Area  =================-->
-	
+	<footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

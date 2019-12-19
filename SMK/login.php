@@ -18,11 +18,11 @@
                 <form action="cek_log.php" method="POST">
                     <div>
                         <span><label>Username</label></span>
-                        <span><input type="text" class="textbox" name="username" autofocus="autofocus"></span>
+                        <span><input type="text" class="textbox" name="username" placeholder="NIM / NIP" ></span>
                     </div>
                     <div>
                         <span><label>Password</label></span>
-                        <span><input type="password" name="password" class="password"></span>
+                        <span><input type="password" name="password" class="password" placeholder="Password"></span>
                     </div>
                     <hr>
                     <div class="sign">
