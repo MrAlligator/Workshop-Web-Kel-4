@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -72,7 +72,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -99,13 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
@@ -127,9 +120,64 @@
 		</div>
 	</header>
 	<!--================ End Header Menu Area =================-->
-
+	<style>
+		.banner_area4 {
+                                  position: relative;
+                                  background: url(../img/mm.jpg) no-repeat center center;
+                                  z-index: 1;
+                                  min-height: 392px;
+                                  padding-top: 0 !important; }
+                                 .banner_area4 .banner_inner {
+                                  position: relative;
+                                  overflow: hidden;
+                                  width: 100%;
+                                  min-height: 392px;
+                                  z-index: 1; }
+                                  .banner_area4 .banner_inner .overlay {
+                                    position: absolute;
+                                    left: 0;
+                                    right: 0;
+                                    top: 0;
+                                    bottom: 0;
+                                    background: #000;
+                                    opacity: 0.4; }
+                                  .banner_area4 .banner_inner .banner_content {
+                                    position: relative;
+                                    z-index: 2;
+                                    color: #fff; }
+                                    .banner_area4 .banner_inner .banner_content h2 {
+                                      color: #fff;
+                                      font-size: 48px; }
+                                    @media (max-width: 991px) {
+                                      .banner_area4 .banner_inner .banner_content p {
+                                        display: none; } }
+                                    .banner_area4 .banner_inner .banner_content .page_link {
+                                      display: inline-block;
+                                      padding: 7px 20px;
+                                      border-top: 1px solid #fff;
+                                      border-bottom: 1px solid #fff;
+                                      margin-top: 20px; }
+                                      .banner_area4 .banner_inner .banner_content .page_link a {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-family: "Crimson Text", serif;
+                                        margin-right: 32px;
+                                        position: relative;
+                                        text-transform: uppercase; }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                          content: "\f178";
+                                          font: normal normal normal 14px/1 FontAwesome;
+                                          position: absolute;
+                                          right: -25px;
+                                          top: 50%;
+                                          transform: translateY(-50%); }
+                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                          margin-right: 0px; }
+                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                            display: none; }
+	</style>
 	<!--================ Start Home Banner Area =================-->
-	<section class="banner_area3">
+	<section class="banner_area4">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">

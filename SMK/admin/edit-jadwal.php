@@ -48,7 +48,7 @@
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
@@ -81,7 +81,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Prestasi</a>
 								<ul class="dropdown-menu">
@@ -107,10 +107,6 @@
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
-    
     <!--================End Home Banner Area =================-->
 
 
@@ -121,71 +117,55 @@
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA SISWA</h3>
-                <div class="button-group-area mt-10">
-					<a href="tambah.php" class="genric-btn default">Tambah Siswa</a>
-				</div>
-				<br>
-				<form method="get"> 
-					<table>
-						<tr>
-							<td><label>Pilih Kelas</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="kelas">
-								<option value="">Kelas</option>
-								<option value="X">X</option>  
-								<option value="XI">XI</option>  
-								<option value="XII">XII</option>
-								</select>
-							</td>
-							<td><input type="submit" value="FILTER"></td>
-						</tr>
-					</table>
-				</form>
-<br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Judul</div>
-							<div class="visit">Isi</div>
-							<div class="country">Tanggal</div>
-							<div class="visit">Foto</di>
-                            <div class="country">Aksi</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-								$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+			<br><br>
+				<h3 class="mb-30 title_color"><center>Form Guru</center></h3>
+				<div class="row">
+					<?php
+                        include 'koneksi.php';
+                        $id= $_GET['id_jadwal'];
+                        $data = mysqli_query($koneksi,"select * from tb_jadwal where id_jadwal='$id'");
+                        while($d = mysqli_fetch_array($data)){
+                        ?>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
+						<form method="post" action="update-jadwal.php">
+							<label>Mata Pelajaran</label><br>
+							<input type="text" name="mapel" class="form-control" value="<?php echo $d['nama_mapel'] ?>" onkeypress="return hanyaHuruf(event)" required>
+							<label>Nama Guru</label><br>
+							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" onkeypress="return hanyaHuruf(event)" required>
 							
-                            while($d = mysqli_fetch_array($sql)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['judul_prestasi']; ?></div>
-							<div class="visit"><?php echo $d['isi_prestasi']; ?></div>
-							<div class="country"><?php echo $d['tanggal_prestasi']; ?></div>
-							<div class="visit"><?php echo "<td><img src='..img/berita".$data['foto_prestasi']."></td>"; ?></div>
-                            <div class="country">
-                                <a href="edit.php?id_siswa=<?php echo $d['id_siswa'];?>"><button>Edit</button></a>
-                                <a href="hapus.php?id_siswa=<?php echo $d['id_siswa'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
-                            </div>
-						</div>
-                        <?php
-                            }
-                        ?>
-                    </div>
+							<label>Semester</label><br>
+							<select name="smstr" required>  
+								<?php
+									$smstr = $d['semester'];
+									if ($smstr=="1") echo "<option value = '1' selected>1i</option>";
+									else echo "<option value = '1'>1</option>";
+									if ($smstr=="2") echo "<option value = '2' selected>2</option>";
+                                    else echo "<option value = '2'>2</option>";
+                                    if ($smstr=="3") echo "<option value = '3' selected>3</option>";
+                                    else echo "<option value = '3'>3</option>";
+                                    if ($smstr=="4") echo "<option value = '4' selected>4</option>";
+                                    else echo "<option value = '4'>4</option>";
+                                    if ($smstr=="25") echo "<option value = '5' selected>5</option>";
+                                    else echo "<option value = '5'>5</option>";
+                                    if ($smstr=="6") echo "<option value = '6' selected>62</option>";
+									else echo "<option value = '6'>6</option>";
+								?>
+							</select><br><br>
+							
+							<button class="btn btn-primary" type="submit">Simpan</button>
+							</form>
+						</div>	
+					</div>
+					<?php 
+                    }
+                    ?>
 				</div>
-			</div>
 		</div>
 	</div>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
@@ -205,5 +185,40 @@
 		<script src="js/gmaps.min.js"></script>
 		<script src="js/theme.js"></script>
 	</body>
+	<script>
+	function hanyaAngka(evt) {
+		var charCode = (evt.which) ? evt.which : event.keyCode
+		if (charCode > 31 && (charCode < 48 || charCode > 57))
+		
+		return false;
+		return true;
+	}
+
+	(function() {
+		var _show = function( element, field ) {
+			this.element = element;
+			this.field = field;
+			this.toggle();    
+		};
+	_show.prototype = {
+		toggle: function() {
+			var self = this;
+			self.element.addEventListener( "change", function() {
+			if( self.element.checked ) {
+			self.field.setAttribute( "type", "text" );
+			} else {
+			self.field.setAttribute( "type", "password" );    
+			}
+			}, false);
+		}
+	};
 	
+	document.addEventListener( "DOMContentLoaded", function() {
+		var checkbox = document.querySelector( "#show-pass" ),
+		pass = document.querySelector( "#pass" ),
+		_form = document.querySelector( "form" );
+		var toggler = new _show( checkbox, pass );
+	});
+	})();
+	</script>
 	</html>

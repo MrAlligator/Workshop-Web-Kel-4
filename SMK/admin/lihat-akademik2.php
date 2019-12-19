@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -72,7 +72,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -99,13 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item active"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
@@ -126,155 +119,84 @@
 			</nav>
 		</div>
 	</header>
-    <!--================ End Header Menu Area =================-->
+	<!--================ End Header Menu Area =================-->
 
-    <!--================Home Banner Area =================-->
-    <section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>PRESTASI<br>NON-AKADEMIK</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--================End Home Banner Area =================-->
+	<!--================ Start Home Banner Area =================-->
+	
+	<!--================ End Home Banner Area =================-->
 
+	<!--================ Start Feature Area =================-->
+	
+	<!--================ End Feature Area =================-->
 
-	<!-- Start Sample Area -->
-	<!-- End Sample Area -->
-	<!-- Start Button -->
-	<!-- End Button -->
-	<!-- Start Align Area -->
-	<!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
+	<!--================ Start Department Area =================-->
+	
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	
+				<!-- single course -->
+				<!-- single course -->
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	
+	<!--================ End Registration Area =================-->
+
+	<!--================ Start Events Area =================-->
+    <?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_prestasi where id_prestasi='$_GET[id_prestasi]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <section class="sample-text-area">
 		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Pramuka</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
+			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
+			<p class="sample-text">
+                <?=$hasil_data['isi_prestasi'];?>
+            </p>
+            <p class="sample-text">
+			<?=$hasil_data['jenis_p'];?>
+                <?=$hasil_data['tanggal_prestasi'];?>
+            </p>
 		</div>
-	</div>
-	<!--?php
-		}
-    ?-->
-    <!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Pencak Silat</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--?php
-		}
-    ?-->
-    <!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Lainnya</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--?php
-		}
-	?-->
-	<!-- End Align Area -->
+	</section>
+	<!--================ End Events Area =================-->
+
+    <!--================Contact Area =================-->
+	
+    <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
-    <footer class="footer-area section_gap">
-		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
-	</footer>
-		<!--================ End footer Area  =================-->
 	
-		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/popper.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/stellar.js"></script>
-		<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-		<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-		<script src="js/owl-carousel-thumb.min.js"></script>
-		<script src="js/jquery.ajaxchimp.min.js"></script>
-		<script src="vendors/counter-up/jquery.counterup.js"></script>
-		<script src="js/mail-script.js"></script>
-		<!--gmaps Js-->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-		<script src="js/gmaps.min.js"></script>
-		<script src="js/theme.js"></script>
-	</body>
-	
-	</html>
+	<!--================ End footer Area  =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/owl-carousel-thumb.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="vendors/counter-up/jquery.counterup.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>

@@ -718,13 +718,13 @@ button:focus {
                         position: relative;
                         background: url(../img/mm.jpg) no-repeat center center;
                         z-index: 1;
-                        min-height: 392px;
+                        min-height: 150px;
                         padding-top: 0 !important; }
                        .banner_area3 .banner_inner {
                         position: relative;
                         overflow: hidden;
                         width: 100%;
-                        min-height: 392px;
+                        min-height: 150px;
                         z-index: 1; }
                         .banner_area3 .banner_inner .overlay {
                           position: absolute;
@@ -769,7 +769,7 @@ button:focus {
                                 .banner_area3 .banner_inner .banner_content .page_link a:last-child:before {
                                   display: none; }
                                  /*banner area 3 */
-                                
+                                 
                                  /*banner area 4  */
 
 /* End Home Banner Area css

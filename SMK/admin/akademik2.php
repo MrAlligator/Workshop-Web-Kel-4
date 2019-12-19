@@ -65,6 +65,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
@@ -166,15 +167,8 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-                        <a href="#"><h2>Prestasi SMK Darus Salam</h2></a>
-                    </div>
-                </div>
-			</div>
             <table>
 			<form method="POST"> 
 						<tr>
@@ -188,49 +182,38 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" name ="submit" value="Filter Prestasi"></td>
+							<td><input class="btn btn-success" type="submit" name ="submit" value="Saring Prestasi"></td>
 						</tr>
 					</table>
 					</form>
 					
 			<div class="row">
                 <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
-                    while($d = mysqli_fetch_array($data)){
-                    }	
-                ?>
-                <?php
-					
-				  include 'koneksi.php';
-				  if(isset($_POST['submit'])){
-				  	$jenis_p = $_POST['jenis_p'];
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-				  }else{
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
-				  }
-				  while($d = mysqli_fetch_array($sql)){
-				  
-				?>
-				
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" style="height=150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
-							</h4>
+					include 'koneksi.php';
+					if(isset($_POST['submit'])){
+						$jenis_p = $_POST['jenis_p'];
+				  		$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+					}else{
+				  		$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+					}
+					while($d = mysqli_fetch_array($sql)){
+					?>
+					<!-- single course -->
+					<div class="col-lg-3 col-md-6">
+						<div class="single_course">
+							<div class="course_head overlay">
+								<img class="img-fluid w-100"  height="150px" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+							</div>
+							<div class="course_content">
+								<h4>
+									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+								</h4>
+							</div>
 						</div>
 					</div>
-                </div>
-				<?php
-				
-				 }
+					<?php
+					}
 				?>
-               
 			</div>
 		</div>
 	</div>
@@ -241,7 +224,13 @@
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
-	
+	<footer class="footer-area section_gap">
+		<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+					</div>
+				</div>
+	</footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

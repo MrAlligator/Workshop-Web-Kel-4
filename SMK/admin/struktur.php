@@ -72,12 +72,11 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakulikuler</a>
+								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
 									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
@@ -99,20 +98,14 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-							<li class="nav-item submenu dropdown">
+                            <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
@@ -134,9 +127,9 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                         <div class="banner_content text-center">
-                            <h2>STRUKTUR</h2>
+                            <h2>Struktur Organisasi<br>SMK Darus Salam Tahun 2019/2020</h2>
                         </div>
                     </div>
                 </div>
@@ -157,12 +150,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-md-12 col-xs-12">
-					<center><h3 class="mb-20 title_color">Struktur Organisasi</h3></center>
-					<center><h3 class="mb-20 title_color">SMK Darus Salam Tahun Pelajaran 2019 / 2020</h3></center>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-12">
 						

@@ -48,7 +48,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -73,7 +73,6 @@
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -100,13 +99,7 @@
 									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
@@ -137,7 +130,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>VIDEO</h2>
+                            <h2>Galeri Video</h2>
                         </div>
                     </div>
                 </div>
@@ -151,7 +144,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
