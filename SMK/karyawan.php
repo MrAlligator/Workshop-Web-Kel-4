@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -162,7 +162,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Data Karyawan</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">

@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -144,7 +144,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>VISI - MISI</h2>
+                            <h2>Visi dan Misi<br>SMK Darus Salam</h2>
                         </div>
                     </div>
                 </div>
@@ -162,13 +162,8 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-heading title_color text-center">VISI dan MISI<br><p>SMK Darus Salam</p></h3>
-			<p style="font-family:Arial">         
-
-		</div>
-    </section>
+	<br>
+	<br>
     <div class="whole-wrap">
 		<div class="container">
 						<h3 class="mb-20 title_color">Visi </h3>

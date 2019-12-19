@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -152,15 +152,6 @@
         </div>
     </section>
 	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
-
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
 	<!--================ Start Popular Courses Area =================-->
 	<div class="popular_courses lite_bg">
 		<div class="container">

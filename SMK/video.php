@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<link rel="stylesheet" href="css/video-js.min.css" type="text/css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -159,7 +159,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
