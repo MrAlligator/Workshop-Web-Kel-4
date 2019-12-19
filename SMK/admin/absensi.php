@@ -170,7 +170,8 @@
 								<?php 
 									include 'koneksi.php';
 									$no = 1;
-									$data = mysqli_query($koneksi,"select * from tb_absen");
+									$tgl = date("Y-m-d");
+									$data = mysqli_query($koneksi,"select * from tb_absen where tgl_absen ='$tgl'");
 									while($d = mysqli_fetch_array($data)){
 								?>
 								<div class="table-row">
