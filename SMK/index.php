@@ -55,6 +55,11 @@
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -174,8 +179,13 @@
 			<div class="row">
                 <?php
                     include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
+					if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_pengumuman where nama_siswa like '%".$cari."%'");
+					}else{
+						$sql = mysqli_query($koneksi,"select * from tb_pengumuman");
+					}
+					while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
@@ -209,8 +219,13 @@
 			<div class="row">
                 <?php
                     include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
+                    if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_berita where nama_siswa like '%".$cari."%'");
+					}else{
+						$sql = mysqli_query($koneksi,"select * from tb_berita");
+					}
+					while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
