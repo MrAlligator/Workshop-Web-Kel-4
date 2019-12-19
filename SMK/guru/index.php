@@ -123,7 +123,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 							</li>
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">GURU</a>
+								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
@@ -146,7 +146,6 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 						<div class="banner_content">
 							<img src="img/logosmk.png" height="180px"><br><br>
 							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
-							<h1><?php echo $_SESSION['nama']; ?></h1>
 						</div>
 					</div>
 				</div>

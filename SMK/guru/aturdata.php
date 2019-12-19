@@ -3,7 +3,7 @@ session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
 // Cek nya dengan cara cek apakah terdapat session username atau tidak
 if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
-  header("location: index.php"); // Kita Redirect ke halaman index.php karena belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
 <!doctype html>
@@ -75,7 +75,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">GURU</a>
+								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -167,17 +167,15 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<div class="popular_courses lite_bg3">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="card mb-3" style="max-width: 540px;">
+				<div class="card mb-3" style="max-width: 1000px;">
   					<div class="row no-gutters">
     					<div class="col-md-4">
       					<img src="..." class="card-img" alt="...">
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text"><h1><?php echo $_SESSION['nama']; ?></h1></p>
-									
-
+								<h3 class="card-title">Identitas Guru</h3>
+								<h4 class="card-text">Nama : <?php echo $_SESSION['nama']; ?></h4>
 							</div>
     					</div>
   					</div>
