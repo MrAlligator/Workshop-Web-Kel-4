@@ -1,4 +1,3 @@
-
 <?php
 session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
@@ -17,15 +16,15 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<link rel="icon" href="img/logosmk.png" type="image/png">
 	<title>SMK Darus Salam</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../vendors/linericon/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -56,66 +55,58 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/multimedia.php">Multimedia</a></li>
-									<li class="nav-item"><a class="nav-link" href="#">Teknik Pemesinan</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="../guru/nonakademik.php">Non - Akademik</a></li>
-								</ul>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -168,67 +159,32 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Pengumuman</h2></a>
+						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Penerimaan Siswa Baru 2019/2020</a>
+								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p>Pengumuman Penerimaan Mahasiswa Baru SMK Darus Salam 2019/2020</p>
 						</div>
 					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Ujian Akhir Semester Genap 2018/2019</a>
-							</h4>
-							<p>Jadwal Ujian Semester Genap Tahun Pelajaran 2018/2019</p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Pemilihan Ketua Osis SMK Darus Salam 2018/2019</a>
-							</h4>
-							<p>Pemilihan Ketua Osis Dilaksanakan pada 10 Oktober 2018, dengan 2 pasangan Calon yang mendaftarkan.</p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Unjuk Kreasi Siswa Tahun Siswa 2018/2019</a>
-							</h4>
-							<p>Unjuk Kreasi Siswa Tahun Siswa 2018/2019 yang dilaksanakan pada 12 Desember 2018, berjalan meriah.</p>
-						</div>
-					</div>
-				</div>
+                </div>
+				<?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
@@ -252,67 +208,32 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="main_title">
-						<a href="#"><h2>Berita</h2></a>
+						<a href="berita.php"><h2>BERITA</h2></a>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+                <?php
+                    include 'koneksi.php';
+                    $data = mysqli_query($koneksi,"select * from tb_berita");
+                    while($d = mysqli_fetch_array($data)){
+                ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
 					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
 						</div>
 						<div class="course_content">
 							<h4>
-								<a href="course-details.html">Mengukir Prestasi Pada Open Championship se Jawa - Bali</a>
+								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
 							</h4>
-							<p></p>
 						</div>
 					</div>
 				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-						<div class="course_head overlay">
-							<img class="img-fluid w-100" src="img/logosmk.png" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="course-details.html">Learn React js beginners</a>
-							</h4>
-							<p></p>
-						</div>
-					</div>
-				</div>
+				<?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
@@ -322,7 +243,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<style>
 	 .banner_area4 {
                                   position: relative;
-                                  background: url(img/sekolah.jpg) no-repeat center center;
+                                  background: url(../img/sekolah.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
@@ -423,12 +344,58 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="https://www.instagram.com/febreroaraya_/" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
 				</div>
-
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik2.php">Prestasi</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 

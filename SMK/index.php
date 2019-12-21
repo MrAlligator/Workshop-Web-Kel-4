@@ -51,7 +51,7 @@
 			<div class="search_input" id="search_input_box">
 				<div class="container">
 					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
@@ -181,11 +181,11 @@
                     include 'koneksi.php';
 					if(isset($_GET['search_input'])){
 						$cari = $_GET['search_input'];
-						$sql = mysqli_query($koneksi,"select * from tb_pengumuman where nama_siswa like '%".$cari."%'");
+						$sql = mysqli_query($koneksi,"select * from tb_pengumuman where judul like '%".$cari."%'");
 					}else{
 						$sql = mysqli_query($koneksi,"select * from tb_pengumuman");
 					}
-					while($d = mysqli_fetch_array($data)){
+					while($d = mysqli_fetch_array($sql)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
@@ -221,11 +221,11 @@
                     include 'koneksi.php';
                     if(isset($_GET['search_input'])){
 						$cari = $_GET['search_input'];
-						$sql = mysqli_query($koneksi,"select * from tb_berita where nama_siswa like '%".$cari."%'");
+						$sql = mysqli_query($koneksi,"select * from tb_berita where judul like '%".$cari."%'");
 					}else{
 						$sql = mysqli_query($koneksi,"select * from tb_berita");
 					}
-					while($d = mysqli_fetch_array($data)){
+					while($d = mysqli_fetch_array($sql)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">

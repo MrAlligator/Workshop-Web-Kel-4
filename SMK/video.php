@@ -166,9 +166,9 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-6">
-						<a href="<?php echo "img/video/".$d['nama_file']; ?>" class="img-gal">
+						<a href="<?php echo "../admin/img/video/".$d['nama_file']; ?>" class="img-gal">
 						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
-							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
+							<source src="<?php echo "../admin/img/video/".$d['nama_file']; ?>"  type='video/mp4' />
 						</video>
 						</a>
 					</div>
