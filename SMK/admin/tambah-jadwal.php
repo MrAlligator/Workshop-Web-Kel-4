@@ -59,6 +59,7 @@ require 'koneksi.php';
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -140,7 +141,7 @@ require 'koneksi.php';
 									<select name="nama_mapel"  required>  
 										<option value="">-Pilih-</option>
 										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
 
@@ -155,7 +156,7 @@ require 'koneksi.php';
 									<select name="nama_guru"  required> 
 									<option value="">-Pilih-</option>
 										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
 
@@ -191,7 +192,6 @@ require 'koneksi.php';
 										<option value="Kamis">Kamis</option>
 										<option value="Jumat">Jumat</option>
 										<option value="Sabtu">Sabtu</option>
-										 
 									</select>
 									</td>
 								</tr>
@@ -206,7 +206,6 @@ require 'koneksi.php';
 										<option value="Jam Keempat">Jam Keempat</option>
 										<option value="Jam Kelima">Jam Kelima</option>
 										<option value="Jam Keenam">Jam Keenam</option>
-										 
 									</select>
 									</td>
 								</tr>

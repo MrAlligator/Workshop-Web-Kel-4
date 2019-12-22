@@ -55,7 +55,8 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -81,14 +82,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik2.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik2.php">Non - Akademik</a></li>
-								</ul>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -147,11 +141,29 @@
     ?>
     <section class="sample-text-area">
 		<div class="container">
-            <img src="<?=$hasil_data['foto'];?>" style="width:600px; height: 300px;"/></br></br>
-			<h3 class="text-heading title_color"><?=$hasil_data['judul'];?></h3>
-			<p class="sample-text">
-                <?=$hasil_data['isi'];?>
-            </p>
+			<div class="row">
+				<div class="col-md-9">
+					<img src="<?=$hasil_data['foto'];?>" style="width:600px; height: 300px;"/></br></br>
+					<h3 class="text-heading title_color"><?=$hasil_data['judul'];?></h3>
+					<p class="sample-text">
+						<?=$hasil_data['isi'];?>
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>Lainnya</h4><br>
+					<ul>
+					<?php
+					include 'koneksi.php';
+					$data = mysqli_query($koneksi,"select * from tb_pengumuman");
+					while($d = mysqli_fetch_array($data)){
+					?>
+						<li><a href="lihatpengumuman2.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a></li>
+					<?php
+					}
+					?>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--================ End Events Area =================-->

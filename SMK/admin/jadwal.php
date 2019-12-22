@@ -55,7 +55,8 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -127,25 +128,6 @@
 					<a href="tambah-jadwal.php" class="genric-btn default">Tambah Jadwal</a>
 				</div>
 				<br>
-				<form method="get"> 
-					<table>
-						<tr>
-							<td><label>Pilih Kelas</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="kelas">
-								<option value="">Kelas</option>
-								<option value="X">X</option>  
-								<option value="XI">XI</option>  
-								<option value="XII">XII</option>
-								</select>
-							</td>
-							<td><input type="submit" value="FILTER"></td>
-						</tr>
-					</table>
-				</form>
-<br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
