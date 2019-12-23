@@ -102,7 +102,23 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
+	<style>
+	#imgView{  
+    padding:5px;
+}
+.loadAnimate{
+    animation:setAnimate ease 2.5s infinite;
+}
+@keyframes setAnimate{
+    0%  {color: #000;}     
+    50% {color: transparent;}
+    99% {color: transparent;}
+    100%{color: #000;}
+}
+.custom-file-label{
+    cursor:pointer;
+}
+</style>
     <!--================Home Banner Area =================-->
     <!--================End Home Banner Area =================-->
 
@@ -140,19 +156,33 @@
 								<option value="Hindu">Hindu</option>
 								<option value="Budha">Budha</option>
 								<option value="Katolik">Katolik</option>
-							</select><br><br>
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
+							</select><br>
 							<label>Tempat Lahir</label><br>
 							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
 							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
 							<label>Alamat</label><br>
 							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"><br>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<label>Foto</label><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
+										<label class="custom-file-label" for="inputFile">Choose file</label>
+									</div>
+								</div>
+							</div>
+							<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	
@@ -197,30 +227,36 @@
 			return false;
 			return true;
 		}
-		function tampilkanPreview(gambar,idpreview){
-		//                membuat objek gambar
-                var gb = gambar.files;
-		//                loop untuk merender gambar
-						for (var i = 0; i < gb.length; i++){
-		//                    bikin variabel
-							var gbPreview = gb[i];
-							var imageType = /image.*/;
-							var preview=document.getElementById(idpreview);
-							var reader = new FileReader();
-							if (gbPreview.type.match(imageType)) {
-		//                        jika tipe data sesuai
-								preview.file = gbPreview;
-								reader.onload = (function(element) {
-									return function(e) {
-										element.src = e.target.result;
-									};
-								})(preview);
-			//                    membaca data URL gambar
-								reader.readAsDataURL(gbPreview);
-							}else{
-		//                        jika tipe data tidak sesuai
-								alert("Type file tidak sesuai. Khusus image.");
-							}
-                }
+		$("#inputFile").change(function(event) {  
+      fadeInAdd();
+      getURL(this);    
+    });
+
+    $("#inputFile").on('click',function(event){
+      fadeInAdd();
+    });
+
+    function getURL(input) {    
+      if (input.files && input.files[0]) {   
+        var reader = new FileReader();
+        var filename = $("#inputFile").val();
+        filename = filename.substring(filename.lastIndexOf('\\')+1);
+        reader.onload = function(e) {
+          debugger;      
+          $('#imgView').attr('src', e.target.result);
+          $('#imgView').hide();
+          $('#imgView').fadeIn(500);      
+          $('.custom-file-label').text(filename);             
         }
+        reader.readAsDataURL(input.files[0]);    
+      }
+      $(".alert").removeClass("loadAnimate").hide();
+    }
+
+    function fadeInAdd(){
+      fadeInAlert();  
+    }
+    function fadeInAlert(text){
+      $(".alert").text(text).addClass("loadAnimate");  
+    }
 	</script>
