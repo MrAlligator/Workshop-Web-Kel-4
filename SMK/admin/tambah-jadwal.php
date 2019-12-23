@@ -212,7 +212,7 @@ require 'koneksi.php';
 								
 								
 								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
+					    			<td><input class="btn btn-primary" type="submit" value="Simpan"></td>
 								</tr>
 								
 							</table>

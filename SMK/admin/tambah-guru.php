@@ -156,7 +156,7 @@
 								<option value="Hindu">Hindu</option>
 								<option value="Budha">Budha</option>
 								<option value="Katolik">Katolik</option>
-							</select><br>
+							</select><br><br>
 							<label>Tempat Lahir</label><br>
 							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>

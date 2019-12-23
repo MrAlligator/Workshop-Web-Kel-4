@@ -104,10 +104,23 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    
-    <section>
-	
-    </section>
+    <style>
+	#imgView{  
+    padding:5px;
+}
+.loadAnimate{
+    animation:setAnimate ease 2.5s infinite;
+}
+@keyframes setAnimate{
+    0%  {color: #000;}     
+    50% {color: transparent;}
+    99% {color: transparent;}
+    100%{color: #000;}
+}
+.custom-file-label{
+    cursor:pointer;
+}
+</style>
     <!--================End Home Banner Area =================-->
 
 
@@ -128,7 +141,17 @@
 							<label>Isi</label><br>
 							<textarea type="text" name="isi" class="form-control" cols="40" rows="10" placeholder="Isi" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Foto</label><br>
-							<input class="btn btn-primary" type="file" name="file"><br><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
+										<label class="custom-file-label" for="inputFile">Choose file</label>
+									</div>
+								</div>
+							</div>
 							<button class="btn btn-success" type="submit">Simpan</button>
 						</form>
 					</div>
@@ -162,3 +185,37 @@
 	</body>
 	
 	</html>
+	<script>
+		$("#inputFile").change(function(event) {  
+      fadeInAdd();
+      getURL(this);    
+    });
+
+    $("#inputFile").on('click',function(event){
+      fadeInAdd();
+    });
+
+    function getURL(input) {    
+      if (input.files && input.files[0]) {   
+        var reader = new FileReader();
+        var filename = $("#inputFile").val();
+        filename = filename.substring(filename.lastIndexOf('\\')+1);
+        reader.onload = function(e) {
+          debugger;      
+          $('#imgView').attr('src', e.target.result);
+          $('#imgView').hide();
+          $('#imgView').fadeIn(500);      
+          $('.custom-file-label').text(filename);             
+        }
+        reader.readAsDataURL(input.files[0]);    
+      }
+      $(".alert").removeClass("loadAnimate").hide();
+    }
+
+    function fadeInAdd(){
+      fadeInAlert();  
+    }
+    function fadeInAlert(text){
+      $(".alert").text(text).addClass("loadAnimate");  
+    }
+	</script>
