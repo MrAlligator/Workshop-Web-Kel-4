@@ -131,7 +131,7 @@
 						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
 							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
 						</video>
-						</a>
+						</a></br>
 						<a href="hapus-video.php?id_video=<?php echo $d['id_video'];?>" onClick="return confirm('Hapus Video?')"/><button class="btn btn-danger">Hapus</button></a>
 					</div>
 				<?php

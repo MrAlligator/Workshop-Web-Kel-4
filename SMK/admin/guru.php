@@ -166,7 +166,7 @@
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
+							<div class="country"><a href="lihat-guru.php?id_guru=<?php echo $d['id_guru']; ?>"><?php echo $d['nama_guru']; ?></a></div>
 							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
 							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
