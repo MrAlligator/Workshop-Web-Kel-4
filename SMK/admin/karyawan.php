@@ -154,8 +154,7 @@
 							<div class="country">Nama</div>
 							<div class="country">NIP</div>
 							<div class="country">J Kelamin</div>
-							<div class="country">Tempat Lahir</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Tempat Tanggal Lahir</div>
 							<div class="visit">Agama</div>
 							<div class="percentage">Alamat</div>
 						</div>
@@ -170,8 +169,7 @@
 							<div class="country"><?php echo $d['nama_guru']; ?></div>
 							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>

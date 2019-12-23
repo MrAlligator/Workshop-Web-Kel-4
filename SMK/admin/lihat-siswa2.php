@@ -57,6 +57,7 @@
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
+
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -125,61 +126,53 @@
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
-    <!-- Start Align Area -->
+	<!-- Start Align Area -->
+	<?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_siswa where id_siswa='$_GET[id_siswa]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA GURU</h3>
-                <div>
-					<ul class="right">
-						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
-						<a href="form-importguru.php"><button class="btn btn-primary">Import</button></a>
-						<a href="unduhguru.php"><button class="btn btn-primary">Export</button></a>
-					</ul>
+				<h3 class="mb-30 title_color text-center">Data <?php echo $hasil_data['nama_siswa']; ?></h3>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-4">
+						<a href="<?=$hasil_data['foto_siswa'];?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?=$hasil_data['foto_siswa'];?>);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<br>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nama_siswa']; ?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nis'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data["tmptlhr_siswa"];?>, <?php echo date ("d F Y", strtotime($hasil_data['tgllhr_siswa']));?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['jk_siswa'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['agama_siswa'];?>">
+							<textarea type="text" class="form-control" cols="40" rows="3" readonly><?=$hasil_data['alamat_siswa']; ?></textarea>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['telp_siswa'];?>">
+						</div><br><br>
+						<div>
+							<ul class="right">
+								<a href="siswa2.php"><button class="btn btn-primary">Kembali</button></a>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2">
+
+					</div>
 				</div>
 				<br>
-</br>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="country">NIP</div>
-							<div class="country">J Kelamin</div>
-							<div class="percentage">Tempat Tanggal Lahir</div>
-							<div class="visit">Agama</div>
-							<div class="percentage">Alamat</div>
-							<div class="country">Telp</div>
-                            <div class="country">Aksi</div>
-						</div>
-                        <?php 
-                            include 'koneksi.php';
-                            $no = 1;
-                            $data = mysqli_query($koneksi,"select * from tb_guru where status='guru'");
-                            while($d = mysqli_fetch_array($data)){
-                        ?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="country"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_guru']; ?></div>
-							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
-							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
-							<div class="country"><?php echo $d['telp_guru']; ?></div>
-                            <div class="country">
-                                <a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>"><button class="btn btn-warning">Edit</button></a>
-                                <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
-                            </div>
-						</div>
-                        <?php
-                            }
-						?>
-                    </div>
-				</div>
 			</div>
 		</div>
 	</div>
+	<br>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->

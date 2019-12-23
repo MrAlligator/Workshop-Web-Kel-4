@@ -139,7 +139,7 @@
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="guru" class="form-control">
 							<label>NIP</label><br>
-							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama</label><br>
 							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Jenis Kelamin</label><br>
