@@ -55,6 +55,11 @@
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -213,6 +218,9 @@
 					if(isset($_POST['submit'])){
 					$jenis_p = $_POST['jenis_p'];
 				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
+					}else if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_prestasi where judul_prestasi like '%".$cari."%'");
 					}else{
 				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
 					}
