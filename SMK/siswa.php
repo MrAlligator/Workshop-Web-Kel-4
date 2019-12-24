@@ -187,14 +187,13 @@
 					</table>
 				</form>
 					<div class="progress-table">
-						<div class="table-head">
+					<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
 							<div class="visit">NIS</div>
-							<div class="country">Jenis Kelamin</div>
+							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat Lahir</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Tempat, Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
 						<?php 
@@ -213,12 +212,11 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_siswa']; ?></div>
+							<div class="country"><a href="lihat-siswa.php?id_siswa=<?php echo $d['id_siswa']; ?>"><?php echo $d['nama_siswa']; ?></a></div>
 							<div class="visit"><?php echo $d['nis']; ?></div>
 							<div class="country"><?php echo $d['jk_siswa']; ?></div>
 							<div class="visit"><?php echo $d['agama_siswa']; ?></div>
-							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
-							<div class="country"><?php echo $d['tgllhr_siswa']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlhr_siswa']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllhr_siswa']));?></div>
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
 						</div>
 						<?php

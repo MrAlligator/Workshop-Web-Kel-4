@@ -51,10 +51,15 @@
 			<div class="search_input" id="search_input_box">
 				<div class="container">
 					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -164,30 +169,32 @@
 			<div class="section-top-border">
 				<div class="progress-table-wrap">
 					<div class="progress-table">
-						<div class="table-head">
+					<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
-							<div class="visit">NIP</div>
-							<div class="country">Jenis Kelamin</div>
+							<div class="country">NIP</div>
+							<div class="country">J Kelamin</div>
+							<div class="percentage">Tempat Tanggal Lahir</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat Lahir</div>
-							<div class="country">Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
 						<?php 
 							include 'koneksi.php';
 							$no = 1;
-							$data = mysqli_query($koneksi,"SELECT * FROM tb_guru WHERE status='karyawan'");
-							while($d = mysqli_fetch_array($data)){
+							if(isset($_GET['search_input'])){
+								$cari = $_GET['search_input'];
+								$data = mysqli_query($koneksi,"select * from tb_guru where nama_guru like '%".$cari."%'");
+							}else {
+								$data = mysqli_query($koneksi,"SELECT * FROM tb_guru WHERE status='karyawan'");
+							}while($d = mysqli_fetch_array($data)){
 						?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="visit"><?php echo $d['nip']; ?></div>
+							<div class="country"><a href="lihat-karyawan.php?id_guru=<?php echo $d['id_guru']; ?>"><?php echo $d['nama_guru']; ?></a></div>
+							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 						</div>
 						<?php

@@ -50,8 +50,8 @@
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
-					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
+					<form class="d-flex justify-content-between" method="get" action="siswa.php">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari Nama">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
@@ -100,7 +100,8 @@
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>								</ul>
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -141,20 +142,22 @@
     <!--================ End Header Menu Area =================-->
 
     <!--================Home Banner Area =================-->
-    <section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>GURU</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+	</style>
+    <!--================Home Banner Area =================-->
+    
     <!--================End Home Banner Area =================-->
 
 
@@ -163,48 +166,52 @@
 	<!-- Start Button -->
 	<!-- End Button -->
 	<!-- Start Align Area -->
-	<div class="whole-wrap">
+	<?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_siswa where id_siswa='$_GET[id_siswa]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-					<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="country">NIP</div>
-							<div class="country">J Kelamin</div>
-							<div class="percentage">Tempat Tanggal Lahir</div>
-							<div class="visit">Agama</div>
-							<div class="percentage">Alamat</div>
+				<h3 class="mb-30 title_color text-center">Data <?php echo $hasil_data['nama_siswa']; ?></h3>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-4">
+						<a href="<?php echo "admin/".$hasil_data['foto_siswa'];?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?php echo "admin/".$hasil_data['foto_siswa'];?>);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<br>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nama_siswa']; ?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nis'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data["tmptlhr_siswa"];?>, <?php echo date ("d F Y", strtotime($hasil_data['tgllhr_siswa']));?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['jk_siswa'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['agama_siswa'];?>">
+							<textarea type="text" class="form-control" cols="40" rows="3" readonly><?=$hasil_data['alamat_siswa']; ?></textarea>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['telp_siswa'];?>">
+						</div><br><br>
+						<div>
+							<ul class="right">
+								<a href="siswa.php"><button class="btn btn-primary">Kembali</button></a>
+							</ul>
 						</div>
-						<?php 
-							include 'koneksi.php';
-							$no = 1;
-							if(isset($_GET['search_input'])){
-								$cari = $_GET['search_input'];
-								$data = mysqli_query($koneksi,"select * from tb_guru where nama_guru like '%".$cari."%'");
-							} else {
-								$data = mysqli_query($koneksi,"select * from tb_guru where status = 'guru'");
-							}
-							while($d = mysqli_fetch_array($data)){
-						?>
-						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><a href="lihat-guru.php?id_guru=<?php echo $d['id_guru']; ?>"><?php echo $d['nama_guru']; ?></a></div>
-							<div class="country"><?php echo $d['nip']; ?></div>
-							<div class="country"><?php echo $d['jk_guru']; ?></div>
-							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
-							<div class="visit"><?php echo $d['agama_guru']; ?></div>
-							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
-						</div>
-						<?php
-							}
-						?>
+					</div>
+					<div class="col-md-2">
+
 					</div>
 				</div>
+				<br>
 			</div>
 		</div>
 	</div>
+	<br>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
