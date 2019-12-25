@@ -16,6 +16,12 @@
         <div class="login">
             <div class="inset">
                 <form action="cek_log.php" method="POST">
+                <select name="status" required>  
+								<option value="" >Status</option>  
+								<option value="admin">admin</option>  
+								<option value="guru">guru</option>
+								<option value="siswa">siswa</option>
+							</select><br><br>
                     <div>
                         <span><label>Username</label></span>
                         <span><input type="text" class="textbox" name="username" placeholder="NIM / NIP" ></span>

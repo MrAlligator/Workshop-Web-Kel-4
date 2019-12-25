@@ -102,24 +102,22 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-	<style>
-	#imgView{  
-    padding:5px;
-}
-.loadAnimate{
-    animation:setAnimate ease 2.5s infinite;
-}
-@keyframes setAnimate{
-    0%  {color: #000;}     
-    50% {color: transparent;}
-    99% {color: transparent;}
-    100%{color: #000;}
-}
-.custom-file-label{
-    cursor:pointer;
-}
-</style>
+	<style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+	</style>
     <!--================Home Banner Area =================-->
+    
     <!--================End Home Banner Area =================-->
 
 
@@ -130,70 +128,70 @@
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<br><br>
-				<h3 class="mb-30 title_color"><center>Form Guru</center></h3>
-				<div class="row">
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
-						<form method="post" action="tambah_aksi2.php" enctype="multipart/form-data">
-							<label>Status</label><br>
-							<input type="text" name="jabatan" readonly value="guru" class="form-control">
-							<input type="checkbox" name="status2" value="admin">Admin
-							<label>NIP</label><br>
-							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Jenis Kelamin</label><br>
-							<select name="jk" required>  
-								<option value="" disabled>Jenis Kelamin</option>  
-								<option value="Laki - Laki">Laki - Laki</option>  
-								<option value="Perempuan">Perempuan</option>  
-							</select><br><br>
-							<label>Agama</label><br>
-							<select name="agama" required>  
-								<option value="" disabled>Agama</option>  
-								<option value="Islam">Islam</option>  
-								<option value="Kristen">Kristen</option>
-								<option value="Hindu">Hindu</option>
-								<option value="Budha">Budha</option>
-								<option value="Katolik">Katolik</option>
-							</select><br><br>
-							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
-							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
-							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Foto</label><br>
-							<div class="card">
-								<div class="imgWrap">
-									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
-								</div>
-								<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
-										<label class="custom-file-label" for="inputFile">Choose file</label>
-									</div>
-								</div>
-							</div>
-							<br><br>
-							<button class="btn btn-primary" type="submit">Simpan</button>
-							</form>
-						</div>	
-					</div>
+			<div class="section-top-border">
+                <h3 class="mb-30 title_color text-center">DATA GURU</h3>
+                <div>
+					<ul class="right">
+						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
+						<a href="form-importguru.php"><button class="btn btn-primary">Import</button></a>
+						<a href="unduhguru.php"><button class="btn btn-primary">Export</button></a>
+					</ul>
 				</div>
+				<br>
+</br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+							<div class="country">NIP</div>
+							<div class="country">J Kelamin</div>
+							<div class="percentage">Tempat Tanggal Lahir</div>
+							<div class="visit">Agama</div>
+							<div class="percentage">Alamat</div>
+							<div class="country">Telp</div>
+                            <div class="country">Aksi</div>
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            $data = mysqli_query($koneksi,"select * from tb_admin where status='admin'");
+                            while($d = mysqli_fetch_array($data)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_admin']; ?></a></div>
+							<div class="country"><?php echo $d['nip_admin']; ?></div>
+							<div class="country"><?php echo $d['jk_admin']; ?></div>
+							<div class="percentage"><?php echo $d['tmpt_admin']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgl_admin']));?></div>
+							<div class="visit"><?php echo $d['agama_admin']; ?></div>
+							<div class="percentage"><?php echo $d['alamat_admin']; ?></div>
+							<div class="country"><?php echo $d['telp_admin']; ?></div>
+                            <div class="country">
+                                <a href="edit-guru.php?id_admin=<?php echo $d['id_admin'];?>"><button class="btn btn-warning">Edit</button></a>
+                                <a href="hapus-admin.php?id_admin=<?php echo $d['id_admin'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
+                            </div>
+						</div>
+                        <?php
+                            }
+						?>
+                    </div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
@@ -215,49 +213,3 @@
 	</body>
 	
 	</html>
-	<script>
-		function hanyaAngka(evt) {
-			var charCode = (evt.which) ? evt.which : event.keyCode
-			if (charCode > 31 && (charCode < 48 || charCode > 57))
-			return false;
-			return true;
-		}
-		function hanyaHuruf(evt) {
-			var charCode = (evt.which) ? evt.which : event.keyCode
-			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
-			return false;
-			return true;
-		}
-		$("#inputFile").change(function(event) {  
-      fadeInAdd();
-      getURL(this);    
-    });
-
-    $("#inputFile").on('click',function(event){
-      fadeInAdd();
-    });
-
-    function getURL(input) {    
-      if (input.files && input.files[0]) {   
-        var reader = new FileReader();
-        var filename = $("#inputFile").val();
-        filename = filename.substring(filename.lastIndexOf('\\')+1);
-        reader.onload = function(e) {
-          debugger;      
-          $('#imgView').attr('src', e.target.result);
-          $('#imgView').hide();
-          $('#imgView').fadeIn(500);      
-          $('.custom-file-label').text(filename);             
-        }
-        reader.readAsDataURL(input.files[0]);    
-      }
-      $(".alert").removeClass("loadAnimate").hide();
-    }
-
-    function fadeInAdd(){
-      fadeInAlert();  
-    }
-    function fadeInAlert(text){
-      $(".alert").text(text).addClass("loadAnimate");  
-    }
-	</script>

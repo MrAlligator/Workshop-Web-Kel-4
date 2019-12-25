@@ -1,4 +1,5 @@
 <?php 
+ini_set("display_errors", "off");
 // koneksi database
 include 'koneksi.php';
 
@@ -11,6 +12,7 @@ $tmptlahir =addslashes($_POST['tempat']);
 $tgllahir = addslashes($_POST['tanggal']);
 $telp = addslashes($_POST['telepon']);
 $status = addslashes($_POST['jabatan']);
+$status2 = addslashes($_POST['status2']);
 $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_guru WHERE nip='$nip'"));
 $namafolder="img/guru/";
 if($ceknis > 0){
@@ -21,8 +23,15 @@ if($ceknis > 0){
     {           
         $gambar = $namafolder . basename($_FILES['file']['name']);       
         if (move_uploaded_file($_FILES['file']['tmp_name'], $gambar)) {
+            if ($status2=admin){
+                mysqli_query($koneksi,"insert into tb_admin values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$telp','$alamat','$gambar','$nip','$nip','admin')");
+                mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$nip','$nip','$gambar')");
+            }else{
+
+            
             mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$nip','$nip','$gambar')");
-		   ?>
+            }
+           ?>
 				<script language="javascript">
                     alert('Berhasil menambahkan');
                     document.location="guru2.php";
