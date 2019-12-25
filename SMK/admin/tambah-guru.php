@@ -135,7 +135,7 @@
 				<div class="row">
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="tambah_aksi2.php">
+						<form method="post" action="tambah_aksi2.php" enctype="multipart/form-data">
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="guru" class="form-control">
 							<label>NIP</label><br>

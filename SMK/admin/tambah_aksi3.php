@@ -3,15 +3,15 @@
 include 'koneksi.php';
 
 // menangkap data yang di kirim dari form
-$nama = $_POST['nama'];
-$nip = $_POST['nip'];
-$alamat = $_POST['alamat'];
-$jk = $_POST['jk'];
-$agama = $_POST['agama'];
-$tmptlahir = $_POST['tempat'];
-$tgllahir = $_POST['tanggal'];
-$telp = $_POST['telepon'];
-$status = $_POST['jabatan'];
+$nama = addslashes($_POST['nama']);
+$nip = addslashes($_POST['nip']);
+$alamat = addslashes($_POST['alamat']);
+$jk = addslashes($_POST['jk']);
+$agama = addslashes($_POST['agama']);
+$tmptlahir =addslashes($_POST['tempat']);
+$tgllahir = addslashes($_POST['tanggal']);
+$telp = addslashes($_POST['telepon']);
+$status = addslashes($_POST['jabatan']);
 // menginput data ke database
 $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_guru WHERE nip='$nip'"));
 $namafolder="img/guru/";

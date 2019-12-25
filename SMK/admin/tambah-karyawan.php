@@ -132,13 +132,14 @@
 				<div class="row">
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="tambah_aksi3.php">
+						<form method="post" action="tambah_aksi3.php" enctype="multipart/form-data">
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="karyawan" class="form-control">
-							<label>NIP</label><br>
-							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<label>NIS</label><br>
+							<input type="text" name="nip" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama</label><br>
 							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<label>Kelas</label><br>
 							<label>Jenis Kelamin</label><br>
 							<select name="jk" required>  
 								<option value="" disabled>Jenis Kelamin</option>  
@@ -165,7 +166,7 @@
 							<label>Alamat</label><br>
 							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"><br>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Foto</label><br>
 							<div class="card">
 								<div class="imgWrap">
