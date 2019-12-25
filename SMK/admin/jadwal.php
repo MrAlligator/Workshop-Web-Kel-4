@@ -133,10 +133,10 @@
 						<div class="table-head">
                             <div class="serial">No</div>
 							<div class="country">Mata Pelajaran</div>
-							<div class="country">Nama Guru</div>
 							<div class="country">Semester</div>
-							<div class="country">Hari</div>
+							<div class="country">Nama Guru</div>
 							<div class="country">Waktu</div>
+							<div class="country">Hari</div>
 							<div class="country">Aksi</div>
 						</div>
                         <?php 
@@ -153,10 +153,10 @@
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
 							<div class="country"><?php echo $d['nama_mapel']; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
 							<div class="country"><?php echo $d['semester']; ?></div>
-							<div class="country"><?php echo $d['hari']; ?></div>
+							<div class="country"><?php echo $d['nama_guru']; ?></div>
 							<div class="country"><?php echo $d['durasi']; ?></div>
+							<div class="country"><?php echo $d['hari']; ?></div>
                             <div class="country">
                                 <a href="edit-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
                                 <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>

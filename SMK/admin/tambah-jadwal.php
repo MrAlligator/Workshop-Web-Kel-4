@@ -150,6 +150,21 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
+								
+								<tr>
+									<td>Semester</td>
+									<td>
+									<select name="semester" required>  
+									<option value="">-Pilih-</option>
+										<option value="1">1</option>  
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>  
+										<option value="5">5</option>
+										<option value="6">6</option>
+										</select>
+									</td>
+								</tr>
 							<tr>
 									<td>Nama Guru</td>
 									<td>
@@ -166,19 +181,19 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
-								
 								<tr>
-									<td>Semester</td>
+									<td>Waktu</td>
 									<td>
-									<select name="semester" required>  
-									<option value="">-Pilih-</option>
-										<option value="1">1</option>  
-										<option value="2">2</option>
-										<option value="3">3</option>
-										<option value="4">4</option>  
-										<option value="5">5</option>
-										<option value="6">6</option>
-										</select>
+									<select name="durasi"  required> 
+									<option value="">-Pilih-</option> 
+										<option value="Jam Pertama">Jam Pertama</option>  
+										<option value="Jam Kedua">Jam Kedua</option>
+										<option value="Jam Ketiga">Jam Ketiga</option>   
+										<option value="Jam Keempat">Jam Keempat</option>
+										<option value="Jam Kelima">Jam Kelima</option>
+										<option value="Jam Keenam">Jam Keenam</option>
+										 
+									</select>
 									</td>
 								</tr>
 								<tr>
