@@ -103,23 +103,23 @@
 		</div>
 	</header>
     <!--================End Home Banner Area =================-->
-<style>
-	#imgView{  
-    padding:5px;
-}
-.loadAnimate{
-    animation:setAnimate ease 2.5s infinite;
-}
-@keyframes setAnimate{
-    0%  {color: #000;}     
-    50% {color: transparent;}
-    99% {color: transparent;}
-    100%{color: #000;}
-}
-.custom-file-label{
-    cursor:pointer;
-}
-</style>
+	<style>
+		#imgView{  
+		padding:5px;
+	}
+	.loadAnimate{
+		animation:setAnimate ease 2.5s infinite;
+	}
+	@keyframes setAnimate{
+		0%  {color: #000;}     
+		50% {color: transparent;}
+		99% {color: transparent;}
+		100%{color: #000;}
+	}
+	.custom-file-label{
+		cursor:pointer;
+	}
+	</style>
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
 	<!-- Start Button -->
