@@ -149,6 +149,7 @@
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
+						<input type="hidden" name="id" readonly value="<?php echo $d['id_siswa'] ?>" class="form-control">
 						<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
 							<label>NIS</label><br>
@@ -205,6 +206,19 @@
 							<label>Password</label><br>
 							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
+							<label>Foto</label><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_siswa']?>"required>
+										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_siswa']?></label>
+									</div>
+								</div>
+							</div>
+							<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	
