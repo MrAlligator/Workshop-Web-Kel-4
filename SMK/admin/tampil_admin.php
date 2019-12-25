@@ -129,7 +129,7 @@
     <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-                <h3 class="mb-30 title_color text-center">DATA GURU</h3>
+                <h3 class="mb-30 title_color text-center">DATA ADMIN</h3>
                 <div>
 					<ul class="right">
 						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
