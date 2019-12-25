@@ -19,6 +19,7 @@ if(mysqli_num_rows($cek3)==1 && $status=='admin'){
 }
 elseif(mysqli_num_rows($cek)==1 && $status =='guru'){
     $_SESSION['password'] = $result['password'];
+    $_SESSION['nama'] = $result['nama_guru'];
     $_SESSION['username'] = $result['username'];
     $_SESSION['level']    = 'guru';
     header('location:guru/index.php');
