@@ -210,9 +210,6 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
-<<<<<<< HEAD
-								
-=======
 								<tr>
 									<td>Waktu</td>
 									<td>
@@ -227,7 +224,6 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
->>>>>>> fca0ebda8f5f0cef788d18369d92dac76f5ec95d
 								
 								
 								<tr>
