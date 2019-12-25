@@ -56,6 +56,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 
 								</ul>
@@ -130,7 +131,7 @@
 						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
 							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
 						</video>
-						</a>
+						</a></br>
 						<a href="hapus-video.php?id_video=<?php echo $d['id_video'];?>" onClick="return confirm('Hapus Video?')"/><button class="btn btn-danger">Hapus</button></a>
 					</div>
 				<?php
@@ -143,7 +144,15 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

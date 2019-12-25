@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -50,11 +50,17 @@
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
-					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+					<form class="d-flex justify-content-between" method="get" action="berita.php">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+							echo "<b>Hasil pencarian : '.$cari.'</b>";
+						}
+					?>
 				</div>
 			</div>
 
@@ -187,8 +193,13 @@
 			</div>
 			<div class="row">
                 <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
+					include 'koneksi.php';
+					if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$data = mysqli_query($koneksi, "select * from tb_berita where judul like '%".$cari."%'");				
+					}else{
+						$data = mysqli_query($koneksi, "select * from tb_berita");		
+					}
                     while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->
@@ -259,18 +270,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 

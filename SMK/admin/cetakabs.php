@@ -50,8 +50,8 @@
     <!--================End Home Banner Area =================-->
 
     <?php
-	header("Content-type: application/vnd-ms-excel");
-	header("Content-Disposition: attachment; filename=Data Absensi.xls");
+    header("Content-type: application/vnd-ms-excel"); 
+    header("Content-Disposition: attachment; filename=Data Absensi.xls");
     ?>
                 <center><h3>Absensi Siswa</h3></center>
                     <table border="1">
@@ -65,8 +65,9 @@
                     </tr>
                     <?php
                         include 'koneksi.php';
+                        $tgl = date("Y-m-d");
                         $no = 1;
-                        $data = mysqli_query($koneksi,"select * from tb_absen");
+                        $data = mysqli_query($koneksi,"select * from tb_absen where tgl_absen = '$tgl'");
                         while($d = mysqli_fetch_array($data)){
                     ?>
                     <tr>
@@ -83,6 +84,6 @@
                 </table>
 			</div>
 		</div>
-	</div>		
+    </div>
 	</body>
 	</html>

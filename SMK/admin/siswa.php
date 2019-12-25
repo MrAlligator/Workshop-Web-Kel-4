@@ -174,8 +174,7 @@
 							<div class="visit">NIS</div>
 							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Tempat, Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
                         <?php 
@@ -191,12 +190,11 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_siswa']; ?></div>
+							<div class="country"><a href="lihat-siswa.php?id_siswa=<?php echo $d['id_siswa']; ?>"><?php echo $d['nama_siswa']; ?></a></div>
 							<div class="visit"><?php echo $d['nis']; ?></div>
 							<div class="country"><?php echo $d['jk_siswa']; ?></div>
 							<div class="visit"><?php echo $d['agama_siswa']; ?></div>
-							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
-							<div class="country"><?php echo $d['tgllhr_siswa']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlhr_siswa']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllhr_siswa']));?></div>
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
 						</div>
                         <?php
@@ -211,9 +209,56 @@
 
 	<!--================ Start footer Area  =================-->
     <footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik2.php">Prestasi</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
 			</div>
 		</div>
 	</footer>

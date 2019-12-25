@@ -55,6 +55,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampil_admin.php">Admin</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
@@ -209,11 +210,10 @@
 		<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
 					</div>
 				</div>
 		</div>
-
 	</footer>
 
 		<!--================ End footer Area  =================-->

@@ -47,69 +47,51 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Profil</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
-								</ul>
-							</li>
-							</li><li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Jurusan</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Ekstrakurikuler</a>
+								aria-expanded="false">Kehadiran</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="absensi.php">Daftar Hadir</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
-                            <li class="nav-item submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -159,25 +141,47 @@
     ?>
     <section class="sample-text-area">
 		<div class="container">
-            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
-			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
-			<p class="sample-text">
-                <?=$hasil_data['isi_prestasi'];?>
-            </p>
-            <p class="sample-text">
-			<?=$hasil_data['jenis_p'];?>
-                <?=$hasil_data['tanggal_prestasi'];?>
-            </p>
+			<div class="row">
+				<div class="col-md-9">
+					<img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
+					<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
+					<p class="sample-text">
+						<?=$hasil_data['isi_prestasi'];?>
+					</p>
+					<p class="sample-text">
+					<?=$hasil_data['jenis_p'];?>
+					<?=$hasil_data['tanggal_prestasi'];?>
+					</p>
+				</div>
+				<div class="col-md-3">
+					<h4>Lainnya</h4><br>
+					<ul>
+					<?php
+					include 'koneksi.php';
+					$data = mysqli_query($koneksi,"select * from tb_prestasi");
+					while($d = mysqli_fetch_array($data)){
+					?>
+						<li><a href="lihatprestasi2.php?id_prestasi=<?php echo $d['id_prestasi'];?>"><?php echo $d['judul_prestasi']?></a></li>
+					<?php
+					}
+					?>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 	<!--================ End Events Area =================-->
 
-    <!--================Contact Area =================-->
-	
-    <!--================Contact Area =================-->
-
 	<!--================ Start footer Area  =================-->
-	
+	<footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

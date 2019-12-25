@@ -55,9 +55,8 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
-
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -147,8 +146,7 @@
 							<div class="country">Nama</div>
 							<div class="country">NIP</div>
 							<div class="country">J Kelamin</div>
-							<div class="country">Tempat</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Tempat Tanggal Lahir</div>
 							<div class="visit">Agama</div>
 							<div class="percentage">Alamat</div>
 							<div class="country">Telp</div>
@@ -162,11 +160,10 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
+							<div class="country"><a href="lihat-guru2.php?id_guru=<?php echo $d['id_guru']; ?>"><?php echo $d['nama_guru']; ?></a></div>
 							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['jk_guru']; ?></div>
-							<div class="country"><?php echo $d['tmptlahir']; ?></div>
-							<div class="country"><?php echo $d['tgllahir']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlahir']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllahir']));?></div>
 							<div class="visit"><?php echo $d['agama_guru']; ?></div>
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
@@ -186,7 +183,15 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

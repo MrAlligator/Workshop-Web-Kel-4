@@ -57,6 +57,7 @@
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -102,8 +103,23 @@
 		</div>
 	</header>
     <!--================End Home Banner Area =================-->
-
-
+	<style>
+		#imgView{  
+		padding:5px;
+	}
+	.loadAnimate{
+		animation:setAnimate ease 2.5s infinite;
+	}
+	@keyframes setAnimate{
+		0%  {color: #000;}     
+		50% {color: transparent;}
+		99% {color: transparent;}
+		100%{color: #000;}
+	}
+	.custom-file-label{
+		cursor:pointer;
+	}
+	</style>
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
 	<!-- Start Button -->
@@ -116,7 +132,7 @@
 				<div class="row">
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="tambah_aksi.php">
+						<form method="post" action="tambah_aksi.php" enctype="multipart/form-data">
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="siswa" class="form-control">
 							<label>NIS</label><br>
@@ -149,18 +165,30 @@
 								<option value="Budha">Budha</option>
 								<option value="Katolik">Katolik</option>
 							</select><br><br>
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
 							<label>Tempat Lahir</label><br>
 							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
 							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
 							<label>Alamat</label><br>
 							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"><br>
+							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<label>Foto</label><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
+										<label class="custom-file-label" for="inputFile">Choose file</label>
+									</div>
+								</div>
+							</div>
 							<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
@@ -206,4 +234,36 @@
 			return false;
 			return true;
 		}
+		$("#inputFile").change(function(event) {  
+      fadeInAdd();
+      getURL(this);    
+    });
+
+    $("#inputFile").on('click',function(event){
+      fadeInAdd();
+    });
+
+    function getURL(input) {    
+      if (input.files && input.files[0]) {   
+        var reader = new FileReader();
+        var filename = $("#inputFile").val();
+        filename = filename.substring(filename.lastIndexOf('\\')+1);
+        reader.onload = function(e) {
+          debugger;      
+          $('#imgView').attr('src', e.target.result);
+          $('#imgView').hide();
+          $('#imgView').fadeIn(500);      
+          $('.custom-file-label').text(filename);             
+        }
+        reader.readAsDataURL(input.files[0]);    
+      }
+      $(".alert").removeClass("loadAnimate").hide();
+    }
+
+    function fadeInAdd(){
+      fadeInAlert();  
+    }
+    function fadeInAlert(text){
+      $(".alert").text(text).addClass("loadAnimate");  
+    }
 	</script>

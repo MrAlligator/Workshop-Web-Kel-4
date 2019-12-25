@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -55,6 +55,11 @@
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -152,15 +157,6 @@
         </div>
     </section>
 	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
-
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
 	<!--================ Start Popular Courses Area =================-->
 	<div class="popular_courses lite_bg">
 		<div class="container">
@@ -169,8 +165,12 @@
 			<div class="row">
                 <?php
                     include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
+                    if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$data = mysqli_query($koneksi,"select * from tb_pengumuman where judul like '%".$cari."%'");
+					}else {
+					$data = mysqli_query($koneksi,"select * from tb_pengumuman");
+                    }while($d = mysqli_fetch_array($data)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
@@ -195,7 +195,7 @@
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-	<div class="container">
+		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Profil Sekolah</h4>
@@ -237,18 +237,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 

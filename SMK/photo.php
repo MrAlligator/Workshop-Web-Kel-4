@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -158,7 +158,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Galeri Foto</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
@@ -223,18 +222,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	

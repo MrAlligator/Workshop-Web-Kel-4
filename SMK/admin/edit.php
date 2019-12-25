@@ -56,6 +56,7 @@
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -102,7 +103,23 @@
 	</header>
     <!--================End Home Banner Area =================-->
 
-
+	<style>
+		#imgView{  
+		padding:5px;
+	}
+	.loadAnimate{
+		animation:setAnimate ease 2.5s infinite;
+	}
+	@keyframes setAnimate{
+		0%  {color: #000;}     
+		50% {color: transparent;}
+		99% {color: transparent;}
+		100%{color: #000;}
+	}
+	.custom-file-label{
+		cursor:pointer;
+	}
+	</style>
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
 	<!-- Start Button -->
@@ -121,8 +138,18 @@
                         ?>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="update.php">
-							<label>Status</label><br>
+						<form method="post" action="update.php" enctype="multipart/form-data">
+						<label>Foto</label><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="<?php echo $d['foto_siswa'];?>" id="imgView" class="card-img-top img-fluid">
+								</div>
+							</div><br><br>
+						</div>
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="form-group">
+						<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
 							<label>NIS</label><br>
 							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nis'] ?>" onkeypress="return hanyaAngka(event)" required>
@@ -167,10 +194,6 @@
 									else echo "<option value = 'Katolik'>Katolik</option>";
 								?>
 							</select><br><br>
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
 							<label>Tempat Lahir</label><br>
 							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmptlhr_siswa'] ?>" required>
 							<label>Tanggal Lahir</label><br>
@@ -178,7 +201,7 @@
 							<label>Alamat</label><br>
 							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" required><?php echo $d['alamat_siswa'] ?></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_siswa'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required><br>
+							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_siswa'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required>
 							<label>Password</label><br>
 							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
@@ -195,6 +218,15 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
+	<footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
@@ -249,5 +281,37 @@
 		var toggler = new _show( checkbox, pass );
 	});
 	})();
+	$("#inputFile").change(function(event) {  
+      fadeInAdd();
+      getURL(this);    
+    });
+
+    $("#inputFile").on('click',function(event){
+      fadeInAdd();
+    });
+
+    function getURL(input) {    
+      if (input.files && input.files[0]) {   
+        var reader = new FileReader();
+        var filename = $("#inputFile").val();
+        filename = filename.substring(filename.lastIndexOf('\\')+1);
+        reader.onload = function(e) {
+          debugger;      
+          $('#imgView').attr('src', e.target.result);
+          $('#imgView').hide();
+          $('#imgView').fadeIn(500);      
+          $('.custom-file-label').text(filename);             
+        }
+        reader.readAsDataURL(input.files[0]);    
+      }
+      $(".alert").removeClass("loadAnimate").hide();
+    }
+
+    function fadeInAdd(){
+      fadeInAlert();  
+    }
+    function fadeInAlert(text){
+      $(".alert").text(text).addClass("loadAnimate");  
+    }
 	</script>
 	</html>

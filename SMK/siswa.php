@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
     <link rel="stylesheet" href="vendors/animate-css/animate.css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -50,11 +50,16 @@
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
-					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+					<form class="d-flex justify-content-between" method="get" action="siswa.php">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari Nama">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -162,7 +167,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Data Siswa</h3>
 				<div class="progress-table-wrap">
 				<form method="get"> 
 					<table>
@@ -183,14 +187,13 @@
 					</table>
 				</form>
 					<div class="progress-table">
-						<div class="table-head">
+					<div class="table-head">
 							<div class="serial">No</div>
 							<div class="country">Nama</div>
 							<div class="visit">NIS</div>
-							<div class="country">Jenis Kelamin</div>
+							<div class="country">J Kelamin</div>
 							<div class="visit">Agama</div>
-							<div class="country">Tempat Lahir</div>
-							<div class="country">Tanggal Lahir</div>
+							<div class="percentage">Tempat, Tanggal Lahir</div>
 							<div class="percentage">Alamat</div>
 						</div>
 						<?php 
@@ -199,6 +202,9 @@
                             if(isset($_GET['kelas'])){
 								$kelas = $_GET['kelas'];
 								$sql = mysqli_query($koneksi,"select * from tb_siswa where kelas='$kelas'");
+							}else if(isset($_GET['search_input'])){
+								$cari = $_GET['search_input'];
+								$sql = mysqli_query($koneksi,"select * from tb_siswa where nama_siswa like '%".$cari."%'");
 							}else{
 								$sql = mysqli_query($koneksi,"select * from tb_siswa");
 							}
@@ -206,12 +212,11 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_siswa']; ?></div>
+							<div class="country"><a href="lihat-siswa.php?id_siswa=<?php echo $d['id_siswa']; ?>"><?php echo $d['nama_siswa']; ?></a></div>
 							<div class="visit"><?php echo $d['nis']; ?></div>
 							<div class="country"><?php echo $d['jk_siswa']; ?></div>
 							<div class="visit"><?php echo $d['agama_siswa']; ?></div>
-							<div class="country"><?php echo $d['tmptlhr_siswa']; ?></div>
-							<div class="country"><?php echo $d['tgllhr_siswa']; ?></div>
+							<div class="percentage"><?php echo $d['tmptlhr_siswa']; ?>, <?php echo date ("d-m-Y", strtotime($d['tgllhr_siswa']));?></div>
 							<div class="percentage"><?php echo $d['alamat_siswa']; ?></div>
 						</div>
 						<?php
@@ -268,18 +273,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	

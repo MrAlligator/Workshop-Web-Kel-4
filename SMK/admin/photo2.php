@@ -55,7 +55,7 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 
 								</ul>
@@ -127,7 +127,7 @@
 					<div class="col-md-4">
 						<a href="<?php echo "img/gallery/".$d['nama_file']; ?>" class="img-gal">
 							<div class="single-gallery-image" style="background: url(<?php echo "img/gallery/".$d['nama_file']; ?>);"></div>
-						</a>
+						</a></br>
 						<a href="hapus-gambar.php?id_foto=<?php echo $d['id_foto'];?>" onClick="return confirm('Hapus Foto?')"/><button type="button" class="btn btn-danger">Hapus</button></a>
 					</div>
 				<?php
@@ -140,7 +140,15 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

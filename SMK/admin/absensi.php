@@ -151,8 +151,7 @@
 						<input type="checkbox" name="hadir" value="Tanpa Keterangan">Tanpa Keterangan<br><br><br>
 						<button class="btn btn-success" type="submit">Simpan</button>
 					</form>
-					<a href="hapusabs.php"><button class="btn btn-danger">Reset Data Harian</button></a>
-					<a href="cetakabs.php"><button class="btn btn-primary">Cetak</button></a>
+					<a href="cetakabs.php"><button id="hapus" class="btn btn-primary">Cetak</button></a>
 					</div>
 				</div>
 			</div>
@@ -170,7 +169,8 @@
 								<?php 
 									include 'koneksi.php';
 									$no = 1;
-									$data = mysqli_query($koneksi,"select * from tb_absen");
+									$tgl = date("Y-m-d");
+									$data = mysqli_query($koneksi,"select * from tb_absen where tgl_absen ='$tgl'");
 									while($d = mysqli_fetch_array($data)){
 								?>
 								<div class="table-row">
@@ -194,8 +194,16 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
-		<!--================ End footer Area  =================-->
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -238,4 +246,12 @@
 			}
 		}
 		batascheckbox(document.forms.absen.hadir, 1)
+		function coba(){
+			var ok = confirm("Data Berhasil di Unduh, Reset?");
+			if (ok){
+				window.location = "hapusabs.php";
+			} else {
+				window.location = "absensi.php";
+			}
+		}
 	</script>

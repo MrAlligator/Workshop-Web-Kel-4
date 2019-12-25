@@ -51,14 +51,15 @@ require 'koneksi.php';
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -76,7 +77,7 @@ require 'koneksi.php';
 									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
@@ -140,7 +141,7 @@ require 'koneksi.php';
 									<select name="nama_mapel"  required>  
 										<option value="">-Pilih-</option>
 										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel") or die (mysqli_query($koneksi));
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
 
@@ -170,7 +171,7 @@ require 'koneksi.php';
 									<select name="nama_guru"  required> 
 									<option value="">-Pilih-</option>
 										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
 
@@ -206,15 +207,31 @@ require 'koneksi.php';
 										<option value="Kamis">Kamis</option>
 										<option value="Jumat">Jumat</option>
 										<option value="Sabtu">Sabtu</option>
-										 
 									</select>
 									</td>
 								</tr>
+<<<<<<< HEAD
 								
+=======
+								<tr>
+									<td>Waktu</td>
+									<td>
+									<select name="durasi"  required> 
+									<option value="">-Pilih-</option> 
+										<option value="Jam Pertama">Jam Pertama</option>  
+										<option value="Jam Kedua">Jam Kedua</option>
+										<option value="Jam Ketiga">Jam Ketiga</option>   
+										<option value="Jam Keempat">Jam Keempat</option>
+										<option value="Jam Kelima">Jam Kelima</option>
+										<option value="Jam Keenam">Jam Keenam</option>
+									</select>
+									</td>
+								</tr>
+>>>>>>> fca0ebda8f5f0cef788d18369d92dac76f5ec95d
 								
 								
 								<tr>
-					    			<td><input type="submit" value="Simpan"></td>
+					    			<td><input class="btn btn-primary" type="submit" value="Simpan"></td>
 								</tr>
 								
 							</table>

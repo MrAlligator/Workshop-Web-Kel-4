@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<link rel="stylesheet" href="css/video-js.min.css" type="text/css">
     <!-- main css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -159,7 +159,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="title_color">Galeri Video</h3>
 				<div class="row gallery-item">
 				<?php
 				include 'koneksi.php';
@@ -167,9 +166,9 @@
 				while($d = mysqli_fetch_array($data)){
 				?>
 					<div class="col-md-6">
-						<a href="<?php echo "img/video/".$d['nama_file']; ?>" class="img-gal">
+						<a href="<?php echo "../admin/img/video/".$d['nama_file']; ?>" class="img-gal">
 						<video class="video-js vjs-default-skin" width="500" height="271" data-setup='{"controls" : true, "autoplay" : false, "preload" : "auto"}'>
-							<source src="<?php echo "img/video/".$d['nama_file']; ?>"  type='video/mp4' />
+							<source src="<?php echo "../admin/img/video/".$d['nama_file']; ?>"  type='video/mp4' />
 						</video>
 						</a>
 					</div>
@@ -226,18 +225,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	

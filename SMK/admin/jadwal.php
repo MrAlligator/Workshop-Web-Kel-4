@@ -55,7 +55,8 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -124,28 +125,9 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">JADWAL SEKOLAH</h3>
                 <div class="button-group-area mt-10">
-					<a href="tambah-jadwal.php" class="genric-btn default">Tambah Jadwal</a>
+					<a href="tambah-jadwal.php" class="btn btn-primary">Tambah Jadwal</a>
 				</div>
 				<br>
-				<form method="get"> 
-					<table>
-						<tr>
-							<td><label>Pilih Kelas</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="kelas">
-								<option value="">Kelas</option>
-								<option value="X">X</option>  
-								<option value="XI">XI</option>  
-								<option value="XII">XII</option>
-								</select>
-							</td>
-							<td><input type="submit" value="FILTER"></td>
-						</tr>
-					</table>
-				</form>
-<br>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
@@ -191,7 +173,15 @@
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-    
+    <footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

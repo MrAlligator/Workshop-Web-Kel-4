@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -55,6 +55,11 @@
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -144,7 +149,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>PRESTASI</h2>
+                            <h2>Prestasi<br>SMK Darus Salam</h2>
                         </div>
                     </div>
                 </div>
@@ -183,13 +188,6 @@
 	<!--================ Start Events Area =================-->
 	<div class="popular_courses lite_bg">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-                        <a href="#"><h2>Prestasi SMK Darus Salam</h2></a>
-                    </div>
-                </div>
-			</div>
             <table>
 			<form method="POST"> 
 						<tr>
@@ -216,36 +214,34 @@
                     }	
                 ?>
                 <?php
-					
-				  include 'koneksi.php';
-				  if(isset($_POST['submit'])){
-				  	$jenis_p = $_POST['jenis_p'];
+					include 'koneksi.php';
+					if(isset($_POST['submit'])){
+					$jenis_p = $_POST['jenis_p'];
 				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-				  }else{
+					}else if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_prestasi where judul_prestasi like '%".$cari."%'");
+					}else{
 				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
-				  }
-				  while($d = mysqli_fetch_array($sql)){
-				  
-				?>
-				
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" style="height=150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
-							</h4>
+					}
+					while($d = mysqli_fetch_array($sql)){
+					?>
+					<!-- single course -->
+					<div class="col-lg-3 col-md-6">
+						<div class="single_course">
+							<div class="course_head overlay">
+								<img class="img-fluid w-100" height="150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+							</div>
+							<div class="course_content">
+								<h4>
+									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+								</h4>
+							</div>
 						</div>
 					</div>
-                </div>
-				<?php
-				
-				 }
-				?>
-               
+					<?php
+					}
+					?>
 			</div>
 		</div>
 	</div>
@@ -256,7 +252,61 @@
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
-	
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="aka.php">Prestasi</a></li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
+	</footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

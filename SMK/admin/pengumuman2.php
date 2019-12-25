@@ -47,7 +47,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-						<li class="nav-item active"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+						<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
@@ -55,9 +55,8 @@
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="siswabaru.php">Siswa Baru</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
-
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -157,28 +156,16 @@
 				
 	<!--================ End Popular Courses Area =================-->
 
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
-	<!--================ Start Events Area =================-->
-	
-	<!--================ End Events Area =================-->
-
-    <!--================Contact Area =================-->
-
-    <!--================Contact Area =================-->
-
 	<!--================ Start footer Area  =================-->
-	
+	<footer class="footer-area section_gap">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+					</div>
+				</div>
+		</div>
+	</footer>
 	<!--================ End footer Area  =================-->
 
 	<!-- Optional JavaScript -->

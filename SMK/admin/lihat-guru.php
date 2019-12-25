@@ -23,30 +23,6 @@
 
     <!--================ Start Header Menu Area =================-->
     <header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+6285231821348">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">(+62)8523 1821 348</span>
-							</span>
-						</a>
-						<a href="mailto:darussalamsmk11@yahoo.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">darussalamsmk11@yahoo.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -71,69 +47,71 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
 							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
+							</li>
+                            <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">ADMIN</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -142,22 +120,22 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
+	<style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+	</style>
     <!--================Home Banner Area =================-->
-    <section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>PRESTASI<br>NON-AKADEMIK</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    
     <!--================End Home Banner Area =================-->
 
 
@@ -166,102 +144,52 @@
 	<!-- Start Button -->
 	<!-- End Button -->
 	<!-- Start Align Area -->
-	<!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
+	<?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_guru where id_guru='$_GET[id_guru]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Pramuka</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
+				<h3 class="mb-30 title_color text-center">Data <?php echo $hasil_data['nama_guru']; ?></h3>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-4">
+						<a href="<?=$hasil_data['foto_guru'];?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?=$hasil_data['foto_guru'];?>);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<br>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nama_guru']; ?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nip'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data["tmptlahir"];?>, <?php echo date ("d F Y", strtotime($hasil_data['tgllahir']));?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['jk_guru'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['agama_guru'];?>">
+							<textarea type="text" class="form-control" cols="40" rows="3" readonly><?=$hasil_data['alamat_guru']; ?></textarea>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['telp_guru'];?>">
+						</div><br><br>
+						<div>
+							<ul class="right">
+								<a href="guru.php"><button class="btn btn-primary">Kembali</button></a>
+							</ul>
 						</div>
 					</div>
+					<div class="col-md-2">
+
+					</div>
 				</div>
+				<br>
 			</div>
 		</div>
 	</div>
-	<!--?php
-		}
-    ?-->
-    <!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Pencak Silat</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--?php
-		}
-    ?-->
-    <!--?php 
-		include 'koneksi.php';
-		$no = 1;
-		$data = mysqli_query($koneksi,"select * from tb_siswa");
-		while($d = mysqli_fetch_array($data)){
-	?-->
-	<div class="whole-wrap">
-		<div class="container">
-			<div class="section-top-border">
-				<h3 class="mb-30 title_color text-center">Prestasi Lainnya</h3>
-				<div class="progress-table-wrap">
-					<div class="progress-table">
-						<div class="table-head">
-							<div class="serial">No</div>
-							<div class="country">Nama</div>
-							<div class="visit">NIS</div>
-							<div class="percentage">Prestasi</div>
-						</div>
-						<div class="table-row">
-							<div class="serial"></div>
-							<div class="country"></div>
-							<div class="visit"></div>
-							<div class="percentage"></div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--?php
-		}
-	?-->
+	<br>
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
@@ -308,18 +236,16 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="akademik2.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 		<!--================ End footer Area  =================-->
 	

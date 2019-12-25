@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -122,14 +122,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Prestasi</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="akademik.php">Akademik</a></li>
-									<li class="nav-item"><a class="nav-link" href="nonakademik.php">Non - Akademik</a></li>
-								</ul>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="aka.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -149,9 +142,9 @@
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6">
+                    <div class="col-md-12 col-xs-12">
                         <div class="banner_content text-center">
-                            <h2>STRUKTUR</h2>
+                            <h2>Struktur Organisasi<br>SMK Darus Salam Tahun 2019/2020</h2>
                         </div>
                     </div>
                 </div>
@@ -172,12 +165,6 @@
 	<div class="whole-wrap">
 		<div class="container">
 			<div class="section-top-border">
-				<div class="row">
-					<div class="col-md-12 col-xs-12">
-					<center><h3 class="mb-20 title_color">Struktur Organisasi</h3></center>
-					<center><h3 class="mb-20 title_color">SMK Darus Salam Tahun Pelajaran 2019 / 2020</h3></center>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-12">
 						
@@ -249,7 +236,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakulikuler</h4>
+					<h4>Ekstrakurikuler</h4>
 					<ul>
 						<li><a href="pramuka.php">Pramuka</a></li>
 						<li><a href="pencak_silat.php">Pencak Silat</a></li>
@@ -265,18 +252,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 

@@ -51,10 +51,15 @@
 			<div class="search_input" id="search_input_box">
 				<div class="container">
 					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -71,7 +76,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -174,8 +179,13 @@
 			<div class="row">
                 <?php
                     include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
+					if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_pengumuman where judul like '%".$cari."%'");
+					}else{
+						$sql = mysqli_query($koneksi,"select * from tb_pengumuman");
+					}
+					while($d = mysqli_fetch_array($sql)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
@@ -209,8 +219,13 @@
 			<div class="row">
                 <?php
                     include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
+                    if(isset($_GET['search_input'])){
+						$cari = $_GET['search_input'];
+						$sql = mysqli_query($koneksi,"select * from tb_berita where judul like '%".$cari."%'");
+					}else{
+						$sql = mysqli_query($koneksi,"select * from tb_berita");
+					}
+					while($d = mysqli_fetch_array($sql)){
                 ?>
 				<!-- single course -->
 				<div class="col-lg-3 col-md-6">
@@ -323,17 +338,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="https://www.instagram.com/febreroaraya_/" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
-
+			
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 

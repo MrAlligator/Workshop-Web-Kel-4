@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<link rel="stylesheet" href="vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="admin/css/style.css">
 </head>
 
 <body>
@@ -144,7 +144,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>PROFIL SINGKAT</h2>
+                            <h2>Profil<br>SMK Darus Salam</h2>
                         </div>
                     </div>
                 </div>
@@ -162,13 +162,8 @@
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<section class="sample-text-area">
-		<div class="container">
-			<h3 class="text-center">SMK Darus Salam Bondowoso</h3>
-			<p style="font-family:Arial">         
-
-		</div>
-    </section>
+	<br>
+	<br>
     <div class="whole-wrap">
 		<div class="container">
 						<h3 class="mb-20 title_color">Identitas Sekolah : </h3>
@@ -249,7 +244,7 @@
 					</ul>
 				</div>
 				<div class="col-lg-2 col-md-6 single-footer-widget">
-					<h4>Ekstrakulikuler</h4>
+					<h4>Ekstrakurikuler</h4>
 					<ul>
 						<li><a href="pramuka.php">Pramuka</a></li>
 						<li><a href="pencak_silat.php">Pencak Silat</a></li>
@@ -265,18 +260,17 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik.php">Akademik</a></li>
-						<li><a href="nonakademik.php">Non - Akademik</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
 			
 		</div>
 		<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
-					</div>
-				</div>
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
+		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
 
