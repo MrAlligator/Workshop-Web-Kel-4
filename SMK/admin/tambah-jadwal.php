@@ -149,22 +149,6 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
-							<tr>
-									<td>Nama Guru</td>
-									<td>
-									<select name="nama_guru"  required> 
-									<option value="">-Pilih-</option>
-										<?php
-										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
-										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
-
-										}  
-										?> 
-										
-									</select>
-									</td>
-								</tr>
 								
 								<tr>
 									<td>Semester</td>
@@ -180,18 +164,19 @@ require 'koneksi.php';
 										</select>
 									</td>
 								</tr>
-								<tr>
-									<td>Hari</td>
+							<tr>
+									<td>Nama Guru</td>
 									<td>
-									<select name="hari"  required>  
-									<option value="">-Pilih-</option>  
-										<option value="Senin">Senin</option>
-										<option value="Selasa">Selasa</option>   
-										<option value="Rabu">Rabu</option>
-										<option value="Kamis">Kamis</option>
-										<option value="Jumat">Jumat</option>
-										<option value="Sabtu">Sabtu</option>
-										 
+									<select name="nama_guru"  required> 
+									<option value="">-Pilih-</option>
+										<?php
+										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru") or die (mysqli_query($koneksi));
+										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
+
+										}  
+										?> 
+										
 									</select>
 									</td>
 								</tr>
@@ -210,6 +195,22 @@ require 'koneksi.php';
 									</select>
 									</td>
 								</tr>
+								<tr>
+									<td>Hari</td>
+									<td>
+									<select name="hari"  required>  
+									<option value="">-Pilih-</option>  
+										<option value="Senin">Senin</option>
+										<option value="Selasa">Selasa</option>   
+										<option value="Rabu">Rabu</option>
+										<option value="Kamis">Kamis</option>
+										<option value="Jumat">Jumat</option>
+										<option value="Sabtu">Sabtu</option>
+										 
+									</select>
+									</td>
+								</tr>
+								
 								
 								
 								<tr>

@@ -1,10 +1,10 @@
 <?php
 include 'koneksi.php';
 $nama_mapel = $_POST['nama_mapel'];
-$nama_guru = $_POST['nama_guru'];
 $semester = $_POST['semester'];
-$hari = $_POST['hari'];
+$nama_guru = $_POST['nama_guru'];
 $durasi = $_POST['durasi'];
+$hari = $_POST['hari'];
 
 
 if($nama_mapel=="" || $nama_guru=="" || $semester=="" || $hari=="" || $durasi==""){

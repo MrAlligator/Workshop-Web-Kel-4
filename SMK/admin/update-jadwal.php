@@ -5,8 +5,8 @@ include 'koneksi.php';
 // menangkap data yang di kirim dari form
 $id = $_POST['id'];
 $mapel = $_POST['nama_mapel'];
-$nama = $_POST['nama_guru'];
 $smstr = $_POST['semester'];
+$nama = $_POST['nama_guru'];
 
 
 // update data ke database
