@@ -29,6 +29,8 @@ elseif(mysqli_num_rows($cek2)==1){
     $_SESSION['level']    = 'siswa';
     header('location:siswa/index.php');
 } else{
-    echo "Login GAGAL";
+    echo "<script>alert('Maaf Hak Akses Salah');location='login.php';</script>";
+    
+    
 }
 ?>
