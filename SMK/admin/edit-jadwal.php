@@ -132,14 +132,12 @@
 						<form method="post" action="update-jadwal.php">
 							<label>Mata Pelajaran</label><br>
 							<input type="text" name="mapel" class="form-control" value="<?php echo $d['nama_mapel'] ?>" onkeypress="return hanyaHuruf(event)" required>
-							<label>Nama Guru</label><br>
-							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" onkeypress="return hanyaHuruf(event)" required>
 							
 							<label>Semester</label><br>
 							<select name="smstr" required>  
 								<?php
 									$smstr = $d['semester'];
-									if ($smstr=="1") echo "<option value = '1' selected>1i</option>";
+									if ($smstr=="1") echo "<option value = '1' selected>1</option>";
 									else echo "<option value = '1'>1</option>";
 									if ($smstr=="2") echo "<option value = '2' selected>2</option>";
                                     else echo "<option value = '2'>2</option>";
@@ -153,7 +151,46 @@
 									else echo "<option value = '6'>6</option>";
 								?>
 							</select><br><br>
-							
+							<label>Nama Guru</label><br>
+							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" onkeypress="return hanyaHuruf(event)" required>
+							<label>Durasi</label><br>
+							<select name="drsi" required>  
+								<?php
+									$drsi = $d['durasi'];
+									if ($hr=="jam pertama") echo "<option value = 'jam pertama' selected>jam pertama</option>";
+									else echo "<option value = 'jam pertama'>jam pertama</option>";
+									if ($hr=="jam kedua") echo "<option value = 'jam kedua' selected>jam kedua</option>";
+                                    else echo "<option value = 'jam kedua'>jam kedua</option>";
+                                    if ($hr=="jam ketiga") echo "<option value = 'jam ketiga' selected>jam ketiga</option>";
+                                    else echo "<option value = 'jam ketiga'>jam ketiga</option>";
+                                    if ($hr=="jam keempat") echo "<option value = 'jam keempat' selected>jam keempat</option>";
+                                    else echo "<option value = 'jam keempat'>jam keempat</option>";
+                                    if ($hr=="jam kelima") echo "<option value = 'jam kelima' selected>jam kelima</option>";
+                                    else echo "<option value = 'jam kelima'>jam kelima</option>";
+                                    if ($hr=="jam keenam") echo "<option value = 'jam keenam' selected>jam keenam</option>";
+									else echo "<option value = 'jam keenam'>jam keenam</option>";
+                                    if ($hr=="jam ketujuh") echo "<option value = 'jam ketujuh' selected>jam ketujuh</option>";
+									else echo "<option value = 'jam ketujuh'>jam ketujuh</option>";
+                                    if ($hr=="jam kedelapan") echo "<option value = 'jam kedelapan' selected>jam kedelapan</option>";
+									else echo "<option value = 'jam kedelapan'>jam kedelapan</option>";
+								?>
+							<label>Hari</label><br>
+							<select name="hr" required>  
+								<?php
+									$hr = $d['hari'];
+									if ($hr=="senin") echo "<option value = 'senin' selected>senin</option>";
+									else echo "<option value = 'senin'>senin</option>";
+									if ($hr=="selasa") echo "<option value = 'selasa' selected>selasa</option>";
+                                    else echo "<option value = 'selasa'>selasa</option>";
+                                    if ($hr=="rabu") echo "<option value = 'rabu' selected>rabu</option>";
+                                    else echo "<option value = 'rabu'>rabu</option>";
+                                    if ($hr=="kamis") echo "<option value = 'kamis' selected>kamis</option>";
+                                    else echo "<option value = 'kamis'>kamis</option>";
+                                    if ($hr=="jumat") echo "<option value = 'jumat' selected>jumat</option>";
+                                    else echo "<option value = 'jumat'>jumat</option>";
+                                    if ($hr=="sabtu") echo "<option value = 'sabtu' selected>sabtu</option>";
+									else echo "<option value = 'sabtu'>sabtu</option>";
+								?>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	

@@ -186,12 +186,14 @@ require 'koneksi.php';
 									<td>
 									<select name="durasi"  required> 
 									<option value="">-Pilih-</option> 
-										<option value="Jam Pertama">Jam Pertama</option>  
-										<option value="Jam Kedua">Jam Kedua</option>
-										<option value="Jam Ketiga">Jam Ketiga</option>   
-										<option value="Jam Keempat">Jam Keempat</option>
-										<option value="Jam Kelima">Jam Kelima</option>
-										<option value="Jam Keenam">Jam Keenam</option>
+										<option value="Jam Pertama">07.00 - 07-45</option>  
+										<option value="Jam Kedua">07.45 - 08.30</option>
+										<option value="Jam Ketiga">08.30 - 09.15</option>   
+										<option value="Jam Keempat">09.15 - 10.00</option>
+										<option value="Jam Kelima">10.15 - 11.00</option>
+										<option value="Jam Keenam">11.00 - 11.45</option>
+										<option value="Jam Ketujuh">11.45 - 12.30</option>
+										<option value="Jam Kedelapan">12.30 - 13.15</option>
 										 
 									</select>
 									</td>
@@ -207,20 +209,6 @@ require 'koneksi.php';
 										<option value="Kamis">Kamis</option>
 										<option value="Jumat">Jumat</option>
 										<option value="Sabtu">Sabtu</option>
-									</select>
-									</td>
-								</tr>
-								<tr>
-									<td>Waktu</td>
-									<td>
-									<select name="durasi"  required> 
-									<option value="">-Pilih-</option> 
-										<option value="Jam Pertama">Jam Pertama</option>  
-										<option value="Jam Kedua">Jam Kedua</option>
-										<option value="Jam Ketiga">Jam Ketiga</option>   
-										<option value="Jam Keempat">Jam Keempat</option>
-										<option value="Jam Kelima">Jam Kelima</option>
-										<option value="Jam Keenam">Jam Keenam</option>
 									</select>
 									</td>
 								</tr>
