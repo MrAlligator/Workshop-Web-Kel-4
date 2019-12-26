@@ -15,7 +15,15 @@ if(mysqli_num_rows($cek3)==1 && $status=='admin'){
     $_SESSION['username'] = $result3['username'];
     $_SESSION['password'] = $result3['password'];
     $_SESSION['level']    = 'admin';
-    $_SESSION['username'] = $result3['username'];
+    $_SESSION['name'] = $result3['nama_admin'];
+    $_SESSION['foto'] = $result3['foto_admin'];
+    $_SESSION['nip'] = $result3['nip_admin'];
+    $_SESSION['alamat'] = $result3['alamat_admin'];
+    $_SESSION['jk'] = $result3['jk_admin'];
+    $_SESSION['tmpt'] = $result3['tmpt_admin'];
+    $_SESSION['tgl'] = $result3['tgl_admin'];
+    $_SESSION['agama'] = $result3['agama_admin'];
+    $_SESSION['telp'] = $result3['telp_admin'];
     header('location:admin/index.php');
 }
 elseif(mysqli_num_rows($cek)==1 && $status =='guru'){
