@@ -27,14 +27,14 @@ mysqli_query($koneksi,"update tb_siswa set nama_siswa='$nama', nis='$nis', kelas
         }
         ?>
         <script language="javascript">
-            alert('Berhasil menambahkan');
+            alert('Berhasil Mengubah data');
             document.location="siswa2.php";
         </script>
        <?php
 } else {
      ?>
         <script language="javascript">
-            alert('Gagal menambahkan');
+            alert('Gagal Mengubah data');
             document.location="siswa2.php";
         </script>
        <?php
@@ -43,7 +43,7 @@ mysqli_query($koneksi,"update tb_siswa set nama_siswa='$nama', nis='$nis', kelas
 ?>
     <script language="javascript">
         alert('Gambar harus berformat .jpg .png .gif');
-        document.location="siswa2.php";
+        document.location="edit.php";
     </script>
    <?php
 }
