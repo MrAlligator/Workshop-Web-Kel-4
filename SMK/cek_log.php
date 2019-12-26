@@ -9,12 +9,13 @@ $result   = mysqli_fetch_array($cek);
 $cek2     = mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE username = '$username' AND password = '$password'");
 $result2  = mysqli_fetch_array($cek2);
 $cek3     = mysqli_query($koneksi, "SELECT * FROM tb_admin WHERE username = '$username' AND password = '$password'");
-$result3  = mysqli_fetch_array($cek2);
+$result3  = mysqli_fetch_array($cek3);
 
 if(mysqli_num_rows($cek3)==1 && $status=='admin'){
     $_SESSION['username'] = $result3['username'];
     $_SESSION['password'] = $result3['password'];
     $_SESSION['level']    = 'admin';
+    $_SESSION['username'] = $result3['username'];
     header('location:admin/index.php');
 }
 elseif(mysqli_num_rows($cek)==1 && $status =='guru'){
