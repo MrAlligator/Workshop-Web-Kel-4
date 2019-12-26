@@ -23,8 +23,8 @@ if($ceknis > 0){
     {           
         $gambar = $namafolder . basename($_FILES['file']['name']);       
         if (move_uploaded_file($_FILES['file']['tmp_name'], $gambar)) {
-            if ($status2=admin){
-                mysqli_query($koneksi,"insert into tb_admin values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$telp','$alamat','$gambar','$nip','$nip','admin')");
+            if ($status2=='admin'){
+                mysqli_query($koneksi,"insert into tb_admin values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$telp','$alamat','$gambar','$nip','$nip','$status2')");
                 mysqli_query($koneksi,"insert into tb_guru values('','$nip','$nama','$jk','$tmptlahir','$tgllahir','$agama','$alamat','$telp','$status','$nip','$nip','$gambar')");
             }else{
 

@@ -168,7 +168,7 @@
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <a href="edit-guru.php?id_guru=<?php echo $d['id_guru'];?>"><button class="btn btn-warning">Edit</button></a>
+                                <a href="edit-guru.php?nip=<?php echo $d['nip'];?>"><button class="btn btn-warning">Edit</button></a>
                                 <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
