@@ -168,7 +168,7 @@ if( ! isset($_SESSION['username'])){
 				<div class="card mb-3" style="max-width: 1500px;">
   					<div class="row no-gutters">
     					<div class="col-md-4">
-      					<img src="<?php echo $_SESSION['foto'];?>" class="card-img" alt="...">
+      					<img src="<?php echo $_SESSION['fotok'];?>" class="card-img" alt="...">
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">

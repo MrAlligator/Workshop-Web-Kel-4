@@ -170,12 +170,19 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 				<div class="card mb-3" style="max-width: 1000px;">
   					<div class="row no-gutters">
     					<div class="col-md-4">
-      					<img src="..." class="card-img" alt="...">
+						<img src="<?php echo $_SESSION['fotos'];?>" class="card-img" alt="...">
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h3 class="card-title">Identitas Guru</h3>
-								<h4 class="card-text">Nama : <?php echo $_SESSION['nama']; ?></h4>
+								<h3 class="card-title">Identitas Guru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['name']; ?></h4>
+								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
+								<h4 class="card-text">Tempat Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['tmpt']; ?></h4>
+								<h4 class="card-text">Tanggal Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo date ("d-m-Y", strtotime($_SESSION['tgl'])); ?></h4>
+								<h4 class="card-text">Jenis Kelamin&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['jk']; ?></h4>
+								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
+								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
+								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
 							</div>
     					</div>
   					</div>

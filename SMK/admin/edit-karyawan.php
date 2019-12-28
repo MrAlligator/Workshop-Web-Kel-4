@@ -140,17 +140,24 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 				<div class="row">
 					<?php
                         include 'koneksi.php';
-                        $id= $_GET['id_guru'];
-                        $data = mysqli_query($koneksi,"select * from tb_guru where id_guru='$id'");
+                        $nip_guru= $_GET['nip'];
+                        $data = mysqli_query($koneksi,"select * from tb_guru where nip='$nip_guru'");
                         while($d = mysqli_fetch_array($data)){
+					
                         ?>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="update-guru.php">
+							<form method="post" action="update-karyawan.php" enctype="multipart/form-data">
 							<label>Foto</label><br>
 							<div class="card">
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_guru']?>"required>
+										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_guru']?></label>
+									</div>
 								</div>
 							</div><br><br>
 						</div>
@@ -158,7 +165,15 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 						<label>Status</label><br>
+							<input type="hidden" name="id" readonly value="<?php echo $d['nip'] ?>" class="form-control">
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
+							<?php
+							$nip_admin= $_GET['nip'];
+							$dat = mysqli_query($koneksi,"select * from tb_admin where nip_admin='$nip_admin'");
+							while($c = mysqli_fetch_array($dat)){
+							?>
+							<input type="checkbox" name="status2" value="admin"<?php in_array ('admin', $c) ? print "checked" : ""; ?>  >Admin</br>
+							<?php } ?>
 							<label>NIP</label><br>
 							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nip'] ?>" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
@@ -223,7 +238,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 				</div>
 		</div>
 	</footer>
-		<!--================ End footer Area  =================-->
+	<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
