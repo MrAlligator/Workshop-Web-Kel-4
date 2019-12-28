@@ -75,7 +75,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
+								aria-expanded="false">Karyawan</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -152,8 +152,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Guru</h2>
-							
+                            <h2>Selamat Datang karyawan</h2>
                             </div>
                         </div>
                     </div>
@@ -175,7 +174,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h3 class="card-title">Identitas Guru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<h3 class="card-title">Identitas Karyawan&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['name']; ?></h4>
 								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
 								<h4 class="card-text">Tempat Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['tmpt']; ?></h4>
@@ -184,7 +183,6 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
 								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
 								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
-								
 							</div>
     					</div>
   					</div>

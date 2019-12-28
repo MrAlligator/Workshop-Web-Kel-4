@@ -57,6 +57,24 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
     $_SESSION['agama'] = $result2['agama_siswa'];
     $_SESSION['telp'] = $result2['telp_siswa'];
     header('location:siswa/index.php');
+}
+    elseif(mysqli_num_rows($cek)==1 && $status =='karyawan'){
+    
+        $_SESSION['nama'] = $result['nama_guru'];
+        $_SESSION['username'] = $result['username'];
+        $_SESSION['password'] = $result['password'];
+        $_SESSION['level']    = 'guru';
+        $_SESSION['name'] = $result['nama_guru'];
+        $_SESSION['fotos'] = $result['foto_guru'];
+        $_SESSION['nip'] = $result['nip'];
+        $_SESSION['alamat'] = $result['alamat_guru'];
+        $_SESSION['jk'] = $result['jk_guru'];
+        $_SESSION['tmpt'] = $result['tmptlahir'];
+        $_SESSION['tgl'] = $result['tgllahir'];
+        $_SESSION['agama'] = $result['agama_guru'];
+        $_SESSION['telp'] = $result['telp_guru'];
+        header('location:karyawan/index.php');
+    
 } else{
     echo "<script>alert('Maaf Hak Akses Salah');location='login.php';</script>";
     
