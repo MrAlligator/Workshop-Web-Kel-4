@@ -37,6 +37,15 @@ elseif(mysqli_num_rows($cek2)==1){
     $_SESSION['username'] = $result2['username'];
     $_SESSION['password'] = $result2['password'];
     $_SESSION['level']    = 'siswa';
+    $_SESSION['name'] = $result2['nama_siswa'];
+    $_SESSION['foto'] = $result2['foto_siswa'];
+    $_SESSION['nip'] = $result2['nis'];
+    $_SESSION['alamat'] = $result2['alamat_siswa'];
+    $_SESSION['jk'] = $result2['jk_siswa'];
+    $_SESSION['tmpt'] = $result2['tmptlhr_siswa'];
+    $_SESSION['tgl'] = $result2['tgllhr_siswa'];
+    $_SESSION['agama'] = $result2['agama_siswa'];
+    $_SESSION['telp'] = $result2['telp_siswa'];
     header('location:siswa/index.php');
 } else{
     echo "<script>alert('Maaf Hak Akses Salah');location='login.php';</script>";
