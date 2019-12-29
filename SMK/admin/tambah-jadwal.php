@@ -146,7 +146,7 @@ require 'koneksi.php';
 										<?php
 										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
+											echo '<option value="'.$data_kategori['nama_mapel'].'">' .$data_kategori['nama_mapel']. '</option>';
 
 										}  
 										?>
@@ -176,7 +176,7 @@ require 'koneksi.php';
 										<?php
 										$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_guru");
 										while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-											echo '<option value="'.$data_kategori['id_guru'].'">' .$data_kategori['nama_guru']. '</option>';
+											echo '<option value="'.$data_kategori['nama_guru'].'">' .$data_kategori['nama_guru']. '</option>';
 
 										}  
 										?> 
@@ -189,14 +189,14 @@ require 'koneksi.php';
 									<td>
 									<select name="durasi"  required> 
 									<option value="">-Pilih-</option> 
-										<option value="Jam Pertama">07.00 - 07-45</option>  
-										<option value="Jam Kedua">07.45 - 08.30</option>
-										<option value="Jam Ketiga">08.30 - 09.15</option>   
-										<option value="Jam Keempat">09.15 - 10.00</option>
-										<option value="Jam Kelima">10.15 - 11.00</option>
-										<option value="Jam Keenam">11.00 - 11.45</option>
-										<option value="Jam Ketujuh">11.45 - 12.30</option>
-										<option value="Jam Kedelapan">12.30 - 13.15</option>
+										<option value="07.00 - 07-45">07.00 - 07-45</option>  
+										<option value="07.45 - 08.30">07.45 - 08.30</option>
+										<option value="08.30 - 09.15">08.30 - 09.15</option>   
+										<option value="09.15 - 10.00">09.15 - 10.00</option>
+										<option value="10.15 - 11.00">10.15 - 11.00</option>
+										<option value="11.00 - 11.45">11.00 - 11.45</option>
+										<option value="11.45 - 12.30">11.45 - 12.30</option>
+										<option value="12.30 - 13.15">12.30 - 13.15</option>
 										 
 									</select>
 									</td>
