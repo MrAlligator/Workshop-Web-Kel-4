@@ -2,7 +2,7 @@
 session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
 // Cek nya dengan cara cek apakah terdapat session username atau tidak
-if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+if( ! isset($_SESSION['usname'])){ // Jika tidak ada session username berarti dia belum login
   header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
@@ -55,7 +55,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
@@ -65,17 +65,13 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								aria-expanded="false">Nilai Siswa</a>
 							</li>
 							<li class="nav-item">
-								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
-								aria-expanded="false">Upload Materi</a>
-							</li>
-							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Guru</a>
+								aria-expanded="false">Wali Kelas</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -152,7 +148,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Guru</h2>
+                            <h2>Selamat Datang Wali Kelas</h2>
 							
                             </div>
                         </div>
@@ -175,16 +171,10 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h3 class="card-title">Identitas Guru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
-								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['name']; ?></h4>
+								<h3 class="card-title">Identitas Wali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nama']; ?></h4>
 								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
-								<h4 class="card-text">Tempat Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['tmpt']; ?></h4>
-								<h4 class="card-text">Tanggal Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo date ("d-m-Y", strtotime($_SESSION['tgl'])); ?></h4>
-								<h4 class="card-text">Jenis Kelamin&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['jk']; ?></h4>
-								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
-								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
-								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
-								
+								<h4 class="card-text">Kelas yang di Wali&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['kelas']; ?></h4>								
 							</div>
     					</div>
   					</div>

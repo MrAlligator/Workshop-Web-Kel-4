@@ -2,10 +2,10 @@
 // Load file koneksi.php
 include "koneksi.php";
 // Ambil Data yang Dikirim dari Form
-$nama = addslashes($_POST['nama']);
-$nip = addslashes($_POST['nip']);
-$kelas = addslashes($_POST['kelas']);
-$status = addslashes($_POST['jabatan']);
+$nama = $_POST['nama'];
+$nip = $_POST['nip'];
+$kelas = $_POST['kelas'];
+$status = $_POST['jabatan'];
 
 $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_walikelas WHERE nip='$nip'"));
 

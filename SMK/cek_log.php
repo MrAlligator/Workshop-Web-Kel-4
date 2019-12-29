@@ -14,7 +14,7 @@ $cek4     = mysqli_query($koneksi, "SELECT * FROM tb_walikelas WHERE usname = '$
 $result4  = mysqli_fetch_array($cek4);
 
 if(mysqli_num_rows($cek3)==1 && $status=='admin'){
-    $_SESSION['username'] = $result3['username'];
+    $_SESSION['uname'] = $result3['username'];
     $_SESSION['password'] = $result3['password'];
     $_SESSION['level']    = 'admin';
     $_SESSION['name'] = $result3['nama_admin'];
@@ -81,8 +81,8 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
     $_SESSION['nama'] = $result4['nama_wali'];
     $_SESSION['kelas'] = $result4['kelas'];
     $_SESSION['nip'] = $result4['nip'];
-    $_SESSION['username'] = $result4['usname'];
-    $_SESSION['password'] = $result4['passwd'];
+    $_SESSION['usname'] = $result4['usname'];
+    $_SESSION['passwd'] = $result4['passwd'];
     $_SESSION['level'] = 'wali kelas';
     header('location:walikelas/index.php');
 }else{

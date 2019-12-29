@@ -36,12 +36,11 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
+							<li class="nav-item"><a class="nav-link" href="aturdata.php">Kembali</a></li>
 							<li class="nav-item">
 								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Daftar Siswa</a>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="../guru/tampilcalonsiswa.php">Calon Siswa</a></li>
 							<li class="nav-item">
 								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
 								aria-expanded="false">Nilai Siswa</a>
@@ -85,7 +84,7 @@
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">NILAI SISWA</h3>
                 <div class="button-group-area mt-10">
-				    <a href="inputnilai.php" class="genric-btn default">Input Nilai</a>
+				    <a href="inputnilai.php" class="btn btn-primary">Input Nilai</a>
                 </div>
 </br>
 				<div class="progress-table-wrap">
@@ -122,8 +121,8 @@
 							<div class="country"><?php echo $d['nilai_uas']; ?></div>
 							<div class="country"><?php echo $d['nilai_sikap']; ?></div>
                             <div class="country">
-                                <button><a href="edit.php?id=<?php echo $d['nama'];?>">Edit</a></button>
-                                <button><a href="hapus.php?id=<?php echo $d['nama'];?>">Hapus</a></button>
+                                <a href="edit.php?id=<?php echo $d['nama'];?>"><button class="btn btn-warning">Edit</button></a>
+                                <a href="hapus.php?id=<?php echo $d['nama'];?>"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
                         <?php

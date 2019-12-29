@@ -172,7 +172,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<?php
 								$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kelas");
 								while ($data_kategori = mysqli_fetch_array($sql_kategori)){
-									echo '<option value="'.$data_kategori['id_kelas'].'">' .$data_kategori['kelas']. '</option>';
+									echo '<option value="'.$data_kategori['kelas'].'">' .$data_kategori['kelas']. '</option>';
 								}  
 								?>
 							</select><br><br>
