@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -139,11 +147,17 @@
                         ?>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="update-guru.php" enctype="multipart/form-data">
+							<form method="post" action="update-guru.php" enctype="multipart/form-data">
 							<label>Foto</label><br>
 							<div class="card">
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
+								</div>
+								<div class="card-body">
+									<div class="custom-file">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_guru']?>"required>
+										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_guru']?></label>
+									</div>
 								</div>
 							</div><br><br>
 						</div>
@@ -151,7 +165,7 @@
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
 						<label>Status</label><br>
-						<input type="hidden" name="id" readonly value="<?php echo $d['nip'] ?>" class="form-control">
+							<input type="hidden" name="id" readonly value="<?php echo $d['nip'] ?>" class="form-control">
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
 							<?php
 							$nip_admin= $_GET['nip'];
@@ -160,8 +174,6 @@
 							?>
 							<input type="checkbox" name="status2" value="admin"<?php in_array ('admin', $c) ? print "checked" : ""; ?>  >Admin</br>
 							<?php } ?>
-							
-
 							<label>NIP</label><br>
 							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nip'] ?>" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
@@ -204,12 +216,6 @@
 							<label>Password</label><br>
 							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
-							<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_guru']?>"required>
-										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_guru']?></label>
-									</div>
-								</div>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	

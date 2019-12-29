@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -140,11 +148,17 @@
 						<div class="form-group">
 						<form method="post" action="update.php" enctype="multipart/form-data">
 						<label>Foto</label><br>
-							<div class="card">
-								<div class="imgWrap">
-									<img src="<?php echo $d['foto_siswa'];?>" id="imgView" class="card-img-top img-fluid">
+						<div class="card">
+							<div class="imgWrap">
+								<img src="<?php echo $d['foto_siswa'];?>" id="imgView" class="card-img-top img-fluid">
+							</div>
+							<div class="card-body">
+								<div class="custom-file">
+									<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_siswa']?>"required>
+									<label class="custom-file-label" for="inputFile"><?php echo $d['foto_siswa']?></label>
 								</div>
-							</div><br><br>
+							</div>
+						</div><br><br>
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-12">
@@ -206,19 +220,6 @@
 							<label>Password</label><br>
 							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
-							<label>Foto</label><br>
-							<div class="card">
-								<div class="imgWrap">
-									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
-								</div>
-								<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_siswa']?>"required>
-										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_siswa']?></label>
-									</div>
-								</div>
-							</div>
-							<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	

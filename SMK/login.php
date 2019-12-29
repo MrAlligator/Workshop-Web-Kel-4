@@ -18,9 +18,11 @@
                 <form action="cek_log.php" method="POST">
                 <select name="status" required>  
 								<option value="" >Status</option>  
-								<option value="admin">admin</option>  
-								<option value="guru">guru</option>
-								<option value="siswa">siswa</option>
+								<option value="admin">Admin</option>  
+								<option value="guru">Guru</option>
+								<option value="siswa">Siswa</option>
+                                <option value="karyawan">Karyawan</option>
+                                <option value="wali kelas">Wali Kelas</option>
 							</select><br><br>
                     <div>
                         <span><label>Username</label></span>

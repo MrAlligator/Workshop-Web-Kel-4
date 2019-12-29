@@ -127,7 +127,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="aka.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="akademik2.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>

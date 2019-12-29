@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -8,45 +16,21 @@
 	<link rel="icon" href="img/logosmk.png" type="image/png">
 	<title>SMK Darus Salam</title>
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../vendors/linericon/style.css">
+	<link rel="stylesheet" href="../css/font-awesome.min.css">
+	<link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="../vendors/animate-css/animate.css">
 	<!-- main css -->
-	<link rel="stylesheet" href="admin/css/style.css">
+	<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
 	<!--================ Start Header Menu Area =================-->
 	<header class="header_area">
-		<div class="header-top">
-			<div class="container">
-				<div class="row align-items-center">
-					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
-						<a href="tel:+6285231821348">
-							<span class="lnr lnr-phone"></span>
-							<span class="text">
-								<span class="text">(+62)8523 1821 348</span>
-							</span>
-						</a>
-						<a href="mailto:darussalamsmk11@yahoo.com">
-							<span class="lnr lnr-envelope"></span>
-							<span class="text">
-								<span class="text">darussalamsmk11@yahoo.com</span>
-							</span>
-						</a>
-					</div>
-					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -55,11 +39,6 @@
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
-					<?php
-						if(isset($_GET['search_input'])){
-							$cari = $_GET['search_input'];
-						}
-					?>
 				</div>
 			</div>
 
@@ -119,7 +98,7 @@
 									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
@@ -127,11 +106,19 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="aka.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
+							</li>
+                            <li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
+								</ul>
 							</li>
 						</ul>
 					</div>
@@ -142,21 +129,20 @@
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-    <section class="banner_area3">
+	<section class="banner_area3">
         <div class="banner_inner d-flex align-items-center">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Prestasi<br>SMK Darus Salam</h2>
+                            <h2>BERITA</h2>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-	
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -188,67 +174,42 @@
 	<!--================ Start Events Area =================-->
 	<div class="popular_courses lite_bg">
 		<div class="container">
-            <table>
-			<form method="POST"> 
-						<tr>
-							<td><label>Pilih Prestasi</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="jenis_p">
-								<option value="">Jenis Prestasi</option>
-								<option value="akademik">Akademik</option>  
-								<option value="non-akademik">Non-Akademik</option>
-								</select>
-							</td>
-							<td><input type="submit" name ="submit" value="Filter Prestasi"></td>
-						</tr>
-					</table>
-					</form>
-					
+			<div class="row justify-content-center">
+
+			</div>
 			<div class="row">
                 <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
-                    while($d = mysqli_fetch_array($data)){
-                    }	
-                ?>
-                <?php
 					include 'koneksi.php';
-					if(isset($_POST['submit'])){
-					$jenis_p = $_POST['jenis_p'];
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-					}else if(isset($_GET['search_input'])){
+					if(isset($_GET['search_input'])){
 						$cari = $_GET['search_input'];
-						$sql = mysqli_query($koneksi,"select * from tb_prestasi where judul_prestasi like '%".$cari."%'");
+						$data = mysqli_query($koneksi, "select * from tb_berita where judul like '%".$cari."%'");				
 					}else{
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+						$data = mysqli_query($koneksi, "select * from tb_berita");		
 					}
-					while($d = mysqli_fetch_array($sql)){
-					?>
-					<!-- single course -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single_course">
-							<div class="course_head overlay">
-								<img class="img-fluid w-100" height="150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
-							</div>
-							<div class="course_content">
-								<h4>
-									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
-								</h4>
-							</div>
+                    while($d = mysqli_fetch_array($data)){
+                ?>
+				<!-- single course -->
+				<div class="col-lg-3 col-md-6">
+					<div class="single_course">
+                        <div class="course_head overlay">
+							<img class="img-fluid w-100" src="<?php echo "../admin/".$d['foto']; ?>" alt="">
+						</div>
+						<div class="course_content">
+							<h4>
+								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
+							</h4>
 						</div>
 					</div>
-					<?php
-					}
-					?>
+				</div>
+				<?php
+                    }
+                ?>
 			</div>
 		</div>
 	</div>
 	<!--================ End Events Area =================-->
 
     <!--================Contact Area =================-->
-	
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->

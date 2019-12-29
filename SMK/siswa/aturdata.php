@@ -1,3 +1,9 @@
+<?php
+session_start(); 
+if( ! isset($_SESSION['username'])){ 
+  header("location: ../index.php"); 
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -144,7 +150,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang Siswa</h2>
+                            <h2>Selamat Datang <?php echo $_SESSION['name']; ?></h2>
                             </div>
                         </div>
                     </div>
@@ -159,22 +165,29 @@
 	<div class="popular_courses lite_bg3">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="card mb-3" style="max-width: 540px;">
+				<div class="card mb-3" style="max-width: 1500px;">
   					<div class="row no-gutters">
     					<div class="col-md-4">
-      					<img src="..." class="card-img" alt="...">
+      					<img src="<?php echo $_SESSION['fotok'];?>" class="card-img" alt="...">
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+								<h3 class="card-title">Identitas Siswa&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['name']; ?></h4>
+								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
+								<h4 class="card-text">Tempat Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['tmpt']; ?></h4>
+								<h4 class="card-text">Tanggal Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo date ("d-m-Y", strtotime($_SESSION['tgl'])); ?></h4>
+								<h4 class="card-text">Jenis Kelamin&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['jk']; ?></h4>
+								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
+								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
+								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
 							</div>
     					</div>
   					</div>
 				</div>
 			</div>
 		</div>
-	</div>			
+	</div>	
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->

@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -138,7 +146,7 @@
 						<form method="post" action="tambah_aksi2.php" enctype="multipart/form-data">
 							<label>Status</label><br>
 							<input type="text" name="jabatan" readonly value="guru" class="form-control">
-							<input type="checkbox" name="status2" value="admin">Admin
+							<input type="checkbox" name="status2" value="admin">Admin<br>
 							<label>NIP</label><br>
 							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama</label><br>

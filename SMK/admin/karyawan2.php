@@ -1,3 +1,11 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+?>
 <!doctype html>
 <html lang="en">
 
@@ -102,8 +110,6 @@
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
-    <!--================Home Banner Area =================-->
 	<style media="screen">
 		.button{
 			width: 100%;
@@ -118,6 +124,8 @@
 			display: block;
 		}
 	</style>
+    <!--================Home Banner Area =================-->
+    
     <!--================End Home Banner Area =================-->
 
 
@@ -132,14 +140,14 @@
                 <h3 class="mb-30 title_color text-center">DATA KARYAWAN</h3>
                 <div>
 					<ul class="right">
-						<a href="tambah-karyawan.php"><button class="btn btn-primary">Tambah</button></a>
-						<a href="form-importkaryawan.php"><button class="btn btn-primary">Import</button></a>
-						<a href="unduhkaryawan.php"><button class="btn btn-primary">Export</button></a>
+						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
+						<a href="form-importguru.php"><button class="btn btn-primary">Import</button></a>
+						<a href="unduhguru.php"><button class="btn btn-primary">Export</button></a>
 					</ul>
 				</div>
 				<br>
 </br>
-<div class="progress-table-wrap">
+				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
 							<div class="serial">No</div>
@@ -168,8 +176,8 @@
 							<div class="percentage"><?php echo $d['alamat_guru']; ?></div>
 							<div class="country"><?php echo $d['telp_guru']; ?></div>
                             <div class="country">
-                                <a href="edit-karyawan.php?id_guru=<?php echo $d['id_guru'];?>"><button class="btn btn-warning">Edit</button></a>
-                                <a href="hapus-karyawan.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
+                                <a href="edit-karyawan.php?nip=<?php echo $d['nip'];?>"><button class="btn btn-warning">Edit</button></a>
+                                <a href="hapus-guru.php?id_guru=<?php echo $d['id_guru'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
                         <?php
