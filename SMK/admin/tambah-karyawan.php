@@ -2,7 +2,7 @@
 session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
 // Cek nya dengan cara cek apakah terdapat session username atau tidak
-if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
+if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia belum login
   header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
@@ -149,15 +149,15 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 							<label>NIP</label><br>
 							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<input type="text" name="nama" maxlength="50" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Jenis Kelamin</label><br>
-							<select name="jk" required>  
+							<select name="jk" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">  
 								<option value="" disabled>Jenis Kelamin</option>  
 								<option value="Laki - Laki">Laki - Laki</option>  
 								<option value="Perempuan">Perempuan</option>  
 							</select><br><br>
 							<label>Agama</label><br>
-							<select name="agama" required>  
+							<select name="agama" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">  
 								<option value="" disabled>Agama</option>  
 								<option value="Islam">Islam</option>  
 								<option value="Kristen">Kristen</option>
@@ -166,7 +166,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<option value="Katolik">Katolik</option>
 							</select><br><br>
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
+							<input type="text" name="tempat" maxlength="25" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							<label>Tanggal Lahir</label><br>
 							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 							
@@ -185,7 +185,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								</div>
 								<div class="card-body">
 									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
+										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
 										<label class="custom-file-label" for="inputFile">Choose file</label>
 									</div>
 								</div>
