@@ -2,10 +2,11 @@
 session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
 // Cek nya dengan cara cek apakah terdapat session username atau tidak
-if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia belum login
+if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia belum login
   header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 
@@ -55,59 +56,58 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
 								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
-							</li>
+							<li class="nav-item"><a class="nav-link" href="akademik.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -115,9 +115,9 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							</li>
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">Siswa</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../siswa/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>

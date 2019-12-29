@@ -1,9 +1,12 @@
 <?php
-session_start(); 
-if( ! isset($_SESSION['username'])){ 
-  header("location: ../index.php"); 
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia belum login
+  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
+
 <!doctype html>
 <html lang="en">
 
