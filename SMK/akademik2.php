@@ -1,27 +1,28 @@
+
 <!doctype html>
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/logosmk.png" type="image/png">
-	<title>SMK Darus Salam</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="vendors/linericon/style.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="vendors/animate-css/animate.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="admin/css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logosmk.png" type="image/png">
+    <title>SMK Darus Salam</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-	<!--================ Start Header Menu Area =================-->
+    <!--================ Start Header Menu Area =================-->
 	<header class="header_area">
 		<div class="header-top">
 			<div class="container">
@@ -41,7 +42,7 @@
 						</a>
 					</div>
 					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
-						<a href="login.php" class="text-uppercase">Masuk</a>
+						<a href="login.php" class="text-uppercase" >Masuk</a>
 					</div>
 				</div>
 			</div>
@@ -51,7 +52,7 @@
 			<div class="search_input" id="search_input_box">
 				<div class="container">
 					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
@@ -76,7 +77,7 @@
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -127,7 +128,7 @@
 									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="aka.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="akademik2.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -149,7 +150,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Prestasi<br>SMK Darus Salam</h2>
+                            <h2>PRESTASI</h2>
                         </div>
                     </div>
                 </div>
@@ -186,7 +187,7 @@
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="popular_courses lite">
 		<div class="container">
             <table>
 			<form method="POST"> 
@@ -201,28 +202,19 @@
 								<option value="non-akademik">Non-Akademik</option>
 								</select>
 							</td>
-							<td><input type="submit" name ="submit" value="Filter Prestasi"></td>
+							<td><input class="btn btn-success" type="submit" name ="submit" value="Saring Prestasi"></td>
 						</tr>
 					</table>
 					</form>
 					
 			<div class="row">
                 <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
-                    while($d = mysqli_fetch_array($data)){
-                    }	
-                ?>
-                <?php
 					include 'koneksi.php';
 					if(isset($_POST['submit'])){
-					$jenis_p = $_POST['jenis_p'];
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-					}else if(isset($_GET['search_input'])){
-						$cari = $_GET['search_input'];
-						$sql = mysqli_query($koneksi,"select * from tb_prestasi where judul_prestasi like '%".$cari."%'");
+						$jenis_p = $_POST['jenis_p'];
+				  		$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
 					}else{
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
+				  		$sql = mysqli_query($koneksi,"select * from tb_prestasi");
 					}
 					while($d = mysqli_fetch_array($sql)){
 					?>
@@ -230,18 +222,18 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="single_course">
 							<div class="course_head overlay">
-							<img class="img-fluid w-100"  height="150px" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+								<img class="img-fluid w-100"  height="150px" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
 							</div>
 							<div class="course_content">
 								<h4>
-									<a href="lihat-akademik2.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
 								</h4>
 							</div>
 						</div>
 					</div>
 					<?php
 					}
-					?>
+				?>
 			</div>
 		</div>
 	</div>
@@ -295,11 +287,10 @@
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="aka.php">Prestasi</a></li>
+						<li><a href="akademik2.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">

@@ -1,11 +1,5 @@
-<?php
-session_start(); // Start session nya
-// Kita cek apakah user sudah login atau belum
-// Cek nya dengan cara cek apakah terdapat session username atau tidak
-if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti dia belum login
-  header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
-}
-?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -30,15 +24,44 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 <body>
 
     <!--================ Start Header Menu Area =================-->
-    <header class="header_area">
+	<header class="header_area">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-6 col-4 header-top-left">
+						<a href="tel:+6285231821348">
+							<span class="lnr lnr-phone"></span>
+							<span class="text">
+								<span class="text">(+62)8523 1821 348</span>
+							</span>
+						</a>
+						<a href="mailto:darussalamsmk11@yahoo.com">
+							<span class="lnr lnr-envelope"></span>
+							<span class="text">
+								<span class="text">darussalamsmk11@yahoo.com</span>
+							</span>
+						</a>
+					</div>
+					<div class="col-lg-6 col-sm-6 col-8 header-top-right">
+						<a href="login.php" class="text-uppercase" >Masuk</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
 					<form class="d-flex justify-content-between" method="" action="">
-						<input type="text" class="form-control" id="search_input" placeholder="Cari">
+						<input type="text" class="form-control" id="search_input" name="search_input" placeholder="Cari">
 						<button type="submit" class="btn"></button>
 						<span class="lnr lnr-cross" id="close_search" title="Tutup"></span>
 					</form>
+					<?php
+						if(isset($_GET['search_input'])){
+							$cari = $_GET['search_input'];
+						}
+					?>
 				</div>
 			</div>
 
@@ -55,53 +78,62 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
+							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Profil</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+								</ul>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
-									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
-									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
+									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+								</ul>
+							</li>
+							</li><li class="nav-item submenu dropdown">
+								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+								aria-expanded="false">Jurusan</a>
+								<ul class="dropdown-menu">
+									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Kehadiran</a>
+								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="absensi.php">Daftar Hadir</a></li>
+									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo2.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video2.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman2.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="akademik2.php">Prestasi</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
 								</a>
-							</li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
-								</ul>
 							</li>
 						</ul>
 					</div>
@@ -149,45 +181,76 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     ?>
     <section class="sample-text-area">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-9">
-					<img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
-					<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
-					<p class="sample-text">
-						<?=$hasil_data['isi_prestasi'];?>
-					</p>
-					<p class="sample-text">
-					<?=$hasil_data['jenis_p'];?>
-					<?=$hasil_data['tanggal_prestasi'];?>
-					</p>
-				</div>
-				<div class="col-md-3">
-					<h4>Lainnya</h4><br>
-					<ul>
-					<?php
-					include 'koneksi.php';
-					$data = mysqli_query($koneksi,"select * from tb_prestasi");
-					while($d = mysqli_fetch_array($data)){
-					?>
-						<li><a href="lihatprestasi2.php?id_prestasi=<?php echo $d['id_prestasi'];?>"><?php echo $d['judul_prestasi']?></a></li>
-					<?php
-					}
-					?>
-					</ul>
-				</div>
-			</div>
+            <img src="<?=$hasil_data['foto_prestasi'];?>" style="width:600px; height: 300px;"/></br></br>
+			<h3 class="text-heading title_color"><?=$hasil_data['judul_prestasi'];?></h3>
+			<p class="sample-text">
+                <?=$hasil_data['isi_prestasi'];?>
+            </p>
+            <p class="sample-text">
+			<?=$hasil_data['jenis_p'];?>
+                <?=$hasil_data['tanggal_prestasi'];?>
+            </p>
 		</div>
 	</section>
 	<!--================ End Events Area =================-->
 
+    <!--================Contact Area =================-->
+	
+    <!--================Contact Area =================-->
+
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
 		<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
-					</div>
+			<div class="row">
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Profil Sekolah</h4>
+					<ul>
+						<li><a href="sejarah.php">Sejarah</a></li>
+						<li><a href="profilsingkat.php">Profil Singkat</a></li>
+						<li><a href="visimisi.php">Visi dan Misi</a></li>
+						<li><a href="struktur.php">Struktur</a></li>
+					</ul>
 				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Data Sekolah</h4>
+					<ul>
+						<li><a href="siswa.php">Siswa</a></li>
+						<li><a href="guru.php">Guru</a></li>
+						<li><a href="karyawan.php">Karyawan</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Jurusan</h4>
+					<ul>
+						<li><a href="multimedia.php">Multimedia</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Ekstrakurikuler</h4>
+					<ul>
+						<li><a href="pramuka.php">Pramuka</a></li>
+						<li><a href="pencak_silat.php">Pencak Silat</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Info</h4>
+					<ul>
+						<li><a href="pengumuman.php">Pengumuman</a></li>
+						<li><a href="berita.php">Berita</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-2 col-md-6 single-footer-widget">
+					<h4>Prestasi</h4>
+					<ul>
+						<li><a href="akademik2.php">Prestasi</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+			</div>
 		</div>
 	</footer>
 	<!--================ End footer Area  =================-->
