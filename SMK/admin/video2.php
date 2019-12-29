@@ -64,9 +64,9 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampil_admin.php">Admin</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
-
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -93,6 +93,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								</ul>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/walikelas.php">Wali Kelas</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
