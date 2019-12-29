@@ -2,7 +2,7 @@
 session_start(); // Start session nya
 // Kita cek apakah user sudah login atau belum
 // Cek nya dengan cara cek apakah terdapat session username atau tidak
-if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia belum login
+if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia belum login
   header("location: ../index.php"); // Kita Redirect ke halaman index.php karena belum login
 }
 ?>
@@ -10,27 +10,27 @@ if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia
 <html lang="en">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="icon" href="img/logosmk.png" type="image/png">
-	<title>SMK Darus Salam</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../vendors/linericon/style.css">
-	<link rel="stylesheet" href="../css/font-awesome.min.css">
-	<link rel="stylesheet" href="../vendors/owl-carousel/owl.carousel.min.css">
-	<link rel="stylesheet" href="../vendors/lightbox/simpleLightbox.css">
-	<link rel="stylesheet" href="../vendors/nice-select/css/nice-select.css">
-	<link rel="stylesheet" href="../vendors/animate-css/animate.css">
-	<!-- main css -->
-	<link rel="stylesheet" href="../css/style.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="img/logosmk.png" type="image/png">
+    <title>SMK Darus Salam</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/animate-css/animate.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-	<!--================ Start Header Menu Area =================-->
-	<header class="header_area">
+    <!--================ Start Header Menu Area =================-->
+    <header class="header_area">
 		<div class="main_menu">
 			<div class="search_input" id="search_input_box">
 				<div class="container">
@@ -55,58 +55,59 @@ if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="sambutan.php">Sambutan</a></li>
-									<li class="nav-item"><a class="nav-link" href="sejarah.php">Sejarah</a></li>
-									<li class="nav-item"><a class="nav-link" href="profilsingkat.php">Profil Singkat</a></li>
-									<li class="nav-item"><a class="nav-link" href="visimisi.php">Visi dan Misi</a></li>
-									<li class="nav-item"><a class="nav-link" href="struktur.php">Struktur</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sambutan.php">Sambutan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/sejarah.php">Sejarah</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/profilsingkat.php">Profil Singkat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/visimisi.php">Visi dan Misi</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/struktur.php">Struktur</a></li>
 								</ul>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
-									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
-									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/siswa.php">Siswa</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/guru.php">Guru</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pencak_silat.php">Pencak Silat</a></li>
-									<li class="nav-item"><a class="nav-link" href="pramuka.php">Pramuka</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pencak_silat.php">Pencak Silat</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pramuka.php">Pramuka</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Galeri</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="photo.php">Foto</a></li>
-									<li class="nav-item"><a class="nav-link" href="video.php">Video</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/photo.php">Foto</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/video.php">Video</a></li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Info</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="pengumuman.php">Pengumuman</a></li>
-									<li class="nav-item"><a class="nav-link" href="berita.php">Berita</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/pengumuman.php">Pengumuman</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/berita.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item active"><a class="nav-link" href="akademik.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/akademik2.php">Prestasi</a></li>
+							</li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -114,9 +115,9 @@ if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia
 							</li>
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
+								aria-expanded="false">ADMIN</a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -127,116 +128,80 @@ if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia
 		</div>
 	</header>
     <!--================ End Header Menu Area =================-->
-
+	<style media="screen">
+		.button{
+			width: 100%;
+			height: 50px;
+		}
+		.left{
+			float: left;
+			display: block;
+		}
+		.right{
+			float: right;
+			display: block;
+		}
+	</style>
     <!--================Home Banner Area =================-->
-	<section class="banner_area3">
-        <div class="banner_inner d-flex align-items-center">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6">
-                        <div class="banner_content text-center">
-                            <h2>Prestasi<br>SMK Darus Salam</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-	<!--================ End Home Banner Area =================-->
+    
+    <!--================End Home Banner Area =================-->
 
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
 
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
-	<!--================ Start Popular Courses Area =================-->
-	
-				<!-- single course -->
-				<!-- single course -->
-	<!--================ End Popular Courses Area =================-->
-
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
-	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<!-- Start Sample Area -->
+	<!-- End Sample Area -->
+	<!-- Start Button -->
+	<!-- End Button -->
+	<!-- Start Align Area -->
+	<?php
+    include "koneksi.php";
+    $ambil_data = mysqli_query($koneksi,"select * from tb_siswa where id_siswa='$_GET[id_siswa]'");
+    $hasil_data = mysqli_fetch_array($ambil_data);
+    ?>
+    <div class="whole-wrap">
 		<div class="container">
-            <table>
-			<form method="POST"> 
-						<tr>
-							<td><label>Pilih Prestasi</label></td>
-						</tr>
-						<tr>
-							<td>
-								<select name="jenis_p">
-								<option value="">Jenis Prestasi</option>
-								<option value="akademik">Akademik</option>  
-								<option value="non-akademik">Non-Akademik</option>
-								</select>
-							</td>
-							<td><input class="btn btn-success" type="submit" name ="submit" value="Filter Prestasi"></td>
-						</tr>
-					</table>
-					</form>
-					
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_prestasi");
-                    while($d = mysqli_fetch_array($data)){
-                    }	
-                ?>
-                <?php
-					include 'koneksi.php';
-					if(isset($_POST['submit'])){
-					$jenis_p = $_POST['jenis_p'];
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi where jenis_p='$jenis_p'");
-					}else{
-				  	$sql = mysqli_query($koneksi,"select * from tb_prestasi");
-					}
-					while($d = mysqli_fetch_array($sql)){
-					?>
-					<!-- single course -->
-					<div class="col-lg-3 col-md-6">
-						<div class="single_course">
-							<div class="course_head overlay">
-								<img class="img-fluid w-100" height="150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
-							</div>
-							<div class="course_content">
-								<h4>
-									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
-								</h4>
-							</div>
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color text-center">Data <?php echo $hasil_data['nama_siswa']; ?></h3>
+				<br>
+				<br>
+				<div class="row">
+					<div class="col-md-2">
+
+					</div>
+					<div class="col-md-4">
+						<a href="<?=$hasil_data['foto_siswa'];?>" class="img-gal">
+							<div class="single-gallery-image" style="background: url(<?=$hasil_data['foto_siswa'];?>);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<div class="form-group">
+							<br>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nama_siswa']; ?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['nis'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data["tmptlhr_siswa"];?>, <?php echo date ("d F Y", strtotime($hasil_data['tgllhr_siswa']));?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['jk_siswa'];?>">
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['agama_siswa'];?>">
+							<textarea type="text" class="form-control" cols="40" rows="3" readonly><?=$hasil_data['alamat_siswa']; ?></textarea>
+							<input type="text" class="form-control" readonly value="<?=$hasil_data['telp_siswa'];?>">
+						</div><br><br>
+						<div>
+							<ul class="right">
+								<a href="siswa.php"><button class="btn btn-primary">Kembali</button></a>
+							</ul>
 						</div>
 					</div>
-					<?php
-					}
-					?>
+					<div class="col-md-2">
+
+					</div>
+				</div>
+				<br>
 			</div>
 		</div>
 	</div>
-	<!--================ End Events Area =================-->
-
-    <!--================Contact Area =================-->
-	
-    <!--================Contact Area =================-->
+	<br>
+	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-	<footer class="footer-area section_gap">
+    <footer class="footer-area section_gap">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-2 col-md-6 single-footer-widget">
@@ -279,11 +244,10 @@ if( ! isset($_SESSION['rname'])){ // Jika tidak ada session username berarti dia
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="aka.php">Prestasi</a></li>
+						<li><a href="akademik2.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
-			
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">

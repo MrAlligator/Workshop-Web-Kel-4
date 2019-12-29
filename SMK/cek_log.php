@@ -46,7 +46,7 @@ elseif(mysqli_num_rows($cek)==1 && $status =='guru'){
     header('location:guru/index.php');
 }
 elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
-    $_SESSION['username'] = $result2['username'];
+    $_SESSION['user'] = $result2['username'];
     $_SESSION['password'] = $result2['password'];
     $_SESSION['level']    = 'siswa';
     $_SESSION['name'] = $result2['nama_siswa'];
@@ -63,8 +63,9 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
     elseif(mysqli_num_rows($cek)==1 && $status =='karyawan'){
     
         $_SESSION['nama'] = $result['nama_guru'];
-        $_SESSION['username'] = $result['username'];
-        $_SESSION['password'] = $result['password'];
+        $_SESSION['no'] = $result['id_guru'];
+        $_SESSION['rname'] = $result['username'];
+        $_SESSION['word'] = $result['password'];
         $_SESSION['level']    = 'guru';
         $_SESSION['name'] = $result['nama_guru'];
         $_SESSION['fotos'] = $result['foto_guru'];
