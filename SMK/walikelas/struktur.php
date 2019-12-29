@@ -55,8 +55,8 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
 								<ul class="dropdown-menu">
@@ -116,7 +116,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -129,20 +129,20 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="banner_content">
-							<img src="img/logosmk.png" height="180px"><br><br>
-							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section class="banner_area3">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="banner_content text-center">
+                            <h2>Struktur Organisasi<br>SMK Darus Salam Tahun 2019/2020</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -154,37 +154,31 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses">
+	<div class="whole-wrap">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
+			<div class="section-top-border">
+				<div class="row">
+					<div class="col-md-4 col-xs-12">
+						
+					</div>
+					<div class="col-md-6 col-xs-12">
+						<div class="">
+							<ol class="ordered-list">
+								<li><span>Komite							:	Abdur Rahman S.Pd.</span></li>
+								<li><span>Kepala Sekolah					:	Ahmad Mahfud S.Pd.</span></li>
+								<li><span>Wakil Bidang Kurikulum			:	Nur Yuliana Dewi S.Pd.</span></li>
+								<li><span>Wakil Bidang Humas				:	Abdul Muis S.Pd.</span></li>
+								<li><span>Wakil Bidang Kesiswaan			:	Yosi Adi Ariesta S.Pd.</span></li>
+								<li><span>Wakil Bidang Sarana dan Prasarana	:	Hanisah S.Pd.</span></li>
+								<li><span>Kepala Departemen					:	Ansori</span></li>
+								<li><span>Kepala Laboratorium				:	Selvia Yugus A</span></li>
+								<li><span>Kepala Tata Usaha					:	Siti Hanafiah</span></li>
+							</ol>
+						</div>
+					</div>
+					<div class="col-md-2 col-xs-12">
 					</div>
 				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-                </div>
-				<?php
-                    }
-                ?>
 			</div>
 		</div>
 	</div>
@@ -203,143 +197,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="berita.php"><h2>BERITA</h2></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-				</div>
-				<?php
-                    }
-                ?>
-			</div>
-		</div>
-	</div>
-	<!--================ End Events Area =================-->
-
-    <!--================Home Banner Area =================-->
-	<style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../img/sekolah.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-    </style>
-    <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>TENTANG KAMI</h2></a>
-					</div>
-				</div>
-			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item ml-2">
-                          <i><img src="../img/loc.png" width="45px" ></i>
-                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
-                            <p class="ml-2">Bondowoso, Jawa Timur</p>
-                        </div>
-                    </div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/wa.png" width="45px" ></i>
-        	                <h6 class="ml-2">(+62)8523 1821 348</h6>
-            	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
-                	    </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/gmail.png" width="45px" ></i>
-                            <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
-                            <p class="ml-2">Email</p>
-                        </div>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
+	
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
@@ -386,10 +244,11 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 				<div class="col-lg-2 col-md-6 single-footer-widget">
 					<h4>Prestasi</h4>
 					<ul>
-						<li><a href="akademik2.php">Prestasi</a></li>
+						<li><a href="aka.php">Prestasi</a></li>
 					</ul>
 				</div>
 			</div>
+			
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center">

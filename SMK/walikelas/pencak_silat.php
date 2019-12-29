@@ -55,7 +55,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -82,7 +82,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="multimedia.php">Multimedia</a></li>
 								</ul>
 							</li>
-							<li class="nav-item submenu dropdown">
+							<li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Ekstrakurikuler</a>
 								<ul class="dropdown-menu">
@@ -116,7 +116,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -129,20 +129,20 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="banner_content">
-							<img src="img/logosmk.png" height="180px"><br><br>
-							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<section class="banner_area2">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>PENCAK SILAT</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start Feature Area =================-->
@@ -154,40 +154,67 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Department Area =================-->
 
 	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses">
+	<section class="sample-text-area">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-                </div>
-				<?php
-                    }
-                ?>
-			</div>
+			<h3 class="text-heading title_color">Pengertian Pencak Silat</h3>
+			<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;   Kata “silat” sendiri merupakan istilah yang terkenal secara luas di kawasan Asia Tenggara untuk menyebut seni bela diri ini.
+Meski demikian, masing-masing negara juga mempunyai sebutannya sendiri sesuai dengan bahasa lokal mereka seperti gayong dan cekak (Malaysia dan Singapura), bersilat (Thailand), dan pasilat (Filipina).
+Pencak silat berasal dari dua kata, yakni pencak dan silat. Pengertian pencak ialah gerak dasar bela diri dan terikat dengan peraturan. 
+Sedangkan silat berarti gerak beladiri sempurna yang bersumber dari kerohanian.
+Dalam perkembangannya, silat ini lebih mengutamakan unsur seni dalam penampilan keindahan gerakan, sementara itu silat ialah inti dari ajaran bela diri dalam pertarungan.
+<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Pengurus Besar IPSI menyebutkan pengertian pencak silat sebagai :
+“Pencak silat ialah hasil budaya manusia di Indonesia untuk membela, lalu mempertahankan eksistensi (kemandiriannya) serta integritasnya (manunggal) untuk lingkungan hidup sekitarnya guna mencapai keselarasan hidup dalam meningkatkan iman & taqwa terhadap Tuhan YME”.
+Sementara itu, berdasarkan KBBI, menyebutkan bahwa pengertian pencak silat yaitu sebagai permainan (keahlian) dalam mempertahankan diri dengan keahlian menangkis, menyerang serta membela diri menggunakan ataupun tanpa senjata.
+
+           
+
 		</div>
-	</div>
+    </section>
+    <div class="whole-wrap">
+		<div class="container">
+						<h3 class="mb-20 title_color">Beberapa istilah resmi yang berkaitan dengan silat dari berbagai daerah di Indonesia, diantaranya yaitu:</h3>
+						<div class="">
+							<ul class="unordered-list">
+								<li style="font-family:Arial"><p>Di provinsi Sumatera Barat terdapat istilah Silek & Gayuang</li></p>
+								<li style="font-family:Arial"><p>Pesisir timur provinsi Sumatra Barat serta Malaysia terdapat istilah Bersilat</li></p>
+                                <li style="font-family:Arial"><p>Di Jawa Barat terdapatistilah Maempok serta Penca</li></p>
+                                <li style="font-family:Arial"><p>Di Jawa Tengah, Yogyakarta, provinsi Jawa Timur terdapat istilah Pencak</li></p>
+                                <li style="font-family:Arial"><p>Di Madura dengan Pulau Bawean terdapat istilah Mancak</li>
+                                <li style="font-family:Arial"><p>Di Bali terdapat istilah Mancak ataupun Encak</li>
+                                <li style="font-family:Arial"><p>Di NTB dan Dompu terdapat istilah Mpaa Sila</li>	
+							</ul>
+                    </div>
+</div>
+</div>
+<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading title_color">Sejarah Pencak silat</h3>
+			<p class="text-justify" style="font-family:Arial">Sejarah perkembangan pencak silat sudah dimulai sejak perkembangan zaman kerajaan, kemudian zaman penjajahan Belanda, sampai zaman pendudukan Jepang, dan yang terakhir ketika zaman kemerdekaan.
+Selain seabgai upaya untuk mempertahankan diri, seni bela diri ini juga menjadi salah satu seni budaya yang terus dilestarikan hingga sekarang.
+Dan seperti yang telah kita ketahui, silat ini tak hanya berkembang di negara Indonesia saja.
+Melainkan hingga menyebar ke negara tetangga seperti Malaysia, Brunei Darusalam, Singapura, ataupun negara lainnya.
+
+            </p>
+
+</div>
+<div class="whole-wrap">
+		<div class="container">
+       
+						<h3 class="mb-20 title_color">Organiasi silat lainnya diantaranya sebagai berikut:</h3>
+						<div class="">
+							<ul class="unordered-list">
+								<li style="font-family:Arial"><p>IPSI (Ikatan Pencak Silat Indonesia) di Indonesia</li></p>
+								<li style="font-family:Arial"><p>PESAKA (Persekutuan Silat Kebangsaan Malaysia) di Malaysia</li></p>
+                                <li style="font-family:Arial"><p>PERSIS (Persekutuan Silat Singapore) di Singapura</li></p>
+                                <li style="font-family:Arial"><p>PERSIB (Persekutuan Silat Bruei Darussalam) di Brunei Darussalam</li></p>
+							</ul>
+						</div>
+                    </div>
+
+</div>
+				<!-- single course -->
+				
+				
 	<!--================ End Popular Courses Area =================-->
 
 	<!--================ Start Fact Area =================-->
@@ -203,143 +230,55 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Registration Area =================-->
 
 	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
+	<div class="whole-wrap">
 		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="berita.php"><h2>BERITA</h2></a>
+			<div class="section-top-border">
+				<h3 class="title_color">Image Gallery</h3>
+				<div class="row gallery-item">
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-6">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="img/logosmk.png" class="img-gal">
+							<div class="single-gallery-image" style="background: url(img/logosmk.png);"></div>
+						</a>
 					</div>
 				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-				</div>
-				<?php
-                    }
-                ?>
 			</div>
 		</div>
 	</div>
-	<!--================ End Events Area =================-->
-
-    <!--================Home Banner Area =================-->
-	<style>
-	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../img/sekolah.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
-    </style>
-    <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>TENTANG KAMI</h2></a>
-					</div>
-				</div>
-			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item ml-2">
-                          <i><img src="../img/loc.png" width="45px" ></i>
-                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
-                            <p class="ml-2">Bondowoso, Jawa Timur</p>
-                        </div>
-                    </div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/wa.png" width="45px" ></i>
-        	                <h6 class="ml-2">(+62)8523 1821 348</h6>
-            	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
-                	    </div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/gmail.png" width="45px" ></i>
-                            <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
-                            <p class="ml-2">Email</p>
-                        </div>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->

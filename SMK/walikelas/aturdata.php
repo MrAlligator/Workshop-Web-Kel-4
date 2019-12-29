@@ -55,26 +55,27 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item"><a class="nav-link" href="../admin/index.php">KEMBALI</a></li>
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Data</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="siswa2.php">nilai</a></li>
-								</ul>
+							<li class="nav-item"><a class="nav-link" href="../guru/index.php">Kembali</a></li>
+							<li class="nav-item">
+								<a href="siswa2.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Daftar Siswa</a>
+							</li>
+							<li class="nav-item">
+								<a href="nilaisiswa.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Nilai Siswa</a>
+							</li>
+							<li class="nav-item">
+								<a href="uploadmateri.php" class="nav-link" role="button" aria-haspopup="true"
+								aria-expanded="false">Upload Materi</a>
+							</li>
+							<li class="nav-item">
+								<a href="#" class="nav-link search" id="search">
+									<i class="lnr lnr-magnifier"></i>
+								</a>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">Kehadiran</a>
-								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="absensi.php">Daftar Hadir</a></li>
-								</ul>
-							</li>
-							
-							<li class="nav-item submenu dropdown">
-								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false">ADMIN</a>
+								aria-expanded="false">Guru</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
@@ -90,59 +91,59 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     <!--================Home Banner Area =================-->
 	<style>
 	 .banner_area4 {
-                                  position: relative;
-                                  background: url(../admin/img/admin.jpg) no-repeat center center;
-                                  z-index: 1;
-                                  min-height: 392px;
-                                  padding-top: 0 !important; }
-                                 .banner_area4 .banner_inner {
-                                  position: relative;
-                                  overflow: hidden;
-                                  width: 100%;
-                                  min-height: 392px;
-                                  z-index: 1; }
-                                  .banner_area4 .banner_inner .overlay {
-                                    position: absolute;
-                                    left: 0;
-                                    right: 0;
-                                    top: 0;
-                                    bottom: 0;
-                                    background: #000;
-                                    opacity: 0.4; }
-                                  .banner_area4 .banner_inner .banner_content {
-                                    position: relative;
-                                    z-index: 2;
-                                    color: #fff; }
-                                    .banner_area4 .banner_inner .banner_content h2 {
-                                      color: #fff;
-                                      font-size: 48px; }
-                                    @media (max-width: 991px) {
-                                      .banner_area4 .banner_inner .banner_content p {
-                                        display: none; } }
-                                    .banner_area4 .banner_inner .banner_content .page_link {
-                                      display: inline-block;
-                                      padding: 7px 20px;
-                                      border-top: 1px solid #fff;
-                                      border-bottom: 1px solid #fff;
-                                      margin-top: 20px; }
-                                      .banner_area4 .banner_inner .banner_content .page_link a {
-                                        font-size: 14px;
-                                        color: #fff;
-                                        font-family: "Crimson Text", serif;
-                                        margin-right: 32px;
-                                        position: relative;
-                                        text-transform: uppercase; }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:before {
-                                          content: "\f178";
-                                          font: normal normal normal 14px/1 FontAwesome;
-                                          position: absolute;
-                                          right: -25px;
-                                          top: 50%;
-                                          transform: translateY(-50%); }
-                                        .banner_area4 .banner_inner .banner_content .page_link a:last-child {
-                                          margin-right: 0px; }
-                                          .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
-                                            display: none; }
+                                position: relative;
+                                background: url(../guru/img/guru.png) no-repeat center center;
+                                z-index: 1;
+                                min-height: 392px;
+                                padding-top: 0 !important; }
+                                .banner_area4 .banner_inner {
+                                position: relative;
+                                overflow: hidden;
+                                width: 100%;
+                                min-height: 392px;
+                                z-index: 1; }
+                                .banner_area4 .banner_inner .overlay {
+                            	position: absolute;
+                                left: 0;
+                                right: 0;
+                                top: 0;
+                                bottom: 0;
+                                background: #000;
+                                opacity: 0.4; }
+                                .banner_area4 .banner_inner .banner_content {
+                                position: relative;
+                                z-index: 2;
+                                color: #fff; }
+                                .banner_area4 .banner_inner .banner_content h2 {
+                                color: #fff;
+                                font-size: 48px; }
+                                @media (max-width: 991px) {
+                                .banner_area4 .banner_inner .banner_content p {
+                                display: none; } }
+                                .banner_area4 .banner_inner .banner_content .page_link {
+                                display: inline-block;
+                                padding: 7px 20px;
+                                border-top: 1px solid #fff;
+                                border-bottom: 1px solid #fff;
+                                margin-top: 20px; }
+                                .banner_area4 .banner_inner .banner_content .page_link a {
+                                font-size: 14px;
+                                color: #fff;
+                                font-family: "Crimson Text", serif;
+                                margin-right: 32px;
+                                position: relative;
+                                text-transform: uppercase; }
+                                .banner_area4 .banner_inner .banner_content .page_link a:before {
+                                content: "\f178";
+                                font: normal normal normal 14px/1 FontAwesome;
+                                position: absolute;
+                                right: -25px;
+                                top: 50%;
+                            	transform: translateY(-50%); }
+                                .banner_area4 .banner_inner .banner_content .page_link a:last-child {
+                                margin-right: 0px; }
+                                .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
+                                display: none; }
 	</style>
     <section class="banner_area4">
         <div class="banner_inner d-flex align-items-center">
@@ -151,7 +152,8 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
                         <div class="banner_content text-center">
-                            <h2>Selamat Datang <?php echo $_SESSION['name']; ?></h2>
+                            <h2>Selamat Datang Guru</h2>
+							
                             </div>
                         </div>
                     </div>
@@ -166,14 +168,14 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<div class="popular_courses lite_bg3">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="card mb-3" style="max-width: 1500px;">
+				<div class="card mb-3" style="max-width: 1000px;">
   					<div class="row no-gutters">
     					<div class="col-md-4">
-      					<img src="<?php echo $_SESSION['foto'];?>" class="card-img" alt="...">
+						<img src="<?php echo $_SESSION['fotos'];?>" class="card-img" alt="...">
     					</div>
     					<div class="col-md-8">
 							<div class="card-body">
-								<h3 class="card-title">Identitas Admin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+								<h3 class="card-title">Identitas Guru&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['name']; ?></h4>
 								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
 								<h4 class="card-text">Tempat Lahir&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['tmpt']; ?></h4>
@@ -182,13 +184,15 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
 								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
 								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
+								
 							</div>
     					</div>
   					</div>
 				</div>
 			</div>
 		</div>
-	</div>			
+	</div>								
+
 	<!-- End Sample Area -->
 	<!-- Start Button -->
 	<!-- End Button -->
@@ -197,15 +201,13 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 
 	<!--================ Start footer Area  =================-->
 	<footer class="footer-area section_gap">
-		<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4</font>
+						<font size="3" color="#333333">&copy;2019 || SMK DARUS SALAM<br>All Rights Reserved<br>Powered by Kelompok 4 | Design by <a href="http://instagram.com/febreroaraya_" target="newtab"><u>Febrero Araya K</u></a></font>
 					</div>
 				</div>
-		</div>
-	</footer>
 
+	</footer>
 		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->

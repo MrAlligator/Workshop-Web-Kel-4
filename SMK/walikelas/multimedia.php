@@ -55,7 +55,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
-							<li class="nav-item active"><a class="nav-link" href="index.php">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Profil</a>
@@ -75,7 +75,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
 								</ul>
 							</li>
-							</li><li class="nav-item submenu dropdown">
+							</li><li class="nav-item active submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Jurusan</a>
 								<ul class="dropdown-menu">
@@ -116,7 +116,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
 								<ul class="dropdown-menu">
-									<li class="nav-item"><a class="nav-link" href="aturdata.php">Edit Data</a></li>
+									<li class="nav-item"><a class="nav-link" href="../guru/aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
 								</ul>
 							</li>
@@ -129,121 +129,10 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 	<!--================ End Header Menu Area =================-->
 
 	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
-		<div class="banner_inner">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="banner_content">
-							<img src="img/logosmk.png" height="180px"><br><br>
-							<font size="15" color="#fff" style="font-weight: bold">SELAMAT DATANG DI WEBSITE RESMI<BR><BR>SMK DARUS SALAM</font><BR><BR>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!--================ End Home Banner Area =================-->
-
-	<!--================ Start Feature Area =================-->
-	
-	<!--================ End Feature Area =================-->
-
-	<!--================ Start Department Area =================-->
-	
-	<!--================ End Department Area =================-->
-
-	<!--================ Start Popular Courses Area =================-->
-	<div class="popular_courses">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="pengumuman.php"><h2>PENGUMUMAN</h2></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_pengumuman");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatpengumuman.php?id_peng=<?php echo $d['id_peng'];?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-                </div>
-				<?php
-                    }
-                ?>
-			</div>
-		</div>
-	</div>
-	<!--================ End Popular Courses Area =================-->
-
-	<!--================ Start Fact Area =================-->
-	
-	<!--================ End Fact Area =================-->
-
-	<!--================ Start Testimonial Area =================-->
-	
-	<!--================ End Testimonial Area =================-->
-
-	<!--================ Start Registration Area =================-->
-	
-	<!--================ End Registration Area =================-->
-
-	<!--================ Start Events Area =================-->
-	<div class="popular_courses lite_bg">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="berita.php"><h2>BERITA</h2></a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-                <?php
-                    include 'koneksi.php';
-                    $data = mysqli_query($koneksi,"select * from tb_berita");
-                    while($d = mysqli_fetch_array($data)){
-                ?>
-				<!-- single course -->
-				<div class="col-lg-3 col-md-6">
-					<div class="single_course">
-                        <div class="course_head overlay">
-							<img class="img-fluid w-100" src="<?php echo "".$d['foto']; ?>" alt="">
-						</div>
-						<div class="course_content">
-							<h4>
-								<a href="lihatberita.php?id_berita=<?php echo $d['id_berita']; ?>"><?php echo $d['judul']?></a>
-							</h4>
-						</div>
-					</div>
-				</div>
-				<?php
-                    }
-                ?>
-			</div>
-		</div>
-	</div>
-	<!--================ End Events Area =================-->
-
-    <!--================Home Banner Area =================-->
 	<style>
-	 .banner_area4 {
+		.banner_area4 {
                                   position: relative;
-                                  background: url(../img/sekolah.jpg) no-repeat center center;
+                                  background: url(../img/mm.jpg) no-repeat center center;
                                   z-index: 1;
                                   min-height: 392px;
                                   padding-top: 0 !important; }
@@ -295,51 +184,156 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
                                           margin-right: 0px; }
                                           .banner_area4 .banner_inner .banner_content .page_link a:last-child:before {
                                             display: none; }
-    </style>
-    <!--================Contact Area =================-->
-    <section class="contact_area section_gap">
-        <div class="container">
-			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="main_title">
-						<a href="#"><h2>TENTANG KAMI</h2></a>
-					</div>
-				</div>
-			</div>
-            <div id="mapBox" class="mapBox" data-lat="-7.924831" data-lon="113.879707" data-zoom="17"
-                data-mlat="-7.924831" data-mlon="113.879707">
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="contact_info">
-                        <div class="info_item ml-2">
-                          <i><img src="../img/loc.png" width="45px" ></i>
-                            <h6 class="ml-2">Tangsil Wetan, Wonosari</h6>
-                            <p class="ml-2">Bondowoso, Jawa Timur</p>
+	</style>
+	<!--================ Start Home Banner Area =================-->
+	<section class="banner_area4">
+        <div class="banner_inner d-flex align-items-center">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <div class="banner_content text-center">
+                            <h2>MULTIMEDIA</h2>
                         </div>
                     </div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/wa.png" width="45px" ></i>
-        	                <h6 class="ml-2">(+62)8523 1821 348</h6>
-            	            <p class="ml-2">Senin - Jumat (08.00 - 15.00 WIB)</p>
-                	    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Start Feature Area =================-->
+	
+	<!--================ End Feature Area =================-->
+
+	<!--================ Start Department Area =================-->
+	
+	<!--================ End Department Area =================-->
+
+	<!--================ Start Popular Courses Area =================-->
+	<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading title_color">PENGERTIAN MULTIMEDIA</h3>
+			<p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Multimedia secara utuh berarti kombinasi atau penggabungan dari beberapa media seperti teks, audio, video, animasi, gambar yang disajikan dalam penggunaan komputer dengan bantuan tool dan link sehingga menghasilkan presentasi yang menarik.
+Kategori dalam multimedia terdapat 2 macam, yaitu Multimedia Communication dan  Multimedia Content Production. Pengertian dari Multimedia Communication adalah penggunaan media yang memiliki fungsi mempublikasikan informasi. Dalam kategori ini media yang digunakan adalah TV, Radio, Film, Game, Musik, Entertaiment, Tutorial, Internet, dan Media Cetak.</p><p class="text-justify" style="font-family:Arial">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Dengan adanya multimedia communication ini akan mempermudah penggua dalam menyampaikan dan mendapatkan informasi. Selanjutnya Multimedia Content Production adalah penggunaan beberapa media yang berbeda seperti Teks, Animasi, Audio, Video, gambar (grafik) yang dipadukan 
+untuk mengasilkan produk multimedia seperti musik, game, film, entertainment, dll.</p>
+		</div>
+	</section>
+	<div class="whole-wrap">
+		<div class="container">
+			<div class="section-top-border">
+				<h3 class="mb-30 title_color">KETUA JURUSAN</h3>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="single-defination">
+							<h4 class="mb-20">Profil Kajur</h4>
+							<?php
+								
+							?>
+						</div>
 					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="contact_info">
-						<div class="info_item">
-							<i><img src="../img/gmail.png" width="45px" ></i>
-                            <h6 class="ml-2">darussalamsmk11@yahoo.com</a></h6>
-                            <p class="ml-2">Email</p>
-                        </div>
+					<div class="col-md-6">
+						<div class="single-defination">
+							<h4 class="mb-20">&nbsp;</h4>
+							<table border="0" cellpadding="0" cellspacing="0" style="width:825px">
+								<tbody>
+									<tr>
+										<td colspan="2" style="width:150px">
+										<p>Nama Sekolah</p>
+										</td>
+										<td style="width:18px">
+										<p>:</p>
+										</td>
+										<td colspan="3" style="width:462px">
+										<p>SMK Darus Salam Bondowoso</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
 			</div>
-        </div>
-    </section>
+		</div>
+	</div>
+    <div class="whole-wrap">
+		<div class="container">
+						<h3 class="mb-20 title_color">Dalam kategori multimedia content production menggunakan media sebagai berikut : </h3>
+						<div class="">
+							<ul class="unordered-list">
+								<li style="font-family:Arial"><p>Media tulisan (Teks)</li></p>
+								<li style="font-family:Arial"><p>Media Suara (Audio)</li></p>
+                                <li style="font-family:Arial"><p>Media Video</li></p>
+                                <li style="font-family:Arial"><p>Media Gambar (Grafik)</li></p>
+                                <li style="font-family:Arial"><p>Media Animasi</li>
+                                <li style="font-family:Arial"><p>Media Efek Khusus (Special Effect)</li>
+                                <li style="font-family:Arial"><p>Media Interaktif (Interactivity)</li>	
+							</ul>
+                    </div>
+</div>
+</div>
+<section class="sample-text-area">
+		<div class="container">
+			<h3 class="text-heading title_color">Multimedia ini tak akan jauh dari seni dan imajinasi kita. Menurut Hofstetter (2001) Multimedia terdiri dari 5 unsur, yaitu :</h3>
+            <p style="font-family:Arial"><b>Teks</b> merupakan unsur dasar untuk meyampaikan informasi. Dalam penempatan teks pun tidak sembarangan. Harus teliti mampu menemukan kunci empatik konsumen dengan imajinasi kita. Atau biasa dipelajari dalam materi Tipografi.</p></br>
+            <p style="font-family:Arial"><b>Gambar (Grafik)</b> merupakan informasi yang tidak dijelaskan dengan kata-kata. Kadangkala ketika kita di berkendara di jalan raya melihat baligo besar berisi informasi hanya dengan melihat gambar saja tanpa membaca kata-katanya kita sudah dapat menyimpulkan isi dari baligo tersebut.</p></br>
+            <p style="font-family:Arial"> <b>Audio</b> merupakan unsur yang bisa berupa percakapan, music atau efek suara. Multimedia tanpa audio akan terasa hambar seperti sayur tanpa garam. Hehehe … Format dasar audio ini biasanya WAVE dan MIDI.</p></br>
+            <p style="font-family:Arial"><b>Video</b> merupakan unsur yang membuat suatu informasi tampak terasa hidup dan lebih jelas. Tentu diiringi dengan audionya.</p></br>
+            <p style="font-family:Arial"><b>Animasi</b> merupakan simulasi gerakan yang dihasilkan  dengan menampilkan beberapa frame ke layer.</p>
+
+</div>
+<div class="whole-wrap">
+		<div class="container">
+       
+						<h3 class="mb-20 title_color">Dalam jurusan multimedia ini kita akan mempelajari hal – hal berikut :</h3>
+						<div class="">
+							<ul class="unordered-list">
+								<li style="font-family:Arial"><p>Dasar-dasar multimedia</li></p>
+								<li style="font-family:Arial"><p>Pengenalan dan Perakitan PC</li></p>
+                                <li style="font-family:Arial"><p>Etimologi Multimedia</li></p>
+                                <li style="font-family:Arial"><p>Fotografi  dan Teknik Pengambilan Gambar</li></p>
+                                <li style="font-family:Arial"><p>Belajar Animasi Dasar</li></p>
+                                <li style="font-family:Arial"><p>Alir Produksi Multimedia</li></p>
+                                <li style="font-family:Arial"><p>Pengelolaan Web</li></p>
+                                <li style="font-family:Arial"><p>Desain Animasi</li></p>
+                                <li style="font-family:Arial"><p>Video Shooting</li></p>
+                                <li style="font-family:Arial"><p>Audio dan Video Editing</li></p>
+                                <li style="font-family:Arial"><p>Menggambar Clean-up dan Sisip</li></p>
+                                <li style="font-family:Arial"><p>Perawatan peralatan multimedia</li></p>
+                                <li style="font-family:Arial"><p>Proposal pembuatan produk</li></p>
+                                <li style="font-family:Arial"><p>Seni Grafis dan Gambar 2D</li></p>
+                                <li style="font-family:Arial"><p>Stop Motion</li></p>
+                                <li style="font-family:Arial"><p>Efek Khusus</li></p>
+                                <li style="font-family:Arial"><p>Pembuatan Story Board</li></p>
+                                <li style="font-family:Arial"><p>Instalasi Sistem Operasi Dasar</li></p>
+                                <li style="font-family:Arial"><p>Final Project (Proyek Akhir pembuatan produk multimedia)</li></p>
+							</ul>
+						</div>
+                    </div>
+
+</div><br>
+<br>
+<br>
+<br>
+				<!-- single course -->
+				
+				
+	<!--================ End Popular Courses Area =================-->
+
+	<!--================ Start Fact Area =================-->
+	
+	<!--================ End Fact Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	
+	<!--================ End Testimonial Area =================-->
+
+	<!--================ Start Registration Area =================-->
+	
+	<!--================ End Registration Area =================-->
+
+	<!--================ Start Events Area =================-->
+	
     <!--================Contact Area =================-->
 
 	<!--================ Start footer Area  =================-->
