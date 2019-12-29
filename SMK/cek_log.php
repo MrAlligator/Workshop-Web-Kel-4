@@ -16,6 +16,7 @@ $result4  = mysqli_fetch_array($cek4);
 if(mysqli_num_rows($cek3)==1 && $status=='admin'){
     $_SESSION['uname'] = $result3['username'];
     $_SESSION['password'] = $result3['password'];
+    $_SESSION['no'] = $result3['id_admin'];
     $_SESSION['level']    = 'admin';
     $_SESSION['name'] = $result3['nama_admin'];
     $_SESSION['foto'] = $result3['foto_admin'];
@@ -31,6 +32,7 @@ if(mysqli_num_rows($cek3)==1 && $status=='admin'){
 elseif(mysqli_num_rows($cek)==1 && $status =='guru'){
     
     $_SESSION['nama'] = $result['nama_guru'];
+    $_SESSION['no'] = $result['id_guru'];
     $_SESSION['username'] = $result['username'];
     $_SESSION['password'] = $result['password'];
     $_SESSION['level']    = 'guru';
@@ -49,6 +51,7 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
     $_SESSION['user'] = $result2['username'];
     $_SESSION['password'] = $result2['password'];
     $_SESSION['level']    = 'siswa';
+    $_SESSION['no'] = $result2['id_siswa'];
     $_SESSION['name'] = $result2['nama_siswa'];
     $_SESSION['fotok'] = $result2['foto_siswa'];
     $_SESSION['nip'] = $result2['nis'];
@@ -84,6 +87,7 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
     $_SESSION['nip'] = $result4['nip'];
     $_SESSION['usname'] = $result4['usname'];
     $_SESSION['passwd'] = $result4['passwd'];
+    $_SESSION['no'] = $result4['id_walikelas'];
     $_SESSION['level'] = 'wali kelas';
     header('location:walikelas/index.php');
 }else{
