@@ -56,16 +56,17 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
-							<li class="nav-item active submenu dropdown">
+							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
 								aria-expanded="false">Data</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="siswa2.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru2.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="tampil_admin.php">Admin</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
-                                </ul>
+								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -91,7 +92,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								</ul>
 							</li>
                             <li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
-                            <li class="nav-item"><a class="nav-link" href="../admin/walikelas.php">Wali Kelas</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="../admin/walikelas.php">Wali Kelas</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>

@@ -91,6 +91,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								</ul>
 							</li>
 							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
+							<li class="nav-item"><a class="nav-link" href="../admin/walikelas.php">Wali Kelas</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
