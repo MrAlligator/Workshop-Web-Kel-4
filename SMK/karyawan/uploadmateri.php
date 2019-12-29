@@ -105,10 +105,10 @@
                         ?>
 						<div class="table-row">
 							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama']; ?></div>
-							<div class="country"><?php echo $d['mapel']; ?></div>
-							<div class="visit"><?php echo $d['kelas']; ?></div>
+							<div class="country"><?php echo $d['nip']; ?></div>
 							<div class="country"><?php echo $d['nama_materi']; ?></div>
+							<div class="visit"><?php echo $d['kelas']; ?></div>
+							<div class="country"><?php echo $d['materi']; ?></div>
                             <div class="country">
                                 <button><a href="edit.php?id=<?php echo $d['id'];?>">Edit</a></button>
                                 <button><a href="hapus.php?id=<?php echo $d['id'];?>">Hapus</a></button>
