@@ -5,7 +5,7 @@ include "koneksi.php";
 $judul_prestasi = addslashes($_POST['judul_prestasi']);
 $isi_prestasi = addslashes($_POST['isi_prestasi']);
 $jenis_p = addslashes($_POST['jenis_p']);
-$tanggal_prestasi = date('d M Y H:i');
+$tanggal_prestasi = addslashes($_POST['tanggal_prestasi']);
   
 $namafolder="img/berita/"; //folder tempat menyimpan file
 if (!empty($_FILES["file"]["tmp_name"]))

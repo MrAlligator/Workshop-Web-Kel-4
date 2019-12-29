@@ -230,11 +230,11 @@
 					<div class="col-lg-3 col-md-6">
 						<div class="single_course">
 							<div class="course_head overlay">
-								<img class="img-fluid w-100" height="150px;" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
+							<img class="img-fluid w-100"  height="150px" src="<?php echo "".$d['foto_prestasi']; ?>" alt="">
 							</div>
 							<div class="course_content">
 								<h4>
-									<a href="lihat-akademik.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
+									<a href="lihat-akademik2.php?id_prestasi=<?php echo $d['id_prestasi']; ?>"><?php echo $d['judul_prestasi']?> <?php echo $d['jenis_p']?></a>
 								</h4>
 							</div>
 						</div>
