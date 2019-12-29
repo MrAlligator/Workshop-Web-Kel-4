@@ -78,6 +78,9 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
         header('location:karyawan/index.php');
     
 } elseif(mysqli_num_rows($cek4)==1 && $status =='wali kelas'){
+    $_SESSION['nama'] = $result['nama_wali'];
+    $_SESSION['kelas'] = $result['kelas'];
+    $_SESSION['nip'] = $result['nip'];
     header('location:walikelas/index.php');
 }else{
     echo "<script>alert('Maaf Hak Akses Salah');location='login.php';</script>";
