@@ -208,6 +208,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 								<h4 class="card-text">Agama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['agama']; ?></h4>
 								<h4 class="card-text">Alamat&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['alamat']; ?></h4>
 								<h4 class="card-text">Telp / Hp&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['telp']; ?></h4>
+								<a href="ubahpass.php"><button class="btn btn-dark">Ganti Password</button></a>
 							</div>
     					</div>
   					</div>

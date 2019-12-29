@@ -174,7 +174,8 @@ if( ! isset($_SESSION['usname'])){ // Jika tidak ada session username berarti di
 								<h3 class="card-title">Identitas Wali&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
 								<h4 class="card-text">Nama&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nama']; ?></h4>
 								<h4 class="card-text">NIP&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['nip']; ?></h4>
-								<h4 class="card-text">Kelas yang di Wali&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['kelas']; ?></h4>								
+								<h4 class="card-text">Kelas yang di Wali&nbsp;&nbsp;:&nbsp;&nbsp;<?php echo $_SESSION['kelas']; ?></h4>
+								<a href="ubahpass.php"><button class="btn btn-dark">Ganti Password</button></a>							
 							</div>
     					</div>
   					</div>
