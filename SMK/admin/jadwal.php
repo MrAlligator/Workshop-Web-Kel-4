@@ -139,11 +139,11 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-							<div class="country">Aksi</div>
 							<div class="country">Hari</div>
 							<div class="country">Mata Pelajaran</div>
-							<div class="country">Nama Guru</div>
 							<div class="country">Waktu</div>
+							<div class="country">Nama Guru</div>
+							<div class="country">Aksi</div>
 						
 						</div>
                         <?php 
@@ -165,18 +165,18 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 								while($f = mysqli_fetch_array($sql2)){	
 								 ?>
 									<div class="table-row">
-									<div class="table-row"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
-									<div class="table-row"><?= $f['nama_guru'] ?></div>
-									<div class="table-row"><?= $f['durasi'] ?></div>
+									<div class="serial"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
+									<div class="country"><?= $f['nama_guru'] ?></div>
+									<div class="serial"><?= $f['durasi'] ?></div>
 										
 									</div>
 								<?php }?>
 								
 								
 							</div>
-							<!-- <?php echo $d['nama_guru']; ?></div> -->
+							<div class="serial"> <?php echo $d['nama_guru']; ?></div> 
 							<!-- <div class="country"><?php echo $d['durasi']; ?></div> -->
-                            <div class="country">
+                            <div class="table-row">
                                 <a href="edit-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
                                 <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
                             </div>
