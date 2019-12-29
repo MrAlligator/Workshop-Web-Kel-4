@@ -131,13 +131,12 @@
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-                            <div class="serial">No</div>
+							<div class="country">Aksi</div>
+							<div class="country">Hari</div>
 							<div class="country">Mata Pelajaran</div>
-							<div class="country">Semester</div>
 							<div class="country">Nama Guru</div>
 							<div class="country">Waktu</div>
-							<div class="country">Hari</div>
-							<div class="country">Aksi</div>
+						
 						</div>
                         <?php 
                             include 'koneksi.php';
@@ -146,17 +145,29 @@
 								$kelas = $_GET['semester'];
 								$sql = mysqli_query($koneksi,"select * from tb_jadwal where semester='$semester'");
 							}else{
-								$sql = mysqli_query($koneksi,"select * from tb_jadwal");
+								$sql = mysqli_query($koneksi,"SELECT * from tb_jadwal group by hari ");
 							}
                             while($d = mysqli_fetch_array($sql)){
                         ?>
 						<div class="table-row">
-							<div class="serial"><?php echo $no++; ?></div>
-							<div class="country"><?php echo $d['nama_mapel']; ?></div>
-							<div class="country"><?php echo $d['semester']; ?></div>
-							<div class="country"><?php echo $d['nama_guru']; ?></div>
-							<div class="country"><?php echo $d['durasi']; ?></div>
-							<div class="country"><?php echo $d['hari']; ?></div>
+							<div class="country"><?php echo $a= $d['hari']; ?></div>
+							<div class="country">
+							<?php $nomor = 1;
+								$sql2 = mysqli_query($koneksi,"SELECT * from tb_jadwal where hari='$a'");
+								while($f = mysqli_fetch_array($sql2)){	
+								 ?>
+									<div class="table-row">
+									<div class="table-row"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
+									<div class="table-row"><?= $f['nama_guru'] ?></div>
+									<div class="table-row"><?= $f['durasi'] ?></div>
+										
+									</div>
+								<?php }?>
+								
+								
+							</div>
+							<!-- <?php echo $d['nama_guru']; ?></div> -->
+							<!-- <div class="country"><?php echo $d['durasi']; ?></div> -->
                             <div class="country">
                                 <a href="edit-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
                                 <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
