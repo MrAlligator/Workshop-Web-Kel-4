@@ -22,6 +22,7 @@
 								<option value="guru">Guru</option>
 								<option value="siswa">Siswa</option>
                                 <option value="karyawan">Karyawan</option>
+                                <option value="wali kelas">Wali Kelas</option>
 							</select><br><br>
                     <div>
                         <span><label>Username</label></span>

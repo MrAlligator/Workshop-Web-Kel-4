@@ -65,7 +65,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="karyawan2.php">Karyawan</a></li>
 									<li class="nav-item"><a class="nav-link" href="tampilcalonsiswa.php">Siswa Baru</a></li>
 									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
-								</ul>
+                                </ul>
 							</li>
 							<li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
@@ -90,7 +90,8 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="berita2.php">Berita</a></li>
 								</ul>
 							</li>
-							<li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../admin/akademik.php">Prestasi</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../admin/walikelas.php">Wali Kelas</a></li>
 							<li class="nav-item">
 								<a href="#" class="nav-link search" id="search">
 									<i class="lnr lnr-magnifier"></i>
@@ -141,61 +142,73 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 			<br><br>
 				<h3 class="mb-30 title_color"><center>Form Guru</center></h3>
 				<div class="row">
-					<div class="col-md-6 col-xs-12">
+                    <div class="col-md-4 col-xs-12">
+
+                    </div>
+					<div class="col-md-4 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="tambah_aksi2.php" enctype="multipart/form-data">
+						<form method="post" action="tambah_aksi6.php" enctype="multipart/form-data">
 							<label>Status</label><br>
-							<input type="text" name="jabatan" readonly value="guru" class="form-control">
-							<input type="checkbox" name="status2" value="admin">Admin<br>
+							<input type="text" name="jabatan" readonly value="wali kelas" class="form-control">
 							<label>NIP</label><br>
-							<input type="text" name="nip" maxlength="18" class="form-control" placeholder="Nomor Induk Pegawai" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" placeholder="Nama Lengkap" onkeypress="return hanyaHuruf(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Jenis Kelamin</label><br>
-							<select name="jk" required>  
-								<option value="" disabled>Jenis Kelamin</option>  
-								<option value="Laki - Laki">Laki - Laki</option>  
-								<option value="Perempuan">Perempuan</option>  
+							<select id="nip" name="nip" onchange="changeValue(this.value)">  
+								<option value="">-Pilih-</option>
+                                <?php
+									include "koneksi.php";
+									$sql=mysqli_query($koneksi, "SELECT * FROM tb_guru where status='guru'");
+									$jsArray = "var prdName = new Array();\n";
+									while ($data=mysqli_fetch_array($sql)) {
+										echo '<option value="'.$data['nip'].'">'.$data['nip'].'</option> ';
+										$jsArray .= "prdName['" . $data['nip'] . "'] = {nama:'" . addslashes($data['nama_guru']) . "'};\n";
+									}
+								?>
+                            </select><br><br>
+                            <label>Nama</label><br>
+                            <input type="text" id="nama" name="nama" class="form-control">
+                            <label>Kelas</label><br>
+                            <select name="kelas"  required>  
+								<option value="">-Pilih-</option>
+								<?php
+								$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_kelas");
+								while ($data_kategori = mysqli_fetch_array($sql_kategori)){
+									echo '<option value="'.$data_kategori['id_kelas'].'">' .$data_kategori['kelas']. '</option>';
+								}  
+								?>
 							</select><br><br>
-							<label>Agama</label><br>
-							<select name="agama" required>  
-								<option value="" disabled>Agama</option>  
-								<option value="Islam">Islam</option>  
-								<option value="Kristen">Kristen</option>
-								<option value="Hindu">Hindu</option>
-								<option value="Budha">Budha</option>
-								<option value="Katolik">Katolik</option>
-							</select><br><br>
-							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" placeholder="Tempat Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tanggal" class="form-control" placeholder="Tanggal Lahir" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							
-						</div>
-					</div>
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
-							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" placeholder="Alamat" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')"></textarea>
-							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" placeholder="Nomor Telepon" maxlength="13" onkeypress="return hanyaAngka(event)" required oninvalid="this.setCustomValidity('data tidak boleh kosong')" oninput="setCustomValidity('')">
-							<label>Foto</label><br>
-							<div class="card">
-								<div class="imgWrap">
-									<img src="no-image.png" id="imgView" class="card-img-top img-fluid">
-								</div>
-								<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01">
-										<label class="custom-file-label" for="inputFile">Choose file</label>
-									</div>
-								</div>
-							</div>
-							<br><br>
 							<button class="btn btn-primary" type="submit">Simpan</button>
 							</form>
 						</div>	
 					</div>
+                </div>
+                <br>
+                <div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="serial">No</div>
+							<div class="country">Nama</div>
+                            <div class="country">NIP</div>
+                            <div class="country">Kelas</div>
+                            <div class="country">Aksi</div>
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            $data = mysqli_query($koneksi,"select * from tb_walikelas");
+                            while($d = mysqli_fetch_array($data)){
+                        ?>
+						<div class="table-row">
+							<div class="serial"><?php echo $no++; ?></div>
+							<div class="country"><?php echo $d['nama_wali']; ?></div>
+                            <div class="country"><?php echo $d['nip']; ?></div>
+                            <div class="country"><?php echo $d['kelas']; ?></div>
+							<div class="country">
+                                <a href="hapus-wali.php?id_wali=<?php echo $d['id_walikelas'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
+                            </div>
+						</div>
+                        <?php
+                            }
+						?>
+                    </div>
 				</div>
 		</div>
 	</div>
@@ -268,4 +281,8 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     function fadeInAlert(text){
       $(".alert").text(text).addClass("loadAnimate");  
     }
+    <?php echo $jsArray; ?>  
+		function changeValue(id){  
+		document.getElementById('nama').value = prdName[id].nama;
+		}
 	</script>

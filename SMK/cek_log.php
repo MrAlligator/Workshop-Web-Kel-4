@@ -10,6 +10,8 @@ $cek2     = mysqli_query($koneksi, "SELECT * FROM tb_siswa WHERE username = '$us
 $result2  = mysqli_fetch_array($cek2);
 $cek3     = mysqli_query($koneksi, "SELECT * FROM tb_admin WHERE username = '$username' AND password = '$password'");
 $result3  = mysqli_fetch_array($cek3);
+$cek4     = mysqli_query($koneksi, "SELECT * FROM tb_walikelas WHERE usname = '$username' AND passwd = '$password'");
+$result4  = mysqli_fetch_array($cek4);
 
 if(mysqli_num_rows($cek3)==1 && $status=='admin'){
     $_SESSION['username'] = $result3['username'];
@@ -75,7 +77,9 @@ elseif(mysqli_num_rows($cek2)==1 && $status =='siswa'){
         $_SESSION['telp'] = $result['telp_guru'];
         header('location:karyawan/index.php');
     
-} else{
+} elseif(mysqli_num_rows($cek4)==1 && $status =='wali kelas'){
+    header('location:walikelas/index.php');
+}else{
     echo "<script>alert('Maaf Hak Akses Salah');location='login.php';</script>";
     
     
