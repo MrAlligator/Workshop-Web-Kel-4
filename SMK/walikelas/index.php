@@ -114,7 +114,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 							</li>
                             <li class="nav-item submenu dropdown">
 								<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-								aria-expanded="false"><?php echo $_SESSION['nama']; ?></a>
+								aria-expanded="false">Wali Kelas</a>
 								<ul class="dropdown-menu">
 									<li class="nav-item"><a class="nav-link" href="aturdata.php">Edit Data</a></li>
 									<li class="nav-item"><a class="nav-link" href="logout.php">Logout</a></li>
