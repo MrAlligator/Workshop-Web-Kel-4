@@ -109,6 +109,7 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
 							<div class="country">Nilai UAS</div>
 							<div class="country">Nilai Sikap</div>
 						</div>
+						<a href="cetaknilai.php"><button id="hapus" class="btn btn-primary">Cetak</button></a>
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
