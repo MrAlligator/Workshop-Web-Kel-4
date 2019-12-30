@@ -96,7 +96,7 @@
 				<div class="row">
 					<div class="col-lg-8 col-md-8">
 						<h3 class="mb-30 title_color">Input Nilai</h3>
-						<form class="form-group" action="simpannilai.php" method="post" enctype="multipart/form-data">	
+						<form class="form-group" action="simpannilai.php" method="post">	
 							<table>
 								<tr>
 									<td>NIS</td>
@@ -153,7 +153,7 @@
 											<option value="">D</option>
 											<option value="">E</option>
 										</select><br>
-								
+									</td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan Nilai"></td>
