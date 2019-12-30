@@ -2,7 +2,7 @@
 session_start();
 include 'koneksi.php';
 $username = $_POST['username'];
-$password = $_POST['password'];
+$password = $_POST['pass'];
 $status = $_POST['status'];
 $cek      = mysqli_query($koneksi, "SELECT * FROM tb_guru WHERE username = '$username' AND password = '$password'");
 $result   = mysqli_fetch_array($cek);

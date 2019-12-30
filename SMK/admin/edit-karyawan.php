@@ -155,12 +155,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
 								</div>
-								<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_guru']?>"required>
-										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_guru']?></label>
-									</div>
-								</div>
+								
 							</div><br><br>
 						</div>
 					</div>
