@@ -178,7 +178,6 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							<div class="percentage"><?php echo $d['alamat_admin']; ?></div>
 							<div class="country"><?php echo $d['telp_admin']; ?></div>
                             <div class="country">
-                                <a href="edit-guru.php?id_admin=<?php echo $d['id_admin'];?>"><button class="btn btn-warning">Edit</button></a>
                                 <a href="hapus-admin.php?id_admin=<?php echo $d['id_admin'];?>" onClick="return confirm('Hapus Data?')"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>

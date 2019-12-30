@@ -155,13 +155,8 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
 								</div>
-								<div class="card-body">
-									<div class="custom-file">
-										<input type="file" id="inputFile" name="file" class="imgFile custom-file-input" aria-describedby="inputGroupFileAddon01"value="<?php echo $d['foto_guru']?>"required>
-										<label class="custom-file-label" for="inputFile"><?php echo $d['foto_guru']?></label>
-									</div>
-								</div>
-							</div><br><br>
+								<input type="hidden" name="foto" readonly value="<?php echo $d['foto_guru']; ?>">
+								</div><br><br>
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-12">
@@ -267,7 +262,12 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		return false;
 		return true;
 	}
-
+	function hanyaHuruf(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+			return true;
+		}
 	(function() {
 		var _show = function( element, field ) {
 			this.element = element;
