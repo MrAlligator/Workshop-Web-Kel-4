@@ -118,7 +118,7 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
                             while($d = mysqli_fetch_array($data)){
                         ?>
 						<?php
-							$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
+							$sql_kategori = mysqli_query($koneksi, "select * from tb_mapel");
 							while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 
 							}  

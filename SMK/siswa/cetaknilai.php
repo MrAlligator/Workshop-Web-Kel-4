@@ -59,7 +59,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 
     <?php
     header("Content-type: application/vnd-ms-excel"); 
-    header("Content-Disposition: attachment; filename=Data Absensi.xls");
+    header("Content-Disposition: attachment; filename=nilai.xls");
     ?>
                 <center><h3>Nilai</h3></center>
                     <table border="1">
