@@ -61,30 +61,29 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
     header("Content-type: application/vnd-ms-excel"); 
     header("Content-Disposition: attachment; filename=Data Absensi.xls");
     ?>
-                <center><h3>Absensi Siswa</h3></center>
+                <center><h3>Nilai</h3></center>
                     <table border="1">
                     <tr>
-                        <th class="c">No</th>
-                        <th class="e">Tanggal</th>
-                        <th class="d">NIS</th>
-                        <th class="f">Nama</th>
-                        <th class="g">Kelas</th>
-                        <th class="h">Keterangan</th>
+                        <th class="c">Nama</th>
+                        <th class="e">Nilai UH</th>
+                        <th class="d">Nilai UTS</th>
+                        <th class="f">Nilai UAS</th>
+                        <th class="g">Nilai Sikap</th>
+                        
                     </tr>
                     <?php
                         include 'koneksi.php';
-                        $tgl = date("Y-m-d");
-                        $no = 1;
-                        $data = mysqli_query($koneksi,"select * from tb_absen where tgl_absen = '$tgl'");
+                        $nis = ['nis'];
+                        $data = mysqli_query($koneksi,"select * from tb_nilai where nis = '$nis'");
                         while($d = mysqli_fetch_array($data)){
                     ?>
                     <tr>
-                        <td class="c"><?php echo $no++; ?></td>
-                        <td class="e"><?php echo $d['tgl_absen']; ?></td>
-                        <td class="d"><?php echo $d['nisabsen_siswa']; ?></td>
-                        <td class="f"><?php echo $d['namaabsen_siswa']; ?></td>
-                        <td class="g"><?php echo $d['kelasabsen_siswa']; ?></td>
-                        <td class="h"><?php echo $d['ket']; ?></td>
+                        <td class="c"><?php echo $d['nama'] ?></td>
+                        <td class="e"><?php echo $d['nilai_ulgn_harian']; ?></td>
+                        <td class="d"><?php echo $d['nilai_uts']; ?></td>
+                        <td class="f"><?php echo $d['nilai_uas']; ?></td>
+                        <td class="g"><?php echo $d['nilai_sikap']; ?></td>
+                        
                     </tr>
                     <?php
                     }
