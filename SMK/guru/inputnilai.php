@@ -145,8 +145,15 @@
 								</tr>
 								<tr>
 									<td>Nilai Sikap</td>
-									<td><input type="text" name="sikap" placeholder="Nilai Sikap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai SIkap'"
-                        	        onkeypress="return hanyaHuruf(event) "required class="single-input"></td>
+									<td>
+										<select name="sikap" required>  
+											<option value="">A</option>  
+											<option value="">B</option>  
+											<option value="">C</option>
+											<option value="">D</option>
+											<option value="">E</option>
+										</select><br>
+								
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan Nilai"></td>
@@ -196,18 +203,4 @@
 	</body>
 	
 	</html>
-	<script>
-		function hanyaAngka(evt) {
-			var charCode = (evt.which) ? evt.which : event.keyCode
-			if (charCode > 31 && (charCode < 48 || charCode > 57))
-			return false;
-			return true;
-		}
-		function hanyaHuruf(evt) {
-			var charCode = (evt.which) ? evt.which : event.keyCode
-			if ((charCode = 65)&&(charCode = 66)&&(charCode = 67)&&(charCode = 68)&&(charCode = 69))
-			return false;
-			return true;
-		}
-	</script>
 	
