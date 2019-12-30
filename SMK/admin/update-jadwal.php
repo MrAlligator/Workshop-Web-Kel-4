@@ -13,7 +13,8 @@ $hr = $_POST['hari'];
 
 // update data ke database
 mysqli_query($koneksi,"update tb_jadwal set nama_mapel='$mapel', nama_guru='$nama', durasi='$drsi', hari='$hr', where id_jadwal ='$id'");
-
+?>
+<?php
 // mengalihkan halaman kembali ke index.php
 header("location:jadwal.php");
 
