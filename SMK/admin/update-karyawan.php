@@ -16,6 +16,7 @@ $telp = $_POST['telepon'];
 $pass = $_POST['pass'];
 $status = $_POST['jabatan'];
 $status2 = $_POST['status2'];
+
 $namafolder="img/guru/";
 
             if ($status2== 'admin'){
@@ -26,9 +27,4 @@ $namafolder="img/guru/";
                   mysqli_query($koneksi,"update tb_guru set nip='$nip',nama_guru='$nama',jk_guru='$jk',tmptlahir='$tmptlahir',tgllahir='$tgllahir',agama_guru='$agama',alamat_guru='$alamat',telp_guru='$telp',status='$status',password='$pass' where nip ='$id'");
                   echo "<script>alert('Data Berhasil diupload');document.location.href='../admin/karyawan2.php'</script>";
                 }
-           
-         
-  
-
-
 ?>

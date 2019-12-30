@@ -112,7 +112,6 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		</div>
 	</header>
     <!--================End Home Banner Area =================-->
-
 	<style>
 		#imgView{  
 		padding:5px;
@@ -130,6 +129,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		cursor:pointer;
 	}
 	</style>
+
 	<!-- Start Sample Area -->
 	<!-- End Sample Area -->
 	<!-- Start Button -->
@@ -138,51 +138,40 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
     <div class="whole-wrap">
 		<div class="container">
 			<br><br>
-				<h3 class="mb-30 title_color"><center>Form Siswa</center></h3>
+				<h3 class="mb-30 title_color"><center>Form Admin</center></h3>
 				<div class="row">
 					<?php
                         include 'koneksi.php';
-                        $id= $_GET['id_siswa'];
-                        $data = mysqli_query($koneksi,"select * from tb_siswa where id_siswa='$id'");
+                        $nip_guru= $_GET['nip_admin'];
+                        $data = mysqli_query($koneksi,"select * from tb_admin where nip_admin='$nip_guru'");
                         while($d = mysqli_fetch_array($data)){
+					
                         ?>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<form method="post" action="update.php" enctype="multipart/form-data">
-						<label>Foto</label><br>
-						<div class="card">
-							<div class="imgWrap">
-								<img src="<?php echo $d['foto_siswa'];?>" id="imgView" class="card-img-top img-fluid">
-							</div>
-						</div><br><br>
+							<form method="post" action="update-admin.php" enctype="multipart/form-data">
+							<label>Foto</label><br>
+							<div class="card">
+								<div class="imgWrap">
+									<img src="<?php echo $d['foto_admin'];?>" id="imgView" class="card-img-top img-fluid">
+								</div>
+							</div><br><br>
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-12">
 						<div class="form-group">
-						<input type="hidden" name="id" readonly value="<?php echo $d['id_siswa'] ?>" class="form-control">
 						<label>Status</label><br>
+							<input type="hidden" name="id" readonly value="<?php echo $d['nip_admin'] ?>" class="form-control">
 							<input type="text" name="jabatan" readonly value="<?php echo $d['status'] ?>" class="form-control">
-							<label>NIS</label><br>
-							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nis'] ?>" onkeypress="return hanyaAngka(event)" required>
+							<label>NIP</label><br>
+							<input type="text" name="nip" class="form-control" readonly value="<?php echo $d['nip_admin'] ?>" onkeypress="return hanyaAngka(event)" required>
 							<label>Nama</label><br>
-							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_siswa'] ?>" onkeypress="return hanyaHuruf(event)" required>
+							<input type="text" name="nama" maxlength="50" class="form-control" value="<?php echo $d['nama_admin'] ?>" onkeypress="return hanyaHuruf(event)" required>
 							<label>Kelas</label><br>
-							<select name="kelas" required>  
-								<option value="" disabled>Kelas</option>  
-								<?php
-									$jk = $d['kelas'];
-									if ($jk=="X") echo "<option value = 'X' selected>X</option>";
-									else echo "<option value = 'X'>X</option>";
-									if ($jk=="XI") echo "<option value = 'XI' selected>XI</option>";
-									else echo "<option value = 'XI'>XI</option>";
-									if ($jk=="XII") echo "<option value = 'XII' selected>XII</option>";
-									else echo "<option value = 'XII'>XII</option>";
-								?>
-							</select><br><br>
 							<label>Jenis Kelamin</label><br>
 							<select name="jk" required>  
 								<?php
-									$jk = $d['jk_siswa'];
+									$jk = $d['jk_admin'];
 									if ($jk=="Laki - Laki") echo "<option value = 'Laki - Laki' selected>Laki - Laki</option>";
 									else echo "<option value = 'Laki - Laki'>Laki - Laki</option>";
 									if ($jk=="Perempuan") echo "<option value = 'Perempuan' selected>Perempuan</option>";
@@ -192,7 +181,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							<label>Agama</label><br>
 							<select name="agama" required>  
 								<?php
-									$agama = $d['agama_siswa'];
+									$agama = $d['agama_admin'];
 									if ($agama=="Islam") echo "<option value = 'Islam' selected>Islam</option>";
 									else echo "<option value = 'Islam'>Islam</option>";
 									if ($agama=="Kristen") echo "<option value = 'Kristen' selected>Kristen</option>";
@@ -206,13 +195,13 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 								?>
 							</select><br><br>
 							<label>Tempat Lahir</label><br>
-							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmptlhr_siswa'] ?>" required>
+							<input type="text" name="tempat" class="form-control" value="<?php echo $d['tmpt_admin'] ?>" required>
 							<label>Tanggal Lahir</label><br>
-							<input type="date" name="tanggal" class="form-control" value="<?php echo $d['tgllhr_siswa'] ?>" required>
+							<input type="date" name="tanggal" class="form-control" value="<?php echo $d['tgl_admin'] ?>" required>
 							<label>Alamat</label><br>
-							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" required><?php echo $d['alamat_siswa'] ?></textarea>
+							<textarea type="text" name="alamat" class="form-control" cols="40" rows="5" required><?php echo $d['alamat_admin'] ?></textarea>
 							<label>Nomor Telepon</label><br>
-							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_siswa'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required>
+							<input type="text" name="telepon" class="form-control" value="<?php echo $d['telp_admin'] ?>" maxlength="13" onkeypress="return hanyaAngka(event)" required>
 							<label>Password</label><br>
 							<input type="password" class="form-control" maxlength="8" id="pass" name="pass" value="<?php echo $d['password'] ?>" required>
 							<input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br>
@@ -238,7 +227,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 				</div>
 		</div>
 	</footer>
-		<!--================ End footer Area  =================-->
+	<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -265,13 +254,6 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		return false;
 		return true;
 	}
-
-	function hanyaHuruf(evt) {
-			var charCode = (evt.which) ? evt.which : event.keyCode
-			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
-			return false;
-			return true;
-		}
 
 	(function() {
 		var _show = function( element, field ) {

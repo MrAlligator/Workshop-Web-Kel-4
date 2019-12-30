@@ -154,8 +154,6 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							<div class="card">
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
-								</div>
-								
 							</div><br><br>
 						</div>
 					</div>
@@ -262,7 +260,12 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		return false;
 		return true;
 	}
-
+	function hanyaHuruf(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+			return true;
+		}
 	(function() {
 		var _show = function( element, field ) {
 			this.element = element;
