@@ -142,7 +142,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
                 <h3 class="mb-30 title_color text-center">DATA KARYAWAN</h3>
                 <div>
 					<ul class="right">
-						<a href="tambah-guru.php"><button class="btn btn-primary">Tambah</button></a>
+						<a href="tambah-karyawan.php"><button class="btn btn-primary">Tambah</button></a>
 						<a href="form-importguru.php"><button class="btn btn-primary">Import</button></a>
 						<a href="unduhguru.php"><button class="btn btn-primary">Export</button></a>
 					</ul>
