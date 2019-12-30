@@ -128,6 +128,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">JADWAL SEKOLAH</h3>
                 <div class="button-group-area mt-10">
+					
 				</div>
 				<br>
 				<div class="progress-table-wrap">

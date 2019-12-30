@@ -154,9 +154,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							<div class="card">
 								<div class="imgWrap">
 									<img src="<?php echo $d['foto_guru'];?>" id="imgView" class="card-img-top img-fluid">
-								</div>
-								<input type="hidden" name="foto" readonly value="<?php echo $d['foto_guru']; ?>">
-								</div><br><br>
+							</div><br><br>
 						</div>
 					</div>
 					<div class="col-md-6 col-xs-12">

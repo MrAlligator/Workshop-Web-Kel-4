@@ -100,6 +100,7 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
 			<div class="section-top-border">
                 <h3 class="mb-30 title_color text-center">NILAI</h3>
 </br>
+				<a href="cetaknilai.php"><button id="hapus" class="btn btn-primary">Cetak</button></a>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
@@ -109,6 +110,7 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
 							<div class="country">Nilai UAS</div>
 							<div class="country">Nilai Sikap</div>
 						</div>
+						
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
@@ -116,7 +118,7 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
                             while($d = mysqli_fetch_array($data)){
                         ?>
 						<?php
-							$sql_kategori = mysqli_query($koneksi, "SELECT * FROM tb_mapel");
+							$sql_kategori = mysqli_query($koneksi, "select * from tb_mapel");
 							while ($data_kategori = mysqli_fetch_array($sql_kategori)){
 
 							}  
@@ -166,3 +168,17 @@ if( ! isset($_SESSION['user'])){ // Jika tidak ada session username berarti dia 
 	</body>
 	
 	</html>
+	<script>
+		function hanyaAngka(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if (charCode > 31 && (charCode < 48 || charCode > 57))
+			return false;
+			return true;
+		}
+		function hanyaHuruf(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+			return true;
+		}
+	</script>
