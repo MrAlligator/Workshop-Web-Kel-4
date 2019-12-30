@@ -6,10 +6,10 @@ include 'koneksi.php';
 $nama = $_POST['nama'];
 $nis = $_POST['nis'];
 $kelas = $_POST['kelas'];
-$uh = $_POST['uh'];
-$uts = $_POST['uts'];
-$uas = $_POST['uas'];
-$sikap = $_POST['sikap'];
+$uh = $_POST['nilai_ulgn_harian'];
+$uts = $_POST['nilai_uts'];
+$uas = $_POST['nilai_uas'];
+$sikap = $_POST['nilai_sikap'];
 
 // menginput data ke database
 $ceknis = mysqli_num_rows(mysqli_query($koneksi, "SELECT * FROM tb_nilai WHERE nis='$nis'"));

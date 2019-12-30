@@ -123,7 +123,7 @@
 							<div class="country"><?php echo $d['nilai_sikap']; ?></div>
                             <div class="country">
                                 <a href="edit.php?id=<?php echo $d['nama'];?>"><button class="btn btn-warning">Edit</button></a>
-                                <a href="hapusnilai.php?id=<?php echo $d['nis'];?>"><button class="btn btn-danger">Hapus</button></a>
+                                <a href="hapusnilai.php?id=<?php echo $d['id_nilai'];?>"><button class="btn btn-danger">Hapus</button></a>
                             </div>
 						</div>
                         <?php

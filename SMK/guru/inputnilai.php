@@ -126,52 +126,31 @@
 								<tr>
 									<td>Mata Pelajaran</td>
 									<td><input type="text" name="mapel" placeholder="Mata Pelajaran" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
-                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai Ulangan Harian</td>
 									<td><input type="text" name="uh" placeholder="Nilai Ulangan Harian" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
-                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UTS</td>
 									<td><input type="text" name="uts" placeholder="Nilai UTS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UTS'"
-                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UAS</td>
 									<td><input type="text" name="uas" placeholder="Nilai UAS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UAS'"
-                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai Sikap</td>
-									<td>
-										<select name="sikap" required>  
-											<option value="">A</option>  
-											<option value="">B</option>  
-											<option value="">C</option>
-											<option value="">D</option>
-											<option value="">E</option>
-										</select><br>
-									</td>
+									<td><input type="text" name="sikap" placeholder="Nilai sikap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Sikap'"
+                        	        required class="single-input"></td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan Nilai"></td>
 								</tr>
-								<script>
-									function hanyaAngka(evt) {
-										var charCode = (evt.which) ? evt.which : event.keyCode
-										if (charCode > 31 && (charCode < 48 || charCode > 57))
-
-										return false;
-										return true;
-									}
-									<?php echo $jsArray; ?>  
-									function changeValue(id){  
-										document.getElementById('nama').value = prdName[id].nama;
-										document.getElementById('kelas').value = prdName[id].kelas;
-									};
-								</script>
 							</table>
 						</form>
 					</div>
@@ -203,4 +182,18 @@
 	</body>
 	
 	</html>
+	<script>
+									function hanyaAngka(evt) {
+										var charCode = (evt.which) ? evt.which : event.keyCode
+										if (charCode > 31 && (charCode < 48 || charCode > 57))
+
+										return false;
+										return true;
+									}
+									<?php echo $jsArray; ?>  
+									function changeValue(id){  
+										document.getElementById('nama').value = prdName[id].nama;
+										document.getElementById('kelas').value = prdName[id].kelas;
+									};
+								</script>
 	
