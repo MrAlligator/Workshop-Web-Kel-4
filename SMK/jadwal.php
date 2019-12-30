@@ -134,10 +134,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
-							<div class="country">Hari</div>
-							<div class="country">Mata Pelajaran</div>
-							<div class="country">Waktu</div>
-							<div class="country">Nama Guru</div>
+							<div class="country">HARI &nbsp; &nbsp; &nbsp; MAPEL&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; GURU&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;WAKTU</div>
 						
 						</div>
                         <?php 
@@ -151,29 +148,26 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							}
                             while($d = mysqli_fetch_array($sql)){
                         ?>
-						<div class="table-row">
-							<div class="country"><?php echo $a= $d['hari']; ?></div>
-							<div class="country">
+						<div class="country"><?php echo $a= $d['hari']; ?></div>
+							
 							<?php $nomor = 1;
 								$sql2 = mysqli_query($koneksi,"SELECT * from tb_jadwal where hari='$a'");
 								while($f = mysqli_fetch_array($sql2)){	
 								 ?>
 									<div class="table-row">
 									<div class="serial"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
-									<div class="country"><?= $f['nama_guru'] ?></div>
+									<div class="serial"><?= $f['nama_guru'] ?></div>
 									<div class="serial"><?= $f['durasi'] ?></div>
 										
 									</div>
-								<?php }?>
+								<?php }}?>
 								
 								
 							</div>
-							<div class="serial"> <?php echo $d['nama_guru']; ?></div> 
-							<!-- <div class="country"><?php echo $d['durasi']; ?></div> -->
                            
 						</div>
                         <?php
-                            }
+                            
                         ?>
                     </div>
 				</div>

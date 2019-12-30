@@ -134,13 +134,15 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 				<div class="progress-table-wrap">
 					<div class="progress-table">
 						<div class="table-head">
+						
+							<div class="visit">Aksi</div>
 							<div class="country">Hari</div>
-							<div class="country">Mata Pelajaran</div>
-							<div class="country">Waktu</div>
-							<div class="country">Nama Guru</div>
-							<div class="country">Aksi</div>
+							<div class="visit">Mata Pelajaran</div>
+							<div class="serial">Waktu</div>
+							<div class="percentage">Nama Guru</div>
 						
 						</div>
+						
                         <?php 
                             include 'koneksi.php';
                             $no = 1;
@@ -152,32 +154,28 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 							}
                             while($d = mysqli_fetch_array($sql)){
                         ?>
+                                <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
+                            </div>
 						<div class="table-row">
 							<div class="country"><?php echo $a= $d['hari']; ?></div>
-							<div class="country">
 							<?php $nomor = 1;
 								$sql2 = mysqli_query($koneksi,"SELECT * from tb_jadwal where hari='$a'");
 								while($f = mysqli_fetch_array($sql2)){	
 								 ?>
 									<div class="table-row">
 									<div class="serial"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
-									<div class="country"><?= $f['nama_guru'] ?></div>
+									<div class="serial"><?= $f['nama_guru'] ?></div>
 									<div class="serial"><?= $f['durasi'] ?></div>
 										
 									</div>
-								<?php }?>
+								<?php }}?>
 								
 								
-							</div>
-							<div class="serial"> <?php echo $d['nama_guru']; ?></div> 
-							<!-- <div class="country"><?php echo $d['durasi']; ?></div> -->
-                            <div class="table-row">
-                                <a href="edit-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>"><button>Edit</button></a>
-                                <a href="hapus-jadwal.php?id_jadwal=<?php echo $d['id_jadwal'];?>" onClick="return confirm('Hapus Data?')"><button>Hapus</button></a>
-                            </div>
+							</div> 
+                            
 						</div>
                         <?php
-                            }
+                            
                         ?>
                     </div>
 				</div>
