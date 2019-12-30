@@ -126,27 +126,27 @@
 								<tr>
 									<td>Mata Pelajaran</td>
 									<td><input type="text" name="mapel" placeholder="Mata Pelajaran" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
-                        	        required class="single-input"></td>
+                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai Ulangan Harian</td>
 									<td><input type="text" name="uh" placeholder="Nilai Ulangan Harian" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai Ulangan Harian'"
-                        	        required class="single-input"></td>
+                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UTS</td>
 									<td><input type="text" name="uts" placeholder="Nilai UTS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UTS'"
-                        	        required class="single-input"></td>
+                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai UAS</td>
 									<td><input type="text" name="uas" placeholder="Nilai UAS" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai UAS'"
-                        	        required class="single-input"></td>
+                        	        onkeypress="return hanyaAngka(event)" required class="single-input"></td>
 								</tr>
 								<tr>
 									<td>Nilai Sikap</td>
 									<td><input type="text" name="sikap" placeholder="Nilai Sikap" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nilai SIkap'"
-                        	        required class="single-input"></td>
+                        	        onkeypress="return hanyaHuruf(event) "required class="single-input"></td>
 								</tr>
 								<tr>
 					    			<td><input type="submit" value="Simpan Nilai"></td>
@@ -196,4 +196,18 @@
 	</body>
 	
 	</html>
+	<script>
+		function hanyaAngka(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if (charCode > 31 && (charCode < 48 || charCode > 57))
+			return false;
+			return true;
+		}
+		function hanyaHuruf(evt) {
+			var charCode = (evt.which) ? evt.which : event.keyCode
+			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			return false;
+			return true;
+		}
+	</script>
 	
