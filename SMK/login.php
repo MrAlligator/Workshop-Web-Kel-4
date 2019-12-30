@@ -30,7 +30,8 @@
                     </div>
                     <div>
                         <span><label>Password</label></span>
-                        <span><input type="password" name="password" class="password" placeholder="Password"></span>
+                        <span><input type="password" id="pass" name="pass" class="password" placeholder="Password"></span>
+                        <span><input type="checkbox" id="show-pass" name="show-pass"> Show password<br><br></span>
                     </div>
                     <hr>
                     <div class="sign">
@@ -48,3 +49,31 @@
     </div>
 </body>
 </html>
+<script>
+    (function() {
+		var _show = function( element, field ) {
+			this.element = element;
+			this.field = field;
+			this.toggle();    
+		};
+	_show.prototype = {
+		toggle: function() {
+			var self = this;
+			self.element.addEventListener( "change", function() {
+			if( self.element.checked ) {
+			self.field.setAttribute( "type", "text" );
+			} else {
+			self.field.setAttribute( "type", "password" );    
+			}
+			}, false);
+		}
+	};
+	
+	document.addEventListener( "DOMContentLoaded", function() {
+		var checkbox = document.querySelector( "#show-pass" ),
+		pass = document.querySelector( "#pass" ),
+		_form = document.querySelector( "form" );
+		var toggler = new _show( checkbox, pass );
+	});
+	})();
+</script>
