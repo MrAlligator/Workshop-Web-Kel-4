@@ -98,6 +98,7 @@
 							<div class="country">Nilai UTS</div>
 							<div class="country">Nilai UAS</div>
 							<div class="country">Nilai Sikap</div>
+							<div class="country">Aksi</div>
 						</div>
                         <?php 
                             include 'koneksi.php';
