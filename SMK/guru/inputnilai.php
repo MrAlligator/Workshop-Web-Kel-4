@@ -205,7 +205,7 @@
 		}
 		function hanyaHuruf(evt) {
 			var charCode = (evt.which) ? evt.which : event.keyCode
-			if ((charCode < 65 || charCode > 90)&&(charCode < 97 || charCode > 122)&&charCode>32)
+			if ((charCode = 65)&&(charCode = 66)&&(charCode = 67)&&(charCode = 68)&&(charCode = 69))
 			return false;
 			return true;
 		}
