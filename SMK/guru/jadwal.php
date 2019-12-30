@@ -43,7 +43,17 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 			</div>
 
 			<nav class="navbar navbar-expand-lg navbar-light">
-			<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand logo_h" href="index.php"><img src="img/logo2.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
 						<ul class="nav navbar-nav menu_nav ml-auto">
 							<li class="nav-item"><a class="nav-link" href="../admin/aturdata.php">KEMBALI</a></li>
 							<li class="nav-item active submenu dropdown">
@@ -101,6 +111,10 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 			</nav>
 		</div>
 	</header>
+    <!--================ End Header Menu Area =================-->
+
+    <!--================Home Banner Area =================-->
+    
     <!--================End Home Banner Area =================-->
 
 
@@ -111,84 +125,64 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
     <!-- Start Align Area -->
     <div class="whole-wrap">
 		<div class="container">
-			<br><br>
-				<h3 class="mb-30 title_color"><center>Form Edit Jadwal</center></h3>
-				<div class="row">
-					<?php
-                        include 'koneksi.php';
-                        $id= $_GET['id_jadwal'];
-                        $data = mysqli_query($koneksi,"select * from tb_jadwal where id_jadwal='$id'");
-                        while($d = mysqli_fetch_array($data)){
-                        ?>
-				
-					<div class="col-md-6 col-xs-12">
-						<div class="form-group">
-						<form method="post" action="update-jadwal.php" enctype="multipart/form-data">
-						<input type="hidden" name="id" readonly value="<?php echo $d['id_jadwal'] ?>" class="form-control">
-					<label>Kelas</label><br>
-							<select name="hari" required>  
-								<option value="" disabled>Hari</option>  
-								<?php
-									$hr = $d['hari'];
-									if ($hr=="senin") echo "<option value = 'senin' selected>senin</option>";
-									else echo "<option value = 'senin'>senin</option>";
-									if ($hr=="selasa") echo "<option value = 'selasa' selected>selasa</option>";
-                                    else echo "<option value = 'selasa'>selasa</option>";
-                                    if ($hr=="rabu") echo "<option value = 'rabu' selected>rabu</option>";
-                                    else echo "<option value = 'rabu'>rabu</option>";
-                                    if ($hr=="kamis") echo "<option value = 'kamis' selected>kamis</option>";
-                                    else echo "<option value = 'kamis'>kamis</option>";
-                                    if ($hr=="jumat") echo "<option value = 'jumat' selected>jumat</option>";
-                                    else echo "<option value = 'jumat'>jumat</option>";
-                                    if ($hr=="sabtu") echo "<option value = 'sabtu' selected>sabtu</option>";
-									else echo "<option value = 'sabtu'>sabtu</option>";
-								?>
-							</select><br><br>
-							
-							<label>Nama Mata Pelajaran</label><br>
-							<input type="text" name="mapel" class="form-control" value="<?php echo $d['nama_mapel'] ?>" required>
-							<label>Durasi</label><br>
-							<select name="durasi" required>  
-							<?php
-									$drsi = $d['durasi'];
-									if ($hr=="07.00 - 07-45") echo "<option value = '07.00 - 07-45' selected>07.00 - 07-45</option>";
-									else echo "<option value = '07.00 - 07-45'>07.00 - 07-45</option>";
-									if ($hr=="07.45 - 08.30") echo "<option value = '07.45 - 08.30' selected>07.45 - 08.30</option>";
-                                    else echo "<option value = '07.45 - 08.30'>07.45 - 08.30</option>";
-                                    if ($hr=="08.30 - 09.15") echo "<option value = '08.30 - 09.15' selected>08.30 - 09.15</option>";
-                                    else echo "<option value = '08.30 - 09.15'>08.30 - 09.15</option>";
-                                    if ($hr=="09.15 - 10.00") echo "<option value = '09.15 - 10.00' selected>09.15 - 10.00</option>";
-                                    else echo "<option value = '09.15 - 10.00'>09.15 - 10.00</option>";
-                                    if ($hr=="10.15 - 11.00") echo "<option value = '10.15 - 11.00' selected>10.15 - 11.00</option>";
-                                    else echo "<option value = '10.15 - 11.00'>10.15 - 11.00</option>";
-                                    if ($hr=="11.00 - 11.45") echo "<option value = '11.00 - 11.45' selected>11.00 - 11.45</option>";
-									else echo "<option value = '11.00 - 11.45'>11.00 - 11.45</option>";
-                                    if ($hr=="11.45 - 12.30") echo "<option value = '11.45 - 12.30' selected>11.45 - 12.30</option>";
-									else echo "<option value = '11.45 - 12.30'>11.45 - 12.30</option>";
-                                    if ($hr=="12.30 - 13.15") echo "<option value = '12.30 - 13.15' selected>12.30 - 13.15</option>";
-									else echo "<option value = '12.30 - 13.15'>12.30 - 13.15</option>";
-								?>
-							</select><br><br>
-							
-							<label>Nama Guru</label><br>
-							<input type="text" name="nama" class="form-control" value="<?php echo $d['nama_guru'] ?>" required>
-							<br><br>
-							<button class="btn btn-primary" type="submit">Simpan</button>
-							</form>
-						</div>	
-					</div>
-					<?php 
-                    }
-                    ?>
+			<div class="section-top-border">
+                <h3 class="mb-30 title_color text-center">JADWAL SEKOLAH</h3>
+                <div class="button-group-area mt-10">
 				</div>
+				<br>
+				<div class="progress-table-wrap">
+					<div class="progress-table">
+						<div class="table-head">
+							<div class="country">Hari</div>
+							<div class="country">Mata Pelajaran</div>
+							<div class="country">Waktu</div>
+							<div class="country">Nama Guru</div>
+						
+						</div>
+                        <?php 
+                            include 'koneksi.php';
+                            $no = 1;
+                            if(isset($_GET['semester'])){
+								$kelas = $_GET['semester'];
+								$sql = mysqli_query($koneksi,"select * from tb_jadwal where semester='$semester'");
+							}else{
+								$sql = mysqli_query($koneksi,"SELECT * from tb_jadwal group by hari ");
+							}
+                            while($d = mysqli_fetch_array($sql)){
+                        ?>
+						<div class="table-row">
+							<div class="country"><?php echo $a= $d['hari']; ?></div>
+							<div class="country">
+							<?php $nomor = 1;
+								$sql2 = mysqli_query($koneksi,"SELECT * from tb_jadwal where hari='$a'");
+								while($f = mysqli_fetch_array($sql2)){	
+								 ?>
+									<div class="table-row">
+									<div class="serial"><?= $nomor++ ?> &nbsp; <?= $f['nama_mapel'] ?></div>
+									<div class="country"><?= $f['nama_guru'] ?></div>
+									<div class="serial"><?= $f['durasi'] ?></div>
+										
+									</div>
+								<?php }?>
+								
+								
+							</div>
+							<div class="serial"> <?php echo $d['nama_guru']; ?></div> 
+							<!-- <div class="country"><?php echo $d['durasi']; ?></div> -->
+                           
+						</div>
+                        <?php
+                            }
+                        ?>
+                    </div>
+				</div>
+			</div>
 		</div>
 	</div>
-			
-						
 	<!-- End Align Area -->
 
 	<!--================ Start footer Area  =================-->
-	<footer class="footer-area section_gap">
+    <footer class="footer-area section_gap">
 		<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
@@ -197,7 +191,7 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 				</div>
 		</div>
 	</footer>
-	<!--================ End footer Area  =================-->
+		<!--================ End footer Area  =================-->
 	
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -216,40 +210,5 @@ if( ! isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia
 		<script src="js/gmaps.min.js"></script>
 		<script src="js/theme.js"></script>
 	</body>
-	<script>
-	function hanyaAngka(evt) {
-		var charCode = (evt.which) ? evt.which : event.keyCode
-		if (charCode > 31 && (charCode < 48 || charCode > 57))
-		
-		return false;
-		return true;
-	}
-
-	(function() {
-		var _show = function( element, field ) {
-			this.element = element;
-			this.field = field;
-			this.toggle();    
-		};
-	_show.prototype = {
-		toggle: function() {
-			var self = this;
-			self.element.addEventListener( "change", function() {
-			if( self.element.checked ) {
-			self.field.setAttribute( "type", "text" );
-			} else {
-			self.field.setAttribute( "type", "password" );    
-			}
-			}, false);
-		}
-	};
 	
-	document.addEventListener( "DOMContentLoaded", function() {
-		var checkbox = document.querySelector( "#show-pass" ),
-		pass = document.querySelector( "#pass" ),
-		_form = document.querySelector( "form" );
-		var toggler = new _show( checkbox, pass );
-	});
-	})();
-	</script>
 	</html>

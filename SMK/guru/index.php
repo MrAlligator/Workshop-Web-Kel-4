@@ -73,6 +73,7 @@ if( ! isset($_SESSION['username'])){ // Jika tidak ada session username berarti 
 									<li class="nav-item"><a class="nav-link" href="siswa.php">Siswa</a></li>
 									<li class="nav-item"><a class="nav-link" href="guru.php">Guru</a></li>
 									<li class="nav-item"><a class="nav-link" href="karyawan.php">Karyawan</a></li>
+									<li class="nav-item"><a class="nav-link" href="jadwal.php">Jadwal</a></li>
 								</ul>
 							</li>
 							</li><li class="nav-item submenu dropdown">
