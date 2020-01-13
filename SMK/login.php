@@ -1,3 +1,20 @@
+<?php
+session_start(); // Start session nya
+// Kita cek apakah user sudah login atau belum
+// Cek nya dengan cara cek apakah terdapat session username atau tidak
+if( isset($_SESSION['uname'])){ // Jika tidak ada session username berarti dia belum login
+    header("location:/SMK/admin/index.php"); // Kita Redirect ke halaman index.php karena belum login
+}
+else if(isset($_SESSION['username'])){
+    header("location:/SMK/guru/index.php");
+}
+else if(isset($_SESSION['user'])){
+    header("location:/SMK/siswa/index.php");
+}
+else if(isset($_SESSION['usname'])){
+    header("location:/SMK/walikelas/index.php");
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
