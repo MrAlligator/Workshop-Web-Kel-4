@@ -7,14 +7,9 @@ $durasi = $_POST['durasi'];
 $hari = $_POST['hari'];
 
 
-if($nama_mapel=="" || $semester=="" || $nama_guru=="" || $durasi=="" || $hari==""){
+if ($nama_mapel == "" || $semester == "" || $nama_guru == "" || $durasi == "" || $hari == "") {
 	echo "<script>alert('data tidak lengkap!');location='tambah-jadwal.php';</script>";
-}else{
-$query = mysqli_query($koneksi,"INSERT INTO tb_jadwal VALUES('','$nama_mapel','$semester','$nama_guru', '$durasi','$hari')");
-if ($query){
+} else {
+	mysqli_query($koneksi, "INSERT INTO tb_jadwal VALUES('','$nama_mapel','$semester','$nama_guru', '$durasi','$hari')");
 	echo "<script>alert('Berhasil Tersimpan!');location='jadwal.php';</script>";
-}else{
-	echo "gagal";
 }
-}
-?>
